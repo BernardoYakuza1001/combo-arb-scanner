@@ -5,6 +5,9 @@ on:
       days:
         description: "How many days of settled events"
         default: "14"
+      window:
+        description: "Max seconds between the legs' prints"
+        default: "10"
 permissions:
   contents: write
 jobs:
@@ -21,7 +24,7 @@ jobs:
       - name: Trade-tape history scan
         run: |
           python - <<'PY'
-          import json; p="config.json"; c=json.load(open(p)); c["history"]["days"]=int("${{ github.event.inputs.days || '14' }}"); json.dump(c,open(p,"w"),indent=1)
+          import json; p="config.json"; c=json.load(open(p)); c["history"]["days"]=int("${{ github.event.inputs.days || '14' }}"); c["history"]["window_s"]=int("${{ github.event.inputs.window || '10' }}"); c["history"]["max_markets"]=6000; json.dump(c,open(p,"w"),indent=1)
           PY
           python -u -m combo_arb history 2>&1 | tee history.log | grep -E "history:|trades:|relation|closed events|HISTORY_RESULT| gap | wallet |error|Traceback|^HTTP|^EXC"
       - name: Save results
