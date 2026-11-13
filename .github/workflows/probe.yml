@@ -7,13 +7,12 @@ jobs:
     timeout-minutes: 5
     steps:
       - run: |
-          for u in "https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=AAVE_USDT&limit=1000&from=1760024780&to=1772984780" \
-                   "https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=AAVE_USDT&limit=1000&from=1779896780&to=1794584780" \
-                   "https://api.bitget.com/api/v2/mix/market/history-fund-rate?symbol=AAVEUSDT&productType=usdt-futures&pageSize=100&pageNo=15"; do
-            echo "== $u"; curl -sS -m 20 -o /tmp/r -w "HTTP %{http_code}\n" "$u"; head -c 200 /tmp/r; echo
-            python3 -c "
-          import json;d=json.load(open('/tmp/r'));d=d.get('data',d) if isinstance(d,dict) else d
-          print('rows',len(d) if isinstance(d,list) else d)
-          if isinstance(d,list) and d:
-              ts=[int(x.get('t',0))*1000 if 't' in x else int(x.get('fundingTime',0)) for x in d]; import datetime as D; print('span',D.datetime.utcfromtimestamp(min(ts)/1000),D.datetime.utcfromtimestamp(max(ts)/1000))"
-          done
+          curl -sS -m 20 "https://contract.mexc.com/api/v1/contract/funding_rate/history?symbol=AAVE_USDT&page_size=1000&page_num=1" -o /tmp/r -w "HTTP %{http_code}\n"
+          python3 -c "
+          import json,datetime as D;d=json.load(open('/tmp/r'))['data'];l=d['resultList'];print('total',d['totalCount'],'pages',d['totalPage'],'got',len(l));t=[x['settleTime'] for x in l];print('span',D.datetime.utcfromtimestamp(min(t)/1000),D.datetime.utcfromtimestamp(max(t)/1000))"
+          curl -sS -m 30 "https://contract.mexc.com/api/v1/contract/detail" -o /tmp/c -w "HTTP %{http_code}\n"
+          python3 -c "
+          import json;d=json.load(open('/tmp/c'))['data'];u=[x for x in d if x.get('quoteCoin')=='USDT' and x.get('state')==0];print('usdt perps live',len(u))"
+          curl -sS -m 30 "https://api.mexc.com/api/v3/exchangeInfo" -o /tmp/s -w "HTTP %{http_code}\n"
+          python3 -c "
+          import json;d=json.load(open('/tmp/s'));s=[x for x in d['symbols'] if x.get('quoteAsset')=='USDT' and str(x.get('status'))in('1','ENABLED','TRADING')];print('spot usdt',len(s))"
