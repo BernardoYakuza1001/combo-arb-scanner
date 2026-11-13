@@ -1,0 +1,48 @@
+2026-11-13 15:18:05 closed events: sports page 1: 100 (total 100)
+2026-11-13 15:18:05 closed events: sports page 2: 100 (total 200)
+2026-11-13 15:18:05 closed events: sports page 3: 100 (total 300)
+2026-11-13 15:18:05 closed events: sports page 4: 100 (total 400)
+2026-11-13 15:18:06 closed events: sports page 5: 100 (total 500)
+2026-11-13 15:18:06 closed events: sports page 6: 100 (total 600)
+2026-11-13 15:18:06 closed events: esports page 1: 100 (total 656)
+2026-11-13 15:18:07 closed events: esports page 2: 100 (total 756)
+2026-11-13 15:18:08 closed events: esports page 3: 100 (total 856)
+2026-11-13 15:18:08 closed events: esports page 4: 100 (total 956)
+2026-11-13 15:18:09 closed events: esports page 5: 100 (total 1056)
+2026-11-13 15:18:10 closed events: esports page 6: 100 (total 1156)
+2026-11-13 15:18:10 relation search 0.3s
+2026-11-13 15:18:10 history: 1156 settled events, 3388 families, 4391 baskets, skipped {'sports_bad_margin': 15, 'sports_unmodelled_type': 2379, 'families': 3388, 'baskets': 4391}
+2026-11-13 15:18:18 trades: 250/3227 markets, 10308 prints, 8s, requests 256, 429s 0, errors 0
+2026-11-13 15:18:25 trades: 500/3227 markets, 22428 prints, 15s, requests 517, 429s 0, errors 0
+2026-11-13 15:18:33 trades: 750/3227 markets, 31158 prints, 23s, requests 770, 429s 0, errors 0
+2026-11-13 15:18:41 trades: 1000/3227 markets, 59992 prints, 31s, requests 1081, 429s 0, errors 0
+2026-11-13 15:18:49 trades: 1250/3227 markets, 76993 prints, 39s, requests 1327, 429s 0, errors 0
+2026-11-13 15:18:57 trades: 1500/3227 markets, 103715 prints, 47s, requests 1610, 429s 0, errors 0
+2026-11-13 15:19:05 trades: 1750/3227 markets, 126851 prints, 55s, requests 1887, 429s 0, errors 0
+2026-11-13 15:19:52 trades: 2000/3227 markets, 135035 prints, 102s, requests 2189, 429s 64, errors 0
+2026-11-13 15:20:00 trades: 2250/3227 markets, 147894 prints, 110s, requests 2449, 429s 64, errors 0
+2026-11-13 15:20:09 trades: 2500/3227 markets, 186448 prints, 119s, requests 2754, 429s 64, errors 0
+2026-11-13 15:20:17 trades: 2750/3227 markets, 226365 prints, 127s, requests 3067, 429s 64, errors 0
+2026-11-13 15:20:26 trades: 3000/3227 markets, 284641 prints, 136s, requests 3382, 429s 64, errors 0
+2026-11-13 15:20:33 trades: 3227/3227 markets, 288449 prints, 143s, requests 3610, 429s 64, errors 0
+2026-11-13 15:20:33 HISTORY_RESULT {"settled_events": 1156, "baskets": 4391, "markets_with_tape": 3227, "prints": 288449, "window_s": 3, "days": 14, "tape_gaps": 86, "tape_gap_events": 32, "tape_gap_profit_usd": 323.63, "tape_gap_median_edge": 0.0309, "tape_gaps_in_play_share": 0.535, "captures": 118, "capture_wallets": 19, "capture_profit_usd": 230.16, "capture_median_edge": 0.0167, "by_kind": {"margin": {"gaps": 33, "gap_profit": 194.35, "captures": 51, "capture_profit": 201.24}, "series": {"gaps": 53, "gap_profit": 129.28, "captures": 64, "capture_profit": 28.83}, "total": {"gaps": 0, "gap_profit": 0.0, "captures": 3, "capture_profit": 0.09}}}
+2026-11-13 15:20:33 gap +52.71% $109.39 size 207.51 in-play True | Dota 2: CyberHero vs angry birds (BO3) - 1win Esse | Game Handicap: angry birds (-1.5) vs CyberHer + Dota 2: CyberHero vs angry birds (BO3) - 1win
+2026-11-13 15:20:33 gap +97.90% $101.82 size 104.0 in-play True | Dota 2: CyberHero vs angry birds (BO3) - 1win Esse | Game Handicap: angry birds (-1.5) vs CyberHer + Games Total: O/U 2.5 Under
+2026-11-13 15:20:33 gap +11.88% $58.71 size 494.0 in-play False | Dota 2: potn9ki vs Power Rangers (BO3) - DreamLeag | Dota 2: potn9ki vs Power Rangers (BO3) - Drea + Game Handicap: PR (-1.5) vs potn9ki (+1.5) ->
+2026-11-13 15:20:33 gap +2.91% $5.58 size 192.0 in-play True | LoL: Invictus Gaming vs Gen.G (BO5) - Worlds Playo | Games Total: O/U 3.5 Under + Game Handicap: GEN (-2.5) vs Invictus Gaming 
+2026-11-13 15:20:33 gap +3.53% $5.32 size 151.0 in-play True | LoL: Invictus Gaming vs Gen.G (BO5) - Worlds Playo | Games Total: O/U 3.5 Under + Game Handicap: GEN (-2.5) vs Invictus Gaming 
+2026-11-13 15:20:33 gap +22.73% $2.27 size 10.0 in-play False | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLeague  | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLe + Game Handicap: HULIGANI (-1.5) vs PuckChamp (
+2026-11-13 15:20:33 gap +22.73% $2.27 size 10.0 in-play False | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLeague  | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLe + Game Handicap: HULIGANI (-1.5) vs PuckChamp (
+2026-11-13 15:20:33 gap +22.63% $2.26 size 10.0 in-play False | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLeague  | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLe + Game Handicap: HULIGANI (-1.5) vs PuckChamp (
+2026-11-13 15:20:33 gap +22.63% $2.26 size 10.0 in-play False | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLeague  | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLe + Game Handicap: HULIGANI (-1.5) vs PuckChamp (
+2026-11-13 15:20:33 gap +34.81% $1.74 size 5.0 in-play False | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLeague  | Dota 2: HULIGANI vs PuckChamp (BO3) - DreamLe + Game Handicap: HULIGANI (-1.5) vs PuckChamp (
+2026-11-13 15:20:33 wallet 0x62022a4b6d3a33239111774d4cabb0c2c41ac297: 1 captures, $109.39
+2026-11-13 15:20:33 wallet 0xbfeceb4126b34e7e194c3d02cc107125785f4c6c: 12 captures, $76.32
+2026-11-13 15:20:33 wallet 0xdca194ffacd6efe8618ac8fe387ca9fdd78c95de: 17 captures, $16.53
+2026-11-13 15:20:33 wallet 0x67799d399360fcb5a7e386caef44add58b08fc9d: 7 captures, $3.57
+2026-11-13 15:20:33 wallet 0x1264afc155c582ea15a3013f7ffc6882615b43ae: 27 captures, $3.28
+2026-11-13 15:20:33 wallet 0xc4783a87149875e7d775c479367a6211c01cbb8d: 3 captures, $2.57
+2026-11-13 15:20:33 wallet 0x3f5813ba1f7f4bf8e49b70ce36bc18b5196fd93a: 9 captures, $2.5
+2026-11-13 15:20:33 wallet 0xd1a63a243042d864520512fbdbd2fd20e0ab1507: 3 captures, $2.16
+2026-11-13 15:20:33 wallet 0xc33a35c708c35d07e8df356421eb98abb0b017de: 1 captures, $2.1
+2026-11-13 15:20:33 wallet 0x8fe730b55cf3468c01a884cfcde79c2dfb4d6c1f: 3 captures, $1.87

@@ -1,31 +1,37 @@
 {
  "settled_events": 1156,
  "baskets": 4391,
- "markets_with_tape": 3000,
- "prints": 282566,
- "window_s": 10,
- "days": 7,
- "tape_gaps": 94,
- "tape_gap_events": 37,
- "tape_gap_profit_usd": 329.38,
- "tape_gap_median_edge": 0.03175,
- "tape_gaps_in_play_share": 0.628,
- "captures": 116,
+ "markets_with_tape": 3227,
+ "prints": 288449,
+ "window_s": 3,
+ "days": 14,
+ "tape_gaps": 86,
+ "tape_gap_events": 32,
+ "tape_gap_profit_usd": 323.63,
+ "tape_gap_median_edge": 0.0309,
+ "tape_gaps_in_play_share": 0.535,
+ "captures": 118,
  "capture_wallets": 19,
- "capture_profit_usd": 232.14,
- "capture_median_edge": 0.01685,
+ "capture_profit_usd": 230.16,
+ "capture_median_edge": 0.0167,
  "by_kind": {
   "margin": {
-   "gaps": 32,
-   "gap_profit": 193.55,
-   "captures": 52,
-   "capture_profit": 203.31
+   "gaps": 33,
+   "gap_profit": 194.35,
+   "captures": 51,
+   "capture_profit": 201.24
   },
   "series": {
-   "gaps": 62,
-   "gap_profit": 135.83,
+   "gaps": 53,
+   "gap_profit": 129.28,
    "captures": 64,
    "capture_profit": 28.83
+  },
+  "total": {
+   "gaps": 0,
+   "gap_profit": 0.0,
+   "captures": 3,
+   "capture_profit": 0.09
   }
  },
  "top_wallets": [
@@ -43,11 +49,6 @@
    "wallet": "0xdca194ffacd6efe8618ac8fe387ca9fdd78c95de",
    "captures": 17,
    "profit": 16.53
-  },
-  {
-   "wallet": "0xc69bd5567b40ef4d11922eaa57e1f9be1c642076",
-   "captures": 2,
-   "profit": 3.76
   },
   {
    "wallet": "0x67799d399360fcb5a7e386caef44add58b08fc9d",
@@ -85,6 +86,11 @@
    "profit": 1.87
   },
   {
+   "wallet": "0x2277c18fb73d4cfbd61384be80ef9339a9496604",
+   "captures": 19,
+   "profit": 1.79
+  },
+  {
    "wallet": "0xf3d0dddaa4ff1d8af941df16923a6b980c73f451",
    "captures": 1,
    "profit": 1.74
@@ -95,9 +101,9 @@
    "profit": 1.73
   },
   {
-   "wallet": "0x2277c18fb73d4cfbd61384be80ef9339a9496604",
-   "captures": 16,
-   "profit": 1.7
+   "wallet": "0xc69bd5567b40ef4d11922eaa57e1f9be1c642076",
+   "captures": 1,
+   "profit": 1.69
   },
   {
    "wallet": "0xb682d2785018884f0e32c9a98ee67584bea1677e",
