@@ -144,16 +144,44 @@ def run(cfg, log):
             by_market[m.get("slug")] = m
     need = sorted({c.market for b in baskets for c in b["legs"]})[: h.get("max_markets", 2500)]
     tape = defaultdict(list)
-    for i, slug in enumerate(need, 1):
-        m = by_market.get(slug) or {}
-        for t in trades_for(api, m.get("conditionId"), h.get("max_trades_per_market", 3000)) if m.get("conditionId") else []:
-            try:
-                tape[str(t["asset"])].append((int(t["timestamp"]), float(t["price"]), float(t["size"]),
-                                              str(t.get("side", "")).upper(), t.get("proxyWallet", "")))
-            except (KeyError, ValueError, TypeError):
-                continue
-        if i % 200 == 0:
-            log(f"trades: {i}/{len(need)} markets, {sum(len(v) for v in tape.values())} prints")
+    cap = h.get("max_trades_per_market", 3000)
+
+    def one(slug):
+        sess = requests.Session()
+        cid = (by_market.get(slug) or {}).get("conditionId")
+        rows, off = [], 0
+        while cid and off < cap:
+            page = None
+            for attempt in range(4):
+                try:
+                    r = sess.get(f"{DATA}/trades", params={"market": cid, "limit": 500, "offset": off,
+                                                          "takerOnly": "true"}, timeout=20)
+                    if r.status_code == 429:
+                        time.sleep(2 * (attempt + 1)); continue
+                    r.raise_for_status(); page = r.json(); break
+                except Exception:
+                    time.sleep(1 + attempt)
+            if not page:
+                break
+            rows += page
+            if len(page) < 500:
+                break
+            off += 500
+        return rows
+
+    from concurrent.futures import ThreadPoolExecutor
+    done = 0
+    with ThreadPoolExecutor(max_workers=h.get("workers", 8)) as ex:
+        for rows in ex.map(one, need):
+            done += 1
+            for t in rows:
+                try:
+                    tape[str(t["asset"])].append((int(t["timestamp"]), float(t["price"]), float(t["size"]),
+                                                  str(t.get("side", "")).upper(), t.get("proxyWallet", "")))
+                except (KeyError, ValueError, TypeError):
+                    continue
+            if done % 100 == 0:
+                log(f"trades: {done}/{len(need)} markets, {sum(len(v) for v in tape.values())} prints")
     start_of = {}
     for e in evs:
         s0 = e.get("startTime") or next((m.get("gameStartTime") for m in e.get("markets") or [] if m.get("gameStartTime")), None)

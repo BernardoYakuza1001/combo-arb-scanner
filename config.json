@@ -29,10 +29,11 @@
    "esports"
   ],
   "pages": 6,
-  "days": 14,
-  "max_markets": 2500,
-  "max_trades_per_market": 3000,
+  "days": 7,
+  "max_markets": 1500,
+  "max_trades_per_market": 2000,
   "window_s": 10,
-  "min_edge": 0.01
+  "min_edge": 0.01,
+  "workers": 8
  }
 }
