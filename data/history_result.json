@@ -1,0 +1,19 @@
+{
+ "settled_events": 1156,
+ "baskets": 4391,
+ "markets_with_tape": 3000,
+ "prints": 0,
+ "window_s": 10,
+ "days": 7,
+ "tape_gaps": 0,
+ "tape_gap_events": 0,
+ "tape_gap_profit_usd": 0,
+ "tape_gap_median_edge": null,
+ "tape_gaps_in_play_share": null,
+ "captures": 0,
+ "capture_wallets": 0,
+ "capture_profit_usd": 0,
+ "capture_median_edge": null,
+ "by_kind": {},
+ "top_wallets": []
+}

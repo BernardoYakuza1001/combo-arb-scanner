@@ -1,0 +1,138 @@
+2026-11-13 15:11:22 closed events: sports page 1: 100 (total 100)
+2026-11-13 15:11:23 closed events: sports page 2: 100 (total 200)
+2026-11-13 15:11:23 closed events: sports page 3: 100 (total 300)
+2026-11-13 15:11:23 closed events: sports page 4: 100 (total 400)
+2026-11-13 15:11:24 closed events: sports page 5: 100 (total 500)
+2026-11-13 15:11:24 closed events: sports page 6: 100 (total 600)
+2026-11-13 15:11:24 closed events: esports page 1: 100 (total 656)
+2026-11-13 15:11:25 closed events: esports page 2: 100 (total 756)
+2026-11-13 15:11:26 closed events: esports page 3: 100 (total 856)
+2026-11-13 15:11:26 closed events: esports page 4: 100 (total 956)
+2026-11-13 15:11:27 closed events: esports page 5: 100 (total 1056)
+2026-11-13 15:11:29 closed events: esports page 6: 100 (total 1156)
+2026-11-13 15:11:29 relation search 0.3s
+2026-11-13 15:11:29 history: 1156 settled events, 3388 families, 4391 baskets, skipped {'sports_bad_margin': 15, 'sports_unmodelled_type': 2379, 'families': 3388, 'baskets': 4391}
+HTTP HTTP 400 {"error":"'offset' is not a query param on this API: pages are cursor-only, pass 'cursor' from a prior response's next_cursor","code":"invalid_request","retryable":false,"trace_id":"db8599de9cdb4a8e8f400 {"error":"'offset' is not a query param on this API: pages are cursor-only, pass 'cursor' from a prior response's next_cursor","code":"invalid_request","retryable":false,"trace_id":"b7e20f48f7f74123a0
+
+HTTP 400 {"error":"'offset' is not a query param on this API: pages are cursor-only, pass 'cursor' from a prior response's next_cursor","code":"invalid_request","retryable":false,"trace_id":"f0b65065387b4367ad
+2026-11-13 15:11:30 trades: 25/3000 markets, 0 prints, 1s, requests 26, 429s 0, errors 26
+2026-11-13 15:11:31 trades: 50/3000 markets, 0 prints, 1s, requests 51, 429s 0, errors 51
+2026-11-13 15:11:31 trades: 75/3000 markets, 0 prints, 2s, requests 75, 429s 0, errors 75
+2026-11-13 15:11:32 trades: 100/3000 markets, 0 prints, 2s, requests 101, 429s 0, errors 101
+2026-11-13 15:11:32 trades: 125/3000 markets, 0 prints, 3s, requests 128, 429s 0, errors 128
+2026-11-13 15:11:33 trades: 150/3000 markets, 0 prints, 3s, requests 150, 429s 0, errors 150
+2026-11-13 15:11:33 trades: 175/3000 markets, 0 prints, 4s, requests 175, 429s 0, errors 175
+2026-11-13 15:11:34 trades: 200/3000 markets, 0 prints, 5s, requests 200, 429s 0, errors 200
+2026-11-13 15:11:34 trades: 225/3000 markets, 0 prints, 5s, requests 225, 429s 0, errors 225
+2026-11-13 15:11:35 trades: 250/3000 markets, 0 prints, 6s, requests 250, 429s 0, errors 250
+2026-11-13 15:11:35 trades: 275/3000 markets, 0 prints, 6s, requests 275, 429s 0, errors 275
+2026-11-13 15:11:36 trades: 300/3000 markets, 0 prints, 7s, requests 306, 429s 0, errors 306
+2026-11-13 15:11:37 trades: 325/3000 markets, 0 prints, 7s, requests 325, 429s 0, errors 325
+2026-11-13 15:11:37 trades: 350/3000 markets, 0 prints, 8s, requests 350, 429s 0, errors 350
+2026-11-13 15:11:38 trades: 375/3000 markets, 0 prints, 8s, requests 375, 429s 0, errors 375
+2026-11-13 15:11:38 trades: 400/3000 markets, 0 prints, 9s, requests 401, 429s 0, errors 401
+2026-11-13 15:11:39 trades: 425/3000 markets, 0 prints, 10s, requests 425, 429s 0, errors 425
+2026-11-13 15:11:39 trades: 450/3000 markets, 0 prints, 10s, requests 450, 429s 0, errors 450
+2026-11-13 15:11:40 trades: 475/3000 markets, 0 prints, 11s, requests 475, 429s 0, errors 475
+2026-11-13 15:11:41 trades: 500/3000 markets, 0 prints, 11s, requests 500, 429s 0, errors 500
+2026-11-13 15:11:41 trades: 525/3000 markets, 0 prints, 12s, requests 525, 429s 0, errors 525
+2026-11-13 15:11:42 trades: 550/3000 markets, 0 prints, 12s, requests 550, 429s 0, errors 550
+2026-11-13 15:11:42 trades: 575/3000 markets, 0 prints, 13s, requests 575, 429s 0, errors 575
+2026-11-13 15:11:43 trades: 600/3000 markets, 0 prints, 13s, requests 600, 429s 0, errors 600
+2026-11-13 15:11:43 trades: 625/3000 markets, 0 prints, 14s, requests 625, 429s 0, errors 625
+2026-11-13 15:11:44 trades: 650/3000 markets, 0 prints, 15s, requests 652, 429s 0, errors 652
+2026-11-13 15:11:44 trades: 675/3000 markets, 0 prints, 15s, requests 675, 429s 0, errors 675
+2026-11-13 15:11:45 trades: 700/3000 markets, 0 prints, 16s, requests 700, 429s 0, errors 700
+2026-11-13 15:11:46 trades: 725/3000 markets, 0 prints, 16s, requests 725, 429s 0, errors 725
+2026-11-13 15:11:46 trades: 750/3000 markets, 0 prints, 17s, requests 751, 429s 0, errors 751
+2026-11-13 15:11:47 trades: 775/3000 markets, 0 prints, 17s, requests 775, 429s 0, errors 775
+2026-11-13 15:11:47 trades: 800/3000 markets, 0 prints, 18s, requests 800, 429s 0, errors 800
+2026-11-13 15:11:48 trades: 825/3000 markets, 0 prints, 18s, requests 825, 429s 0, errors 825
+2026-11-13 15:11:48 trades: 850/3000 markets, 0 prints, 19s, requests 850, 429s 0, errors 850
+2026-11-13 15:11:49 trades: 875/3000 markets, 0 prints, 20s, requests 875, 429s 0, errors 875
+2026-11-13 15:11:49 trades: 900/3000 markets, 0 prints, 20s, requests 900, 429s 0, errors 900
+2026-11-13 15:11:50 trades: 925/3000 markets, 0 prints, 21s, requests 925, 429s 0, errors 925
+2026-11-13 15:11:50 trades: 950/3000 markets, 0 prints, 21s, requests 950, 429s 0, errors 950
+2026-11-13 15:11:51 trades: 975/3000 markets, 0 prints, 22s, requests 975, 429s 0, errors 975
+2026-11-13 15:11:52 trades: 1000/3000 markets, 0 prints, 22s, requests 1000, 429s 0, errors 1000
+2026-11-13 15:11:52 trades: 1025/3000 markets, 0 prints, 23s, requests 1025, 429s 0, errors 1025
+2026-11-13 15:11:53 trades: 1050/3000 markets, 0 prints, 23s, requests 1050, 429s 0, errors 1050
+2026-11-13 15:11:53 trades: 1075/3000 markets, 0 prints, 24s, requests 1076, 429s 0, errors 1076
+2026-11-13 15:11:54 trades: 1100/3000 markets, 0 prints, 24s, requests 1101, 429s 0, errors 1101
+2026-11-13 15:11:54 trades: 1125/3000 markets, 0 prints, 25s, requests 1125, 429s 0, errors 1125
+2026-11-13 15:11:55 trades: 1150/3000 markets, 0 prints, 26s, requests 1150, 429s 0, errors 1150
+2026-11-13 15:11:55 trades: 1175/3000 markets, 0 prints, 26s, requests 1175, 429s 0, errors 1175
+2026-11-13 15:11:56 trades: 1200/3000 markets, 0 prints, 27s, requests 1200, 429s 0, errors 1200
+2026-11-13 15:11:57 trades: 1225/3000 markets, 0 prints, 27s, requests 1225, 429s 0, errors 1225
+2026-11-13 15:11:57 trades: 1250/3000 markets, 0 prints, 28s, requests 1250, 429s 0, errors 1250
+2026-11-13 15:11:58 trades: 1275/3000 markets, 0 prints, 28s, requests 1275, 429s 0, errors 1275
+2026-11-13 15:11:58 trades: 1300/3000 markets, 0 prints, 29s, requests 1313, 429s 0, errors 1313
+2026-11-13 15:11:59 trades: 1325/3000 markets, 0 prints, 30s, requests 1325, 429s 0, errors 1325
+2026-11-13 15:11:59 trades: 1350/3000 markets, 0 prints, 30s, requests 1350, 429s 0, errors 1350
+2026-11-13 15:12:00 trades: 1375/3000 markets, 0 prints, 31s, requests 1375, 429s 0, errors 1375
+2026-11-13 15:12:00 trades: 1400/3000 markets, 0 prints, 31s, requests 1400, 429s 0, errors 1400
+2026-11-13 15:12:01 trades: 1425/3000 markets, 0 prints, 32s, requests 1425, 429s 0, errors 1425
+2026-11-13 15:12:02 trades: 1450/3000 markets, 0 prints, 32s, requests 1451, 429s 0, errors 1451
+2026-11-13 15:12:02 trades: 1475/3000 markets, 0 prints, 33s, requests 1479, 429s 0, errors 1479
+2026-11-13 15:12:03 trades: 1500/3000 markets, 0 prints, 34s, requests 1503, 429s 0, errors 1503
+2026-11-13 15:12:04 trades: 1525/3000 markets, 0 prints, 34s, requests 1526, 429s 0, errors 1526
+2026-11-13 15:12:04 trades: 1550/3000 markets, 0 prints, 35s, requests 1550, 429s 0, errors 1550
+2026-11-13 15:12:05 trades: 1575/3000 markets, 0 prints, 35s, requests 1575, 429s 0, errors 1575
+2026-11-13 15:12:05 trades: 1600/3000 markets, 0 prints, 36s, requests 1601, 429s 0, errors 1601
+2026-11-13 15:12:06 trades: 1625/3000 markets, 0 prints, 36s, requests 1625, 429s 0, errors 1625
+2026-11-13 15:12:06 trades: 1650/3000 markets, 0 prints, 37s, requests 1650, 429s 0, errors 1650
+2026-11-13 15:12:07 trades: 1675/3000 markets, 0 prints, 38s, requests 1675, 429s 0, errors 1675
+2026-11-13 15:12:07 trades: 1700/3000 markets, 0 prints, 38s, requests 1701, 429s 0, errors 1701
+2026-11-13 15:12:08 trades: 1725/3000 markets, 0 prints, 39s, requests 1725, 429s 0, errors 1725
+2026-11-13 15:12:08 trades: 1750/3000 markets, 0 prints, 39s, requests 1750, 429s 0, errors 1750
+2026-11-13 15:12:09 trades: 1775/3000 markets, 0 prints, 40s, requests 1775, 429s 0, errors 1775
+2026-11-13 15:12:10 trades: 1800/3000 markets, 0 prints, 40s, requests 1800, 429s 0, errors 1800
+2026-11-13 15:12:10 trades: 1825/3000 markets, 0 prints, 41s, requests 1825, 429s 0, errors 1825
+2026-11-13 15:12:31 trades: 1850/3000 markets, 0 prints, 61s, requests 1881, 429s 37, errors 1844
+2026-11-13 15:12:57 trades: 1875/3000 markets, 0 prints, 88s, requests 1946, 429s 80, errors 1866
+2026-11-13 15:12:58 trades: 1900/3000 markets, 0 prints, 89s, requests 1967, 429s 80, errors 1887
+2026-11-13 15:12:59 trades: 1925/3000 markets, 0 prints, 89s, requests 1998, 429s 80, errors 1918
+2026-11-13 15:12:59 trades: 1950/3000 markets, 0 prints, 90s, requests 2014, 429s 80, errors 1934
+2026-11-13 15:13:00 trades: 1975/3000 markets, 0 prints, 90s, requests 2039, 429s 80, errors 1959
+2026-11-13 15:13:00 trades: 2000/3000 markets, 0 prints, 91s, requests 2064, 429s 80, errors 1984
+2026-11-13 15:13:01 trades: 2025/3000 markets, 0 prints, 91s, requests 2089, 429s 80, errors 2009
+2026-11-13 15:13:01 trades: 2050/3000 markets, 0 prints, 92s, requests 2115, 429s 80, errors 2035
+2026-11-13 15:13:02 trades: 2075/3000 markets, 0 prints, 92s, requests 2139, 429s 80, errors 2059
+2026-11-13 15:13:02 trades: 2100/3000 markets, 0 prints, 93s, requests 2164, 429s 80, errors 2084
+2026-11-13 15:13:03 trades: 2125/3000 markets, 0 prints, 94s, requests 2189, 429s 80, errors 2109
+2026-11-13 15:13:03 trades: 2150/3000 markets, 0 prints, 94s, requests 2214, 429s 80, errors 2134
+2026-11-13 15:13:04 trades: 2175/3000 markets, 0 prints, 95s, requests 2239, 429s 80, errors 2159
+2026-11-13 15:13:05 trades: 2200/3000 markets, 0 prints, 95s, requests 2264, 429s 80, errors 2184
+2026-11-13 15:13:05 trades: 2225/3000 markets, 0 prints, 96s, requests 2289, 429s 80, errors 2209
+2026-11-13 15:13:06 trades: 2250/3000 markets, 0 prints, 96s, requests 2314, 429s 80, errors 2234
+2026-11-13 15:13:06 trades: 2275/3000 markets, 0 prints, 97s, requests 2339, 429s 80, errors 2259
+2026-11-13 15:13:07 trades: 2300/3000 markets, 0 prints, 97s, requests 2364, 429s 80, errors 2284
+2026-11-13 15:13:07 trades: 2325/3000 markets, 0 prints, 98s, requests 2390, 429s 80, errors 2310
+2026-11-13 15:13:08 trades: 2350/3000 markets, 0 prints, 99s, requests 2414, 429s 80, errors 2334
+2026-11-13 15:13:08 trades: 2375/3000 markets, 0 prints, 99s, requests 2439, 429s 80, errors 2359
+2026-11-13 15:13:09 trades: 2400/3000 markets, 0 prints, 100s, requests 2464, 429s 80, errors 2384
+2026-11-13 15:13:10 trades: 2425/3000 markets, 0 prints, 100s, requests 2490, 429s 80, errors 2410
+2026-11-13 15:13:10 trades: 2450/3000 markets, 0 prints, 101s, requests 2514, 429s 80, errors 2434
+2026-11-13 15:13:11 trades: 2475/3000 markets, 0 prints, 102s, requests 2546, 429s 80, errors 2466
+2026-11-13 15:13:11 trades: 2500/3000 markets, 0 prints, 102s, requests 2564, 429s 80, errors 2484
+2026-11-13 15:13:12 trades: 2525/3000 markets, 0 prints, 103s, requests 2590, 429s 80, errors 2510
+2026-11-13 15:13:12 trades: 2550/3000 markets, 0 prints, 103s, requests 2614, 429s 80, errors 2534
+2026-11-13 15:13:13 trades: 2575/3000 markets, 0 prints, 104s, requests 2639, 429s 80, errors 2559
+2026-11-13 15:13:14 trades: 2600/3000 markets, 0 prints, 104s, requests 2664, 429s 80, errors 2584
+2026-11-13 15:13:14 trades: 2625/3000 markets, 0 prints, 105s, requests 2689, 429s 80, errors 2609
+2026-11-13 15:13:15 trades: 2650/3000 markets, 0 prints, 105s, requests 2714, 429s 80, errors 2634
+2026-11-13 15:13:15 trades: 2675/3000 markets, 0 prints, 106s, requests 2739, 429s 80, errors 2659
+2026-11-13 15:13:16 trades: 2700/3000 markets, 0 prints, 107s, requests 2764, 429s 80, errors 2684
+2026-11-13 15:13:17 trades: 2725/3000 markets, 0 prints, 108s, requests 2821, 429s 80, errors 2741
+2026-11-13 15:13:17 trades: 2750/3000 markets, 0 prints, 108s, requests 2821, 429s 80, errors 2741
+2026-11-13 15:13:18 trades: 2775/3000 markets, 0 prints, 108s, requests 2839, 429s 80, errors 2759
+2026-11-13 15:13:18 trades: 2800/3000 markets, 0 prints, 109s, requests 2864, 429s 80, errors 2784
+2026-11-13 15:13:19 trades: 2825/3000 markets, 0 prints, 109s, requests 2890, 429s 80, errors 2810
+2026-11-13 15:13:19 trades: 2850/3000 markets, 0 prints, 110s, requests 2915, 429s 80, errors 2835
+2026-11-13 15:13:20 trades: 2875/3000 markets, 0 prints, 110s, requests 2939, 429s 80, errors 2859
+2026-11-13 15:13:20 trades: 2900/3000 markets, 0 prints, 111s, requests 2964, 429s 80, errors 2884
+2026-11-13 15:13:21 trades: 2925/3000 markets, 0 prints, 112s, requests 2989, 429s 80, errors 2909
+2026-11-13 15:13:21 trades: 2950/3000 markets, 0 prints, 112s, requests 3014, 429s 80, errors 2934
+2026-11-13 15:13:22 trades: 2975/3000 markets, 0 prints, 113s, requests 3039, 429s 80, errors 2959
+2026-11-13 15:13:23 trades: 3000/3000 markets, 0 prints, 113s, requests 3064, 429s 80, errors 2984
+2026-11-13 15:13:23 HISTORY_RESULT {"settled_events": 1156, "baskets": 4391, "markets_with_tape": 3000, "prints": 0, "window_s": 10, "days": 7, "tape_gaps": 0, "tape_gap_events": 0, "tape_gap_profit_usd": 0, "tape_gap_median_edge": null, "tape_gaps_in_play_share": null, "captures": 0, "capture_wallets": 0, "capture_profit_usd": 0, "capture_median_edge": null, "by_kind": {}}
