@@ -1,0 +1,83 @@
+{
+ "start": 1794585929067,
+ "cash": -0.7717479310291537,
+ "positions": [
+  {
+   "symbol": "JCT_USDT",
+   "spot": "JCTUSDT",
+   "qty": 84331.0441204171,
+   "entry_spot": 0.001976338232320256,
+   "entry_perp": 0.00195,
+   "margin": 166.66666666666666,
+   "opened": 1794585945219,
+   "funding_ms": 1794585945219,
+   "f30_at_entry": 0.061483,
+   "funding": 0.0,
+   "mark_spot": 0.0019572910785243514,
+   "mark_perp": 0.001951,
+   "perp_upnl": -0.08433104412042829
+  },
+  {
+   "symbol": "PLAY_USDT",
+   "spot": "PLAYUSDT",
+   "qty": 20262.238709546924,
+   "entry_spot": 0.008225481352568342,
+   "entry_perp": 0.0082,
+   "margin": 166.66666666666666,
+   "opened": 1794585945403,
+   "funding_ms": 1794585945403,
+   "f30_at_entry": 0.053558,
+   "funding": 0.0,
+   "mark_spot": 0.00800868599113513,
+   "mark_perp": 0.00821,
+   "perp_upnl": -0.202622387095461
+  },
+  {
+   "symbol": "AGT_USDT",
+   "spot": "AGTUSDT",
+   "qty": 3156.2018122143954,
+   "entry_spot": 0.052806086740610894,
+   "entry_perp": 0.0518,
+   "margin": 166.66666666666666,
+   "opened": 1794585945599,
+   "funding_ms": 1794585945599,
+   "f30_at_entry": 0.048314,
+   "funding": 0.0,
+   "mark_spot": 0.05163406388691598,
+   "mark_perp": 0.05181,
+   "perp_upnl": -0.03156201812215362
+  }
+ ],
+ "fees": 0.771747931029192,
+ "funding": 0.0,
+ "last_rotation": 1794585943978,
+ "peak": 1000.0,
+ "history": [
+  {
+   "t": "2026-11-13 16:05",
+   "equity": 989.21,
+   "funding": 0.0,
+   "fees": 0.77,
+   "dd_from_start": 0.0108
+  }
+ ],
+ "log": [
+  "2026-11-13 16:05 OPEN JCT_USDT qty 84331.0441 spot 0.00197634 perp 0.00195 (f30 6.15%)",
+  "2026-11-13 16:05 OPEN PLAY_USDT qty 20262.2387 spot 0.00822548 perp 0.0082 (f30 5.36%)",
+  "2026-11-13 16:05 OPEN AGT_USDT qty 3156.2018 spot 0.0528061 perp 0.0518 (f30 4.83%)"
+ ],
+ "stopped": false,
+ "rules": {
+  "CAPITAL": 1000.0,
+  "SPOT_FRAC": 0.5,
+  "K": 3,
+  "ROTATE_DAYS": 30,
+  "MAX_DD": 0.05,
+  "SPOT_FEE": 0.001,
+  "PERP_FEE": 0.00055,
+  "MIN_SPOT_VOL": 100000,
+  "MIN_PERP_TURNOVER": 1000000,
+  "MARGIN_WARN": 0.6,
+  "NEG7_EXIT": true
+ }
+}
