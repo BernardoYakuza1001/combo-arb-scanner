@@ -2,7 +2,11 @@ name: collect
 on:
   schedule:
     - cron: "7 */6 * * *"      # a new ~5h50m run every 6 hours
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "Collection length in minutes (max ~345)"
+        default: "345"
 permissions:
   contents: write
 concurrency:
@@ -22,8 +26,9 @@ jobs:
         run: python tests/test_combo.py
       - name: Collect
         env:
-          MAX_RUNTIME_S: "20700"
+          MINUTES: ${{ github.event.inputs.minutes || '345' }}
         run: |
+          export MAX_RUNTIME_S=$(( MINUTES * 60 ))
           export EPISODES_FILE="episodes-$(date -u +%Y%m%dT%H%M).jsonl"
           python -u -m combo_arb collect 2>&1 | tee run.log | tail -n 400
       - name: Report
