@@ -155,26 +155,41 @@ def run(cfg, log):
         sess = requests.Session()
         cid = (by_market.get(slug) or {}).get("conditionId")
         rows, off = [], 0
+        cursor = None
         while cid and off < cap:
             page = None
+            params = {"condition_id": cid, "limit": 500}
+            if cursor:
+                params["cursor"] = cursor
+            else:
+                params["offset"] = off
             for attempt in range(4):
                 try:
-                    r = sess.get(f"{DATA}/trades", params={"market": cid, "limit": 500, "offset": off,
-                                                          "takerOnly": "true"}, timeout=20)
+                    r = sess.get(f"{DATA}/v2/trades", params=params, timeout=20)
                     counts["req"] += 1
                     if r.status_code == 429:
                         counts["r429"] += 1
                         time.sleep(2 * (attempt + 1)); continue
-                    r.raise_for_status(); page = r.json(); break
-                except Exception:
+                    if r.status_code >= 400:
+                        counts["err"] += 1
+                        if counts["err"] <= 3:
+                            print("HTTP", r.status_code, r.text[:200], flush=True)
+                        break
+                    page = r.json(); break
+                except Exception as e:
                     counts["err"] += 1
+                    if counts["err"] <= 3:
+                        print("EXC", type(e).__name__, str(e)[:200], flush=True)
                     time.sleep(1 + attempt)
             if not page:
                 break
-            rows += page
-            if len(page) < 500:
+            data = page.get("data") or []
+            rows += data
+            pg = page.get("pagination") or {}
+            off += len(data)
+            cursor = pg.get("next_cursor")
+            if not data or not pg.get("has_more"):
                 break
-            off += 500
         return rows
 
     from concurrent.futures import ThreadPoolExecutor
@@ -184,8 +199,8 @@ def run(cfg, log):
             done += 1
             for t in rows:
                 try:
-                    tape[str(t["asset"])].append((int(t["timestamp"]), float(t["price"]), float(t["size"]),
-                                                  str(t.get("side", "")).upper(), t.get("proxyWallet", "")))
+                    tape[str(t["token_id"])].append((int(t["timestamp"]), float(t["price"]), float(t["size"]),
+                                                     str(t.get("side", "")).upper(), t.get("proxy_wallet", "")))
                 except (KeyError, ValueError, TypeError):
                     continue
             if done % 25 == 0 or done == len(need):
