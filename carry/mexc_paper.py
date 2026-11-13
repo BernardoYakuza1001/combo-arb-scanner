@@ -208,15 +208,64 @@ def accrue(st, api):
         p["neg7"] = sum(r for _, r in api.funding(p["symbol"], now_ms() - 7 * DAY)) < 0
 
 
+def write_ticket(st, api, actions_log, capital):
+    """Plain order ticket for a human, scaled to `capital` USDT. Never sends anything."""
+    k = capital / CFG["CAPITAL"]
+    cs = {p["symbol"]: float(p.get("contractSize") or 1) for p in api.perps()}
+    tk = api.perp_tickers()
+    L = [f"# MEXC carry — ORDER TICKET for ${capital:,.0f} ({iso(now_ms())} UTC)", "",
+         "You place these orders yourself in the MEXC app. Spot and futures are separate accounts:",
+         f"put about ${capital * CFG['SPOT_FRAC']:,.0f} in Spot and ${capital * (1 - CFG['SPOT_FRAC']):,.0f} in Futures (USDT-M).",
+         "Futures settings for every coin: **Isolated margin, 1x leverage, Short**.", ""]
+    if actions_log:
+        L += ["## Do today", ""]
+        for x in actions_log:
+            if " OPEN " in x:
+                sym = x.split(" OPEN ")[1].split()[0]
+                p = next((q for q in st["positions"] if q["symbol"] == sym), None)
+                if not p:
+                    continue
+                contracts = int(p["qty"] * k / cs.get(sym, 1))
+                qty = contracts * cs.get(sym, 1)          # spot matches the short exactly
+                L += [f"- **OPEN {sym}**: Spot BUY {qty:,.4f} {sym[:-5]} with a limit at most "
+                      f"{p['entry_spot'] * 1.005:.6g} USDT  |  Futures SHORT {contracts:,} contracts "
+                      f"({contracts * cs.get(sym, 1):,.4f} {sym[:-5]}), limit at least {p['entry_perp'] * 0.995:.6g}"]
+            elif " CLOSE " in x:
+                sym = x.split(" CLOSE ")[1].split()[0]
+                L += [f"- **CLOSE {sym}**: sell ALL your spot {sym[:-5]} and close ALL of the {sym} short "
+                      f"(reason: {x.split('(')[1].split(')')[0] if '(' in x else 'rule'})"]
+        L.append("")
+    else:
+        L += ["## Do today: nothing. Keep holding.", ""]
+    L += ["## What you should be holding", "",
+          "Starting fresh? Open exactly this table (spot buy + futures short per coin), at the current market.", "",
+          "| Coin | Spot qty | Short contracts | Margin | Mark (spot / perp) |", "|---|---|---|---|---|"]
+    for p in st["positions"]:
+        c = int(p["qty"] * k / cs.get(p["symbol"], 1))
+        L.append(f"| {p['symbol'][:-5]} | {c * cs.get(p['symbol'], 1):,.4f} | {c:,} | ${p['margin'] * k:,.0f} | "
+                 f"{p.get('mark_spot', p['entry_spot']):.6g} / {p.get('mark_perp', p['entry_perp']):.6g} |")
+    L += ["", "## Safety rules (check daily)",
+          "- Close a coin if the ticket says so (its 7-day funding turned negative).",
+          "- Close EVERYTHING if total equity is down 5% from what you started with.",
+          "- If a short is ever near liquidation (MEXC shows the price), add margin or close both legs.",
+          "- Never use leverage above 1x on the short."]
+    rep = "\n".join(L) + "\n"
+    open(os.path.join(OUT, "TICKET.md"), "w").write(rep)
+    return rep
+
+
 def main(log=print):
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, "state.json")
     api = Api()
     st = json.load(open(path)) if os.path.exists(path) else None
     actions = []
+    if st is not None:
+        st["_log_len_before"] = len(st["log"])
     if st is None:
         st = {"start": now_ms(), "cash": CFG["CAPITAL"], "positions": [], "fees": 0.0, "funding": 0.0,
-              "last_rotation": 0, "peak": CFG["CAPITAL"], "history": [], "log": [], "stopped": False, "rules": CFG}
+              "last_rotation": 0, "peak": CFG["CAPITAL"], "history": [], "log": [], "stopped": False, "rules": CFG,
+              "_log_len_before": 0}
         actions.append("start")
     if not st["stopped"]:
         accrue(st, api)
@@ -259,6 +308,11 @@ def main(log=print):
         L.append(f"| {p['symbol']} | {p['qty']:.4f} | {p['entry_spot']:.6g} | {p.get('mark_spot', 0):.6g} | {p['entry_perp']:.6g} | "
                  f"{p.get('mark_perp', 0):.6g} | ${p['funding']:.2f} | {p['f30_at_entry']:.2%} |")
     L += ["", "Recent log:", ""] + [f"- {x}" for x in st["log"][-10:]]
+    if VARIANT == "v2":
+        n0 = st.get("_log_len_before", 0)
+        log(write_ticket(st, api, st["log"][n0:], float(os.environ.get("LIVE_CAPITAL", "1000"))))
+    st.pop("_log_len_before", None)
+    json.dump(st, open(path, "w"), indent=1)
     rep = "\n".join(L) + "\n"
     open(os.path.join(OUT, f"report_{datetime.now(timezone.utc):%Y-%m-%d}.md"), "w").write(rep)
     open(os.path.join(OUT, "LATEST.md"), "w").write(rep)
