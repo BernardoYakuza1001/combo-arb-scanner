@@ -161,8 +161,6 @@ def run(cfg, log):
             params = {"condition_id": cid, "limit": 500}
             if cursor:
                 params["cursor"] = cursor
-            else:
-                params["offset"] = off
             for attempt in range(4):
                 try:
                     r = sess.get(f"{DATA}/v2/trades", params=params, timeout=20)
@@ -203,7 +201,7 @@ def run(cfg, log):
                                                      str(t.get("side", "")).upper(), t.get("proxy_wallet", "")))
                 except (KeyError, ValueError, TypeError):
                     continue
-            if done % 25 == 0 or done == len(need):
+            if done % 250 == 0 or done == len(need):
                 log(f"trades: {done}/{len(need)} markets, {sum(len(v) for v in tape.values())} prints, "
                     f"{time.time() - t_tr:.0f}s, requests {counts['req']}, 429s {counts['r429']}, errors {counts['err']}")
     start_of = {}
