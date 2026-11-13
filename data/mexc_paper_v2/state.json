@@ -1,0 +1,85 @@
+{
+ "start": 1794587284498,
+ "cash": -0.7726601886178628,
+ "positions": [
+  {
+   "symbol": "BROCCOLIF3B_USDT",
+   "spot": "BROCCOLIF3BUSDT",
+   "qty": 34566.25772413316,
+   "entry_spot": 0.004821657814299776,
+   "entry_perp": 0.004778,
+   "margin": 166.66666666666666,
+   "opened": 1794587365377,
+   "funding_ms": 1794587365377,
+   "f30_at_entry": 0.083216,
+   "funding": 0.0,
+   "mark_spot": 0.004728849492306467,
+   "mark_perp": 0.004782,
+   "perp_upnl": -0.138265030896521
+  },
+  {
+   "symbol": "JCT_USDT",
+   "spot": "JCTUSDT",
+   "qty": 80514.49931854708,
+   "entry_spot": 0.002070020531423386,
+   "entry_perp": 0.00205,
+   "margin": 166.66666666666666,
+   "opened": 1794587365848,
+   "funding_ms": 1794587365848,
+   "f30_at_entry": 0.061483,
+   "funding": 0.0,
+   "mark_spot": 0.0020439116223128742,
+   "mark_perp": 0.002051,
+   "perp_upnl": -0.08051449931852285
+  },
+  {
+   "symbol": "AGT_USDT",
+   "spot": "AGTUSDT",
+   "qty": 3123.862888814096,
+   "entry_spot": 0.053352747095099906,
+   "entry_perp": 0.05299,
+   "margin": 166.66666666666666,
+   "opened": 1794587366336,
+   "funding_ms": 1794587366336,
+   "f30_at_entry": 0.048314,
+   "funding": 0.0,
+   "mark_spot": 0.05246777656460179,
+   "mark_perp": 0.053,
+   "perp_upnl": -0.03123862888812885
+  }
+ ],
+ "fees": 0.7726601886179538,
+ "funding": 0.0,
+ "last_rotation": 1794587364590,
+ "peak": 1000.0,
+ "history": [
+  {
+   "t": "2026-11-13 16:29",
+   "equity": 990.9,
+   "funding": 0.0,
+   "fees": 0.77,
+   "dd_from_start": 0.0091
+  }
+ ],
+ "log": [
+  "2026-11-13 16:29 OPEN BROCCOLIF3B_USDT qty 34566.2577 spot 0.00482166 perp 0.004778 (f30 8.32%)",
+  "2026-11-13 16:29 OPEN JCT_USDT qty 80514.4993 spot 0.00207002 perp 0.00205 (f30 6.15%)",
+  "2026-11-13 16:29 OPEN AGT_USDT qty 3123.8629 spot 0.0533527 perp 0.05299 (f30 4.83%)"
+ ],
+ "stopped": false,
+ "rules": {
+  "CAPITAL": 1000.0,
+  "SPOT_FRAC": 0.5,
+  "K": 3,
+  "ROTATE_DAYS": 30,
+  "MAX_DD": 0.05,
+  "SPOT_FEE": 0.001,
+  "PERP_FEE": 0.00055,
+  "MIN_SPOT_VOL": 0,
+  "MIN_PERP_TURNOVER": 0,
+  "MARGIN_WARN": 0.6,
+  "NEG7_EXIT": true,
+  "HOLD_TOP": 10,
+  "MAX_RT_COST": 0.03
+ }
+}

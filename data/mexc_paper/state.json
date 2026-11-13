@@ -13,9 +13,10 @@
    "funding_ms": 1794585945219,
    "f30_at_entry": 0.061483,
    "funding": 0.0,
-   "mark_spot": 0.0019572910785243514,
-   "mark_perp": 0.001951,
-   "perp_upnl": -0.08433104412042829
+   "mark_spot": 0.002046419334202795,
+   "mark_perp": 0.002049,
+   "perp_upnl": -8.348773367921304,
+   "neg7": false
   },
   {
    "symbol": "PLAY_USDT",
@@ -28,9 +29,10 @@
    "funding_ms": 1794585945403,
    "f30_at_entry": 0.053558,
    "funding": 0.0,
-   "mark_spot": 0.00800868599113513,
-   "mark_perp": 0.00821,
-   "perp_upnl": -0.202622387095461
+   "mark_spot": 0.007381641469577921,
+   "mark_perp": 0.00798,
+   "perp_upnl": 4.457692516100352,
+   "neg7": false
   },
   {
    "symbol": "AGT_USDT",
@@ -43,9 +45,10 @@
    "funding_ms": 1794585945599,
    "f30_at_entry": 0.048314,
    "funding": 0.0,
-   "mark_spot": 0.05163406388691598,
-   "mark_perp": 0.05181,
-   "perp_upnl": -0.03156201812215362
+   "mark_spot": 0.052759704983436545,
+   "mark_perp": 0.05294,
+   "perp_upnl": -3.5980700659244174,
+   "neg7": false
   }
  ],
  "fees": 0.771747931029192,
@@ -59,6 +62,13 @@
    "funding": 0.0,
    "fees": 0.77,
    "dd_from_start": 0.0108
+  },
+  {
+   "t": "2026-11-13 16:28",
+   "equity": 980.4,
+   "funding": 0.0,
+   "fees": 0.77,
+   "dd_from_start": 0.0196
   }
  ],
  "log": [
