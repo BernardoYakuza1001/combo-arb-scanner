@@ -1,0 +1,26 @@
+{
+ "data_dir": "data",
+ "tag_slugs": [
+  "sports",
+  "esports",
+  "crypto"
+ ],
+ "event_pages": 3,
+ "discovery_every_s": 1800,
+ "max_legs": 3,
+ "min_edge": 0.001,
+ "hot_edge": -0.03,
+ "cold_every": 6,
+ "cycle_s": 2.0,
+ "min_request_gap_s": 0.2,
+ "status_every": 15,
+ "gate": {
+  "min_days": 7,
+  "min_edge": 0.01,
+  "min_profit_usd": 1.0,
+  "min_seen_s": 10,
+  "min_qualifying": 30,
+  "min_events": 5,
+  "min_weekly_profit_usd": 70
+ }
+}

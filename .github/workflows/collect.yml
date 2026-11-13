@@ -1,0 +1,40 @@
+name: collect
+on:
+  schedule:
+    - cron: "7 */6 * * *"      # a new ~5h50m run every 6 hours
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: collect
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install requests
+      - name: Offline tests
+        run: python tests/test_combo.py
+      - name: Collect
+        env:
+          MAX_RUNTIME_S: "20700"
+        run: |
+          export EPISODES_FILE="episodes-$(date -u +%Y%m%dT%H%M).jsonl"
+          python -u -m combo_arb collect 2>&1 | tee run.log | tail -n 400
+      - name: Report
+        if: always()
+        run: python -m combo_arb report || true
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "combo-arb-bot"
+          git config user.email "combo-arb-bot@users.noreply.github.com"
+          mkdir -p logs && tail -n 300 run.log > "logs/run-$(date -u +%Y%m%dT%H%M).log" || true
+          git add data logs
+          git commit -m "collect: $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
