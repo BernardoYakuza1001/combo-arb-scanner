@@ -99,8 +99,7 @@ def main():
             na = [{"price": 1 - float(x["price"]), "size": x["size"]} for x in bn.get("asks", [])]
             yes_ask_px = {round(float(x["price"]), 3) for x in b["asks"]}
             mirror_n += 1; mirror_hits += any(round(x["price"], 3) in yes_ask_px for x in nb)
-            # conservative: add them (if the API already mirrors, this double counts -> lower share estimate)
-            q1 += side_score(na, mid, v, +1); q2 += side_score(nb, mid, v, -1)
+            # The YES book already includes mirrored NO orders (verified 2584/2584), so they are not added again.
         others = min(q1, q2) if min(q1, q2) > 0 else max(q1, q2) / 3
         # my quote: bid YES and bid NO (= ask YES) at QUOTE_FRAC*v from mid; capital ~ shares*(1 - spread)
         s = QUOTE_FRAC * v
@@ -116,7 +115,7 @@ def main():
                          others=round(others), share=round(share, 3), earn=round(earn, 2),
                          apr=round(earn * 365 / CAPITAL * 100, 1),
                          end=str(m.get("end_date") or m.get("end_date_iso") or "")[:10],
-                         bid=bb, ask=ba))
+                         bid=bb, ask=ba, tok=tok, tno=tno, tick=float(b.get("tick_size") or 0.01)))
     rows.sort(key=lambda r: -r["earn"])
     print(f"mirror check: NO-book bid prices seen as YES asks in {mirror_hits}/{mirror_n} markets")
     # status check on Gamma for the top candidates: must be open, accepting orders, end in the future
