@@ -136,7 +136,9 @@ def run(cfg, log):
     h = cfg.get("history", {})
     api = Api(requests.Session(), log, cfg["min_request_gap_s"])
     evs = closed_events(api, h.get("tags", ["sports", "esports"]), h.get("pages", 6), h.get("days", 14), log)
+    t_d = time.time()
     fams, baskets, stats = R.discover(evs, cfg["max_legs"])
+    log(f"relation search {time.time() - t_d:.1f}s")
     log(f"history: {len(evs)} settled events, {len(fams)} families, {len(baskets)} baskets, skipped {stats}")
     by_market = {}
     for e in evs:
@@ -145,6 +147,9 @@ def run(cfg, log):
     need = sorted({c.market for b in baskets for c in b["legs"]})[: h.get("max_markets", 2500)]
     tape = defaultdict(list)
     cap = h.get("max_trades_per_market", 3000)
+
+    counts = {"req": 0, "r429": 0, "err": 0}
+    t_tr = time.time()
 
     def one(slug):
         sess = requests.Session()
@@ -156,10 +161,13 @@ def run(cfg, log):
                 try:
                     r = sess.get(f"{DATA}/trades", params={"market": cid, "limit": 500, "offset": off,
                                                           "takerOnly": "true"}, timeout=20)
+                    counts["req"] += 1
                     if r.status_code == 429:
+                        counts["r429"] += 1
                         time.sleep(2 * (attempt + 1)); continue
                     r.raise_for_status(); page = r.json(); break
                 except Exception:
+                    counts["err"] += 1
                     time.sleep(1 + attempt)
             if not page:
                 break
@@ -180,8 +188,9 @@ def run(cfg, log):
                                                   str(t.get("side", "")).upper(), t.get("proxyWallet", "")))
                 except (KeyError, ValueError, TypeError):
                     continue
-            if done % 100 == 0:
-                log(f"trades: {done}/{len(need)} markets, {sum(len(v) for v in tape.values())} prints")
+            if done % 25 == 0 or done == len(need):
+                log(f"trades: {done}/{len(need)} markets, {sum(len(v) for v in tape.values())} prints, "
+                    f"{time.time() - t_tr:.0f}s, requests {counts['req']}, 429s {counts['r429']}, errors {counts['err']}")
     start_of = {}
     for e in evs:
         s0 = e.get("startTime") or next((m.get("gameStartTime") for m in e.get("markets") or [] if m.get("gameStartTime")), None)

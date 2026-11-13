@@ -21,7 +21,7 @@ jobs:
           python - <<'PY'
           import json; p="config.json"; c=json.load(open(p)); c["history"]["days"]=int("${{ github.event.inputs.days || '14' }}"); json.dump(c,open(p,"w"),indent=1)
           PY
-          python -u -m combo_arb history 2>&1 | tee history.log | grep -E "history:|trades:|HISTORY_RESULT|^.{20}gap |wallet |error|Traceback" | head -200
+          python -u -m combo_arb history 2>&1 | tee history.log | grep -E "history:|trades:|relation|closed events|HISTORY_RESULT| gap | wallet |error|Traceback"
       - name: Save results
         if: always()
         run: |
