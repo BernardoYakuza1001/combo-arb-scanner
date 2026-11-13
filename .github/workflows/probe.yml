@@ -7,8 +7,13 @@ jobs:
     timeout-minutes: 5
     steps:
       - run: |
-          for u in "https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=AAVE_USDT&limit=1000&from=1768664737&to=1794584737" \
-                   "https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=AAVE_USDT&limit=1000"; do
-            echo "== $u"; curl -sS -m 20 -o /tmp/r -w "HTTP %{http_code}\n" "$u"; head -c 300 /tmp/r; echo; python3 -c "import json;d=json.load(open('/tmp/r'));print('rows',len(d) if isinstance(d,list) else d)"
+          for u in "https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=AAVE_USDT&limit=1000&from=1760024780&to=1772984780" \
+                   "https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=AAVE_USDT&limit=1000&from=1779896780&to=1794584780" \
+                   "https://api.bitget.com/api/v2/mix/market/history-fund-rate?symbol=AAVEUSDT&productType=usdt-futures&pageSize=100&pageNo=15"; do
+            echo "== $u"; curl -sS -m 20 -o /tmp/r -w "HTTP %{http_code}\n" "$u"; head -c 200 /tmp/r; echo
+            python3 -c "
+          import json;d=json.load(open('/tmp/r'));d=d.get('data',d) if isinstance(d,dict) else d
+          print('rows',len(d) if isinstance(d,list) else d)
+          if isinstance(d,list) and d:
+              ts=[int(x.get('t',0))*1000 if 't' in x else int(x.get('fundingTime',0)) for x in d]; import datetime as D; print('span',D.datetime.utcfromtimestamp(min(ts)/1000),D.datetime.utcfromtimestamp(max(ts)/1000))"
           done
-          curl -sS https://api.gateio.ws/api/v4/futures/usdt/contracts -o /tmp/c; python3 -c "import json;d=json.load(open('/tmp/c'));print('contracts',len(d))"
