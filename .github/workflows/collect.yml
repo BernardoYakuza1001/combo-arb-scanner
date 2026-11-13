@@ -42,4 +42,4 @@ jobs:
           mkdir -p logs && tail -n 300 run.log > "logs/run-$(date -u +%Y%m%dT%H%M).log" || true
           git add data logs
           git commit -m "collect: $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
-          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
