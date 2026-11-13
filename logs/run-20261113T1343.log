@@ -1,0 +1,11 @@
+2026-11-13 13:43:12 events: tag sports page 1: 100 events in 1.0s (total 100)
+2026-11-13 13:43:13 events: tag sports page 2: 100 events in 0.6s (total 200)
+2026-11-13 13:43:13 events: tag sports page 3: 100 events in 0.6s (total 300)
+2026-11-13 13:43:14 events: tag esports page 1: 100 events in 0.4s (total 368)
+2026-11-13 13:43:14 events: tag esports page 2: 100 events in 0.3s (total 468)
+2026-11-13 13:43:14 events: tag esports page 3: 100 events in 0.3s (total 568)
+2026-11-13 13:43:14 events: tag crypto page 1: 100 events in 0.3s (total 668)
+2026-11-13 13:43:15 events: tag crypto page 2: 100 events in 0.5s (total 768)
+2026-11-13 13:43:15 events: tag crypto page 3: 100 events in 0.3s (total 868)
+2026-11-13 13:43:28 relation search took 13.2s
+2026-11-13 13:43:28 discovery: 868 events, 1026 families, 41172 baskets, 7354 tokens, skipped {'sports_unmodelled_type': 11482, 'sports_bad_margin': 231}
