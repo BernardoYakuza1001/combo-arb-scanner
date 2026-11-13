@@ -23,7 +23,7 @@
  {
   "q": "Will Lindsay Clancy be the #1 searched person on Google in the US this year?",
   "cid": "0x2579c53c318675bde886ceb1ad73605d293c27b6eb3b7d878481299d73af1765",
-  "reward": 0.580626038793301,
+  "reward": 0.6133261487275664,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -33,7 +33,7 @@
  {
   "q": "Will Jensen Huang be the #1 searched person on Google this year?",
   "cid": "0xaf1a86346f480ce8b4c631b812123dbe0b814c89320465d3d0bcaf68c6b972a8",
-  "reward": 0.5006500765149753,
+  "reward": 0.5575103640012594,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -43,7 +43,7 @@
  {
   "q": "Robert Pattinson announced as next James Bond?",
   "cid": "0xdc913f1173086416c810b9b257d9f17887b3bfb414f69921e8b1310905699fe1",
-  "reward": 1.208194066245541,
+  "reward": 1.2465978784157232,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -53,7 +53,7 @@
  {
   "q": "Will Lindsay Clancy be the #1 searched person on Google this year?",
   "cid": "0x4350034be066b7f44fcec5f1c89fdcc0f9e0a0f34add9f563715ae1515d75b03",
-  "reward": 0.29141586838680644,
+  "reward": 0.31189959906700615,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -63,7 +63,7 @@
  {
   "q": "Tesla and SpaceX merger officially announced by December 31?",
   "cid": "0x85647246dede70416c9c71ea851d87facf4b5efe58c685f4acc5ea94a9487c10",
-  "reward": 0.25424998762559053,
+  "reward": 0.2713363719229426,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -73,7 +73,7 @@
  {
   "q": "Will Daft Punk perform at Coachella 2027?",
   "cid": "0x856fa22b5e4891747946ec84e4a07a69d951f750289b61aab6981927f2a643cb",
-  "reward": 0.8571808113966208,
+  "reward": 0.9262778953956861,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -83,7 +83,7 @@
  {
   "q": "Will Anthropic's market cap be between $1.5T and $1.75T at market close on IPO day?",
   "cid": "0xe02dadd92c84112fce087b6f260d62c8df1648e071acaef35b0851c8dde64163",
-  "reward": 0.3394562557506558,
+  "reward": 0.36001492700038984,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -93,7 +93,7 @@
  {
   "q": "Will The Odyssey be the #1 searched movie on Google this year?",
   "cid": "0xaf0bd8bb48f7dfecb135e3867b0768e9ba296ed527a7d6b3de6839e9d985f8c2",
-  "reward": 0.286226634694597,
+  "reward": 0.2984711222641307,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -103,8 +103,8 @@
  {
   "q": "Will Anthropic's valuation hit (HIGH) $2.0T by December 31?",
   "cid": "0xf32da8a1740a0d58ffdf87343afefb0bcca4b355cc88e2dba8fd78a88a5308d2",
-  "reward": 0.2489159146702662,
-  "mtm": -4.159999999999997,
+  "reward": 0.2853554953613711,
+  "mtm": -3.1200000000000045,
   "yes": 0.0,
   "no": 208.0,
   "merged": 0.0,
@@ -126,7 +126,7 @@
  {
   "q": "Callum Turner announced as next James Bond?",
   "cid": "0xdf55222217299506bd9b7b348ac3be51137ac480da920567722824f0c40c5fc0",
-  "reward": 0.180569409106915,
+  "reward": 0.20323549016624787,
   "mtm": 0.9772450000000106,
   "yes": 0.0,
   "no": 114.97,
@@ -149,7 +149,7 @@
  {
   "q": "Will Anthropic flip BTC by December 31?",
   "cid": "0x5c0d7c74bbf6ef1e0114e6f75514e3360673e15b6542b78a95363a41c24089d3",
-  "reward": 0.5944404878417133,
+  "reward": 0.6532959816874275,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
