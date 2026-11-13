@@ -1,0 +1,34 @@
+name: history
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days of settled events"
+        default: "14"
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install requests
+      - run: python tests/test_combo.py
+      - name: Trade-tape history scan
+        run: |
+          python - <<'PY'
+          import json; p="config.json"; c=json.load(open(p)); c["history"]["days"]=int("${{ github.event.inputs.days || '14' }}"); json.dump(c,open(p,"w"),indent=1)
+          PY
+          python -u -m combo_arb history 2>&1 | tee history.log | grep -E "history:|trades:|HISTORY_RESULT|^.{20}gap |wallet |error|Traceback" | head -200
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "combo-arb-bot"
+          git config user.email "combo-arb-bot@users.noreply.github.com"
+          git checkout -- config.json
+          mkdir -p logs && cp history.log "logs/history-$(date -u +%Y%m%dT%H%M).log" || true
+          git add data logs
+          git commit -m "history: $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done

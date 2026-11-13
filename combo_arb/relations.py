@@ -80,7 +80,13 @@ def _common(m: dict, ev: dict) -> dict:
                 start=str(m.get("gameStartTime") or ev.get("startTime") or ""))
 
 
+ALLOW_CLOSED = False   # history mode reads settled markets
+
+
 def tradable(m: dict) -> bool:
+    if ALLOW_CLOSED:
+        toks = loads(m.get("clobTokenIds")) or []
+        return len(toks) == 2 and m.get("enableOrderBook") is not False
     if m.get("closed") or m.get("active") is False or m.get("archived"):
         return False
     if m.get("enableOrderBook") is False or m.get("acceptingOrders") is False:

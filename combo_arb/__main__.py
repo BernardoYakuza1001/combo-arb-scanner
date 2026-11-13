@@ -31,6 +31,9 @@ def main(argv):
             with open(sf, "w") as f:
                 f.write(datetime.now(timezone.utc).isoformat())
         collector.run(cfg, log)
+    elif cmd == "history":
+        from . import history
+        history.run(cfg, log)
     elif cmd == "report":
         res = report.write(cfg)
         log(json.dumps({k: res[k] for k in ("verdict", "days", "episodes", "qualifying", "weekly_profit_usd")}))

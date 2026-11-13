@@ -22,5 +22,17 @@
   "min_qualifying": 30,
   "min_events": 5,
   "min_weekly_profit_usd": 70
+ },
+ "history": {
+  "tags": [
+   "sports",
+   "esports"
+  ],
+  "pages": 6,
+  "days": 14,
+  "max_markets": 2500,
+  "max_trades_per_market": 3000,
+  "window_s": 10,
+  "min_edge": 0.01
  }
 }
