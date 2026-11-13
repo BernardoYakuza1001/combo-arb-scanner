@@ -1,21 +1,21 @@
-# PMMM paper run — 2026-11-13 20:09 UTC, 2.75 h
+# PMMM paper run — 2026-11-13 20:09 UTC, 2.83 h
 
 12 markets, $200 each ($2,400 total), quotes at 50% of max spread.
 
-**Rewards accrued: $8.71  |  Trading P&L (marked at mid): $+0.08  |  Net: $+8.79**
-Per day at this pace: rewards $76.00, net $+76.67
+**Rewards accrued: $8.91  |  Trading P&L (marked at mid): $-0.50  |  Net: $+8.41**
+Per day at this pace: rewards $75.46, net $+71.22
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Callum Turner announced as next James Bond?](https://polymarket.com/market/callum-turner-announced-as-next-james-bond-288) | 24 | 0.229 | 17.7% | 90/166 | 0.27 | 2 | 0 | 0 | 165 | +5.28 | 2 | 19 (14) / 19 / -1.3c |
-| [Robert Pattinson announced as next James Bond?](https://polymarket.com/market/robert-pattinson-announced-as-next-james-bond) | 58 | 0.49 | 25.1% | 130/166 | 1.31 | 0 | 0 | 0 | 0 | +0.00 | 1 | 15 (6) / 14 / +0.6c |
-| [Will Daft Punk perform at Coachella 2027?](https://polymarket.com/market/will-daft-punk-perform-at-coachella-2027) | 200 | 0.155 | 5.6% | 166/166 | 1.30 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
-| [Howard Lutnick out as Secretary of Commerce by December 31?](https://polymarket.com/market/howard-lutnick-out-as-secretary-of-commerce-by-december-31) | 330 | 0.52 | 5.5% | 89/166 | 1.13 | 0 | 0 | 0 | 0 | +0.00 | 2 | 60 (46) / 60 / +1.0c |
-| [Will Anthropic flip BTC by December 31?](https://polymarket.com/market/will-anthropic-flip-btc-by-december-31) | 10 | 0.76 | 84.8% | 166/166 | 0.98 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
-| [Will Jensen Huang be the #1 searched person on Google this y](https://polymarket.com/market/will-jensen-huang-be-the-1-searched-person-on-google-this-year-20260717214426300) | 188 | 0.305 | 4.0% | 166/166 | 0.86 | 0 | 0 | 0 | 0 | +0.00 | 0 | 2 (2) / 2 / +1.0c |
-| [Will Lindsay Clancy be the #1 searched person on Google in t](https://polymarket.com/market/will-lindsay-clancy-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940435) | 70 | 0.205 | 10.0% | 166/166 | 0.81 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
-| [Will Anthropic's market cap be between $1.5T and $1.75T at m](https://polymarket.com/market/will-anthropics-market-cap-be-between-1pt5t-and-1pt75t-at-market-close-on-ipo-day) | 184 | 0.181 | 2.2% | 166/166 | 0.46 | 0 | 0 | 0 | 0 | +0.00 | 0 | 8 (8) / 8 / +0.9c |
-| [Will The Odyssey be the #1 searched movie on Google this yea](https://polymarket.com/market/will-the-odyssey-be-the-1-searched-movie-on-google-this-year-20260730181459216) | 27 | 0.195 | 14.5% | 145/166 | 0.40 | 0 | 0 | 0 | 0 | +0.00 | 1 | 2 (1) / 2 / +1.0c |
-| [Tesla and SpaceX merger officially announced by December 31?](https://polymarket.com/market/tesla-and-spacex-merger-officially-announced-by-december-31) | 500 | 0.29 | 0.7% | 166/166 | 0.38 | 0 | 0 | 0 | 0 | +0.00 | 0 | 4 (2) / 4 / +3.0c |
-| [Will Lindsay Clancy be the #1 searched person on Google this](https://polymarket.com/market/will-lindsay-clancy-be-the-1-searched-person-on-google-this-year-20260717214426299) | 97 | 0.165 | 3.3% | 166/166 | 0.37 | 0 | 0 | 0 | 0 | +0.00 | 0 | 5 (0) / 5 / +1.0c |
-| [Will Anthropic's valuation hit (HIGH) $2.0T by December 31?](https://polymarket.com/market/will-anthropics-valuation-hit-high-2pt0t-by-december-31-922) | 75 | 0.245 | 6.4% | 131/166 | 0.43 | 1 | 0 | 0 | 208 | -5.20 | 1 | 20 (10) / 20 / +1.0c |
+| [Callum Turner announced as next James Bond?](https://polymarket.com/market/callum-turner-announced-as-next-james-bond-288) | 24 | 0.233 | 18.5% | 92/171 | 0.28 | 2 | 0 | 0 | 165 | +4.70 | 2 | 22 (14) / 22 / -1.3c |
+| [Will Daft Punk perform at Coachella 2027?](https://polymarket.com/market/will-daft-punk-perform-at-coachella-2027) | 200 | 0.155 | 5.6% | 171/171 | 1.33 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
+| [Robert Pattinson announced as next James Bond?](https://polymarket.com/market/robert-pattinson-announced-as-next-james-bond) | 58 | 0.49 | 25.1% | 132/171 | 1.33 | 0 | 0 | 0 | 0 | +0.00 | 1 | 17 (8) / 16 / +0.6c |
+| [Howard Lutnick out as Secretary of Commerce by December 31?](https://polymarket.com/market/howard-lutnick-out-as-secretary-of-commerce-by-december-31) | 330 | 0.52 | 5.4% | 94/171 | 1.15 | 0 | 0 | 0 | 0 | +0.00 | 2 | 61 (46) / 61 / +1.0c |
+| [Will Anthropic flip BTC by December 31?](https://polymarket.com/market/will-anthropic-flip-btc-by-december-31) | 10 | 0.76 | 84.8% | 171/171 | 1.01 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
+| [Will Jensen Huang be the #1 searched person on Google this y](https://polymarket.com/market/will-jensen-huang-be-the-1-searched-person-on-google-this-year-20260717214426300) | 188 | 0.305 | 4.0% | 171/171 | 0.89 | 0 | 0 | 0 | 0 | +0.00 | 0 | 2 (2) / 2 / +1.0c |
+| [Will Lindsay Clancy be the #1 searched person on Google in t](https://polymarket.com/market/will-lindsay-clancy-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940435) | 70 | 0.205 | 9.9% | 171/171 | 0.82 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
+| [Will Anthropic's market cap be between $1.5T and $1.75T at m](https://polymarket.com/market/will-anthropics-market-cap-be-between-1pt5t-and-1pt75t-at-market-close-on-ipo-day) | 184 | 0.182 | 2.2% | 171/171 | 0.47 | 0 | 0 | 0 | 0 | +0.00 | 0 | 8 (8) / 8 / +0.9c |
+| [Will The Odyssey be the #1 searched movie on Google this yea](https://polymarket.com/market/will-the-odyssey-be-the-1-searched-movie-on-google-this-year-20260730181459216) | 27 | 0.195 | 14.5% | 145/171 | 0.40 | 0 | 0 | 0 | 0 | +0.00 | 1 | 2 (1) / 2 / +1.0c |
+| [Tesla and SpaceX merger officially announced by December 31?](https://polymarket.com/market/tesla-and-spacex-merger-officially-announced-by-december-31) | 500 | 0.29 | 0.7% | 171/171 | 0.40 | 0 | 0 | 0 | 0 | +0.00 | 0 | 5 (3) / 5 / +3.0c |
+| [Will Lindsay Clancy be the #1 searched person on Google this](https://polymarket.com/market/will-lindsay-clancy-be-the-1-searched-person-on-google-this-year-20260717214426299) | 97 | 0.165 | 3.2% | 171/171 | 0.37 | 0 | 0 | 0 | 0 | +0.00 | 0 | 5 (0) / 5 / +1.0c |
+| [Will Anthropic's valuation hit (HIGH) $2.0T by December 31?](https://polymarket.com/market/will-anthropics-valuation-hit-high-2pt0t-by-december-31-922) | 75 | 0.245 | 6.4% | 136/171 | 0.45 | 1 | 0 | 0 | 208 | -5.20 | 1 | 21 (11) / 21 / +0.2c |
