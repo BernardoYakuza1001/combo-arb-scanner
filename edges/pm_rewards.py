@@ -109,19 +109,44 @@ def main():
                          end=str(m.get("end_date") or m.get("end_date_iso") or "")[:10],
                          bid=bb, ask=ba))
     rows.sort(key=lambda r: -r["earn"])
-    with open(f"{OUT}/pm_rewards.json", "w") as f: json.dump(rows, f, indent=1)
+    # status check on Gamma for the top candidates: must be open, accepting orders, end in the future
+    top = rows[:300]; st = {}
+    for i in range(0, len(top), 50):
+        ids = [r["cid"] for r in top[i:i + 50]]
+        try:
+            g = get("https://gamma-api.polymarket.com/markets", params=[("condition_ids", c) for c in ids] + [("limit", 100)])
+            for x in g: st[x.get("conditionId")] = x
+        except Exception as e: print("gamma err", e)
+    keep = []
+    for r in rows:
+        g = st.get(r["cid"])
+        if r in top and g is None: r["status"] = "unknown"
+        if g:
+            r["status"] = ("closed" if g.get("closed") else "open") + ("" if g.get("acceptingOrders", True) else "/not-accepting")
+            r["vol24"] = round(float(g.get("volume24hr") or 0)); r["liq"] = round(float(g.get("liquidityNum") or 0))
+            r["end"] = str(g.get("endDate") or r["end"])[:10]
+        r["empty_book"] = r["spread"] > 2 * r["v"]
+        ok = r.get("status") == "open" and r["end"] >= now.strftime("%Y-%m-%d")
+        if ok: keep.append(r)
+    print("after status filter:", len(keep), "of", len(rows))
+    competitive = [r for r in keep if not r["empty_book"]]
+    empty = [r for r in keep if r["empty_book"]]
+    json.dump(rows, open(f"{OUT}/pm_rewards.json", "w"), indent=1)
+    hdr = ["| # | Market | Pool $/d | Max spread c | Min size | Mid | Book spread c | 24h vol $ | Others' score | Est. share | Est. $/day per $%d | Ends |" % CAPITAL,
+           "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    def tab(rs, n):
+        out = list(hdr)
+        for i, r in enumerate(rs[:n], 1):
+            out.append(f"| {i} | [{r['q']}](https://polymarket.com/market/{r['slug']}) | {r['rate']:.0f} | {r['v']} | {r['minsz']:.0f} | {r['mid']} | {r['spread']} | {r.get('vol24','?')} | {r['others']:,} | {r['share']:.1%} | {r['earn']:.2f} | {r['end']} |")
+        return out
     L = [f"# Polymarket liquidity rewards — {now:%Y-%m-%d %H:%M} UTC", "",
-         f"Assumes ${CAPITAL:.0f} resting per market, quoted at {QUOTE_FRAC:.0%} of max spread both sides, "
-         "and that competing liquidity stays as it is now. Estimate only; fills are the risk.", "",
-         f"Markets with live rewards: {len(live)}; total pool ${sum(r for _, r, _ in live):,.0f}/day", "",
-         "| # | Market | Pool $/d | Max spread c | Min size | Mid | Book spread c | Others' score | Est. share | Est. $/day | APR on capital | Ends |",
-         "|---|---|---|---|---|---|---|---|---|---|---|---|"]
-    for i, r in enumerate(rows[:40], 1):
-        L.append(f"| {i} | [{r['q']}](https://polymarket.com/market/{r['slug']}) | {r['rate']:.0f} | {r['v']} | {r['minsz']:.0f} | {r['mid']} | {r['spread']} | {r['others']:,} | {r['share']:.1%} | {r['earn']:.2f} | {r['apr']:.0f}% | {r['end']} |")
-    top10 = sum(r["earn"] for r in rows[:10])
-    L += ["", f"Top 10 combined: ${top10:.2f}/day on ${CAPITAL*10:,.0f} resting."]
+         f"Assumes ${CAPITAL:.0f} resting per market, quoted at {QUOTE_FRAC:.0%} of max spread on both sides, and that competing liquidity stays as it is now. Only open markets accepting orders with a future end date.", "",
+         f"Markets with live rewards: {len(live)}; pool ${sum(r for _, r, _ in live):,.0f}/day. Open and scored: {len(keep)}.", "",
+         "## A. Competitive books (real two-sided market already exists)", ""] + tab(competitive, 30) + [
+         "", f"Top 10 A combined: ${sum(r['earn'] for r in competitive[:10]):.2f}/day on ${CAPITAL*10:,.0f}.", "",
+         "## B. Empty books (no maker inside the max spread; you would set the price yourself, highest pick-off risk)", ""] + tab(empty, 20)
     open(f"{OUT}/PM_REWARDS.md", "w").write("\n".join(L) + "\n")
-    print("\n".join(L[:20]))
+    print("\n".join(L[:45]))
 
 if __name__ == "__main__":
     main()
