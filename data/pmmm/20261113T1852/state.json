@@ -2,7 +2,7 @@
  {
   "q": "Howard Lutnick out as Secretary of Commerce by December 31?",
   "cid": "0x7978663d03b5c053dcea87b39e06fad5bcdd036b0c7febfa4309502c02f70c2c",
-  "reward": 0.7896082075753136,
+  "reward": 1.4343145338579857,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Daft Punk perform at Coachella 2027?",
   "cid": "0x856fa22b5e4891747946ec84e4a07a69d951f750289b61aab6981927f2a643cb",
-  "reward": 0.0909656894708353,
+  "reward": 0.13081206976747023,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will no one dissent the December Fed decision?",
   "cid": "0x6a57f797374375cc63db50ef8bba44c8581c6b5b9ae93110d84bdebadcabac85",
-  "reward": 0.04033663378892922,
+  "reward": 0.0714888364718745,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Anthropic's market cap be between $1.25T and $1.5T at market close on IPO day?",
   "cid": "0x67644dafb1cb9f5dda7cc1b5666e93c1ca539da38cafb17b4ebca6493a04e25b",
-  "reward": 0.0925442651416553,
+  "reward": 0.16321680544308495,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Nicol\u00e1s Maduro be the #1 searched person on Google in the US this year?",
   "cid": "0x205bc75ca035634d71abd9231aa393926b2361f04f1a78c7480e0096ee1c920a",
-  "reward": 0.03401341679208548,
+  "reward": 0.04810264231304571,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +52,7 @@
  {
   "q": "Will Anthropic's valuation hit (HIGH) $2.0T by December 31?",
   "cid": "0xf32da8a1740a0d58ffdf87343afefb0bcca4b355cc88e2dba8fd78a88a5308d2",
-  "reward": 0.06185387020737886,
+  "reward": 0.11389022338133595,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +62,7 @@
  {
   "q": "Will Anthropic's IPO valuation be between $1.25T and $1.50T?",
   "cid": "0x504a33da236817ce4ffb63421f899d1030bb843d496fee11aff31dca3fea397c",
-  "reward": 0.028481827386920594,
+  "reward": 0.054847677385259475,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -72,7 +72,7 @@
  {
   "q": "Will The Odyssey be the #1 searched movie on Google this year?",
   "cid": "0xaf0bd8bb48f7dfecb135e3867b0768e9ba296ed527a7d6b3de6839e9d985f8c2",
-  "reward": 0.009506687040895459,
+  "reward": 0.015050011687567973,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,17 +82,23 @@
  {
   "q": "Robert Pattinson announced as next James Bond?",
   "cid": "0xdc913f1173086416c810b9b257d9f17887b3bfb414f69921e8b1310905699fe1",
-  "reward": 0.03512134119819272,
+  "reward": 0.04695997354093748,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794596527.5600307,
+    "kind": "pause",
+    "mid": 0.48350000000000004
+   }
+  ]
  },
  {
   "q": "Will Lindsay Clancy be the #1 searched person on Google in the US this year?",
   "cid": "0x2579c53c318675bde886ceb1ad73605d293c27b6eb3b7d878481299d73af1765",
-  "reward": 0.03232211051217656,
+  "reward": 0.058356167675171364,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -102,7 +108,7 @@
  {
   "q": "US-Canada diplomatic agreement to lower tariffs by December 31?",
   "cid": "0xc73321f9828303361b4e18b842c207d84864f6017f09ac50d145fd5fa8c9be2b",
-  "reward": 0.025514161161776867,
+  "reward": 0.046775962129924256,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -112,7 +118,7 @@
  {
   "q": "Will Anthropic's market cap be between $1.5T and $1.75T at market close on IPO day?",
   "cid": "0xe02dadd92c84112fce087b6f260d62c8df1648e071acaef35b0851c8dde64163",
-  "reward": 0.03754705109525207,
+  "reward": 0.05061031453680013,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
