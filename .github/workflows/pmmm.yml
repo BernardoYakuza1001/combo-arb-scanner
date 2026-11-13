@@ -6,7 +6,7 @@ on:
       n: {default: "12"}
       cap: {default: "200"}
   push:
-    paths: ["pmmm/**", ".github/workflows/pmmm.yml"]
+    paths: ["pmmm/bot.py"]
   schedule:
     - cron: "3 */6 * * *"
 concurrency: {group: pmmm, cancel-in-progress: true}
