@@ -116,6 +116,7 @@ class Mkt:
         self.yes = self.no = 0.0; self.cash = 0.0; self.merged = 0.0
         self.reward = 0.0; self.fills = []; self.seen = set(); self.samples = 0; self.scored = 0
         self.mid = None; self.share_sum = 0.0
+        self.tape_n = 0; self.tape_near = 0; self.tape_tok = 0; self.closest = None
 
     def mtm(self):
         m = self.mid if self.mid is not None else 0.5
@@ -137,6 +138,7 @@ def target(m, book, mid):
 def step(m, book, trades, now):
     mid = adj_mid(book, m.minsz)
     if mid is None: return
+    if not hasattr(m, "t_start"): m.t_start = now
     m.mid = mid
     m.mids.append((now, mid))
     while m.mids and now - m.mids[0][0] > CFG["news_win_s"]: m.mids.popleft()
@@ -148,7 +150,18 @@ def step(m, book, trades, now):
         try: px = float(t["price"]); sz = float(t["size"]); ts = tsec(t["timestamp"])
         except Exception: continue
         if ts is None: continue
+        if not getattr(m, "raw_dumped", False):
+            m.raw_dumped = True; os.makedirs(OUT, exist_ok=True)
+            json.dump(trades[:3], open(f"{OUT}/tape_sample_{m.cid[:10]}.json", "w"), indent=1)
+        if t.get("token_id") not in (m.tok, m.tno): continue
+        if ts < getattr(m, "t_start", 0): continue
         yes_px = px if t.get("token_id") == m.tok else 1 - px
+        m.tape_n += 1; m.tape_tok += t.get("token_id") == m.tok
+        if abs(yes_px - mid) <= m.v / 100: m.tape_near += 1
+        for o in m.orders.values():
+            if o:
+                d = (yes_px - o.price) if o.side == "Y" else ((1 - o.price) - yes_px)
+                m.closest = d if m.closest is None else min(m.closest, d)
         for sd in ("Y", "N"):
             o = m.orders[sd]
             if o:
@@ -234,12 +247,12 @@ def report(mk, t0, now, final=False):
          f"{len(mk)} markets, ${CFG['cap']:.0f} each (${CFG['cap']*len(mk):,.0f} total), quotes at {CFG['quote_frac']:.0%} of max spread.", "",
          f"**Rewards accrued: ${tot_r:.2f}  |  Trading P&L (marked at mid): ${tot_p:+.2f}  |  Net: ${tot_r+tot_p:+.2f}**",
          f"Per day at this pace: rewards ${tot_r/max(hrs,1e-9)*24:.2f}, net ${(tot_r+tot_p)/max(hrs,1e-9)*24:+.2f}", "",
-         "| Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses |",
-         "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+         "| Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |",
+         "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for m in sorted(mk, key=lambda m: -(m.reward + m.mtm())):
         nf = sum(1 for f in m.fills if "side" in f); np_ = sum(1 for f in m.fills if f.get("kind") == "pause")
         avg = m.share_sum / m.scored if m.scored else 0
-        L.append(f"| [{m.q[:60]}](https://polymarket.com/market/{m.slug}) | {m.rate:.0f} | {m.mid if m.mid is None else round(m.mid,3)} | {avg:.1%} | {m.scored}/{m.samples} | {m.reward:.2f} | {nf} | {m.merged:.0f} | {m.yes:.0f} | {m.no:.0f} | {m.mtm():+.2f} | {np_} |")
+        L.append(f"| [{m.q[:60]}](https://polymarket.com/market/{m.slug}) | {m.rate:.0f} | {m.mid if m.mid is None else round(m.mid,3)} | {avg:.1%} | {m.scored}/{m.samples} | {m.reward:.2f} | {nf} | {m.merged:.0f} | {m.yes:.0f} | {m.no:.0f} | {m.mtm():+.2f} | {np_} | {m.tape_n} ({m.tape_tok}) / {m.tape_near} / {"-" if m.closest is None else f"{m.closest*100:+.1f}c"} |")
     open(f"{OUT}/SUMMARY.md", "w").write("\n".join(L) + "\n")
     json.dump([dict(q=m.q, cid=m.cid, reward=m.reward, mtm=m.mtm(), yes=m.yes, no=m.no, merged=m.merged, fills=m.fills[-200:]) for m in mk],
               open(f"{OUT}/state.json", "w"), indent=1)
