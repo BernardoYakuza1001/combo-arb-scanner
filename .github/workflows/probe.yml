@@ -7,12 +7,6 @@ jobs:
     timeout-minutes: 5
     steps:
       - run: |
-          C=0x17a14c4d471293a292ada881703da8c4ed5debaf18833199c99f44e90c081509
-          T=42816906397095965525632464544281564892353427213301456976104550327854380255772
-          for u in "https://data-api.polymarket.com/v2/" \
-                   "https://data-api.polymarket.com/v2/trades?market=$C&limit=3" \
-                   "https://data-api.polymarket.com/v2/trades?condition_id=$C&limit=3" \
-                   "https://data-api.polymarket.com/v2/trades?asset=$T&limit=3" \
-                   "https://data-api.polymarket.com/v2/trades?limit=2"; do
-            echo "== $u"; curl -sS -m 20 -o /tmp/r -w "HTTP %{http_code}\n" "$u"; head -c 1500 /tmp/r; echo
+          for u in "https://api.bybit.com/v5/market/time" "https://api.bytick.com/v5/market/time" "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=2"; do
+            echo "== $u"; curl -sS -m 20 -o /tmp/r -w "HTTP %{http_code}\n" "$u"; head -c 300 /tmp/r; echo
           done
