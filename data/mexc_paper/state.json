@@ -13,9 +13,9 @@
    "funding_ms": 1794585945219,
    "f30_at_entry": 0.061483,
    "funding": 0.0,
-   "mark_spot": 0.002046419334202795,
-   "mark_perp": 0.002049,
-   "perp_upnl": -8.348773367921304,
+   "mark_spot": 0.0022602996614148867,
+   "mark_perp": 0.002243,
+   "perp_upnl": -24.70899592728223,
    "neg7": false
   },
   {
@@ -29,9 +29,9 @@
    "funding_ms": 1794585945403,
    "f30_at_entry": 0.053558,
    "funding": 0.0,
-   "mark_spot": 0.007381641469577921,
-   "mark_perp": 0.00798,
-   "perp_upnl": 4.457692516100352,
+   "mark_spot": 0.007563493767209086,
+   "mark_perp": 0.00764,
+   "perp_upnl": 11.34685367734629,
    "neg7": false
   },
   {
@@ -45,9 +45,9 @@
    "funding_ms": 1794585945599,
    "f30_at_entry": 0.048314,
    "funding": 0.0,
-   "mark_spot": 0.052759704983436545,
-   "mark_perp": 0.05294,
-   "perp_upnl": -3.5980700659244174,
+   "mark_spot": 0.0514393184359707,
+   "mark_perp": 0.05168,
+   "perp_upnl": 0.37874421746573395,
    "neg7": false
   }
  ],
@@ -69,6 +69,13 @@
    "funding": 0.0,
    "fees": 0.77,
    "dd_from_start": 0.0196
+  },
+  {
+   "t": "2026-11-13 17:12",
+   "equity": 992.46,
+   "funding": 0.0,
+   "fees": 0.77,
+   "dd_from_start": 0.0075
   }
  ],
  "log": [

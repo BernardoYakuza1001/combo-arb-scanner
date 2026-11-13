@@ -13,9 +13,10 @@
    "funding_ms": 1794587365377,
    "f30_at_entry": 0.083216,
    "funding": 0.0,
-   "mark_spot": 0.004728849492306467,
-   "mark_perp": 0.004782,
-   "perp_upnl": -0.138265030896521
+   "mark_spot": 0.004673505587852162,
+   "mark_perp": 0.004762,
+   "perp_upnl": 0.553060123586144,
+   "neg7": false
   },
   {
    "symbol": "JCT_USDT",
@@ -28,9 +29,10 @@
    "funding_ms": 1794587365848,
    "f30_at_entry": 0.061483,
    "funding": 0.0,
-   "mark_spot": 0.0020439116223128742,
-   "mark_perp": 0.002051,
-   "perp_upnl": -0.08051449931852285
+   "mark_spot": 0.002260313865952268,
+   "mark_perp": 0.002244,
+   "perp_upnl": -15.619812867798112,
+   "neg7": false
   },
   {
    "symbol": "AGT_USDT",
@@ -43,9 +45,10 @@
    "funding_ms": 1794587366336,
    "f30_at_entry": 0.048314,
    "funding": 0.0,
-   "mark_spot": 0.05246777656460179,
-   "mark_perp": 0.053,
-   "perp_upnl": -0.03123862888812885
+   "mark_spot": 0.05141419096357366,
+   "mark_perp": 0.05163,
+   "perp_upnl": 4.248453528787171,
+   "neg7": false
   }
  ],
  "fees": 0.7726601886179538,
@@ -59,6 +62,13 @@
    "funding": 0.0,
    "fees": 0.77,
    "dd_from_start": 0.0091
+  },
+  {
+   "t": "2026-11-13 17:12",
+   "equity": 992.55,
+   "funding": 0.0,
+   "fees": 0.77,
+   "dd_from_start": 0.0074
   }
  ],
  "log": [
