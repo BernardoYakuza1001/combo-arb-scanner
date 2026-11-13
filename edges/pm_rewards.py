@@ -15,21 +15,23 @@ S = requests.Session(); S.headers["User-Agent"] = "edges/1.0"
 
 def get(url, **kw):
     for i in range(5):
-        r = S.get(url, timeout=30, **kw)
+        r = S.get(url, timeout=20, **kw)
         if r.status_code == 429: time.sleep(2 + 2 * i); continue
         r.raise_for_status(); return r.json()
     r.raise_for_status()
 
 def reward_markets():
-    out, cur = [], None
-    while True:
+    out, cur, seen = [], None, set()
+    for page in range(60):
         p = {"page_size": 500}
         if cur: p["next_cursor"] = cur
         j = get(f"{CLOB}/rewards/markets/multi", params=p)
         data = j.get("data", j if isinstance(j, list) else [])
         out += data
         cur = j.get("next_cursor") if isinstance(j, dict) else None
-        if not cur or cur in ("LTE=", "") or not data: break
+        print(f"page {page}: +{len(data)} (total {len(out)}) cursor={cur}", flush=True)
+        if not cur or cur in ("LTE=", "") or not data or cur in seen: break
+        seen.add(cur)
     return out
 
 def books(tokens):

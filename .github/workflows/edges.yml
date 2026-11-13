@@ -17,9 +17,9 @@ jobs:
         with:
           python-version: "3.13"
       - run: pip install requests
-      - run: python -u edges/pm_rewards.py
+      - run: timeout 600 python -u edges/funding_xv.py
         continue-on-error: true
-      - run: python -u edges/funding_xv.py
+      - run: timeout 600 python -u edges/pm_rewards.py
         continue-on-error: true
       - name: Save results
         if: always()
