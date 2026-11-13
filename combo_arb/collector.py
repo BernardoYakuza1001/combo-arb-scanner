@@ -182,6 +182,22 @@ def run(cfg: dict, log, max_cycles: int | None = None):
             if e is not None:
                 near[b["kind"]] = max(near.get(b["kind"], -9), e)
         hot = new_hot if cold_turn else (hot | new_hot)
+        if max_cycles and cycle == 0:
+            edges = []
+            for b in poll:
+                e = top_edge(b["legs"], books)
+                if e is not None:
+                    edges.append((e, b))
+            kinds = sorted({b["kind"] for _, b in edges})
+            for k in kinds:
+                ek = sorted((e for e, b in edges if b["kind"] == k), reverse=True)
+                bucket = lambda lo: sum(1 for e in ek if e >= lo)
+                log(f"survey {k}: {len(ek)} priced, best {ek[0]:+.2%}, >=0: {bucket(0)}, >=-1%: {bucket(-0.01)}, "
+                    f">=-2%: {bucket(-0.02)}, >=-5%: {bucket(-0.05)}")
+            for e, b in sorted(edges, key=lambda x: -x[0])[:12]:
+                asks = [((books.get(c.token) or {}).get("asks") or [[None, None]])[0] for c in b["legs"]]
+                log(f"closest {e:+.2%} [{b['kind']}] {b['title'][:60]} | " +
+                    " + ".join(f"{c.label[:55]} @{a[0]}x{a[1]}" for c, a in zip(b["legs"], asks)))
         cycle += 1
         if cycle % cfg["status_every"] == 0 or max_cycles:
             st = {"time": iso(now()), "cycle": cycle, "baskets": len(baskets), "polled": len(poll),
