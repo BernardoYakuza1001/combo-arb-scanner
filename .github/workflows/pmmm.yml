@@ -31,7 +31,7 @@ jobs:
           export PMMM_RUN_S=$(python -c "print(int(float('$PMMM_RUN_S')*3600))")
           export PMMM_OUT=data/pmmm/$(date -u +%Y%m%dT%H%M)
           git config user.name "combo-arb-bot"; git config user.email "combo-arb-bot@users.noreply.github.com"
-          ( sleep 60; while sleep 300; do git add data/pmmm data/edges 2>/dev/null; git commit -qm "pmmm: progress" && for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push -q && break; sleep 5; done; done ) &
+          ( set +e; sleep 60; while sleep 300; do git add -A data 2>/dev/null || true; git commit -qm "pmmm: progress" && for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push -q && break; sleep 5; done; done ) &
           python -u pmmm/bot.py
           git add data/pmmm data/edges; git commit -qm "pmmm: final" || true
           for i in 1 2 3; do git pull --rebase -X theirs -q && git push -q && break; sleep 5; done
