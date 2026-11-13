@@ -20,11 +20,16 @@ jobs:
       - run: pip install requests
       - run: python carry/test_mexc_paper.py
       - run: python -u carry/mexc_paper.py
+      - name: Variant v2 (all coins, keep while top-10, max 3% round trip)
+        if: always()
+        env:
+          PAPER_VARIANT: v2
+        run: python -u carry/mexc_paper.py
       - name: Save state
         if: always()
         run: |
           git config user.name "combo-arb-bot"
           git config user.email "combo-arb-bot@users.noreply.github.com"
-          git add data/mexc_paper || true
+          git add data/mexc_paper data/mexc_paper_v2 || true
           git commit -m "mexc paper: $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
           for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done

@@ -28,10 +28,15 @@ import requests
 CFG = {"CAPITAL": 1000.0, "SPOT_FRAC": 0.5, "K": 3, "ROTATE_DAYS": 30, "MAX_DD": 0.05,
        "SPOT_FEE": 0.0010, "PERP_FEE": 0.00055, "MIN_SPOT_VOL": 100_000, "MIN_PERP_TURNOVER": 1_000_000,
        "MARGIN_WARN": 0.6, "NEG7_EXIT": True}
+VARIANT = os.environ.get("PAPER_VARIANT", "v1")
+if VARIANT == "v2":
+    # v2 (fixed 13 Nov 2026 after the cost study): no liquidity filter, keep a coin while it is
+    # still top-10 by f30 at each 30-day review, skip coins whose live round trip costs > 3%.
+    CFG.update(MIN_SPOT_VOL=0, MIN_PERP_TURNOVER=0, HOLD_TOP=10, MAX_RT_COST=0.03)
 SPOT = "https://api.mexc.com/api/v3"
 FUT = "https://contract.mexc.com/api/v1/contract"
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), "data", "mexc_paper")
+OUT = os.path.join(os.path.dirname(HERE), "data", "mexc_paper" + ("" if VARIANT == "v1" else "_" + VARIANT))
 DAY = 86_400_000
 
 
@@ -118,7 +123,7 @@ def select(api, log):
         if vol.get(spot[base], 0) < CFG["MIN_SPOT_VOL"] or float(t.get("amount24") or 0) < CFG["MIN_PERP_TURNOVER"]:
             continue
         cands.append((sym, spot[base]))
-    log(f"universe after liquidity filter: {len(cands)}")
+    log(f"[{VARIANT}] universe after liquidity filter: {len(cands)}")
     since = now_ms() - 30 * DAY
     scored = []
     for i, (sym, ssym) in enumerate(cands, 1):
@@ -159,6 +164,13 @@ def open_pos(st, api, scored, n, log):
         bid = float((tk.get(sym) or {}).get("bid1") or 0)
         if qty <= 0 or bid <= 0 or qty * spx < per * 0.95:
             log(f"skip {sym}: thin book"); continue
+        if CFG.get("MAX_RT_COST"):
+            _, sell_back = walk(api.spot_book(ssym)[1], qty=qty)
+            ask = float((tk.get(sym) or {}).get("ask1") or 0)
+            rt = ((spx - sell_back) / spx if sell_back else 1) + ((ask - bid) / bid if ask else 1) \
+                + 2 * (CFG["SPOT_FEE"] + CFG["PERP_FEE"])
+            if rt > CFG["MAX_RT_COST"]:
+                log(f"skip {sym}: round trip {rt:.2%} > {CFG['MAX_RT_COST']:.0%}"); continue
         fees = qty * spx * CFG["SPOT_FEE"] + qty * bid * CFG["PERP_FEE"]
         margin = per
         st["cash"] -= qty * spx + margin + fees
@@ -213,7 +225,7 @@ def main(log=print):
         if rotate or exits or len(st["positions"]) < CFG["K"]:
             scored = select(api, log)
             if rotate:
-                keep = {s for _, s, _ in scored[:CFG["K"]]}
+                keep = {s for _, s, _ in scored[:CFG.get("HOLD_TOP", CFG["K"])]}
                 for p in list(st["positions"]):
                     if p["symbol"] not in keep:
                         close_pos(st, api, p, "rotation")
@@ -236,7 +248,7 @@ def main(log=print):
                           "fees": round(st["fees"], 2), "dd_from_start": round(dd, 4)})
     json.dump(st, open(path, "w"), indent=1)
     ann = (eq / CFG["CAPITAL"] - 1) * 365 / days if days >= 1 else None
-    L = [f"# MEXC paper carry — {iso(now_ms())} UTC (day {days:.1f})", "",
+    L = [f"# MEXC paper carry {VARIANT} — {iso(now_ms())} UTC (day {days:.1f})", "",
          f"- Equity **${eq:,.2f}** (start $1,000) | funding ${st['funding']:.2f} | fees ${st['fees']:.2f}"
          + (f" | annualised {ann:.1%}" if ann is not None else ""),
          f"- Drawdown from start {dd:.2%} (stop at 5%) {'-> STOPPED' if st['stopped'] else '-> ok'}"
