@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: "3.13"
       - run: pip install requests
-      - run: python -u carry/gate_study.py
+      - run: python -u carry/mexc_study.py
       - name: Save results
         if: always()
         run: |
