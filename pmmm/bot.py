@@ -262,7 +262,7 @@ def main():
             step(m, b, tr, now)
             if do_sample: sample(m, b, now)
         if do_sample: last_sample = now
-        if now - last_rep > 900: report(mk, t0, now); last_rep = now
+        if now - last_rep > 300: report(mk, t0, now); last_rep = now
         time.sleep(max(0, CFG["cycle_s"] - (time.time() - now)))
     report(mk, t0, time.time(), final=True)
 
