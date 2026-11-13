@@ -1,0 +1,24 @@
+name: carry
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  carry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install requests
+      - run: python -u carry/gate_study.py
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "combo-arb-bot"
+          git config user.email "combo-arb-bot@users.noreply.github.com"
+          git add data/carry || true
+          git commit -m "carry: $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; sleep 5; done
