@@ -5,6 +5,8 @@ on:
       days:
         description: "How many days of settled events"
         default: "14"
+permissions:
+  contents: write
 jobs:
   history:
     runs-on: ubuntu-latest

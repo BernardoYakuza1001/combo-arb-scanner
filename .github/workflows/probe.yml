@@ -1,0 +1,16 @@
+name: probe
+on:
+  workflow_dispatch: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          C=0x17a14c4d471293a292ada881703da8c4ed5debaf18833199c99f44e90c081509
+          for u in "https://data-api.polymarket.com/trades?market=$C&limit=5&offset=0&takerOnly=true" \
+                   "https://data-api.polymarket.com/trades?market=$C&limit=5" \
+                   "https://data-api.polymarket.com/trades?limit=3" \
+                   "https://clob.polymarket.com/prices-history?market=42816906397095965525632464544281564892353427213301456976104550327854380255772&interval=1d&fidelity=1"; do
+            echo "== $u"; curl -sS -m 20 -A "Mozilla/5.0" -w "\nHTTP %{http_code}\n" "$u" | head -c 700; echo
+          done
