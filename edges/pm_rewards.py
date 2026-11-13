@@ -80,18 +80,27 @@ def main():
         if rate <= 0: continue
         ids = pick_tokens(m)
         if not ids: continue
-        live.append((m, rate, ids[0]))
-    print("with live rate:", len(live), "total $/day:", round(sum(r for _, r, _ in live)))
-    bk = books([t for _, _, t in live])
+        live.append((m, rate, ids[0], ids[1] if len(ids) > 1 else None))
+    print("with live rate:", len(live), "total $/day:", round(sum(x[1] for x in live)))
+    bk = books([t for x in live for t in x[2:] if t])
     rows = []
-    for m, rate, tok in live:
-        b = bk.get(tok)
+    mirror_hits = mirror_n = 0
+    for m, rate, tok, tno in live:
+        b = bk.get(tok); bn = bk.get(tno) if tno else None
         if not b or not b.get("bids") or not b.get("asks"): continue
         bb = max(float(x["price"]) for x in b["bids"]); ba = min(float(x["price"]) for x in b["asks"])
         mid = (bb + ba) / 2
         v = float(m.get("rewards_max_spread") or 0); minsz = float(m.get("rewards_min_size") or 0)
         if v <= 0 or not (0.10 <= mid <= 0.90): continue      # outside band needs strict two-sided; skip
         q1 = side_score(b["bids"], mid, v, +1); q2 = side_score(b["asks"], mid, v, -1)
+        if bn:
+            # NO bids at q act as YES asks at 1-q; NO asks at q act as YES bids at 1-q.
+            nb = [{"price": 1 - float(x["price"]), "size": x["size"]} for x in bn.get("bids", [])]
+            na = [{"price": 1 - float(x["price"]), "size": x["size"]} for x in bn.get("asks", [])]
+            yes_ask_px = {round(float(x["price"]), 3) for x in b["asks"]}
+            mirror_n += 1; mirror_hits += any(round(x["price"], 3) in yes_ask_px for x in nb)
+            # conservative: add them (if the API already mirrors, this double counts -> lower share estimate)
+            q1 += side_score(na, mid, v, +1); q2 += side_score(nb, mid, v, -1)
         others = min(q1, q2) if min(q1, q2) > 0 else max(q1, q2) / 3
         # my quote: bid YES and bid NO (= ask YES) at QUOTE_FRAC*v from mid; capital ~ shares*(1 - spread)
         s = QUOTE_FRAC * v
@@ -109,6 +118,7 @@ def main():
                          end=str(m.get("end_date") or m.get("end_date_iso") or "")[:10],
                          bid=bb, ask=ba))
     rows.sort(key=lambda r: -r["earn"])
+    print(f"mirror check: NO-book bid prices seen as YES asks in {mirror_hits}/{mirror_n} markets")
     # status check on Gamma for the top candidates: must be open, accepting orders, end in the future
     top = rows[:300]; st = {}
     for i in range(0, len(top), 50):
@@ -141,7 +151,7 @@ def main():
         return out
     L = [f"# Polymarket liquidity rewards — {now:%Y-%m-%d %H:%M} UTC", "",
          f"Assumes ${CAPITAL:.0f} resting per market, quoted at {QUOTE_FRAC:.0%} of max spread on both sides, and that competing liquidity stays as it is now. Only open markets accepting orders with a future end date.", "",
-         f"Markets with live rewards: {len(live)}; pool ${sum(r for _, r, _ in live):,.0f}/day. Open and scored: {len(keep)}.", "",
+         f"Markets with live rewards: {len(live)}; pool ${sum(x[1] for x in live):,.0f}/day. Open and scored: {len(keep)}.", "",
          "## A. Competitive books (real two-sided market already exists)", ""] + tab(competitive, 30) + [
          "", f"Top 10 A combined: ${sum(r['earn'] for r in competitive[:10]):.2f}/day on ${CAPITAL*10:,.0f}.", "",
          "## B. Empty books (no maker inside the max spread; you would set the price yourself, highest pick-off risk)", ""] + tab(empty, 20)
