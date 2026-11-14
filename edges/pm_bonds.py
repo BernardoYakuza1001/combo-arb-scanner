@@ -39,13 +39,13 @@ def ts(x):
 def closed_markets():
     now = dt.datetime.now(dt.timezone.utc); out = []
     lo = (now - dt.timedelta(days=DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ"); hi = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-    for off in range(0, 60000, 500):
-        d = get(f"{GAMMA}/markets", params={"closed": "true", "end_date_min": lo, "end_date_max": hi, "limit": 500, "offset": off,
+    for off in range(0, 60000, 100):
+        d = get(f"{GAMMA}/markets", params={"closed": "true", "end_date_min": lo, "end_date_max": hi, "limit": 100, "offset": off,
                                             "order": "volumeNum", "ascending": "false"})
         if not d: break
         out += d
-        print("closed page", off, len(d), "min vol", round(float(d[-1].get("volumeNum") or 0)), flush=True)
-        if len(d) < 500 or float(d[-1].get("volumeNum") or 0) < MIN_VOL or len(out) >= MAXM: break
+        if off % 1000 == 0: print("closed page", off, len(d), "min vol", round(float(d[-1].get("volumeNum") or 0)), flush=True)
+        if len(d) < 100 or float(d[-1].get("volumeNum") or 0) < MIN_VOL or len(out) >= MAXM: break
     return [m for m in out if float(m.get("volumeNum") or 0) >= MIN_VOL][:MAXM]
 
 def study(m):
@@ -104,8 +104,8 @@ def part_a():
 def part_b():
     now = dt.datetime.now(dt.timezone.utc); rows = []
     hi = (now + dt.timedelta(days=14)).strftime("%Y-%m-%dT%H:%M:%SZ"); lo = (now + dt.timedelta(hours=6)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    for off in range(0, 20000, 500):
-        d = get(f"{GAMMA}/markets", params={"closed": "false", "active": "true", "end_date_min": lo, "end_date_max": hi, "limit": 500, "offset": off})
+    for off in range(0, 30000, 100):
+        d = get(f"{GAMMA}/markets", params={"closed": "false", "active": "true", "end_date_min": lo, "end_date_max": hi, "limit": 100, "offset": off})
         if not d: break
         for m in d:
             try:
@@ -118,7 +118,7 @@ def part_b():
                                          y=1 / cost - 1, ann=(1 / cost - 1) / days * 365, liq=float(m.get("liquidityNum") or 0),
                                          vol24=float(m.get("volume24hr") or 0), sport=bool(m.get("sportsMarketType") or m.get("gameStartTime"))))
             except Exception: pass
-        if len(d) < 500: break
+        if len(d) < 100: break
     rows = [r for r in rows if r["liq"] >= 5000]
     rows.sort(key=lambda r: -r["ann"])
     json.dump(rows, open(f"{OUT}/pm_bonds_now.json", "w"), indent=1)
