@@ -9,6 +9,8 @@ set PMMM_LIVE=YES
 set PMMM_N=5
 set PMMM_CAP=200
 set PMMM_FRAC=0.75
+set PMMM_AHEAD=0.5
+set PMMM_STOP=0.04
 set PMMM_MAX_TOTAL=1000
 set PMMM_MAX_LOSS=30
 .venv\Scripts\python.exe -u pmmm\live.py

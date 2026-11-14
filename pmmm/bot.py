@@ -27,7 +27,7 @@ CFG = dict(
     max_imb=1.0,              # stop bidding a side once net inventory exceeds this many order sizes
     news_move=0.04, news_win_s=600, pause_s=1800,
     min_days=7,
-    ahead_x=float(os.environ.get("PMMM_AHEAD", "2")),     # resting size that must sit in front of a quote, in order sizes
+    ahead_x=float(os.environ.get("PMMM_AHEAD", "0.5")),     # resting size that must sit in front of a quote, in order sizes
     stop_c=float(os.environ.get("PMMM_STOP", "0.04")),    # sell a filled position once the price is this far below entry
     run_s=int(os.environ.get("PMMM_RUN_S", "3600")),
 )

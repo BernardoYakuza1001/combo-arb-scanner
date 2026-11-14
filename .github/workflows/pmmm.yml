@@ -6,7 +6,7 @@ on:
       n: {default: "12"}
       cap: {default: "200"}
       frac: {default: "0.75"}
-      ahead: {default: "2"}
+      ahead: {default: "0.5"}
   push:
     paths: ["pmmm/bot.py"]
   schedule:
@@ -30,7 +30,7 @@ jobs:
           PMMM_N: ${{ github.event.inputs.n || '12' }}
           PMMM_CAP: ${{ github.event.inputs.cap || '200' }}
           PMMM_FRAC: ${{ github.event.inputs.frac || '0.75' }}
-          PMMM_AHEAD: ${{ github.event.inputs.ahead || '2' }}
+          PMMM_AHEAD: ${{ github.event.inputs.ahead || '0.5' }}
         run: |
           export PMMM_RUN_S=$(python -c "print(int(float('$PMMM_RUN_S')*3600))")
           export PMMM_OUT=data/pmmm/$(date -u +%Y%m%dT%H%M)-a${PMMM_AHEAD}
