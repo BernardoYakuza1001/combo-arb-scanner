@@ -12,17 +12,23 @@
  {
   "q": "Will Data center utility cost protection become law this year?",
   "cid": "0xbcf92dd69e289a4bce83a086363bc7deeae3f8d3f0370e8f4b02cffdc7ac8b7e",
-  "reward": 0.005343481591694454,
+  "reward": 0.009676105311521244,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794680427.8606298,
+    "kind": "pause",
+    "mid": 0.34500000000000003
+   }
+  ]
  },
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.002415082062393546,
+  "reward": 0.004428881435664657,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +38,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.01710981711649652,
+  "reward": 0.025401053689719632,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +48,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.008281146284822242,
+  "reward": 0.015182101522174113,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +58,7 @@
  {
   "q": "Will OpenAI's IPO valuation be less than $1T?",
   "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
-  "reward": 0.001569478642344848,
+  "reward": 0.0028620060401852495,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +68,7 @@
  {
   "q": "Will Kylian Mbapp\u00e9 (Real Madrid) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0x486c0e64f87de9dafb26f47f3ab0c119581cc796ce16b341b9814fd114daf850",
-  "reward": 0.0009159727748098656,
+  "reward": 0.00156695216490697,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
