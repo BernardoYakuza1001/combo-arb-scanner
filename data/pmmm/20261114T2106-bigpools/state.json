@@ -70,7 +70,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.12012866673491866,
+  "reward": 0.13703954308006205,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -85,7 +85,13 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794694724.0856855,
+    "kind": "pause",
+    "mid": 0.1375
+   }
+  ]
  },
  {
   "q": "Will Indiana have more than 10.5 wins during the 2026 CFB season?",
@@ -122,7 +128,7 @@
  {
   "q": "Will Lighter dip to $2 before 2027?",
   "cid": "0x8f133c5de9d7ce0a6d117295b2958d33e9748de019da426f217b2d2a73f0942b",
-  "reward": 0.023224586408589015,
+  "reward": 0.024579086110387182,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -132,7 +138,7 @@
  {
   "q": "OpenAI IPO closing market cap above $1.6T?",
   "cid": "0x82b7da93a66790027b48e73cff250492ece87b6bfd48e680278f4fee75433737",
-  "reward": 7.1995711718249325e-31,
+  "reward": 8.297521339860438e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -142,7 +148,7 @@
  {
   "q": "Will Anthropic\u2019s market cap be between 1.2T and 1.5T at market close on IPO day by Decembe",
   "cid": "0x510736e7804a288592abab4105eca3399cbd562cd49a6d4e0289362490cc4825",
-  "reward": 0.041323376347385636,
+  "reward": 0.044579182541861086,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
