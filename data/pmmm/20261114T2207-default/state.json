@@ -28,7 +28,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.04396827849737295,
+  "reward": 0.05242371666994467,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,12 +38,18 @@
  {
   "q": "Will Leonardo Monta\u00f1ez Castro win the 2027 Aguascalientes Governor Election?",
   "cid": "0x2b6e0c3e73aeb1bf370336800e865e2fbb59c14bc3f6f3fcd5f1c675e6d8cc8d",
-  "reward": 0.00990373587391327,
+  "reward": 0.010299243345458554,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794695867.3618739,
+    "kind": "pause",
+    "mid": 0.21500000000000002
+   }
+  ]
  },
  {
   "q": "Will Canada\u2019s 2026 inflation be between 2.5% and 2.9%?",
@@ -74,7 +80,7 @@
  {
   "q": "Will Bitcoin hit $150k by September 30, 2027?",
   "cid": "0x9c1e35fe68023147db17a2e5ca11aee3ab755891fe3c8e8891f02be08ee47097",
-  "reward": 0.002130246811127971,
+  "reward": 0.0031125428010568106,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
