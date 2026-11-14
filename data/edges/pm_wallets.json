@@ -1,0 +1,26 @@
+[
+ {
+  "w": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+  "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+  "pnl_all": 5977232.575325,
+  "trades_21d": 7387,
+  "buys": 74,
+  "markets": 10,
+  "ret_weighted": -0.09011208302894325,
+  "ret_equal": 0.13200010533439316,
+  "win": 0.6,
+  "closed_share": 0.0
+ },
+ {
+  "w": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
+  "name": "ndb1",
+  "pnl_all": 4403988.403934,
+  "trades_21d": 302,
+  "buys": 6,
+  "markets": 5,
+  "ret_weighted": 3.041522030652347,
+  "ret_equal": 0.5027379850882697,
+  "win": 0.4,
+  "closed_share": 0.0
+ }
+]
