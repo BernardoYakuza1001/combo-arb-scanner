@@ -12,7 +12,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.07042569795601886,
+  "reward": 0.07400258242493112,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.06396792096474198,
+  "reward": 0.06604291496019303,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -79,7 +79,7 @@
  {
   "q": "Will Russia capture Kozacha Lopan by December 31, 2026?",
   "cid": "0x2d7da8aeba11b38dc7733150b53a7b7f5fc6d8e68571d671a11377468bbd8b74",
-  "reward": 0.020335322395812067,
+  "reward": 0.0206954335900305,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -89,7 +89,7 @@
  {
   "q": "Will OpenAI's IPO valuation be less than $1T?",
   "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
-  "reward": 0.05733677487359664,
+  "reward": 0.05850954560262732,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
