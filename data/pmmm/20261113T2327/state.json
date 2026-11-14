@@ -18,7 +18,7 @@
  {
   "q": "Tesla and SpaceX merger officially announced by December 31?",
   "cid": "0x85647246dede70416c9c71ea851d87facf4b5efe58c685f4acc5ea94a9487c10",
-  "reward": 0.541361319347671,
+  "reward": 0.564174088157978,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -44,7 +44,7 @@
  {
   "q": "Will Jensen Huang be the #1 searched person on Google this year?",
   "cid": "0xaf1a86346f480ce8b4c631b812123dbe0b814c89320465d3d0bcaf68c6b972a8",
-  "reward": 0.49542541437720466,
+  "reward": 0.5267145395361972,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -54,7 +54,7 @@
  {
   "q": "Will Anthropic's IPO valuation be between $1.50T and $1.75T?",
   "cid": "0x366a98120ec16a252876ffd8b5d64fc170d53277bbe91daf5218e3bd69a24853",
-  "reward": 0.29389107313612733,
+  "reward": 0.3014424153079033,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -65,7 +65,7 @@
   "q": "Robert Pattinson announced as next James Bond?",
   "cid": "0xdc913f1173086416c810b9b257d9f17887b3bfb414f69921e8b1310905699fe1",
   "reward": 0.22905250522446927,
-  "mtm": -5.399999999999999,
+  "mtm": -5.350000000000001,
   "yes": 100.0,
   "no": 0.0,
   "merged": 0.0,
@@ -87,7 +87,7 @@
  {
   "q": "Will Anthropic's valuation hit (HIGH) $2.0T by December 31?",
   "cid": "0xf32da8a1740a0d58ffdf87343afefb0bcca4b355cc88e2dba8fd78a88a5308d2",
-  "reward": 0.48474726100199345,
+  "reward": 0.5069695568236333,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -97,7 +97,7 @@
  {
   "q": "US-Canada diplomatic agreement to lower tariffs by December 31?",
   "cid": "0xc73321f9828303361b4e18b842c207d84864f6017f09ac50d145fd5fa8c9be2b",
-  "reward": 0.030707220147730585,
+  "reward": 0.07495201958868498,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -114,7 +114,7 @@
   "q": "Callum Turner announced as next James Bond?",
   "cid": "0xdf55222217299506bd9b7b348ac3be51137ac480da920567722824f0c40c5fc0",
   "reward": 0.5175467847520377,
-  "mtm": -5.0160000000000196,
+  "mtm": -6.89700000000002,
   "yes": 0.0,
   "no": 209.0,
   "merged": 0.0,
@@ -159,7 +159,7 @@
  {
   "q": "Will Anthropic's IPO valuation be between $1.25T and $1.50T?",
   "cid": "0x504a33da236817ce4ffb63421f899d1030bb843d496fee11aff31dca3fea397c",
-  "reward": 0.22111925866949564,
+  "reward": 0.23359782510576707,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -169,7 +169,7 @@
  {
   "q": "Will DJ Khaled perform at Coachella 2027?",
   "cid": "0x811a32e2c8ccd245d85702955e6f312782017d96c58cf7d0bcb7550656f7665f",
-  "reward": 0.37662014971429664,
+  "reward": 0.3934756675637167,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
