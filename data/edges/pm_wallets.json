@@ -1,26 +1,74 @@
 [
  {
+  "w": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+  "name": "RN1",
+  "pnl_all": 13413736.119626,
+  "trades_21d": 15000,
+  "buys": 9851,
+  "markets": 3191,
+  "ret_weighted": -0.025581997686237146,
+  "ret_equal": -0.07660752968933927,
+  "win": 0.5148856157944218,
+  "closed_share": 1.0
+ },
+ {
+  "w": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+  "name": "BreakTheBank",
+  "pnl_all": 8870383.924344,
+  "trades_21d": 258,
+  "buys": 193,
+  "markets": 117,
+  "ret_weighted": -0.05255414940584424,
+  "ret_equal": -0.09784736851671834,
+  "win": 0.4700854700854701,
+  "closed_share": 0.9829059829059829
+ },
+ {
   "w": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
   "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-  "pnl_all": 5977232.575325,
-  "trades_21d": 7387,
-  "buys": 74,
-  "markets": 10,
-  "ret_weighted": -0.09011208302894325,
-  "ret_equal": 0.13200010533439316,
-  "win": 0.6,
-  "closed_share": 0.0
+  "pnl_all": 5892933.228942,
+  "trades_21d": 7389,
+  "buys": 2717,
+  "markets": 1293,
+  "ret_weighted": 0.03861157559189521,
+  "ret_equal": -0.09799695167011219,
+  "win": 0.48491879350348027,
+  "closed_share": 0.9922660479505027
  },
  {
   "w": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
   "name": "ndb1",
-  "pnl_all": 4403988.403934,
+  "pnl_all": 4403991.298412,
   "trades_21d": 302,
-  "buys": 6,
-  "markets": 5,
-  "ret_weighted": 3.041522030652347,
-  "ret_equal": 0.5027379850882697,
-  "win": 0.4,
-  "closed_share": 0.0
+  "buys": 45,
+  "markets": 19,
+  "ret_weighted": 0.2946452986441497,
+  "ret_equal": -0.11430561960759202,
+  "win": 0.5263157894736842,
+  "closed_share": 0.7368421052631579
+ },
+ {
+  "w": "0xee00ba338c59557141789b127927a55f5cc5cea1",
+  "name": "S-Works",
+  "pnl_all": 3916667.564642,
+  "trades_21d": 13,
+  "buys": 8,
+  "markets": 6,
+  "ret_weighted": 0.36180823123296535,
+  "ret_equal": 0.16060506786522347,
+  "win": 0.8333333333333334,
+  "closed_share": 1.0
+ },
+ {
+  "w": "0xd38b71f3e8ed1af71983e5c309eac3dfa9b35029",
+  "name": "primm",
+  "pnl_all": 3768502.95193,
+  "trades_21d": 3206,
+  "buys": 2057,
+  "markets": 791,
+  "ret_weighted": 0.06658085148622161,
+  "ret_equal": 0.025778915900770083,
+  "win": 0.504424778761062,
+  "closed_share": 1.0
  }
 ]
