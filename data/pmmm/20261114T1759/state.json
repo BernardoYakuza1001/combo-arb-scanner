@@ -12,7 +12,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.006892826622264833,
+  "reward": 0.007607565033492328,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.00305597324811128,
+  "reward": 0.003496066717432456,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Will Russia capture Kozacha Lopan by December 31, 2026?",
   "cid": "0x2d7da8aeba11b38dc7733150b53a7b7f5fc6d8e68571d671a11377468bbd8b74",
-  "reward": 0.0033628962936225614,
+  "reward": 0.003739825642148473,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +78,7 @@
  {
   "q": "Will OpenAI's IPO valuation be less than $1T?",
   "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
-  "reward": 0.013215553877293862,
+  "reward": 0.014500510385961366,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
