@@ -1,0 +1,62 @@
+[
+ {
+  "q": "Will Jos\u00e9 Maria Neves win the Cape Verde presidential election?",
+  "slug": "will-jose-maria-neves-win-the-cape-verde-presidential-election-1786395605043",
+  "side": "YES",
+  "cost": 0.961,
+  "days": 1.327542116239115,
+  "y": 0.04058272632674309,
+  "ann": 11.157985067340181,
+  "liq": 23624.96005,
+  "vol24": 63.3,
+  "sport": false
+ },
+ {
+  "q": "Will Joana Rosa win the Cape Verde presidential election?",
+  "slug": "will-joana-rosa-win-the-cape-verde-presidential-election-1786395605037",
+  "side": "NO",
+  "cost": 0.972,
+  "days": 1.327542116239115,
+  "y": 0.028806584362139898,
+  "ann": 7.920203181175175,
+  "liq": 14376.22587,
+  "vol24": 69.93714299999999,
+  "sport": false
+ },
+ {
+  "q": "GTA 6 launch postponed again?",
+  "slug": "gta-6-launch-postponed-again",
+  "side": "NO",
+  "cost": 0.984,
+  "days": 5.327542116239115,
+  "y": 0.016260162601626105,
+  "ann": 1.1140145343014591,
+  "liq": 38637.11767,
+  "vol24": 30931.26639,
+  "sport": false
+ },
+ {
+  "q": "Will the Bank of Korea hike by 25 bps at the November 2026 meeting?",
+  "slug": "will-the-bank-of-korea-hike-by-25-bps-at-the-november-2026-meeting",
+  "side": "YES",
+  "cost": 0.993,
+  "days": 11.119903227350227,
+  "y": 0.007049345417925457,
+  "ann": 0.2313879019391356,
+  "liq": 6855.40806,
+  "vol24": 245.614,
+  "sport": false
+ },
+ {
+  "q": "Will the Bank of Korea hold at the November 2026 meeting?",
+  "slug": "will-the-bank-of-korea-hold-at-the-november-2026-meeting",
+  "side": "NO",
+  "cost": 0.995,
+  "days": 11.119903227350227,
+  "y": 0.005025125628140614,
+  "ann": 0.16494485759192984,
+  "liq": 8427.34366,
+  "vol24": 495.15,
+  "sport": false
+ }
+]
