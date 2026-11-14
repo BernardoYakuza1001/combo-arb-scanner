@@ -13,6 +13,7 @@ ahead of it has traded, or when the book crosses it. No orders are sent.
 import json, math, os, sys, time, datetime as dt
 from collections import deque
 import requests
+from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
@@ -23,10 +24,12 @@ CFG = dict(
     n_markets=int(os.environ.get("PMMM_N", "12")),
     cap=float(os.environ.get("PMMM_CAP", "200")),         # $ per market (both bids)
     quote_frac=float(os.environ.get("PMMM_FRAC", "0.75")),  # distance from mid as share of max spread
-    cycle_s=15, sample_s=60,
+    cycle_s=int(os.environ.get("PMMM_CYCLE_S", "15")), sample_s=60,
     max_imb=1.0,              # stop bidding a side once net inventory exceeds this many order sizes
     news_move=0.04, news_win_s=600, pause_s=1800,
     min_days=7,
+    mode=os.environ.get("PMMM_MODE", "quiet"),            # quiet = jump-filtered liquid markets; thin = minimum-size quotes in markets nobody quotes
+    max_others=float(os.environ.get("PMMM_MAX_OTHERS", "300")),
     max_jumps=int(os.environ.get("PMMM_MAX_JUMPS", "2")),   # hours in the past week with a move bigger than the quote distance
     max_move=float(os.environ.get("PMMM_MAX_MOVE", "0.10")),
     ahead_x=float(os.environ.get("PMMM_AHEAD", "0.5")),     # resting size that must sit in front of a quote, in order sizes
@@ -119,8 +122,13 @@ class Mkt:
         self.orders = {"Y": None, "N": None}
         self.yes = self.no = 0.0; self.cash = 0.0; self.merged = 0.0
         self.reward = 0.0; self.fills = []; self.seen = set(); self.samples = 0; self.scored = 0
-        self.mid = None; self.share_sum = 0.0
+        self.mid = None; self.share_sum = 0.0; self.bb = None; self.ba = None
         self.tape_n = 0; self.tape_near = 0; self.tape_tok = 0; self.closest = None
+
+    def liq(self):
+        """Value if every held share were sold at the current best bid (worst realistic exit)."""
+        if self.bb is None: return self.mtm()
+        return self.cash + self.yes * self.bb + self.no * (1 - self.ba)
 
     def mtm(self):
         m = self.mid if self.mid is not None else 0.5
@@ -192,6 +200,7 @@ def step(m, book, trades, now):
     o = m.orders["N"]
     if o and o.rem > 0 and best_bid >= 1 - o.price - 1e-9:
         f = min(o.rem, sum(float(l["size"]) for l in book["bids"] if float(l["price"]) >= 1 - o.price - 1e-9)); o.rem -= f; book_fill(m, o, f, now, "cross")
+    m.bb, m.ba = best_bid, best_ask
     # merge pairs
     sets = min(m.yes, m.no)
     if sets > 0: m.yes -= sets; m.no -= sets; m.cash += sets; m.merged += sets
@@ -260,13 +269,18 @@ def select():
     except Exception as e: print("refresh failed, using last ranking:", e)
     rows = json.load(open("data/edges/pm_rewards.json"))
     cut = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(days=CFG["min_days"])).strftime("%Y-%m-%d")
-    rows = [r for r in rows if r.get("status") == "open" and not r.get("empty_book") and r.get("tok") and r.get("tno") and r["end"] >= cut]
+    thin = CFG["mode"] == "thin"
+    rows = [r for r in rows if r.get("status") == "open" and r.get("tok") and r.get("tno") and r["end"] >= cut
+            and ((r.get("empty_book") or r["others"] <= CFG["max_others"]) if thin else not r.get("empty_book"))]
     def est(r):
-        v = r["v"]; s = CFG["quote_frac"] * v; n = CFG["cap"] / (1 - 2 * s / 100)
+        v = r["v"]; s = CFG["quote_frac"] * v; n = max(r["minsz"], CFG["cap"] / (1 - 2 * s / 100)) if thin else CFG["cap"] / (1 - 2 * s / 100)
         if n < r["minsz"]: return 0
         mine = ((v - s) / v) ** 2 * n
         return r["rate"] * mine / (mine + r["others"])
     rows.sort(key=lambda r: -est(r))
+    if thin:
+        print("thin mode candidates:", len(rows), "pool $/day", round(sum(r["rate"] for r in rows)), flush=True)
+        return [Mkt(r) for r in rows[:CFG["n_markets"]]]
     # Jump filter: paper runs lost money on "cross" fills, where the price jumped through the quote on news.
     # Use 7 days of price history: skip markets whose price moved more than the quote distance
     # within one hour too often, and rank the rest by reward per unit of jump risk.
@@ -291,11 +305,13 @@ def select():
 def report(mk, t0, now, final=False):
     os.makedirs(OUT, exist_ok=True)
     hrs = (now - t0) / 3600
-    tot_r = sum(m.reward for m in mk); tot_p = sum(m.mtm() for m in mk)
+    tot_r = sum(m.reward for m in mk); tot_p = sum(m.mtm() for m in mk); tot_l = sum(m.liq() for m in mk)
+    spent = sum(-m.cash for m in mk if m.cash < 0); nfill = sum(1 for m in mk for f in m.fills if "side" in f and f.get("kind") != "stop")
     L = [f"# PMMM paper run — {dt.datetime.fromtimestamp(t0, dt.timezone.utc):%Y-%m-%d %H:%M} UTC, {hrs:.2f} h{' (final)' if final else ''}", "",
          f"{len(mk)} markets, ${CFG['cap']:.0f} each (${CFG['cap']*len(mk):,.0f} total), quotes at {CFG['quote_frac']:.0%} of max spread.", "",
          f"**Rewards accrued: ${tot_r:.2f}  |  Trading P&L (marked at mid): ${tot_p:+.2f}  |  Net: ${tot_r+tot_p:+.2f}**",
          f"Per day at this pace: rewards ${tot_r/max(hrs,1e-9)*24:.2f}, net ${(tot_r+tot_p)/max(hrs,1e-9)*24:+.2f}", "",
+         f"Worst case (all held shares sold at current best bids): trading P&L ${tot_l:+.2f}, net ${tot_r+tot_l:+.2f}, per day ${(tot_r+tot_l)/max(hrs,1e-9)*24:+.2f}. Fills: {nfill}; cash paid for shares still held: ${spent:.2f}. Mode: {CFG['mode']}.", "",
          "| Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |",
          "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for m in sorted(mk, key=lambda m: -(m.reward + m.mtm())):
@@ -313,14 +329,17 @@ def main():
     t0 = time.time(); last_sample = 0; last_rep = t0
     while time.time() - t0 < CFG["run_s"]:
         now = time.time()
-        bk = http("POST", f"{CLOB}/books", json=[{"token_id": m.tok} for m in mk]) or []
-        bk = {b.get("asset_id"): b for b in bk}
+        bk = {}
+        for i in range(0, len(mk), 200):
+            for b in (http("POST", f"{CLOB}/books", json=[{"token_id": m.tok} for m in mk[i:i + 200]]) or []): bk[b.get("asset_id")] = b
         do_sample = now - last_sample >= CFG["sample_s"]
-        for m in mk:
-            b = bk.get(m.tok)
-            if not b or not b.get("bids") or not b.get("asks"): continue
+        live_m = [m for m in mk if bk.get(m.tok) and bk[m.tok].get("bids") and bk[m.tok].get("asks")]
+        def tape(m):
             tr = http("GET", f"{DATA}/v2/trades", params={"condition_id": m.cid, "limit": 100})
-            tr = (tr or {}).get("data", []) if isinstance(tr, dict) else (tr or [])
+            return (tr or {}).get("data", []) if isinstance(tr, dict) else (tr or [])
+        with ThreadPoolExecutor(8) as ex: tapes = list(ex.map(tape, live_m))
+        for m, tr in zip(live_m, tapes):
+            b = bk[m.tok]
             step(m, b, tr, now)
             if do_sample: sample(m, b, now)
         if do_sample: last_sample = now

@@ -10,6 +10,9 @@ on:
       jumps: {default: "2"}
       move: {default: "0.10"}
       tag: {default: "x"}
+      mode: {default: "quiet"}
+      stop: {default: "0.04"}
+      cycle: {default: "15"}
   push:
     paths: ["pmmm/bot.py"]
   schedule:
@@ -36,6 +39,10 @@ jobs:
           PMMM_AHEAD: ${{ github.event.inputs.ahead || '0.5' }}
           PMMM_MAX_JUMPS: ${{ github.event.inputs.jumps || '2' }}
           PMMM_MAX_MOVE: ${{ github.event.inputs.move || '0.10' }}
+          PMMM_MODE: ${{ github.event.inputs.mode || 'quiet' }}
+          PMMM_STOP: ${{ github.event.inputs.stop || '0.04' }}
+          PMMM_CYCLE_S: ${{ github.event.inputs.cycle || '15' }}
+          PM_STATUS_TOP: "900"
           PMMM_TAG: ${{ github.event.inputs.tag || 'default' }}
         run: |
           export PMMM_RUN_S=$(python -c "print(int(float('$PMMM_RUN_S')*3600))")

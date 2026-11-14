@@ -119,7 +119,7 @@ def main():
     rows.sort(key=lambda r: -r["earn"])
     print(f"mirror check: NO-book bid prices seen as YES asks in {mirror_hits}/{mirror_n} markets")
     # status check on Gamma for the top candidates: must be open, accepting orders, end in the future
-    top = rows[:300]; st = {}
+    top = rows[:int(os.environ.get("PM_STATUS_TOP", "300"))]; st = {}
     for i in range(0, len(top), 50):
         ids = [r["cid"] for r in top[i:i + 50]]
         try:
