@@ -1,15 +1,15 @@
-# PMMM paper run — 2026-11-14 13:14 UTC, 3.50 h
+# PMMM paper run — 2026-11-14 13:14 UTC, 3.58 h
 
 6 markets, $200 each ($1,200 total), quotes at 50% of max spread.
 
-**Rewards accrued: $2.45  |  Trading P&L (marked at mid): $+0.11  |  Net: $+2.56**
-Per day at this pace: rewards $16.81, net $+17.58
+**Rewards accrued: $2.51  |  Trading P&L (marked at mid): $+0.11  |  Net: $+2.62**
+Per day at this pace: rewards $16.79, net $+17.54
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Erzurumspor be relegated from the 2026-27 Süper Lig?](https://polymarket.com/market/will-erzurumspor-be-relegated-from-super-lig-2026-27) | 5 | 0.236 | 85.2% | 211/211 | 0.62 | 1 | 0 | 5 | 0 | +0.11 | 0 | 1 (1) / 1 / -0.4c |
-| [Will MegaETH hit $0.10 by December 31, 2026?](https://polymarket.com/market/will-megaeth-hit-0pt10-by-december-31-2026) | 5 | 0.195 | 100.0% | 211/211 | 0.73 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
-| [Will AS Trenčín be relegated from the 2026-27 Slovak Niké Li](https://polymarket.com/market/will-as-trencin-be-relegated-from-slovak-nike-liga-2026-27) | 5 | 0.27 | 44.0% | 211/211 | 0.32 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
-| [City Protocol FDV above $500M one day after launch?](https://polymarket.com/market/city-protocol-fdv-above-500m-one-day-after-launch) | 5 | 0.12 | 42.7% | 211/211 | 0.31 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
-| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 18 | 0.12 | 11.6% | 211/211 | 0.31 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
-| [Will Russia capture all of Bilytske by December 31?](https://polymarket.com/market/will-russia-capture-all-of-bilytske-by-december-31) | 10 | 0.65 | 10.5% | 211/211 | 0.15 | 0 | 0 | 0 | 0 | +0.00 | 0 | 2 (1) / 2 / +1.0c |
+| [Will MegaETH hit $0.10 by December 31, 2026?](https://polymarket.com/market/will-megaeth-hit-0pt10-by-december-31-2026) | 5 | 0.195 | 100.0% | 216/216 | 0.75 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
+| [Will Erzurumspor be relegated from the 2026-27 Süper Lig?](https://polymarket.com/market/will-erzurumspor-be-relegated-from-super-lig-2026-27) | 5 | 0.236 | 85.1% | 216/216 | 0.64 | 1 | 0 | 5 | 0 | +0.11 | 0 | 1 (1) / 1 / -0.4c |
+| [Will AS Trenčín be relegated from the 2026-27 Slovak Niké Li](https://polymarket.com/market/will-as-trencin-be-relegated-from-slovak-nike-liga-2026-27) | 5 | 0.27 | 44.0% | 216/216 | 0.33 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
+| [City Protocol FDV above $500M one day after launch?](https://polymarket.com/market/city-protocol-fdv-above-500m-one-day-after-launch) | 5 | 0.12 | 42.4% | 216/216 | 0.32 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
+| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 18 | 0.12 | 11.6% | 216/216 | 0.31 | 0 | 0 | 0 | 0 | +0.00 | 0 | 0 (0) / 0 / - |
+| [Will Russia capture all of Bilytske by December 31?](https://polymarket.com/market/will-russia-capture-all-of-bilytske-by-december-31) | 10 | 0.65 | 10.5% | 216/216 | 0.16 | 0 | 0 | 0 | 0 | +0.00 | 0 | 2 (1) / 2 / +1.0c |
