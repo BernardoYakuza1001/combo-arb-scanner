@@ -1,5 +1,11 @@
 import os, sys; sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from pmmm.bot import *
+import pytest
+
+@pytest.fixture(autouse=True)
+def _no_shield(monkeypatch):
+    monkeypatch.setitem(CFG, 'ahead_x', 0)      # older tests use thin books; shield tested separately
+
 
 def bk(bids, asks): return {"bids": [{"price": str(p), "size": str(s)} for p, s in bids], "asks": [{"price": str(p), "size": str(s)} for p, s in asks]}
 
@@ -37,3 +43,30 @@ def test_sample_reward_share():
     b = bk([(0.49, 1e-9)], [(0.51, 1e-9)])
     step(m, b, [], 1.0); sample(m, b, 2.0)
     assert m.reward > 0.99      # sole maker gets ~ all of the per-minute pool (1440/1440)
+
+
+def test_shield_rule_steps_back_or_skips(monkeypatch):
+    monkeypatch.setitem(CFG, "ahead_x", 2); monkeypatch.setitem(CFG, "quote_frac", 0.5)
+    m = Mkt(dict(cid="c", q="q", slug="s", tok="Y", tno="N", v=4.5, minsz=20, rate=100, tick=0.01))
+    # deep bids: 1000 at 0.49 -> YES quote allowed; asks thin (only 10 in front) -> NO side skipped
+    b = bk([(0.49, 1000), (0.47, 50)], [(0.51, 10), (0.56, 1000)])
+    yb, nb, n, yb0, nb0 = target(m, b, 0.50)
+    assert yb is not None and sum(s for p, s in [(0.49, 1000)] if p > yb) >= 2 * n
+    assert nb is None and nb0 is not None
+    # depth only at the far edge: quote steps back behind it but stays inside the reward zone
+    b2 = bk([(0.49, 10), (0.47, 5000)], [(0.51, 5000)])
+    yb2 = target(m, b2, 0.50)[0]
+    assert yb2 is not None and yb2 < 0.47 and 0.50 - yb2 < 0.045
+
+def test_stop_loss_caps_a_news_fill():
+    m = Mkt(dict(cid="c", q="q", slug="s", tok="Y", tno="N", v=4.5, minsz=20, rate=100, tick=0.01))
+    step(m, bk([(0.48, 100)], [(0.52, 100)]), [], 10.0)
+    yb, n = m.orders["Y"].price, m.orders["Y"].size
+    # news: price collapses through the YES bid to 0.30/0.34
+    crash = bk([(0.30, 1000)], [(0.34, 1000)])
+    step(m, crash, [dict(token_id="Y", price=str(yb - 0.05), size=str(n), timestamp=20)], 30.0)
+    stops = [f for f in m.fills if f.get("kind") == "stop"]
+    assert len(stops) == 1 and m.yes == 0 and m.orders == {"Y": None, "N": None}     # sold and paused
+    assert abs(m.mtm() - (-(yb - 0.29) * n)) < 1e-6                                   # loss is realised, nothing left at risk
+    step(m, bk([(0.10, 1000)], [(0.14, 1000)]), [], 40.0)
+    assert abs(m.mtm() - (-(yb - 0.29) * n)) < 1e-6                                   # further collapse costs nothing more

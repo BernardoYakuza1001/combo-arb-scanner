@@ -22,7 +22,7 @@ def test_real_signing_offline():
 def test_live_loop_fake_exchange(tmp_path, monkeypatch):
     from pmmm import live, bot
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
-    monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md"))
+    monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setitem(bot.CFG, "ahead_x", 0)
     monkeypatch.setitem(bot.CFG, "cycle_s", 0); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
     state = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={})
@@ -30,7 +30,7 @@ def test_live_loop_fake_exchange(tmp_path, monkeypatch):
         funder = "0xF00"
         def __init__(self): pass
         def usdc(self): return 5000.0
-        def place(self, tok, px, sz, tick):
+        def place(self, tok, px, sz, tick, sell=False):
             oid = f"o{len(state['placed'])}"; state["placed"].append((oid, tok, px, sz)); return oid
         def cancel(self, oid): state["cancelled"].append(oid)
         def cancel_all(self): state["cancel_all"] += 1
@@ -60,19 +60,21 @@ def test_live_loop_fake_exchange(tmp_path, monkeypatch):
     assert m.yes == 0 and m.no == 0 and m.merged > 0
 
 
-def _setup(tmp_path, monkeypatch, books, fills_at=None, max_cycles=8):
+def _setup(tmp_path, monkeypatch, books, fills_at=None, max_cycles=8, max_loss=30.0):
     from pmmm import live, bot
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
+    monkeypatch.setitem(bot.CFG, "ahead_x", 0); monkeypatch.setattr(live, "MAX_LOSS", max_loss)
     os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
-    st = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={}, beats=0)
+    st = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={}, beats=0, sells=[], stops=[])
     class C:
         def post_heartbeat(self, hid): st["beats"] += 1; return {"heartbeat_id": f"h{st['beats']}"}
     class FakeLive:
         funder = "0xF00"; c = C()
         def usdc(self): return 5000.0
-        def place(self, tok, px, sz, tick):
-            oid = f"o{len(st['placed'])}"; st["placed"].append((oid, tok, px, sz)); return oid
+        def place(self, tok, px, sz, tick, sell=False):
+            oid = f"o{len(st['placed'])}"; (st["sells"] if sell else st["placed"]).append((oid, tok, px, sz)); return oid if not sell else "s" + oid
+        def stop_sell(self, tok, px, sz, tick): st["stops"].append((tok, px, sz)); return {"success": True}
         def cancel(self, oid): st["cancelled"].append(oid)
         def cancel_all(self): st["cancel_all"] += 1
         def matched(self, oid): return st["matched"].get(oid, 0.0), "LIVE"
@@ -94,8 +96,8 @@ def _setup(tmp_path, monkeypatch, books, fills_at=None, max_cycles=8):
 def _bk(bid, ask): return [{"asset_id": "YES", "bids": [{"price": str(bid), "size": "500"}], "asks": [{"price": str(ask), "size": "500"}]}]
 
 def test_loss_stop_exits_and_cancels(tmp_path, monkeypatch):
-    # YES bid fills, then the price collapses: loss on ~200 shares x ~0.25 > $30 -> abort
-    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52) if c < 4 else _bk(0.20, 0.24), fills_at=3, max_cycles=50)
+    # YES bid fills, then the price collapses: stop-loss sells, and the realised loss trips the $5 daily stop -> abort
+    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52) if c < 4 else _bk(0.20, 0.24), fills_at=3, max_cycles=50, max_loss=5.0)
     live.main()
     ev = [json.loads(l) for l in open(live.LOG)]
     assert any(e["ev"] == "abort" and "loss stop" in e["why"] for e in ev)
@@ -107,3 +109,17 @@ def test_blind_cancel_and_heartbeat(tmp_path, monkeypatch):
     ev = [json.loads(l)["ev"] for l in open(live.LOG)]
     assert "blind_cancel" in ev and len(st["cancelled"]) == 2      # both resting orders pulled once blind
     assert "heartbeat_on" in ev and st["beats"] >= 1
+
+
+def test_exit_order_then_stop_loss(tmp_path, monkeypatch):
+    # YES bid fills at cycle 3. Next cycle: the NO slot becomes a resting SELL of the YES shares.
+    # Then the price drops 6c: stop-loss sells the YES at market and the market is paused.
+    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52) if c < 6 else _bk(0.40, 0.44), fills_at=3, max_cycles=9, max_loss=500.0)
+    live.main()
+    ev = [json.loads(l) for l in open(live.LOG)]
+    names = [e["ev"] for e in ev]
+    assert "fill" in names and "exit_quote" in names and "stop_loss" in names
+    assert st["sells"] and st["sells"][0][1] == "YES" and st["sells"][0][2] > 0.50      # exit sells YES above mid
+    assert len(st["stops"]) == 1 and st["stops"][0][0] == "YES" and m.yes == 0
+    sl = next(e for e in ev if e["ev"] == "stop_loss"); assert 0 < sl["est_loss"] < 30
+    assert names.index("exit_quote") < names.index("stop_loss")

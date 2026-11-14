@@ -16,6 +16,9 @@ Safety:
   * Loss stop: cancels everything and exits if trading loss since start exceeds PMMM_MAX_LOSS (default $30).
   * Blind stop: if a market's order book cannot be read for 3 cycles, its orders are cancelled.
   * Keeps Windows awake while it runs (only while the window is open).
+  * Shield rule: only quotes behind PMMM_AHEAD order sizes of other people's resting orders.
+  * Stop-loss: a filled position is sold at market once the price is PMMM_STOP (default 4c) below entry.
+  * Exit order: after a fill, the opposite quote becomes a resting SELL of the held shares (frees the cash).
   * Re-ranks markets every 6 hours; orders in dropped markets are cancelled.
 
 pmmm\\.env:
@@ -88,7 +91,8 @@ class Live:
         from py_clob_client.clob_types import OrderArgs, OrderType, BalanceAllowanceParams, AssetType, OrdersScoringParams, RequestArgs
         from py_clob_client.order_builder.constants import BUY
         from py_clob_client.headers.headers import create_level_2_headers
-        self.OrderArgs, self.OrderType, self.BUY = OrderArgs, OrderType, BUY
+        from py_clob_client.order_builder.constants import SELL
+        self.OrderArgs, self.OrderType, self.BUY, self.SELL = OrderArgs, OrderType, BUY, SELL
         self.BAP, self.AT, self.OSP, self.RA, self.l2h = BalanceAllowanceParams, AssetType, OrdersScoringParams, RequestArgs, create_level_2_headers
         self.funder = os.environ["PM_FUNDER"]
         self.c = ClobClient(CLOB, key=os.environ["PM_PRIVATE_KEY"], chain_id=137,
@@ -102,12 +106,21 @@ class Live:
         r = self.c.get_balance_allowance(p)
         return float(r.get("balance", 0)) / 1e6
 
-    def place(self, token, price, size, tick):
+    def place(self, token, price, size, tick, sell=False):
+        """Resting post-only order (BUY by default, SELL for exits)."""
         dec = max(0, -int(round(__import__("math").log10(tick))))
-        o = self.c.create_order(self.OrderArgs(price=round(price, dec), size=round(float(size), 2), side=self.BUY, token_id=token))
+        size = __import__("math").floor(float(size) * 100) / 100
+        o = self.c.create_order(self.OrderArgs(price=round(price, dec), size=size, side=self.SELL if sell else self.BUY, token_id=token))
         r = self.c.post_order(o, self.OrderType.GTC, post_only=True)
         if isinstance(r, dict) and r.get("success", True) and r.get("orderID"): return r["orderID"]
         raise RuntimeError(f"rejected: {r}")
+
+    def stop_sell(self, token, price, size, tick):
+        """Stop-loss: sell now at up to `price` (fill what is available, cancel the rest)."""
+        dec = max(0, -int(round(__import__("math").log10(tick))))
+        size = __import__("math").floor(float(size) * 100) / 100
+        o = self.c.create_order(self.OrderArgs(price=round(max(price, tick), dec), size=size, side=self.SELL, token_id=token))
+        return self.c.post_order(o, self.OrderType.FAK)
 
     def cancel(self, oid): self.c.cancel(oid)
     def cancel_all(self): self.c.cancel_all()
@@ -194,7 +207,7 @@ def main():
                 except Exception as e: log(ev="reselect_err", err=str(e)[:200])
             bk = {b.get("asset_id"): b for b in (http("POST", f"{CLOB}/books", json=[{"token_id": m.tok} for m in mk]) or [])}
             exposure = sum(m.yes * (m.mid or .5) + m.no * (1 - (m.mid or .5)) for m in mk) + \
-                       sum(o["price"] * (o["size"] - o["matched"]) for o in live.values())
+                       sum(o["price"] * (o["size"] - o["matched"]) for o in live.values() if not o.get("sell"))
             for m in mk:
                 b = bk.get(m.tok)
                 if not b or not b.get("bids") or not b.get("asks"):
@@ -216,10 +229,16 @@ def main():
                         got, status = L.matched(o["oid"])
                         if got > o["matched"]:
                             d = got - o["matched"]; o["matched"] = got
-                            if sd == "Y": m.yes += d
-                            else: m.no += d
-                            m.cash -= d * o["price"]
-                            log(ev="fill", q=m.q[:50], side=sd, px=o["price"], sz=round(d, 2))
+                            if o.get("sell"):       # exit order: sold held shares of the other outcome
+                                if sd == "N": m.yes = max(0.0, m.yes - d)
+                                else: m.no = max(0.0, m.no - d)
+                                m.cash += d * o["real_px"]
+                                log(ev="exit_fill", q=m.q[:50], sold="YES" if sd == "N" else "NO", px=o["real_px"], sz=round(d, 2))
+                            else:
+                                if sd == "Y": m.avg_y = (getattr(m, "avg_y", 0.0) * m.yes + o["price"] * d) / (m.yes + d); m.yes += d
+                                else: m.avg_n = (getattr(m, "avg_n", 0.0) * m.no + o["price"] * d) / (m.no + d); m.no += d
+                                m.cash -= d * o["price"]
+                                log(ev="fill", q=m.q[:50], side=sd, px=o["price"], sz=round(d, 2))
                         if status.upper() not in ("LIVE", "OPEN", ""):
                             live.pop((m.cid, sd), None)
                     s = min(m.yes, m.no)
@@ -228,27 +247,53 @@ def main():
                     mid = adj_mid(b, m.minsz)
                     if mid is None: continue
                     m.mid = mid; m.mids.append((now, mid))
+                    if m.yes > 0 and getattr(m, "avg_y", None) is None: m.avg_y = mid            # carried-in position: stop measured from here
+                    if m.no > 0 and getattr(m, "avg_n", None) is None: m.avg_n = 1 - mid
                     while m.mids and now - m.mids[0][0] > CFG["news_win_s"]: m.mids.popleft()
                     if max(x[1] for x in m.mids) - min(x[1] for x in m.mids) > CFG["news_move"]:
                         if now >= m.paused_until: log(ev="pause", q=m.q[:50], mid=round(mid, 3))
                         m.paused_until = now + CFG["pause_s"]
+                    # stop-loss on held positions
+                    bb = max(float(l["price"]) for l in b["bids"]); ba = min(float(l["price"]) for l in b["asks"])
+                    for side, held, avg, tok, exit_px in (("Y", m.yes, getattr(m, "avg_y", None), m.tok, bb),
+                                                          ("N", m.no, getattr(m, "avg_n", None), m.tno, 1 - ba)):
+                        if held >= 5 and avg is not None and exit_px <= avg - CFG["stop_c"]:
+                            for sd2 in ("Y", "N"):
+                                o2 = live.pop((m.cid, sd2), None)
+                                if o2 and not DRY: L.cancel(o2["oid"])
+                            r = None if DRY else L.stop_sell(tok, exit_px - 2 * m.tick, held, m.tick)
+                            m.cash += held * (exit_px - m.tick)
+                            log(ev="stop_loss", q=m.q[:50], sold="YES" if side == "Y" else "NO", sz=round(held, 2), entry=round(avg, 3),
+                                px=round(exit_px, 3), est_loss=round(held * (avg - exit_px + m.tick), 2), resp=str(r)[:200])
+                            if side == "Y": m.yes = 0.0
+                            else: m.no = 0.0
+                            m.paused_until = now + CFG["pause_s"]
                     tg = None if now < m.paused_until else target(m, b, mid)
-                    want = {"Y": None, "N": None}
+                    want = {"Y": None, "N": None}       # slot -> (slot price, size, sell?)
                     if tg:
-                        yb, nb, n = tg; imb = m.yes - m.no
-                        if imb < CFG["max_imb"] * n: want["Y"] = (yb, n)
-                        if -imb < CFG["max_imb"] * n: want["N"] = (nb, n)
+                        yb, nb, n, yb0, nb0 = tg; imb = m.yes - m.no
+                        if yb is not None and imb < CFG["max_imb"] * n: want["Y"] = (yb, n, False)
+                        if nb is not None and -imb < CFG["max_imb"] * n: want["N"] = (nb, n, False)
+                        # exit orders: holding YES -> the NO slot becomes SELL YES at the same book level (1 - nb0)
+                        if m.yes >= 5: want["N"] = (nb0, m.yes, True)
+                        if m.no >= 5: want["Y"] = (yb0, m.no, True)
                     # 3) reconcile
                     for sd, w in want.items():
                         o = live.get((m.cid, sd))
-                        if o and w and abs(o["price"] - w[0]) <= 0.01 + 1e-9 and \
+                        if o and w and bool(o.get("sell")) == w[2] and abs(o["price"] - w[0]) <= 0.01 + 1e-9 and \
                            0 < ((mid - o["price"]) if sd == "Y" else ((1 - mid) - o["price"])) < m.v / 100 and \
-                           o["size"] - o["matched"] >= m.minsz:
+                           (abs((o["size"] - o["matched"]) - w[1]) < 1 if w[2] else o["size"] - o["matched"] >= m.minsz):
                             continue
                         if o:
                             if not DRY: L.cancel(o["oid"])
-                            live.pop((m.cid, sd), None); exposure -= o["price"] * (o["size"] - o["matched"])
-                        if w:
+                            live.pop((m.cid, sd), None)
+                            if not o.get("sell"): exposure -= o["price"] * (o["size"] - o["matched"])
+                        if w and w[2]:      # exit: SELL the held outcome at the mirrored price
+                            tok = m.tok if sd == "N" else m.tno; real = round(1 - w[0], 6)
+                            oid = f"dry-{m.cid[:8]}-{sd}-{int(now)}" if DRY else L.place(tok, real, w[1], m.tick, sell=True)
+                            live[(m.cid, sd)] = dict(oid=oid, price=w[0], size=__import__("math").floor(w[1] * 100) / 100, matched=0.0, sell=True, real_px=real)
+                            log(ev="exit_quote", q=m.q[:50], sell="YES" if sd == "N" else "NO", px=real, sz=round(w[1], 2), dry=DRY)
+                        elif w:
                             cost = w[0] * w[1]
                             if exposure + cost > cap: continue
                             oid = f"dry-{m.cid[:8]}-{sd}-{int(now)}" if DRY else L.place(m.tok if sd == "Y" else m.tno, w[0], w[1], m.tick)

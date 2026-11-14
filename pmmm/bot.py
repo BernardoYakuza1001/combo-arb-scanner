@@ -27,6 +27,8 @@ CFG = dict(
     max_imb=1.0,              # stop bidding a side once net inventory exceeds this many order sizes
     news_move=0.04, news_win_s=600, pause_s=1800,
     min_days=7,
+    ahead_x=float(os.environ.get("PMMM_AHEAD", "2")),     # resting size that must sit in front of a quote, in order sizes
+    stop_c=float(os.environ.get("PMMM_STOP", "0.04")),    # sell a filled position once the price is this far below entry
     run_s=int(os.environ.get("PMMM_RUN_S", "3600")),
 )
 S = requests.Session(); S.headers["User-Agent"] = "pmmm/1.0"
@@ -133,7 +135,20 @@ def target(m, book, mid):
     nb = min(nb, (1 - best_bid) - m.tick)
     if yb <= 0 or nb <= 0: return None
     n = max(m.minsz, math.floor(CFG["cap"] / (yb + nb)))
-    return yb, nb, n
+    yb0, nb0 = yb, nb
+    # Shield rule: only quote behind enough resting size, so a news sweep hits other orders first.
+    # Step outward until ahead_x order sizes sit in front; if that leaves the reward zone, skip the side.
+    need = CFG["ahead_x"] * n
+    if need > 0:
+        bids = [(float(l["price"]), float(l["size"])) for l in book["bids"]]
+        asks = [(float(l["price"]), float(l["size"])) for l in book["asks"]]
+        while yb is not None and sum(sz for p, sz in bids if p > yb + 1e-9) < need:
+            yb = round(yb - m.tick, 6)
+            if yb <= 0 or mid - yb >= m.v / 100: yb = None
+        while nb is not None and sum(sz for p, sz in asks if p < (1 - nb) - 1e-9) < need:
+            nb = round(nb - m.tick, 6)
+            if nb <= 0 or (1 - mid) - nb >= m.v / 100: nb = None
+    return yb, nb, n, yb0, nb0
 
 def step(m, book, trades, now):
     mid = adj_mid(book, m.minsz)
@@ -178,6 +193,15 @@ def step(m, book, trades, now):
     # merge pairs
     sets = min(m.yes, m.no)
     if sets > 0: m.yes -= sets; m.no -= sets; m.cash += sets; m.merged += sets
+    # stop-loss: a filled position is sold once the price is stop_c below its entry (one tick of slippage assumed)
+    for side, held, avg, exit_px in (("Y", m.yes, getattr(m, "avg_y", None), best_bid - m.tick),
+                                     ("N", m.no, getattr(m, "avg_n", None), (1 - best_ask) - m.tick)):
+        if held >= 1 and avg is not None and exit_px <= avg - CFG["stop_c"]:
+            exit_px = max(exit_px, 0.0); m.cash += held * exit_px
+            m.fills.append(dict(ts=now, kind="stop", side=side, px=round(exit_px, 4), sz=round(held, 2), loss=round(held * (avg - exit_px), 2)))
+            if side == "Y": m.yes = 0.0
+            else: m.no = 0.0
+            m.paused_until = now + CFG["pause_s"]
     # news pause
     if m.mids and max(x[1] for x in m.mids) - min(x[1] for x in m.mids) > CFG["news_move"]:
         if now >= m.paused_until: m.fills.append(dict(ts=now, kind="pause", mid=mid))
@@ -186,8 +210,11 @@ def step(m, book, trades, now):
         m.orders = {"Y": None, "N": None}; return
     tg = target(m, book, mid)
     if not tg: m.orders = {"Y": None, "N": None}; return
-    yb, nb, n = tg
+    yb, nb, n, yb0, nb0 = tg
     imb = m.yes - m.no
+    # holding a position: the opposite quote is the exit, so it ignores the shield rule
+    if m.yes >= 1 and nb is None: nb = nb0
+    if m.no >= 1 and yb is None: yb = yb0
     want = {"Y": yb if imb < CFG["max_imb"] * n else None, "N": nb if -imb < CFG["max_imb"] * n else None}
     for sd, px in want.items():
         o = m.orders[sd]
@@ -201,8 +228,10 @@ def step(m, book, trades, now):
         m.orders[sd] = Order(sd, px, n, now, q)
 
 def book_fill(m, o, f, now, how):
-    if o.side == "Y": m.yes += f
-    else: m.no += f
+    if o.side == "Y":
+        m.avg_y = (getattr(m, "avg_y", 0.0) * m.yes + o.price * f) / (m.yes + f); m.yes += f
+    else:
+        m.avg_n = (getattr(m, "avg_n", 0.0) * m.no + o.price * f) / (m.no + f); m.no += f
     m.cash -= f * o.price
     m.fills.append(dict(ts=now, side=o.side, px=o.price, sz=round(f, 2), how=how))
 
@@ -268,9 +297,9 @@ def report(mk, t0, now, final=False):
          "| Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |",
          "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for m in sorted(mk, key=lambda m: -(m.reward + m.mtm())):
-        nf = sum(1 for f in m.fills if "side" in f); np_ = sum(1 for f in m.fills if f.get("kind") == "pause")
+        nf = sum(1 for f in m.fills if "side" in f); np_ = sum(1 for f in m.fills if f.get("kind") == "pause"); ns_ = sum(1 for f in m.fills if f.get("kind") == "stop")
         avg = m.share_sum / m.scored if m.scored else 0
-        L.append(f"| [{m.q[:60]}](https://polymarket.com/market/{m.slug}) | {m.rate:.0f} | {m.mid if m.mid is None else round(m.mid,3)} | {avg:.1%} | {m.scored}/{m.samples} | {m.reward:.2f} | {nf} | {m.merged:.0f} | {m.yes:.0f} | {m.no:.0f} | {m.mtm():+.2f} | {np_} | {m.tape_n} ({m.tape_tok}) / {m.tape_near} / {"-" if m.closest is None else f"{m.closest*100:+.1f}c"} |")
+        L.append(f"| [{m.q[:60]}](https://polymarket.com/market/{m.slug}) | {m.rate:.0f} | {m.mid if m.mid is None else round(m.mid,3)} | {avg:.1%} | {m.scored}/{m.samples} | {m.reward:.2f} | {nf} | {m.merged:.0f} | {m.yes:.0f} | {m.no:.0f} | {m.mtm():+.2f} | {np_} / {ns_} stops | {m.tape_n} ({m.tape_tok}) / {m.tape_near} / {"-" if m.closest is None else f"{m.closest*100:+.1f}c"} |")
     open(f"{OUT}/SUMMARY.md", "w").write("\n".join(L) + "\n")
     json.dump([dict(q=m.q, cid=m.cid, reward=m.reward, mtm=m.mtm(), yes=m.yes, no=m.no, merged=m.merged, fills=m.fills[-200:]) for m in mk],
               open(f"{OUT}/state.json", "w"), indent=1)
