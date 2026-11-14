@@ -1,16 +1,16 @@
-# PMMM paper run — 2026-11-14 18:12 UTC, 3.42 h
+# PMMM paper run — 2026-11-14 18:12 UTC, 3.50 h
 
 7 markets, $200 each ($1,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.90  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.90**
-Per day at this pace: rewards $6.32, net $+6.32
+**Rewards accrued: $0.91  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.91**
+Per day at this pace: rewards $6.26, net $+6.26
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Erzurumspor be relegated from the 2026-27 Süper Lig?](https://polymarket.com/market/will-erzurumspor-be-relegated-from-super-lig-2026-27) | 5 | 0.235 | 46.0% | 206/206 | 0.33 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.197 | 24.6% | 165/206 | 0.28 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 14 | 0.135 | 8.5% | 206/206 | 0.17 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (1) / 3 / +2.9c |
-| [Will OpenAI's IPO valuation be less than $1T?](https://polymarket.com/market/will-openais-ipo-valuation-be-less-than-1t) | 17 | 0.243 | 2.0% | 206/206 | 0.05 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Data center utility cost protection become law this yea](https://polymarket.com/market/will-data-center-utility-cost-protection-become-law-this-year) | 5 | 0.185 | 8.7% | 142/206 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (0) / 2 / - |
-| [Will Kylian Mbappé (Real Madrid) be the top goalscorer of th](https://polymarket.com/market/will-kylian-mbappe-real-madrid-be-the-top-goalscorer-of-the-2026-27-la-liga-season) | 11 | 0.445 | 1.6% | 206/206 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +2.0c |
-| [Will MegaETH hit $0.10 by December 31, 2026?](https://polymarket.com/market/will-megaeth-hit-0pt10-by-december-31-2026) | 5 | 0.195 | 0.0% | 0/206 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Erzurumspor be relegated from the 2026-27 Süper Lig?](https://polymarket.com/market/will-erzurumspor-be-relegated-from-super-lig-2026-27) | 5 | 0.235 | 46.1% | 211/211 | 0.34 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.198 | 24.0% | 170/211 | 0.28 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 14 | 0.135 | 8.3% | 211/211 | 0.17 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (1) / 3 / +2.9c |
+| [Will OpenAI's IPO valuation be less than $1T?](https://polymarket.com/market/will-openais-ipo-valuation-be-less-than-1t) | 17 | 0.243 | 2.0% | 211/211 | 0.05 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Data center utility cost protection become law this yea](https://polymarket.com/market/will-data-center-utility-cost-protection-become-law-this-year) | 5 | 0.185 | 8.7% | 147/211 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (0) / 2 / - |
+| [Will Kylian Mbappé (Real Madrid) be the top goalscorer of th](https://polymarket.com/market/will-kylian-mbappe-real-madrid-be-the-top-goalscorer-of-the-2026-27-la-liga-season) | 11 | 0.445 | 1.6% | 211/211 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +2.0c |
+| [Will MegaETH hit $0.10 by December 31, 2026?](https://polymarket.com/market/will-megaeth-hit-0pt10-by-december-31-2026) | 5 | 0.195 | 0.0% | 0/211 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
