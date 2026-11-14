@@ -1,0 +1,23 @@
+[
+ {
+  "proxy_wallet": "0x4fe7ffe9b2799eb9d265b88e253dec3af1085ab1",
+  "side": "BUY",
+  "token_id": "60223388664019279162181010302833432124988688972919536085106853253617030392887",
+  "condition_id": "0xdff317e40e040455ee13c6370ad71cf40c64a354d8a25b5d84f0e93632b159c3",
+  "size": 18.0,
+  "price": 0.926,
+  "timestamp": 1789889815,
+  "title": "Will Oklahoma City Thunder receive the first overall pick at the 2027 NBA Draft Lottery?",
+  "slug": "will-oklahoma-city-thunder-receive-the-first-overall-pick-at-the-2027-nba-draft-lottery",
+  "icon": "",
+  "event_slug": "2027-nba-draft-lottery-1st-pick",
+  "outcome": "No",
+  "outcome_index": 1,
+  "name": "0x4FE7fFE9B2799eb9D265b88E253DEc3AF1085AB1-1789545452767",
+  "pseudonym": "Needy-Logo",
+  "bio": "",
+  "profile_image": "",
+  "profile_image_optimized": "",
+  "transaction_hash": "0xdac8526c92e3bd3ac7a72efe2caf6305194cb22c8c2ba2d7b78f27dfc1865a75"
+ }
+]
