@@ -2,7 +2,7 @@
  {
   "q": "Will Russia capture all of Bilytske by December 31?",
   "cid": "0x60b8efcdc90f3e209a0c325d5bff56145d83aed9e064714aa941aa2c4552644a",
-  "reward": 0.024667249890655375,
+  "reward": 0.03902758620555506,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.014839168039552727,
+  "reward": 0.02177958823693786,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.0023049420756926222,
+  "reward": 0.004310457295069168,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Tom Cruise be nominated for Best Actor at the 99th Academy Awards?",
   "cid": "0x1ce8895e6ecb0a41099a5bdad22cede0c3c1fff8f0a427c9cbd334934c424aad",
-  "reward": 0.004117488515583235,
+  "reward": 0.008091176597090362,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Jaafar Jackson be nominated for Best Actor at the 99th Academy Awards?",
   "cid": "0x7b10d860463304ef0a53218c9986912e7f166eeaba0c53811a73576f7f5e5e81",
-  "reward": 0.002348262986593564,
+  "reward": 0.003943669233563446,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +52,7 @@
  {
   "q": "Will John Turturro be nominated for Best Actor at the 99th Academy Awards?",
   "cid": "0xb974c3d6847dabcba59d0792e3860cbaf810d4542a2c701d739e147c2eb20497",
-  "reward": 0.001466223921931162,
+  "reward": 0.002633658672468547,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +62,7 @@
  {
   "q": "Will Robert Pattinson be nominated for Best Actor at the 99th Academy Awards?",
   "cid": "0xd0d9086351cc86e47bfa4461214d4622617f5e340a9fd7ebc5a9cf9b38166eb7",
-  "reward": 0.0013506493911618043,
+  "reward": 0.0017518724401098511,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -88,7 +88,7 @@
  {
   "q": "Will Club Am\u00e9rica finish the 2026-27 Liga MX season with the best combined goal differenti",
   "cid": "0xd3162486c8aeccf42a6d4aa3ec8d21f865a0eb8cada144ddd4e284f05a093daa",
-  "reward": 0.0022338344172306984,
+  "reward": 0.003913383575418449,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
