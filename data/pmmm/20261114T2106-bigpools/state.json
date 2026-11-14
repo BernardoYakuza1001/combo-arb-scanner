@@ -44,12 +44,18 @@
  {
   "q": "Extended FDV above $150M one day after launch?",
   "cid": "0x45514e0fcd922a740e67ab064a9042d3e964006712f9540947808ae82067ed23",
-  "reward": 0.18417383905853968,
+  "reward": 0.18793230293178034,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794693734.0777006,
+    "kind": "pause",
+    "mid": 0.64
+   }
+  ]
  },
  {
   "q": "Will Chainlink dip to $6 by December 31, 2026?",
@@ -64,7 +70,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.08630691404463191,
+  "reward": 0.0947623522172036,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -74,7 +80,7 @@
  {
   "q": "Will David Sacks leave the Trump administration before 2027?",
   "cid": "0x41e7c27975bd53fe08a5ab30960934bfea92b60b88f56ee9d9b42b8b0c97d98d",
-  "reward": 0.27933045263564343,
+  "reward": 0.3067627756693582,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -116,7 +122,7 @@
  {
   "q": "Will Lighter dip to $2 before 2027?",
   "cid": "0x8f133c5de9d7ce0a6d117295b2958d33e9748de019da426f217b2d2a73f0942b",
-  "reward": 0.015343925504687316,
+  "reward": 0.01658808944457749,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -126,7 +132,7 @@
  {
   "q": "OpenAI IPO closing market cap above $1.6T?",
   "cid": "0x82b7da93a66790027b48e73cff250492ece87b6bfd48e680278f4fee75433737",
-  "reward": 4.855998284618295e-31,
+  "reward": 5.476835003208125e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -136,7 +142,7 @@
  {
   "q": "Will Anthropic\u2019s market cap be between 1.2T and 1.5T at market close on IPO day by Decembe",
   "cid": "0x510736e7804a288592abab4105eca3399cbd562cd49a6d4e0289362490cc4825",
-  "reward": 0.03433638371733605,
+  "reward": 0.03623016812011004,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
