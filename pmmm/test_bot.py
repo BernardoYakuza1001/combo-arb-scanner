@@ -70,3 +70,14 @@ def test_stop_loss_caps_a_news_fill():
     assert abs(m.mtm() - (-(yb - 0.29) * n)) < 1e-6                                   # loss is realised, nothing left at risk
     step(m, bk([(0.10, 1000)], [(0.14, 1000)]), [], 40.0)
     assert abs(m.mtm() - (-(yb - 0.29) * n)) < 1e-6                                   # further collapse costs nothing more
+
+
+def test_wide_book_centres_on_last_trade_or_stays_out():
+    m = Mkt(dict(cid="c", q="q", slug="s", tok="Y", tno="N", v=4.5, minsz=20, rate=100, tick=0.01))
+    wide = bk([(0.30, 100)], [(0.80, 100)])
+    step(m, wide, [], 1000.0)
+    assert m.orders == {"Y": None, "N": None}                       # no trade to anchor on: no quotes
+    step(m, wide, [dict(token_id="N", price="0.64", size="50", timestamp=900)], 1015.0)   # NO at 0.64 = YES at 0.36
+    y, n = m.orders["Y"], m.orders["N"]
+    assert y and n and abs(m.mid - 0.36) < 1e-9
+    assert 0.36 - 0.045 < y.price < 0.36 and 0.64 - 0.045 < n.price < 0.64

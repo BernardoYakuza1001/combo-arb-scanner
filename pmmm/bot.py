@@ -164,6 +164,20 @@ def step(m, book, trades, now):
     mid = adj_mid(book, m.minsz)
     if mid is None: return
     if not hasattr(m, "t_start"): m.t_start = now
+    # Wide/empty book: the book's middle says nothing about fair value. Centre on the last traded price
+    # (in YES terms); with no trade in the last 14 days there is no anchor, so do not quote.
+    _bb = max(float(l["price"]) for l in book["bids"]); _ba = min(float(l["price"]) for l in book["asks"])
+    if (_ba - _bb) * 100 > 2 * m.v:
+        last = None
+        for t in trades:
+            tt = tsec(t.get("timestamp"))
+            if tt is None or t.get("token_id") not in (m.tok, m.tno): continue
+            try: px = float(t["price"])
+            except Exception: continue
+            if last is None or tt > last[0]: last = (tt, px if t.get("token_id") == m.tok else 1 - px)
+        if last is None or now - last[0] > 14 * 86400 or not (_bb + 2 * m.tick < last[1] < _ba - 2 * m.tick):
+            m.orders = {"Y": None, "N": None}; m.mid = mid; m.no_anchor = True; return
+        mid = last[1]; m.no_anchor = False
     m.mid = mid
     m.mids.append((now, mid))
     while m.mids and now - m.mids[0][0] > CFG["news_win_s"]: m.mids.popleft()
