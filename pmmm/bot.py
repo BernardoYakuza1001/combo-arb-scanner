@@ -236,7 +236,25 @@ def select():
         mine = ((v - s) / v) ** 2 * n
         return r["rate"] * mine / (mine + r["others"])
     rows.sort(key=lambda r: -est(r))
-    return [Mkt(r) for r in rows[:CFG["n_markets"]]]
+    # Jump filter: paper runs lost money on "cross" fills, where the price jumped through the quote on news.
+    # Use 7 days of price history: skip markets whose price moved more than the quote distance
+    # within one hour too often, and rank the rest by reward per unit of jump risk.
+    picked = []
+    for r in rows[:80]:
+        h = http("GET", f"{CLOB}/prices-history", params={"market": r["tok"], "interval": "1w", "fidelity": 60}) or {}
+        pts = [float(x["p"]) for x in (h.get("history") or [])]
+        if len(pts) < 24: continue
+        moves = [abs(b - a) for a, b in zip(pts, pts[1:])]
+        dist = CFG["quote_frac"] * r["v"] / 100
+        jumps = sum(1 for x in moves if x >= dist)           # hours in which a quote would have been run over
+        r["jumps7d"] = jumps; r["maxmove"] = max(moves)
+        if jumps > CFG.get("max_jumps", 2) or max(moves) > 0.10: continue
+        r["score"] = est(r) / (1 + jumps)
+        picked.append(r)
+        if len(picked) >= 3 * CFG["n_markets"]: break
+    picked.sort(key=lambda r: -r["score"])
+    print("jump filter kept", len(picked), "of", min(80, len(rows)), flush=True)
+    return [Mkt(r) for r in picked[:CFG["n_markets"]]]
 
 # ---------------- run ----------------
 def report(mk, t0, now, final=False):
