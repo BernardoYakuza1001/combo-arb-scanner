@@ -2,12 +2,18 @@
  {
   "q": "Will XRP dip to $0.80 by December 31, 2026?",
   "cid": "0xe1fe833bcef01f7551519df89d26fe917119c3579335ab79a08260d5a27093d5",
-  "reward": 0.0,
+  "reward": 2.7725823082271833e-05,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794689649.488595,
+    "kind": "pause",
+    "mid": 0.525
+   }
+  ]
  },
  {
   "q": "Will MegaETH hit $0.10 by December 31, 2026?",
@@ -38,7 +44,7 @@
  {
   "q": "Will AVAX dip to $5 by December 31, 2026?",
   "cid": "0x22f9d941af76205055d46dac793fc50135c95e55aa3189854cf3855a58404463",
-  "reward": 0.0035155314588768594,
+  "reward": 0.00413857864293363,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +54,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.017298804290107515,
+  "reward": 0.026266327889049704,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +64,7 @@
  {
   "q": "Will Rafael Grossi be the next Secretary-General of the United Nations?",
   "cid": "0x109940d5d51a60f3706e2149b21124a0c1630c4950ddbf7521470700013783f1",
-  "reward": 0.012605043859697896,
+  "reward": 0.022295573698568525,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +74,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.009648527871093994,
+  "reward": 0.017688967763672323,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +84,7 @@
  {
   "q": "Will \"NAZA\" win Best Documentary Feature Film at the 99th Academy Awards?",
   "cid": "0x653a7f2a51c3806c0261c72d4dae8e65ad67e488df2373501bf7c9113e014b37",
-  "reward": 0.000655572097865313,
+  "reward": 0.002118894754962156,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -88,7 +94,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.0031684652644385887,
+  "reward": 0.005194825922107628,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -98,7 +104,7 @@
  {
   "q": "Variational FDV above $1B one day after launch?",
   "cid": "0x88b2827dd9bb9b3ebd4f229561a7606bd2bbdedbf3dfbb9c563e1e7dd2673747",
-  "reward": 0.0005135920016807508,
+  "reward": 0.0009384621122489999,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -108,7 +114,7 @@
  {
   "q": "Tesla and SpaceX merger officially announced by June 30, 2027?",
   "cid": "0x4ef1ca263fc36cfb21a80adeefd20de4aa2c82c793b66a2cae4b9e290446323e",
-  "reward": 0.0004167957626589175,
+  "reward": 0.001387074016356788,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -118,7 +124,7 @@
  {
   "q": "Will OpenAI's IPO valuation be less than $1T?",
   "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
-  "reward": 0.0015394857574571397,
+  "reward": 0.0028223905553380895,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
