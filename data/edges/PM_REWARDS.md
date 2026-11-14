@@ -2,7 +2,7 @@
 
 Assumes $1000 resting per market, quoted at 50% of max spread on both sides, and that competing liquidity stays as it is now. Only open markets accepting orders with a future end date.
 
-Markets with live rewards: 3428; pool $23,461/day. Open and scored: 274.
+Markets with live rewards: 3428; pool $23,461/day. Open and scored: 865.
 
 ## A. Competitive books (real two-sided market already exists)
 
@@ -22,8 +22,8 @@ Markets with live rewards: 3428; pool $23,461/day. Open and scored: 274.
 | 12 | [Variational FDV above $1B one day after launch?](https://polymarket.com/market/variational-fdv-above-1b-one-day-after-launch-636-229-681) | 50 | 4.5 | 100 | 0.49 | 2.0 | 39395 | 264 | 49.8% | 24.92 | 2028-01-01 |
 | 13 | [Will Anthropic's IPO valuation be between $1.50T and $1.75T?](https://polymarket.com/market/will-anthropics-ipo-valuation-be-between-1pt50t-and-1pt75t-12) | 53 | 4.5 | 50 | 0.509 | 1.6 | 3382 | 387 | 40.4% | 21.39 | 2028-01-01 |
 | 14 | [Tesla and SpaceX merger officially announced by December 31?](https://polymarket.com/market/tesla-and-spacex-merger-officially-announced-by-december-31) | 100 | 3.5 | 100 | 0.28 | 2.0 | 8629 | 965 | 21.2% | 21.17 | 2027-01-01 |
-| 15 | [Robert Pattinson announced as next James Bond?](https://polymarket.com/market/robert-pattinson-announced-as-next-james-bond) | 25 | 6.5 | 100 | 0.43 | 2.0 | 12156 | 52 | 83.8% | 20.94 | 2026-12-31 |
-| 16 | [Will Nvidia’s market capitalization be less than $4.00T at the end of 2026?](https://polymarket.com/market/will-nvidias-market-capitalization-be-less-than-3pt50t-at-the-end-of-2026-1785882876109) | 55 | 4.5 | 20 | 0.498 | 1.7 | 2989 | 432 | 37.7% | 20.75 | 2026-12-31 |
+| 15 | [Will Nvidia’s market capitalization be less than $4.00T at the end of 2026?](https://polymarket.com/market/will-nvidias-market-capitalization-be-less-than-3pt50t-at-the-end-of-2026-1785882876109) | 55 | 4.5 | 20 | 0.498 | 1.7 | 2989 | 423 | 38.2% | 21.03 | 2026-12-31 |
+| 16 | [Robert Pattinson announced as next James Bond?](https://polymarket.com/market/robert-pattinson-announced-as-next-james-bond) | 25 | 6.5 | 100 | 0.43 | 2.0 | 12156 | 52 | 83.8% | 20.94 | 2026-12-31 |
 | 17 | [Predict.fun FDV above $1B one day after launch?](https://polymarket.com/market/predictfun-fdv-above-1b-one-day-after-launch) | 50 | 4.5 | 100 | 0.456 | 2.3 | 24128 | 399 | 39.6% | 19.80 | 2028-01-01 |
 | 18 | [Will Jensen Huang be the #1 searched person on Google this year?](https://polymarket.com/market/will-jensen-huang-be-the-1-searched-person-on-google-this-year-20260717214426300) | 196 | 4.5 | 50 | 0.385 | 1.0 | 68695 | 2,591 | 9.2% | 17.99 | 2026-12-31 |
 | 19 | [Will the 10-year Japanese government bond yield on the last reported day of 2026 be betwee](https://polymarket.com/market/will-the-10-year-japanese-government-bond-yield-on-the-last-reported-day-of-2026-be-between-2pt6-and-2pt8) | 77 | 4.5 | 20 | 0.276 | 0.4 | 0 | 864 | 23.3% | 17.91 | 2027-02-01 |
@@ -59,9 +59,9 @@ Top 10 A combined: $364.90/day on $10,000.
 | 12 | [Will Aneyas Williams be the 2026 D1 Rushing Yards Leader?](https://polymarket.com/market/will-aneyas-williams-be-the-2026-d1-rushing-yards-leader-20260803210835734) | 19 | 4.5 | 20 | 0.154 | 30.2 | 20 | 0 | 100.0% | 19.00 | 2027-01-04 |
 | 13 | [Will Radovan Višković be the next Chairman of the Council of Ministers of Bosnia and Herze](https://polymarket.com/market/will-radovan-vikovi-be-the-next-chairman-of-the-council-of-ministers-of-bosnia-and-herzegovina) | 11 | 8.5 | 20 | 0.382 | 75.6 | 0 | 0 | 100.0% | 11.00 | 2028-08-01 |
 | 14 | [Will OpenAI's public ticker be $OAI?](https://polymarket.com/market/will-openais-public-ticker-be-oai) | 10 | 4.5 | 100 | 0.53 | 34.0 | 0 | 0 | 100.0% | 10.00 | 2028-01-01 |
-| 15 | [Will Zach Charbonnet finish the 2026-27 NFL regular season with the most rushing touchdown](https://polymarket.com/market/will-zach-charbonnet-finish-the-2026-27-nfl-regular-season-with-the-most-rushing-touchdowns-20260715212357152) | 9 | 4.5 | 20 | 0.208 | 39.6 | 0 | 0 | 100.0% | 9.00 | 2027-01-27 |
+| 15 | [Will Zach Charbonnet finish the 2026-27 NFL regular season with the most rushing touchdown](https://polymarket.com/market/will-zach-charbonnet-finish-the-2026-27-nfl-regular-season-with-the-most-rushing-touchdowns-20260715212357152) | 9 | 4.5 | 20 | 0.209 | 39.8 | 0 | 0 | 100.0% | 9.00 | 2027-01-27 |
 | 16 | [Will Minnesota Vikings finish the 2026-27 NFL regular season with the most sacks?](https://polymarket.com/market/will-minnesota-vikings-finish-the-2026-27-nfl-regular-season-with-the-most-sacks-20260715221610078) | 9 | 4.5 | 20 | 0.372 | 48.1 | 0 | 0 | 100.0% | 9.00 | 2027-01-27 |
-| 17 | [Will Pittsburgh Steelers finish the 2026-27 NFL regular season with the most sacks?](https://polymarket.com/market/will-pittsburgh-steelers-finish-the-2026-27-nfl-regular-season-with-the-most-sacks-20260715221610062) | 8 | 4.5 | 20 | 0.339 | 67.1 | 0 | 0 | 100.0% | 8.00 | 2027-01-27 |
-| 18 | [Will Conor McGregor fight Jorge Masvidal next?](https://polymarket.com/market/will-conor-mcgregor-fight-jorge-masvidal-next-2026081022562509202) | 8 | 4.5 | 20 | 0.181 | 31.5 | 0 | 0 | 100.0% | 8.00 | 2027-07-12 |
-| 19 | [Will Olara Otunnu be the next Secretary-General of the United Nations?](https://polymarket.com/market/will-olara-otunnu-be-the-next-secretary-general-of-the-united-nations) | 7 | 6.5 | 20 | 0.11 | 20.8 | 0 | 0 | 100.0% | 7.00 | 2027-07-01 |
-| 20 | [Will Green Bay Packers finish the 2026-27 NFL regular season with the most sacks?](https://polymarket.com/market/will-green-bay-packers-finish-the-2026-27-nfl-regular-season-with-the-most-sacks-20260715221610077) | 7 | 4.5 | 20 | 0.3 | 59.7 | 0 | 0 | 100.0% | 7.00 | 2027-01-27 |
+| 17 | [Will Pittsburgh Steelers finish the 2026-27 NFL regular season with the most sacks?](https://polymarket.com/market/will-pittsburgh-steelers-finish-the-2026-27-nfl-regular-season-with-the-most-sacks-20260715221610062) | 8 | 4.5 | 20 | 0.339 | 67.2 | 0 | 0 | 100.0% | 8.00 | 2027-01-27 |
+| 18 | [Will Indiana Pacers receive the first overall pick at the 2027 NBA Draft Lottery?](https://polymarket.com/market/will-indiana-pacers-receive-the-first-overall-pick-at-the-2027-nba-draft-lottery) | 8 | 4.5 | 20 | 0.309 | 55.4 | 0 | 0 | 100.0% | 8.00 | 2027-06-02 |
+| 19 | [Will Conor McGregor fight Jorge Masvidal next?](https://polymarket.com/market/will-conor-mcgregor-fight-jorge-masvidal-next-2026081022562509202) | 8 | 4.5 | 20 | 0.181 | 31.5 | 0 | 0 | 100.0% | 8.00 | 2027-07-12 |
+| 20 | [Will Olara Otunnu be the next Secretary-General of the United Nations?](https://polymarket.com/market/will-olara-otunnu-be-the-next-secretary-general-of-the-united-nations) | 7 | 6.5 | 20 | 0.11 | 20.8 | 0 | 0 | 100.0% | 7.00 | 2027-07-01 |
