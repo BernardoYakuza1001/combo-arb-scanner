@@ -12,7 +12,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.01007812197144559,
+  "reward": 0.010566994506275428,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.005199159979568317,
+  "reward": 0.005780643407911883,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,17 +32,23 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.022715010838245533,
+  "reward": 0.026229242064703007,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794684012.768332,
+    "kind": "pause",
+    "mid": 0.214
+   }
+  ]
  },
  {
   "q": "Will J.D. Vance announce a presidential run before 2028?",
   "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
-  "reward": 0.011244776283113038,
+  "reward": 0.013613900729732054,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +74,7 @@
  {
   "q": "Will Russia capture Kozacha Lopan by December 31, 2026?",
   "cid": "0x2d7da8aeba11b38dc7733150b53a7b7f5fc6d8e68571d671a11377468bbd8b74",
-  "reward": 0.005140747132514053,
+  "reward": 0.0055176764810399665,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +84,7 @@
  {
   "q": "Will OpenAI's IPO valuation be less than $1T?",
   "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
-  "reward": 0.019616708687122238,
+  "reward": 0.020870876911206957,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
