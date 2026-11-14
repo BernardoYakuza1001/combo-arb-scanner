@@ -1,16 +1,16 @@
-# PMMM paper run — 2026-11-14 18:12 UTC, 0.67 h
+# PMMM paper run — 2026-11-14 18:12 UTC, 0.75 h
 
 7 markets, $200 each ($1,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.11  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.11**
+**Rewards accrued: $0.12  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.12**
 Per day at this pace: rewards $3.92, net $+3.92
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.172 | 20.4% | 39/41 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Erzurumspor be relegated from the 2026-27 Süper Lig?](https://polymarket.com/market/will-erzurumspor-be-relegated-from-super-lig-2026-27) | 5 | 0.236 | 20.8% | 41/41 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will OpenAI's IPO valuation be less than $1T?](https://polymarket.com/market/will-openais-ipo-valuation-be-less-than-1t) | 17 | 0.243 | 2.2% | 41/41 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 14 | 0.121 | 2.1% | 41/41 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Kylian Mbappé (Real Madrid) be the top goalscorer of th](https://polymarket.com/market/will-kylian-mbappe-real-madrid-be-the-top-goalscorer-of-the-2026-27-la-liga-season) | 11 | 0.455 | 1.6% | 41/41 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Data center utility cost protection become law this yea](https://polymarket.com/market/will-data-center-utility-cost-protection-become-law-this-year) | 5 | 0.195 | 3.5% | 2/41 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (0) / 2 / - |
-| [Will MegaETH hit $0.10 by December 31, 2026?](https://polymarket.com/market/will-megaeth-hit-0pt10-by-december-31-2026) | 5 | 0.195 | 0.0% | 0/41 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.182 | 20.4% | 44/46 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Erzurumspor be relegated from the 2026-27 Süper Lig?](https://polymarket.com/market/will-erzurumspor-be-relegated-from-super-lig-2026-27) | 5 | 0.236 | 20.9% | 46/46 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will OpenAI's IPO valuation be less than $1T?](https://polymarket.com/market/will-openais-ipo-valuation-be-less-than-1t) | 17 | 0.243 | 2.2% | 46/46 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 14 | 0.121 | 2.0% | 46/46 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Kylian Mbappé (Real Madrid) be the top goalscorer of th](https://polymarket.com/market/will-kylian-mbappe-real-madrid-be-the-top-goalscorer-of-the-2026-27-la-liga-season) | 11 | 0.455 | 1.6% | 46/46 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Data center utility cost protection become law this yea](https://polymarket.com/market/will-data-center-utility-cost-protection-become-law-this-year) | 5 | 0.19 | 3.5% | 2/46 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (0) / 2 / - |
+| [Will MegaETH hit $0.10 by December 31, 2026?](https://polymarket.com/market/will-megaeth-hit-0pt10-by-december-31-2026) | 5 | 0.195 | 0.0% | 0/46 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
