@@ -1,0 +1,88 @@
+[
+ {
+  "q": "Will MegaETH hit $0.10 by December 31, 2026?",
+  "cid": "0x36b12bcf92bd007dd1e4e86d067ca6fe518936d36f4451851190a1bb0d83d26f",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
+  "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
+  "reward": 0.0007993516365551041,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Solana hit $60 or $140 first?",
+  "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Kristi Noem leave the Trump administration before 2027?",
+  "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
+  "reward": 0.0027201380877855423,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will J.D. Vance announce a presidential run before 2028?",
+  "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
+  "reward": 0.0030130093827162134,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": [
+   {
+    "ts": 1794679542.734196,
+    "kind": "pause",
+    "mid": 0.613
+   }
+  ]
+ },
+ {
+  "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
+  "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
+  "reward": 0.0037556049394792687,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Russia capture Kozacha Lopan by December 31, 2026?",
+  "cid": "0x2d7da8aeba11b38dc7733150b53a7b7f5fc6d8e68571d671a11377468bbd8b74",
+  "reward": 0.00010865185400419324,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will OpenAI's IPO valuation be less than $1T?",
+  "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
+  "reward": 0.0015766525030336547,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ }
+]
