@@ -2,7 +2,7 @@
  {
   "q": "Will Harry Styles perform at Coachella 2027?",
   "cid": "0x253a13a522bd79a5c9471e0075f9f7a3d2b6c3df4668e2bc87fb784aba935626",
-  "reward": 1.050936510133668,
+  "reward": 1.1054198664935528,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.09466778424492889,
+  "reward": 0.09838077200213419,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Variational FDV above $500M one day after launch?",
   "cid": "0x76e7f72aef4e8533e5f3e6672f223899682d52849e022cac8592a7a4f56cb1a7",
-  "reward": 0.05729117483596035,
+  "reward": 0.06370956206399671,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Russia capture all of Bilytske by December 31?",
   "cid": "0x60b8efcdc90f3e209a0c325d5bff56145d83aed9e064714aa941aa2c4552644a",
-  "reward": 0.10479580551224732,
+  "reward": 0.11354362191526023,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Edmonton Oilers be the 2027 NHL Western Conference Champion?",
   "cid": "0x51562d49cee0823bf3876df6578b663096d12b5c2fc58bf5ca72f6ba5cf88a8b",
-  "reward": 0.0013897113990360636,
+  "reward": 0.0015258528934001003,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +52,7 @@
  {
   "q": "Will Nicol\u00e1s Maduro be the #1 searched person on Google in the US this year?",
   "cid": "0x205bc75ca035634d71abd9231aa393926b2361f04f1a78c7480e0096ee1c920a",
-  "reward": 0.03277721932117691,
+  "reward": 0.0340297462837755,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
