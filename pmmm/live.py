@@ -29,7 +29,8 @@ pmmm\\.env:
 import os, sys, time, json, datetime as dt, requests
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from pmmm import bot
-from pmmm.bot import CFG, adj_mid, target, http, CLOB
+from pmmm.bot import CFG, adj_mid, target, http, CLOB, fair_mid, DATA
+from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STOP = os.path.join(HERE, "STOP")
@@ -40,6 +41,7 @@ DRY = os.environ.get("PMMM_DRY") == "YES"
 MAX_LOSS = float(os.environ.get("PMMM_MAX_LOSS", "30"))
 RESELECT_S = float(os.environ.get("PMMM_RESELECT_H", "6")) * 3600
 LIVE_CYCLE_S = float(os.environ.get("PMMM_CYCLE_S", "8"))
+TAPE_REFRESH_S = 60
 
 def keep_awake(on=True):
     """Ask Windows not to sleep while this process runs (process-level request, reverts when it exits)."""
@@ -129,6 +131,10 @@ class Live:
         o = self.c.get_order(oid) or {}
         return float(o.get("size_matched") or 0), str(o.get("status") or "")
 
+    def open_map(self):
+        """All my open orders in one call: id -> shares matched so far."""
+        return {o["id"]: float(o.get("size_matched") or 0) for o in (self.c.get_orders() or []) if o.get("id")}
+
     def scoring(self, oids):
         if not oids: return {}
         r = self.c.are_orders_scoring(self.OSP(orderIds=oids))
@@ -139,6 +145,20 @@ class Live:
         h = self.l2h(self.c.signer, self.c.creds, self.RA(method="GET", request_path=path))
         r = requests.get(CLOB + path, headers=h, params={"date": day, "maker_address": self.funder}, timeout=20)
         return r.json() if r.ok else {"error": r.status_code}
+
+def ext_book(b, mine):
+    """The order book without my own resting orders, so my quotes never anchor themselves.
+    mine: my live orders in this market (slot 'Y' rests in the YES bids at price; slot 'N' rests in the YES asks at 1 - price)."""
+    bids = {round(float(l["price"]), 6): float(l["size"]) for l in b["bids"]}
+    asks = {round(float(l["price"]), 6): float(l["size"]) for l in b["asks"]}
+    for sd, o in mine:
+        rem = o["size"] - o["matched"]
+        side, px = (bids, round(o["price"], 6)) if sd == "Y" else (asks, round(1 - o["price"], 6))
+        if px in side:
+            side[px] -= rem
+            if side[px] <= 1e-6: del side[px]
+    return {"bids": [{"price": str(p), "size": str(z)} for p, z in bids.items()],
+            "asks": [{"price": str(p), "size": str(z)} for p, z in asks.items()]}
 
 def positions(funder):
     """Shares currently held, by token id (Data API v2)."""
@@ -174,7 +194,7 @@ def main():
     L = Live()
     usdc = L.usdc(); cap = min(MAX_TOTAL, usdc)
     log(ev="start", dry=DRY, usdc=round(usdc, 2), cap=cap, per_market=CFG["cap"], n=CFG["n_markets"])
-    if cap < CFG["cap"]: log(ev="abort", why=f"USDC ${usdc:.2f} is below one market's size ${CFG['cap']:.0f}"); return
+    if cap < max(CFG["cap"], 20): log(ev="abort", why=f"USDC ${usdc:.2f} is below one market's size ${CFG['cap']:.0f}"); return
     if not DRY: L.cancel_all()
     keep_awake(True)
     def load_markets(old=()):
@@ -193,7 +213,7 @@ def main():
     mk = load_markets()
     if not mk: log(ev="abort", why="no market passed the filters"); return
     live = {}; errors = 0; t0 = time.time(); last_score = 0; scoring_frac = "n/a"; last_day = None
-    last_select = t0; baseline = None; retired_pnl = 0.0; hb_flag = {"stop": False}
+    last_select = t0; baseline = None; retired_pnl = 0.0; hb_flag = {"stop": False}; tapes = {}; cycles = 0
     if not DRY: start_heartbeat(L, hb_flag)
     try:
         while not os.path.exists(STOP):
@@ -210,7 +230,22 @@ def main():
                         retired_pnl += m.mtm(); log(ev="market_dropped", q=m.q[:50], yes=m.yes, no=m.no)
                     mk = new
                 except Exception as e: log(ev="reselect_err", err=str(e)[:200])
-            bk = {b.get("asset_id"): b for b in (http("POST", f"{CLOB}/books", json=[{"token_id": m.tok} for m in mk]) or [])}
+            bk = {}
+            for i in range(0, len(mk), 200):
+                for b in (http("POST", f"{CLOB}/books", json=[{"token_id": m.tok} for m in mk[i:i + 200]]) or []): bk[b.get("asset_id")] = b
+            # my open orders in one call (falls back to per-order checks if it fails)
+            omap = None
+            if not DRY and live:
+                try: omap = L.open_map()
+                except Exception as e: log(ev="open_orders_err", err=str(e)[:150])
+            # trade tape for markets whose book is wide (needed to anchor the price); refreshed at most once a minute
+            need = [m for m in mk if getattr(m, "wide", True) and now - tapes.get(m.cid, (0, []))[0] > TAPE_REFRESH_S]
+            if need:
+                def tape(m):
+                    tr = http("GET", f"{DATA}/v2/trades", params={"condition_id": m.cid, "limit": 100})
+                    return (tr or {}).get("data", []) if isinstance(tr, dict) else (tr or [])
+                with ThreadPoolExecutor(8) as ex:
+                    for m, tr in zip(need, ex.map(tape, need)): tapes[m.cid] = (now, tr)
             exposure = sum(m.yes * (m.mid or .5) + m.no * (1 - (m.mid or .5)) for m in mk) + \
                        sum(o["price"] * (o["size"] - o["matched"]) for o in live.values() if not o.get("sell"))
             for m in mk:
@@ -231,7 +266,8 @@ def main():
                     for sd in ("Y", "N"):
                         o = live.get((m.cid, sd))
                         if not o or DRY: continue
-                        got, status = L.matched(o["oid"])
+                        if omap is not None and o["oid"] in omap: got, status = omap[o["oid"]], "LIVE"
+                        else: got, status = L.matched(o["oid"])
                         if got > o["matched"]:
                             d = got - o["matched"]; o["matched"] = got
                             if o.get("sell"):       # exit order: sold held shares of the other outcome
@@ -248,9 +284,14 @@ def main():
                             live.pop((m.cid, sd), None)
                     s = min(m.yes, m.no)
                     if s > 0: m.yes -= s; m.no -= s; m.merged += s; m.cash += s; log(ev="pair_locked", q=m.q[:50], sets=round(s, 2))
-                    # 2) decide
-                    mid = adj_mid(b, m.minsz)
-                    if mid is None: continue
+                    # 2) decide (on the book without my own orders)
+                    b = ext_book(b, [(sd, live[(m.cid, sd)]) for sd in ("Y", "N") if (m.cid, sd) in live])
+                    mid = fair_mid(m, b, tapes.get(m.cid, (0, []))[1], now) if b["bids"] and b["asks"] else None
+                    if mid is None:        # nothing to anchor on: stay out of this market
+                        for sd in ("Y", "N"):
+                            o = live.pop((m.cid, sd), None)
+                            if o and not DRY: L.cancel(o["oid"])
+                        continue
                     m.mid = mid; m.mids.append((now, mid))
                     if m.yes > 0 and getattr(m, "avg_y", None) is None: m.avg_y = mid            # carried-in position: stop measured from here
                     if m.no > 0 and getattr(m, "avg_n", None) is None: m.avg_n = 1 - mid
@@ -319,7 +360,8 @@ def main():
                     if day != last_day: last_day = day; log(ev="earnings", day=day, result=L.earnings(day))
                 except Exception as e: log(ev="scoring_err", err=str(e)[:200])
             # loss stop (trading P&L since start; rewards are paid separately and not counted here)
-            if all(m.mid is not None for m in mk):
+            cycles += 1
+            if cycles >= 2:
                 cur = pnl(mk) + retired_pnl
                 if baseline is None: baseline = cur
                 if cur - baseline < -MAX_LOSS:

@@ -123,3 +123,69 @@ def test_exit_order_then_stop_loss(tmp_path, monkeypatch):
     assert len(st["stops"]) == 1 and st["stops"][0][0] == "YES" and m.yes == 0
     sl = next(e for e in ev if e["ev"] == "stop_loss"); assert 0 < sl["est_loss"] < 30
     assert names.index("exit_quote") < names.index("stop_loss")
+
+
+def test_thin_mode_anchor_ignores_own_orders_and_follows_fills(tmp_path, monkeypatch):
+    """Wide book 0.30/0.80, last trade 0.36. The bot must quote around 0.36, must not re-anchor on its own
+    resting orders, must move down after its YES bid is hit, and must stay out when there is no trade."""
+    from pmmm import live, bot
+    monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
+    monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
+    monkeypatch.setattr(live, "MAX_LOSS", 500.0)
+    for k, v in dict(ahead_x=0, stop_c=1.0, cap=1.0, quote_frac=0.75, news_move=1.0).items(): monkeypatch.setitem(bot.CFG, k, v)
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    st = dict(orders={}, n=0, cycle=0, cancelled=[], tape_a=[dict(token_id="YES", price="0.36", size="30", timestamp=time.time() - 3600)])
+    class C:
+        def post_heartbeat(self, hid): return {"heartbeat_id": "h"}
+    class FakeLive:
+        funder = "0xF00"; c = C()
+        def usdc(self): return 5000.0
+        def place(self, tok, px, sz, tick, sell=False):
+            st["n"] += 1; oid = f"o{st['n']}"; st["orders"][oid] = dict(tok=tok, px=px, sz=sz, sell=sell, matched=0.0, live=True); return oid
+        def cancel(self, oid): st["orders"][oid]["live"] = False; st["cancelled"].append(oid)
+        def cancel_all(self): pass
+        def open_map(self): return {i: o["matched"] for i, o in st["orders"].items() if o["live"]}
+        def matched(self, oid): o = st["orders"][oid]; return o["matched"], ("LIVE" if o["live"] else "MATCHED")
+        def scoring(self, ids): return {}
+        def earnings(self, d): return {}
+        def stop_sell(self, *a): raise AssertionError("stop-loss must be off in thin mode")
+    monkeypatch.setattr(live, "Live", FakeLive)
+    A = bot.Mkt(dict(cid="0xA", q="Anchored market", slug="a", tok="YES", tno="NO", v=4.5, minsz=20, rate=100, tick=0.01))
+    B = bot.Mkt(dict(cid="0xB", q="No trades market", slug="b", tok="YES2", tno="NO2", v=4.5, minsz=20, rate=100, tick=0.01))
+    monkeypatch.setattr(bot, "select", lambda: [A, B]); monkeypatch.setattr(live, "positions", lambda f: {})
+    def book_for(tok):
+        bids = {0.20: 100.0}; asks = {0.80: 100.0}
+        for o in st["orders"].values():           # the exchange shows my resting orders in the book too
+            if not o["live"] or o["matched"] >= o["sz"]: continue
+            if o["tok"] == tok and not o["sell"]: bids[round(o["px"], 2)] = bids.get(round(o["px"], 2), 0) + o["sz"]
+            if o["tok"] == ("NO" if tok == "YES" else "NO2") and not o["sell"]: asks[round(1 - o["px"], 2)] = asks.get(round(1 - o["px"], 2), 0) + o["sz"]
+            if o["tok"] == tok and o["sell"]: asks[round(o["px"], 2)] = asks.get(round(o["px"], 2), 0) + o["sz"]
+        return {"asset_id": tok, "bids": [{"price": str(p), "size": str(z)} for p, z in bids.items()], "asks": [{"price": str(p), "size": str(z)} for p, z in asks.items()]}
+    snap = {}
+    def fake_http(method, url, **kw):
+        if method == "GET":      # trade tape
+            return {"data": st["tape_a"] if kw["params"]["condition_id"] == "0xA" else []}
+        st["cycle"] += 1
+        if st["cycle"] == 4:     # someone hits my YES bid: fill + a print at my price
+            snap["before"] = {i: dict(o) for i, o in st["orders"].items() if o["live"]}
+            oid, o = next((i, o) for i, o in st["orders"].items() if o["live"] and o["tok"] == "YES" and not o["sell"])
+            o["matched"] = o["sz"]; o["live"] = False
+            st["tape_a"] = st["tape_a"] + [dict(token_id="YES", price=str(o["px"]), size=str(o["sz"]), timestamp=time.time())]
+            snap["fill_px"] = o["px"]
+        if st["cycle"] >= 8: open(live.STOP, "w").close()
+        return [book_for("YES"), book_for("YES2")]
+    monkeypatch.setattr(live, "http", fake_http)
+    monkeypatch.setattr(live, "TAPE_REFRESH_S", -1)      # refresh the tape every cycle
+    live.main()
+    ev = [json.loads(l) for l in open(live.LOG)]
+    first = [e for e in ev if e["ev"] == "quote"][:2]
+    assert {e["side"] for e in first} == {"Y", "N"}
+    yq = next(e for e in first if e["side"] == "Y"); nq = next(e for e in first if e["side"] == "N")
+    assert 0.36 - 0.045 < yq["px"] < 0.36 and 0.64 - 0.045 < nq["px"] < 0.64 and yq["sz"] == 20      # around last trade, minimum size
+    assert all("No trades" not in e.get("q", "") for e in ev if e["ev"] in ("quote", "exit_quote"))     # market B never quoted
+    # cycles 2-3: own orders are in the book, yet nothing was re-quoted (no self-anchoring, no churn)
+    assert len(snap["before"]) == 2 and not [c for c in st["cancelled"] if c in ("o1", "o2") and st["cycle"] < 4]
+    # after the fill: an exit SELL of YES is posted, and it is anchored at the fill price (lower than before)
+    ex = [e for e in ev if e["ev"] == "exit_quote"]
+    assert ex and ex[0]["sell"] == "YES" and snap["fill_px"] < ex[0]["px"] < snap["fill_px"] + 0.045
+    assert any(e["ev"] == "fill" for e in ev) and A.yes == 20

@@ -112,6 +112,24 @@ def apply_trade(o, yes_px, size, ts):
     return f
 
 # ---------------- market state ----------------
+def fair_mid(m, book, trades, now):
+    """Midpoint to quote around, or None when there is nothing to anchor on.
+    Normal book: size-cutoff-adjusted midpoint. Wide/empty book (spread > 2x max spread): the last traded
+    price in YES terms, if it is recent (14 days) and sits inside the book; otherwise None (do not quote)."""
+    mid = adj_mid(book, m.minsz)
+    if mid is None: return None
+    bb = max(float(l["price"]) for l in book["bids"]); ba = min(float(l["price"]) for l in book["asks"])
+    if (ba - bb) * 100 <= 2 * m.v: m.wide = False; return mid
+    m.wide = True; last = None
+    for t in trades or []:
+        tt = tsec(t.get("timestamp"))
+        if tt is None or t.get("token_id") not in (m.tok, m.tno): continue
+        try: px = float(t["price"])
+        except Exception: continue
+        if last is None or tt > last[0]: last = (tt, px if t.get("token_id") == m.tok else 1 - px)
+    if last is None or now - last[0] > 14 * 86400 or not (bb + 2 * m.tick < last[1] < ba - 2 * m.tick): return None
+    return last[1]
+
 class Mkt:
     def __init__(self, r):
         self.cid, self.q, self.slug = r["cid"], r["q"], r["slug"]
@@ -164,20 +182,10 @@ def step(m, book, trades, now):
     mid = adj_mid(book, m.minsz)
     if mid is None: return
     if not hasattr(m, "t_start"): m.t_start = now
-    # Wide/empty book: the book's middle says nothing about fair value. Centre on the last traded price
-    # (in YES terms); with no trade in the last 14 days there is no anchor, so do not quote.
-    _bb = max(float(l["price"]) for l in book["bids"]); _ba = min(float(l["price"]) for l in book["asks"])
-    if (_ba - _bb) * 100 > 2 * m.v:
-        last = None
-        for t in trades:
-            tt = tsec(t.get("timestamp"))
-            if tt is None or t.get("token_id") not in (m.tok, m.tno): continue
-            try: px = float(t["price"])
-            except Exception: continue
-            if last is None or tt > last[0]: last = (tt, px if t.get("token_id") == m.tok else 1 - px)
-        if last is None or now - last[0] > 14 * 86400 or not (_bb + 2 * m.tick < last[1] < _ba - 2 * m.tick):
-            m.orders = {"Y": None, "N": None}; m.mid = mid; m.no_anchor = True; return
-        mid = last[1]; m.no_anchor = False
+    mid = fair_mid(m, book, trades, now)
+    if mid is None:
+        m.orders = {"Y": None, "N": None}; m.no_anchor = True; return
+    m.no_anchor = False
     m.mid = mid
     m.mids.append((now, mid))
     while m.mids and now - m.mids[0][0] > CFG["news_win_s"]: m.mids.popleft()
@@ -293,6 +301,12 @@ def select():
         return r["rate"] * mine / (mine + r["others"])
     rows.sort(key=lambda r: -est(r))
     if thin:
+        rows = [r for r in rows if r["minsz"] <= float(os.environ.get("PMMM_MAX_MINSZ", "100"))]
+        z = [r for r in rows if r.get("comp", 0) == 0]
+        print(f"thin: Polymarket's own competitiveness is 0 in {len(z)} of {len(rows)} candidates (pool ${sum(r['rate'] for r in z):,.0f}/day); "
+              f"my book check says nobody quotes in {sum(1 for r in rows if r.get('empty_book'))}", flush=True)
+        json.dump([dict(q=r["q"], rate=r["rate"], comp=r.get("comp"), others=r["others"], empty=r.get("empty_book"), minsz=r["minsz"], v=r["v"], mid=r["mid"], end=r["end"]) for r in rows],
+                  open("data/edges/pm_thin_candidates.json", "w"), indent=1)
         print("thin mode candidates:", len(rows), "pool $/day", round(sum(r["rate"] for r in rows)), flush=True)
         return [Mkt(r) for r in rows[:CFG["n_markets"]]]
     # Jump filter: paper runs lost money on "cross" fills, where the price jumped through the quote on news.

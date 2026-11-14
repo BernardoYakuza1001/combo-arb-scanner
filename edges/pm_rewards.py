@@ -115,7 +115,7 @@ def main():
                          others=round(others), share=round(share, 3), earn=round(earn, 2),
                          apr=round(earn * 365 / CAPITAL * 100, 1),
                          end=str(m.get("end_date") or m.get("end_date_iso") or "")[:10],
-                         bid=bb, ask=ba, tok=tok, tno=tno, tick=float(b.get("tick_size") or 0.01)))
+                         bid=bb, ask=ba, tok=tok, tno=tno, comp=float(m.get("market_competitiveness") or 0), tick=float(b.get("tick_size") or 0.01)))
     rows.sort(key=lambda r: -r["earn"])
     print(f"mirror check: NO-book bid prices seen as YES asks in {mirror_hits}/{mirror_n} markets")
     # status check on Gamma for the top candidates: must be open, accepting orders, end in the future
