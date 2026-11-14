@@ -1,14 +1,8 @@
 [
  {
   "token_id": "Y",
-  "price": "0.46",
-  "size": "212",
+  "price": "0.41000000000000003",
+  "size": "217",
   "timestamp": 20
- },
- {
-  "token_id": "Y",
-  "price": "0.54",
-  "size": "212",
-  "timestamp": 21
  }
 ]
