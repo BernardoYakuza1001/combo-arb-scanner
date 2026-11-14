@@ -27,12 +27,18 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794693129.1309478,
+    "kind": "pause",
+    "mid": 0.5900000000000001
+   }
+  ]
  },
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.04396827849737295,
+  "reward": 0.05242371666994467,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
