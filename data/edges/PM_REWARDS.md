@@ -2,7 +2,7 @@
 
 Assumes $1000 resting per market, quoted at 50% of max spread on both sides, and that competing liquidity stays as it is now. Only open markets accepting orders with a future end date.
 
-Markets with live rewards: 3468; pool $23,013/day. Open and scored: 277.
+Markets with live rewards: 3469; pool $23,012/day. Open and scored: 277.
 
 ## A. Competitive books (real two-sided market already exists)
 
@@ -48,7 +48,7 @@ Top 10 A combined: $313.54/day on $10,000.
 | 1 | [Will Kewan Lacy be the 2026 D1 Rushing Yards Leader?](https://polymarket.com/market/will-kewan-lacy-be-the-2026-d1-rushing-yards-leader-20260803210835751) | 72 | 4.5 | 20 | 0.433 | 86.4 | 0 | 0 | 100.0% | 72.00 | 2027-01-04 |
 | 2 | [Will NewJeans release a song in 2026?](https://polymarket.com/market/will-newjeans-release-a-song-in-2026) | 50 | 6.5 | 20 | 0.385 | 23.0 | 60 | 0 | 100.0% | 50.00 | 2027-01-01 |
 | 3 | [Will the highest score achieved on Humanity’s Last Exam in 2026 be 70% or higher?](https://polymarket.com/market/will-the-highest-score-achieved-on-humanitys-last-exam-in-2026-be-70-or-higher-20260723190142925) | 40 | 6.5 | 20 | 0.53 | 28.0 | 380 | 0 | 100.0% | 40.00 | 2027-01-01 |
-| 4 | [Will the Ornn H200 Index hit $4.00 (LOW) by December 31, 2026?](https://polymarket.com/market/will-the-ornn-h200-index-hit-4pt00-low-by-december-31-2026-20260709171105509) | 40 | 6.5 | 20 | 0.247 | 17.6 | 0 | 0 | 100.0% | 40.00 | 2027-01-01 |
+| 4 | [Will the Ornn H200 Index hit $4.00 (LOW) by December 31, 2026?](https://polymarket.com/market/will-the-ornn-h200-index-hit-4pt00-low-by-december-31-2026-20260709171105509) | 40 | 6.5 | 20 | 0.246 | 17.7 | 0 | 0 | 100.0% | 40.00 | 2027-01-01 |
 | 5 | [Will Sean Dyche be the next head coach of the England national team?](https://polymarket.com/market/will-sean-dyche-be-the-next-head-coach-of-the-england-national-team-20260731023421473) | 34 | 4.5 | 20 | 0.467 | 92.3 | 0 | 0 | 100.0% | 34.00 | 2026-12-31 |
 | 6 | [Will OpenAI launch a new consumer hardware product by December 31, 2026?](https://polymarket.com/market/will-openai-launch-a-new-consumer-hardware-product-by-december-31-2026-538) | 30 | 3.5 | 200 | 0.245 | 21.0 | 501 | 0 | 100.0% | 30.00 | 2027-01-01 |
 | 7 | [Will Jensen Huang be the #1 searched person on Google in the US this year?](https://polymarket.com/market/will-jensen-huang-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940437) | 27 | 4.5 | 50 | 0.179 | 14.1 | 566 | 0 | 100.0% | 27.00 | 2026-12-31 |
@@ -61,7 +61,7 @@ Top 10 A combined: $313.54/day on $10,000.
 | 14 | [Will OpenAI's public ticker be $OAI?](https://polymarket.com/market/will-openais-public-ticker-be-oai) | 10 | 4.5 | 100 | 0.52 | 32.0 | 0 | 0 | 100.0% | 10.00 | 2028-01-01 |
 | 15 | [Will Markwayne Mullin leave the Trump administration before 2027?](https://polymarket.com/market/will-markwayne-mullin-leave-the-trump-administration-before-2027-20260715195455798) | 10 | 4.5 | 200 | 0.225 | 13.0 | 1284 | 0 | 100.0% | 10.00 | 2027-01-01 |
 | 16 | [Will Yaxel Lendeborg win the 2026-27 NBA Rookie of the Year?](https://polymarket.com/market/will-yaxel-lendeborg-win-the-2026-27-nba-rookie-of-the-year-20260624161716890) | 9 | 4.5 | 50 | 0.33 | 10.1 | 337 | 0 | 100.0% | 9.00 | 2027-05-01 |
-| 17 | [Will Zach Charbonnet finish the 2026-27 NFL regular season with the most rushing touchdown](https://polymarket.com/market/will-zach-charbonnet-finish-the-2026-27-nfl-regular-season-with-the-most-rushing-touchdowns-20260715212357152) | 9 | 4.5 | 20 | 0.205 | 40.3 | 0 | 0 | 100.0% | 9.00 | 2027-01-27 |
+| 17 | [Will Zach Charbonnet finish the 2026-27 NFL regular season with the most rushing touchdown](https://polymarket.com/market/will-zach-charbonnet-finish-the-2026-27-nfl-regular-season-with-the-most-rushing-touchdowns-20260715212357152) | 9 | 4.5 | 20 | 0.205 | 40.4 | 0 | 0 | 100.0% | 9.00 | 2027-01-27 |
 | 18 | [Will Radovan Višković be the next Chairman of the Council of Ministers of Bosnia and Herze](https://polymarket.com/market/will-radovan-vikovi-be-the-next-chairman-of-the-council-of-ministers-of-bosnia-and-herzegovina) | 8 | 8.5 | 20 | 0.281 | 55.4 | 0 | 0 | 100.0% | 8.00 | 2028-08-01 |
 | 19 | [Will Detroit Lions finish the 2026-27 NFL regular season with the most sacks?](https://polymarket.com/market/will-detroit-lions-finish-the-2026-27-nfl-regular-season-with-the-most-sacks-20260715221610076) | 7 | 4.5 | 20 | 0.371 | 63.6 | 0 | 0 | 100.0% | 7.00 | 2027-01-27 |
 | 20 | [Will Minnesota Vikings finish the 2026-27 NFL regular season with the most sacks?](https://polymarket.com/market/will-minnesota-vikings-finish-the-2026-27-nfl-regular-season-with-the-most-sacks-20260715221610078) | 7 | 4.5 | 20 | 0.371 | 48.1 | 0 | 0 | 100.0% | 7.00 | 2027-01-27 |
