@@ -1,0 +1,25 @@
+name: research
+on:
+  workflow_dispatch:
+    inputs:
+      script: {default: "edges/pm_bonds.py"}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13"}
+      - run: pip install requests
+      - run: timeout 6000 python -u ${{ github.event.inputs.script }}
+        continue-on-error: true
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "combo-arb-bot"; git config user.email "combo-arb-bot@users.noreply.github.com"
+          git add -A data/edges || true
+          git commit -qm "research: ${{ github.event.inputs.script }}" || exit 0
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push -q && break; sleep 5; done

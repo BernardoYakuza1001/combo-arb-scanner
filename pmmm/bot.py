@@ -27,6 +27,8 @@ CFG = dict(
     max_imb=1.0,              # stop bidding a side once net inventory exceeds this many order sizes
     news_move=0.04, news_win_s=600, pause_s=1800,
     min_days=7,
+    max_jumps=int(os.environ.get("PMMM_MAX_JUMPS", "2")),   # hours in the past week with a move bigger than the quote distance
+    max_move=float(os.environ.get("PMMM_MAX_MOVE", "0.10")),
     ahead_x=float(os.environ.get("PMMM_AHEAD", "0.5")),     # resting size that must sit in front of a quote, in order sizes
     stop_c=float(os.environ.get("PMMM_STOP", "0.04")),    # sell a filled position once the price is this far below entry
     run_s=int(os.environ.get("PMMM_RUN_S", "3600")),
@@ -277,7 +279,7 @@ def select():
         dist = CFG["quote_frac"] * r["v"] / 100
         jumps = sum(1 for x in moves if x >= dist)           # hours in which a quote would have been run over
         r["jumps7d"] = jumps; r["maxmove"] = max(moves)
-        if jumps > CFG.get("max_jumps", 2) or max(moves) > 0.10: continue
+        if jumps > CFG["max_jumps"] or max(moves) > CFG["max_move"]: continue
         r["score"] = est(r) / (1 + jumps)
         picked.append(r)
         if len(picked) >= 3 * CFG["n_markets"]: break

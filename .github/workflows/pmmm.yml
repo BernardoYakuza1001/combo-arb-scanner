@@ -7,11 +7,14 @@ on:
       cap: {default: "200"}
       frac: {default: "0.75"}
       ahead: {default: "0.5"}
+      jumps: {default: "2"}
+      move: {default: "0.10"}
+      tag: {default: "x"}
   push:
     paths: ["pmmm/bot.py"]
   schedule:
     - cron: "3 */6 * * *"
-concurrency: {group: "pmmm-${{ github.event.inputs.ahead || 'default' }}", cancel-in-progress: true}
+concurrency: {group: "pmmm-${{ github.event.inputs.tag || 'default' }}", cancel-in-progress: true}
 permissions:
   contents: write
 jobs:
@@ -31,9 +34,12 @@ jobs:
           PMMM_CAP: ${{ github.event.inputs.cap || '200' }}
           PMMM_FRAC: ${{ github.event.inputs.frac || '0.75' }}
           PMMM_AHEAD: ${{ github.event.inputs.ahead || '0.5' }}
+          PMMM_MAX_JUMPS: ${{ github.event.inputs.jumps || '2' }}
+          PMMM_MAX_MOVE: ${{ github.event.inputs.move || '0.10' }}
+          PMMM_TAG: ${{ github.event.inputs.tag || 'default' }}
         run: |
           export PMMM_RUN_S=$(python -c "print(int(float('$PMMM_RUN_S')*3600))")
-          export PMMM_OUT=data/pmmm/$(date -u +%Y%m%dT%H%M)-a${PMMM_AHEAD}
+          export PMMM_OUT=data/pmmm/$(date -u +%Y%m%dT%H%M)-${PMMM_TAG}
           git config user.name "combo-arb-bot"; git config user.email "combo-arb-bot@users.noreply.github.com"
           ( set +e; sleep 60; while sleep 300; do git add -A data 2>/dev/null || true; git commit -qm "pmmm: progress" && for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push -q && break; sleep 5; done; done ) &
           python -u pmmm/bot.py
