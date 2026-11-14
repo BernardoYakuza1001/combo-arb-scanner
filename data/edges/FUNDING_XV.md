@@ -1,39 +1,39 @@
-# Cross-venue perp funding — 2026-11-14 16:07 UTC
+# Cross-venue perp funding — 2026-11-14 21:06 UTC
 
 Short the perp on the high-funding venue, long the same coin's perp on the low one. Price-neutral; earns the funding difference.
 Net = funding over 7 days minus taker fees for open+close on both legs. 'Past 7d APR' = what the same pair actually paid over the last week.
 
 | Coin | Short on | Long on | Live APR | Past 7d APR | Net 7d (live) | Net 7d (past) | Price gap | Intervals h |
 |---|---|---|---|---|---|---|---|---|
-| SOPH | bitget | gate | 2177% | 26% | 41.53% | 0.28% | -0.26% | 4/4 |
-| KAVA | mexc | kucoin | 1459% | 32% | 27.82% | 0.45% | -1.11% | 4/4 |
-| MSTU | gate | mexc | 611% | 44% | 11.58% | 0.70% | +0.43% | 8/8 |
-| INIT | hl | mexc | 444% | 922% | 8.38% | 17.55% | -1.99% | 1/1 |
-| SAFE | mexc | gate | 442% | 11% | 8.34% | 0.07% | +0.00% | 4/4 |
-| SKL | mexc | gate | 438% | 6% | 8.25% | -0.02% | -0.03% | 4/4 |
-| POWR | mexc | gate | 436% | 58% | 8.21% | 0.97% | -0.55% | 4/4 |
-| MAGIC | mexc | gate | 426% | -3% | 8.03% | -0.19% | -0.15% | 4/8 |
-| F | mexc | gate | 379% | 3% | 7.13% | -0.09% | -0.28% | 4/8 |
-| YFI | kucoin | gate | 379% | 30% | 7.04% | 0.35% | +0.24% | 8/8 |
-| OG | mexc | gate | 369% | -8% | 6.93% | -0.30% | -1.12% | 4/4 |
-| HUMA | mexc | gate | 362% | -27% | 6.80% | -0.66% | +0.00% | 1/1 |
-| GWEI | mexc | gate | 361% | 2% | 6.78% | -0.10% | +0.24% | 4/4 |
-| STO | mexc | gate | 353% | -3% | 6.63% | -0.19% | +0.16% | 4/4 |
-| PNUT | mexc | gate | 341% | 7% | 6.40% | -0.01% | -0.03% | 4/4 |
-| FLOCK | mexc | gate | 331% | -1% | 6.21% | -0.16% | -0.09% | 4/8 |
-| CVX | mexc | gate | 328% | 32% | 6.14% | 0.48% | -0.07% | 4/8 |
-| PROM | mexc | gate | 326% | -39% | 6.11% | -0.90% | +0.06% | 4/4 |
-| HOME | mexc | gate | 318% | 11% | 5.96% | 0.06% | +0.09% | 4/4 |
-| CTSI | mexc | gate | 311% | -4% | 5.82% | -0.22% | -0.26% | 8/8 |
-| CGPT | mexc | gate | 307% | -2% | 5.75% | -0.18% | +0.06% | 4/4 |
-| RVN | mexc | gate | 307% | 10% | 5.75% | 0.05% | -0.09% | 4/8 |
-| NMR | mexc | gate | 295% | -2% | 5.52% | -0.18% | +0.05% | 4/4 |
-| GLM | bitget | gate | 293% | 17% | 5.40% | 0.10% | +0.65% | 4/4 |
-| RSR | mexc | gate | 282% | -8% | 5.26% | -0.29% | -0.14% | 8/4 |
-| ANKR | mexc | gate | 281% | 9% | 5.25% | 0.04% | -0.91% | 4/4 |
-| LPT | bitget | gate | 274% | 10% | 5.03% | -0.02% | +0.81% | 4/8 |
-| AVAAI | mexc | gate | 269% | 17% | 5.03% | 0.19% | +0.30% | 4/4 |
-| FLUX | mexc | gate | 269% | 23% | 5.02% | 0.30% | +0.41% | 4/4 |
-| W | bitget | gate | 269% | 29% | 4.93% | 0.34% | -0.31% | 4/4 |
+| KAVA | mexc | kucoin | 759% | 49% | 14.41% | 0.79% | -0.42% | 4/4 |
+| INIT | hl | bitget | 483% | -86% | 9.06% | -1.87% | -0.99% | 1/1 |
+| MSTU | gate | mexc | 453% | 44% | 8.55% | 0.70% | +0.20% | 8/8 |
+| POWER | mexc | bitget | 451% | 144% | 8.49% | 2.60% | -0.43% | 4/4 |
+| FRAX | mexc | gate | 439% | 35% | 8.28% | 0.52% | +0.10% | 4/4 |
+| PROS | gate | kucoin | 321% | 19% | 5.94% | 0.15% | +0.35% | 4/4 |
+| POWR | mexc | gate | 311% | 53% | 5.83% | 0.89% | -0.33% | 4/4 |
+| HEMI | hl | mexc | 304% | 14% | 5.71% | 0.13% | -0.06% | 1/4 |
+| BAN | mexc | bitget | 273% | 75% | 5.08% | 1.27% | +0.16% | 4/4 |
+| ZHIPU | gate | kucoin | 266% | -3% | 4.88% | -0.27% | -0.51% | 8/4 |
+| 龙虾 | gate | bitget | 264% | 11% | 4.85% | -0.01% | +0.62% | 4/4 |
+| BTW | kucoin | bitget | 256% | -133% | 4.67% | -2.79% | +0.65% | 4/4 |
+| POPCAT | bitget | hl | 236% | 0% | 4.31% | -0.21% | +0.12% | 4/1 |
+| KOMA | kucoin | gate | 231% | 24% | 4.22% | 0.23% | -0.46% | 4/4 |
+| MINIMAX | gate | kucoin | 231% | -8% | 4.20% | -0.37% | -0.06% | 8/4 |
+| INTW | gate | mexc | 222% | -0% | 4.13% | -0.14% | -0.13% | 8/8 |
+| BIGTIME | hl | gate | 221% | -2% | 4.05% | -0.23% | -0.09% | 1/4 |
+| LONGXIA | mexc | kucoin | 217% | 1% | 4.00% | -0.14% | +0.24% | 4/4 |
+| CYPH | gate | kucoin | 212% | -18% | 3.85% | -0.56% | +0.18% | 8/8 |
+| KORU | gate | mexc | 204% | 22% | 3.77% | 0.28% | -0.06% | 8/8 |
+| SOPH | hl | bitget | 197% | -31% | 3.57% | -0.81% | -0.24% | 1/4 |
+| SNXX | gate | mexc | 190% | 11% | 3.50% | 0.08% | -0.25% | 8/8 |
+| MSTR | gate | kucoin | 189% | 7% | 3.40% | -0.09% | -0.09% | 8/8 |
+| ZCSH | gate | bitget | 189% | 10% | 3.40% | -0.03% | -1.18% | 8/8 |
+| BSV | kucoin | gate | 187% | 6% | 3.37% | -0.10% | -0.14% | 4/4 |
+| EVAA | kucoin | bitget | 183% | 88% | 3.28% | 1.44% | -0.38% | 4/4 |
+| XMR | gate | hl | 178% | -67% | 3.22% | -1.47% | +0.29% | 8/1 |
+| MUU | gate | mexc | 175% | 16% | 3.21% | 0.17% | -0.13% | 8/8 |
+| IMX | kucoin | hl | 176% | 8% | 3.16% | -0.06% | +0.44% | 4/1 |
+| KAS | mexc | gate | 169% | 6% | 3.10% | -0.03% | -0.15% | 4/8 |
 
-Both live and past-week net > 0.5%/week: 3 pairs: MSTU (gate/mexc), INIT (hl/mexc), POWR (mexc/gate)
+Both live and past-week net > 0.5%/week: 7 pairs: KAVA (mexc/kucoin), MSTU (gate/mexc), POWER (mexc/bitget), FRAX (mexc/gate), POWR (mexc/gate), BAN (mexc/bitget), EVAA (kucoin/bitget)
