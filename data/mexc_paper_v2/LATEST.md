@@ -1,14 +1,14 @@
-# MEXC paper carry v2 — 2026-11-13 17:12 UTC (day 0.0)
+# MEXC paper carry v2 — 2026-11-14 09:06 UTC (day 0.7)
 
-- Equity **$992.55** (start $1,000) | funding $0.00 | fees $0.77
-- Drawdown from start 0.74% (stop at 5%) -> ok
+- Equity **$992.02** (start $1,000) | funding $0.39 | fees $0.77
+- Drawdown from start 0.80% (stop at 5%) -> ok
 - Actions this run: none
 
 | coin | qty | entry spot | mark spot | entry perp | mark perp | funding | f30 at entry |
 |---|---|---|---|---|---|---|---|
-| BROCCOLIF3B_USDT | 34566.2577 | 0.00482166 | 0.00467351 | 0.004778 | 0.004762 | $0.00 | 8.32% |
-| JCT_USDT | 80514.4993 | 0.00207002 | 0.00226031 | 0.00205 | 0.002244 | $0.00 | 6.15% |
-| AGT_USDT | 3123.8629 | 0.0533527 | 0.0514142 | 0.05299 | 0.05163 | $0.00 | 4.83% |
+| BROCCOLIF3B_USDT | 34566.2577 | 0.00482166 | 0.00471595 | 0.004778 | 0.004787 | $0.08 | 8.32% |
+| JCT_USDT | 80514.4993 | 0.00207002 | 0.002026 | 0.00205 | 0.00203 | $0.28 | 6.15% |
+| AGT_USDT | 3123.8629 | 0.0533527 | 0.0403895 | 0.05299 | 0.04057 | $0.02 | 4.83% |
 
 Recent log:
 

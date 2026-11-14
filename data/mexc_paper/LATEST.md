@@ -1,14 +1,14 @@
-# MEXC paper carry v1 — 2026-11-13 17:12 UTC (day 0.0)
+# MEXC paper carry v1 — 2026-11-14 09:06 UTC (day 0.7)
 
-- Equity **$992.46** (start $1,000) | funding $0.00 | fees $0.77
-- Drawdown from start 0.75% (stop at 5%) -> ok
+- Equity **$989.34** (start $1,000) | funding $0.46 | fees $0.77
+- Drawdown from start 1.07% (stop at 5%) -> ok
 - Actions this run: none
 
 | coin | qty | entry spot | mark spot | entry perp | mark perp | funding | f30 at entry |
 |---|---|---|---|---|---|---|---|
-| JCT_USDT | 84331.0441 | 0.00197634 | 0.0022603 | 0.00195 | 0.002243 | $0.00 | 6.15% |
-| PLAY_USDT | 20262.2387 | 0.00822548 | 0.00756349 | 0.0082 | 0.00764 | $0.00 | 5.36% |
-| AGT_USDT | 3156.2018 | 0.0528061 | 0.0514393 | 0.0518 | 0.05168 | $0.00 | 4.83% |
+| JCT_USDT | 84331.0441 | 0.00197634 | 0.00202503 | 0.00195 | 0.002029 | $0.29 | 6.15% |
+| PLAY_USDT | 20262.2387 | 0.00822548 | 0.00728976 | 0.0082 | 0.00741 | $0.15 | 5.36% |
+| AGT_USDT | 3156.2018 | 0.0528061 | 0.0400803 | 0.0518 | 0.04061 | $0.02 | 4.83% |
 
 Recent log:
 
