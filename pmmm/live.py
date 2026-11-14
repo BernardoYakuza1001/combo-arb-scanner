@@ -141,12 +141,17 @@ class Live:
         return r.json() if r.ok else {"error": r.status_code}
 
 def positions(funder):
-    out = {}
-    for page in range(10):
-        d = http("GET", "https://data-api.polymarket.com/positions",
-                 params={"user": funder, "sizeThreshold": 0, "limit": 500, "offset": 500 * page}) or []
-        for p in d: out[str(p.get("asset"))] = float(p.get("size") or 0)
-        if len(d) < 500: break
+    """Shares currently held, by token id (Data API v2)."""
+    out = {}; cur = None
+    for _ in range(20):
+        p = {"user": funder, "limit": 500}
+        if cur: p["cursor"] = cur
+        d = http("GET", "https://data-api.polymarket.com/v2/positions", params=p) or {}
+        rows = d.get("data", []) if isinstance(d, dict) else d
+        for r in rows: out[str(r.get("token_id"))] = float(r.get("current_size") or 0)
+        pg = d.get("pagination", {}) if isinstance(d, dict) else {}
+        cur = pg.get("next_cursor")
+        if not rows or not pg.get("has_more") or not cur: break
     return out
 
 def write_status(mk, live, usdc, cap, scoring_frac, t0):
