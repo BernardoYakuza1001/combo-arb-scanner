@@ -40,7 +40,8 @@ def main():
     print("wallets", len(W), "trades", sum(len(x) for x in T.values()), "markets", len(conds), flush=True)
     px = {}
     def lookup(chunk):
-        g = get(f"{GAMMA}/markets", **{"condition_ids": chunk, "limit": 100}) or []
+        g = (get(f"{GAMMA}/markets", **{"condition_ids": chunk, "limit": 100, "closed": "true"}) or []) + \
+            (get(f"{GAMMA}/markets", **{"condition_ids": chunk, "limit": 100, "closed": "false"}) or [])
         for m in g:
             try:
                 for tok, p in zip(json.loads(m["clobTokenIds"]), json.loads(m["outcomePrices"])): px[tok] = (float(p), bool(m.get("closed")))
