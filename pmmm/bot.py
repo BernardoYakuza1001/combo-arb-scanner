@@ -22,7 +22,7 @@ OUT = os.environ.get("PMMM_OUT", "data/pmmm")
 CFG = dict(
     n_markets=int(os.environ.get("PMMM_N", "12")),
     cap=float(os.environ.get("PMMM_CAP", "200")),         # $ per market (both bids)
-    quote_frac=float(os.environ.get("PMMM_FRAC", "0.5")),  # distance from mid as share of max spread
+    quote_frac=float(os.environ.get("PMMM_FRAC", "0.75")),  # distance from mid as share of max spread
     cycle_s=15, sample_s=60,
     max_imb=1.0,              # stop bidding a side once net inventory exceeds this many order sizes
     news_move=0.04, news_win_s=600, pause_s=1800,

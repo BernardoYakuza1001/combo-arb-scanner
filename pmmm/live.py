@@ -11,6 +11,12 @@ Safety:
   * Hard cap on dollars in open orders + inventory: min(PMMM_MAX_TOTAL, USDC balance).
   * Cancels every open order at start, on exit, on crash, and when a file named STOP appears in pmmm\\.
   * Stops itself after 20 API errors in a row.
+  * Dead-man switch: sends Polymarket a heartbeat every 5 s. If this PC sleeps, crashes or loses
+    internet, Polymarket itself cancels all your open orders about 10 s later.
+  * Loss stop: cancels everything and exits if trading loss since start exceeds PMMM_MAX_LOSS (default $30).
+  * Blind stop: if a market's order book cannot be read for 3 cycles, its orders are cancelled.
+  * Keeps Windows awake while it runs (only while the window is open).
+  * Re-ranks markets every 6 hours; orders in dropped markets are cancelled.
 
 pmmm\\.env:
   PM_PRIVATE_KEY=0x...   Polymarket > Settings > Export private key
@@ -28,6 +34,40 @@ LOG = os.path.join(HERE, "live_log.jsonl")
 STATUS = os.path.join(HERE, "LIVE_STATUS.md")
 MAX_TOTAL = float(os.environ.get("PMMM_MAX_TOTAL", "1000"))
 DRY = os.environ.get("PMMM_DRY") == "YES"
+MAX_LOSS = float(os.environ.get("PMMM_MAX_LOSS", "30"))
+RESELECT_S = float(os.environ.get("PMMM_RESELECT_H", "6")) * 3600
+LIVE_CYCLE_S = float(os.environ.get("PMMM_CYCLE_S", "8"))
+
+def keep_awake(on=True):
+    """Ask Windows not to sleep while this process runs (process-level request, reverts when it exits)."""
+    try:
+        import ctypes
+        ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | (0x00000001 if on else 0))
+    except Exception: pass
+
+def start_heartbeat(L, stop_flag):
+    """Dead-man switch. Returns the thread, or None if the venue rejects heartbeats."""
+    import threading
+    state = {"id": None, "fails": 0}
+    def beat():
+        r = L.c.post_heartbeat(state["id"])
+        if isinstance(r, dict) and r.get("heartbeat_id"): state["id"] = r["heartbeat_id"]
+    try: beat()
+    except Exception as e:
+        log(ev="heartbeat_unavailable", err=str(e)[:200]); return None
+    def loop():
+        while not stop_flag["stop"]:
+            time.sleep(5)
+            try: beat(); state["fails"] = 0
+            except Exception as e:
+                state["fails"] += 1
+                if state["fails"] in (1, 5, 20): log(ev="heartbeat_err", n=state["fails"], err=str(e)[:150])
+                state["id"] = None if state["fails"] % 3 == 0 else state["id"]
+    t = threading.Thread(target=loop, daemon=True); t.start()
+    log(ev="heartbeat_on"); return t
+
+def pnl(mk):
+    return sum(m.mtm() for m in mk)
 
 def load_env():
     p = os.path.join(HERE, ".env")
@@ -118,22 +158,56 @@ def main():
     log(ev="start", dry=DRY, usdc=round(usdc, 2), cap=cap, per_market=CFG["cap"], n=CFG["n_markets"])
     if cap < CFG["cap"]: log(ev="abort", why=f"USDC ${usdc:.2f} is below one market's size ${CFG['cap']:.0f}"); return
     if not DRY: L.cancel_all()
-    mk = bot.select()
-    pos = positions(L.funder)
-    for m in mk:
-        m.yes = pos.get(str(m.tok), 0.0); m.no = pos.get(str(m.tno), 0.0)
-        s = min(m.yes, m.no); m.yes -= s; m.no -= s
-    log(ev="markets", markets=[m.q[:50] for m in mk], held={m.q[:30]: (m.yes, m.no) for m in mk if m.yes or m.no})
+    keep_awake(True)
+    def load_markets(old=()):
+        new = bot.select()
+        if not new: return list(old)
+        pos = positions(L.funder); keep = {m.cid: m for m in old}
+        out = []
+        for m in new:
+            if m.cid in keep: out.append(keep[m.cid]); continue     # keep running state (inventory, cash, pause)
+            m.yes = pos.get(str(m.tok), 0.0); m.no = pos.get(str(m.tno), 0.0)
+            s = min(m.yes, m.no); m.yes -= s; m.no -= s
+            m.cash = -(m.yes + m.no) * 0.5                          # rough carry-in cost; baseline below removes it
+            out.append(m)
+        log(ev="markets", markets=[m.q[:50] for m in out], held={m.q[:30]: (m.yes, m.no) for m in out if m.yes or m.no})
+        return out
+    mk = load_markets()
+    if not mk: log(ev="abort", why="no market passed the filters"); return
     live = {}; errors = 0; t0 = time.time(); last_score = 0; scoring_frac = "n/a"; last_day = None
+    last_select = t0; baseline = None; retired_pnl = 0.0; hb_flag = {"stop": False}
+    if not DRY: start_heartbeat(L, hb_flag)
     try:
         while not os.path.exists(STOP):
             now = time.time()
+            if now - last_select > RESELECT_S:
+                last_select = now
+                try:
+                    new = load_markets(mk); ids = {m.cid for m in new}
+                    for m in mk:
+                        if m.cid in ids: continue
+                        for sd in ("Y", "N"):
+                            o = live.pop((m.cid, sd), None)
+                            if o and not DRY: L.cancel(o["oid"])
+                        retired_pnl += m.mtm(); log(ev="market_dropped", q=m.q[:50], yes=m.yes, no=m.no)
+                    mk = new
+                except Exception as e: log(ev="reselect_err", err=str(e)[:200])
             bk = {b.get("asset_id"): b for b in (http("POST", f"{CLOB}/books", json=[{"token_id": m.tok} for m in mk]) or [])}
             exposure = sum(m.yes * (m.mid or .5) + m.no * (1 - (m.mid or .5)) for m in mk) + \
                        sum(o["price"] * (o["size"] - o["matched"]) for o in live.values())
             for m in mk:
                 b = bk.get(m.tok)
-                if not b or not b.get("bids") or not b.get("asks"): continue
+                if not b or not b.get("bids") or not b.get("asks"):
+                    m.blind = getattr(m, "blind", 0) + 1
+                    if m.blind == 3:
+                        for sd in ("Y", "N"):
+                            o = live.pop((m.cid, sd), None)
+                            if o and not DRY:
+                                try: L.cancel(o["oid"])
+                                except Exception as e: log(ev="error", q=m.q[:50], err=str(e)[:200])
+                        log(ev="blind_cancel", q=m.q[:50])
+                    continue
+                m.blind = 0
                 try:
                     # 1) fills
                     for sd in ("Y", "N"):
@@ -144,11 +218,12 @@ def main():
                             d = got - o["matched"]; o["matched"] = got
                             if sd == "Y": m.yes += d
                             else: m.no += d
+                            m.cash -= d * o["price"]
                             log(ev="fill", q=m.q[:50], side=sd, px=o["price"], sz=round(d, 2))
                         if status.upper() not in ("LIVE", "OPEN", ""):
                             live.pop((m.cid, sd), None)
                     s = min(m.yes, m.no)
-                    if s > 0: m.yes -= s; m.no -= s; m.merged += s; log(ev="pair_locked", q=m.q[:50], sets=round(s, 2))
+                    if s > 0: m.yes -= s; m.no -= s; m.merged += s; m.cash += s; log(ev="pair_locked", q=m.q[:50], sets=round(s, 2))
                     # 2) decide
                     mid = adj_mid(b, m.minsz)
                     if mid is None: continue
@@ -193,9 +268,16 @@ def main():
                     day = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1)).strftime("%Y-%m-%d")
                     if day != last_day: last_day = day; log(ev="earnings", day=day, result=L.earnings(day))
                 except Exception as e: log(ev="scoring_err", err=str(e)[:200])
+            # loss stop (trading P&L since start; rewards are paid separately and not counted here)
+            if all(m.mid is not None for m in mk):
+                cur = pnl(mk) + retired_pnl
+                if baseline is None: baseline = cur
+                if cur - baseline < -MAX_LOSS:
+                    log(ev="abort", why=f"loss stop: trading P&L {cur - baseline:+.2f} is below -{MAX_LOSS:.0f}"); return
             write_status(mk, live, usdc, cap, scoring_frac, t0)
-            time.sleep(CFG["cycle_s"])
+            time.sleep(LIVE_CYCLE_S)
     finally:
+        hb_flag["stop"] = True; keep_awake(False)
         if not DRY:
             try: L.cancel_all()
             except Exception as e: log(ev="cancel_all_err", err=str(e)[:200])

@@ -23,7 +23,7 @@ def test_live_loop_fake_exchange(tmp_path, monkeypatch):
     from pmmm import live, bot
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md"))
-    monkeypatch.setitem(bot.CFG, "cycle_s", 0)
+    monkeypatch.setitem(bot.CFG, "cycle_s", 0); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
     state = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={})
     class FakeLive:
@@ -58,3 +58,52 @@ def test_live_loop_fake_exchange(tmp_path, monkeypatch):
     for oid, tok, px, sz in state["placed"]:
         assert 0.5 - px < 0.045 and sz >= 50             # inside max spread, at least min size
     assert m.yes == 0 and m.no == 0 and m.merged > 0
+
+
+def _setup(tmp_path, monkeypatch, books, fills_at=None, max_cycles=8):
+    from pmmm import live, bot
+    monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
+    monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    st = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={}, beats=0)
+    class C:
+        def post_heartbeat(self, hid): st["beats"] += 1; return {"heartbeat_id": f"h{st['beats']}"}
+    class FakeLive:
+        funder = "0xF00"; c = C()
+        def usdc(self): return 5000.0
+        def place(self, tok, px, sz, tick):
+            oid = f"o{len(st['placed'])}"; st["placed"].append((oid, tok, px, sz)); return oid
+        def cancel(self, oid): st["cancelled"].append(oid)
+        def cancel_all(self): st["cancel_all"] += 1
+        def matched(self, oid): return st["matched"].get(oid, 0.0), "LIVE"
+        def scoring(self, ids): return {}
+        def earnings(self, d): return {}
+    monkeypatch.setattr(live, "Live", FakeLive)
+    m = bot.Mkt(dict(cid="0xcid", q="Test market", slug="t", tok="YES", tno="NO", v=4.5, minsz=50, rate=100, tick=0.01))
+    monkeypatch.setattr(bot, "select", lambda: [m]); monkeypatch.setattr(live, "positions", lambda f: {})
+    def fake_http(method, url, **kw):
+        st["cycle"] += 1
+        if fills_at and st["cycle"] == fills_at:
+            for oid, tok, px, sz in st["placed"]:
+                if tok == "YES": st["matched"][oid] = sz
+        if st["cycle"] >= max_cycles: open(live.STOP, "w").close()
+        return books(st["cycle"])
+    monkeypatch.setattr(live, "http", fake_http)
+    return live, st, m
+
+def _bk(bid, ask): return [{"asset_id": "YES", "bids": [{"price": str(bid), "size": "500"}], "asks": [{"price": str(ask), "size": "500"}]}]
+
+def test_loss_stop_exits_and_cancels(tmp_path, monkeypatch):
+    # YES bid fills, then the price collapses: loss on ~200 shares x ~0.25 > $30 -> abort
+    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52) if c < 4 else _bk(0.20, 0.24), fills_at=3, max_cycles=50)
+    live.main()
+    ev = [json.loads(l) for l in open(live.LOG)]
+    assert any(e["ev"] == "abort" and "loss stop" in e["why"] for e in ev)
+    assert st["cycle"] < 50 and st["cancel_all"] == 2 and ev[-1]["ev"] == "stopped"
+
+def test_blind_cancel_and_heartbeat(tmp_path, monkeypatch):
+    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52) if c < 3 else [], max_cycles=8)
+    live.main()
+    ev = [json.loads(l)["ev"] for l in open(live.LOG)]
+    assert "blind_cancel" in ev and len(st["cancelled"]) == 2      # both resting orders pulled once blind
+    assert "heartbeat_on" in ev and st["beats"] >= 1
