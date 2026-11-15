@@ -189,3 +189,18 @@ def test_thin_mode_anchor_ignores_own_orders_and_follows_fills(tmp_path, monkeyp
     ex = [e for e in ev if e["ev"] == "exit_quote"]
     assert ex and ex[0]["sell"] == "YES" and snap["fill_px"] < ex[0]["px"] < snap["fill_px"] + 0.045
     assert any(e["ev"] == "fill" for e in ev) and A.yes == 20
+
+
+def test_setup_key_validation_and_file(tmp_path, monkeypatch, capsys):
+    from pmmm import setup_key as sk
+    assert sk.clean_key(" ab" * 0 + "A" * 64) == "0x" + "A" * 64 and sk.clean_key("0x" + "1" * 64 + "\n") == "0x" + "1" * 64
+    assert sk.clean_key("0x123") is None and sk.clean_key("hello") is None
+    assert sk.clean_addr("0x" + "a" * 40) and sk.clean_addr("0x" + "a" * 39) is None
+    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env"))
+    key = "0x" + "7" * 64
+    monkeypatch.setattr(sk.getpass, "getpass", lambda p: key)
+    answers = iter(["0x" + "b" * 40, "1"]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
+    sk.main()
+    txt = open(sk.ENV).read()
+    assert f"PM_PRIVATE_KEY={key}" in txt and "PM_SIG_TYPE=1" in txt and "PM_FUNDER=0x" + "b" * 40 in txt
+    assert key not in capsys.readouterr().out          # the key is never printed
