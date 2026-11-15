@@ -75,7 +75,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.31716422528007804,
+  "reward": 0.32296071224854817,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -153,7 +153,7 @@
  {
   "q": "OpenAI IPO closing market cap above $1.6T?",
   "cid": "0x82b7da93a66790027b48e73cff250492ece87b6bfd48e680278f4fee75433737",
-  "reward": 2.3636654897112218e-30,
+  "reward": 2.4088229474541544e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -163,7 +163,7 @@
  {
   "q": "Will Anthropic\u2019s market cap be between 1.2T and 1.5T at market close on IPO day by Decembe",
   "cid": "0x510736e7804a288592abab4105eca3399cbd562cd49a6d4e0289362490cc4825",
-  "reward": 0.0797052592224626,
+  "reward": 0.08057872741363682,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
