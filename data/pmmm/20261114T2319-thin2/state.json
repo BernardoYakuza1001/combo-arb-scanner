@@ -3,7 +3,7 @@
   "q": "Will BLG be number 1 on the end of year Global Power Rankings?",
   "cid": "0xe32519c919cbbca022969647761c32caef07b9adbe20cbd37f255fcd54f99a17",
   "reward": 2.3958333333333335,
-  "mtm": -3.4348447853999993,
+  "mtm": -4.5809999999999995,
   "yes": 0.0,
   "no": 18.0,
   "merged": 0.0,
@@ -72,7 +72,7 @@
  {
   "q": "Will the highest score achieved on Humanity\u2019s Last Exam in 2026 be 70% or higher?",
   "cid": "0x8ec7a062dfcb27ff89b560c3bf323d9842ee97f147d91b0223d1139e5bcd6843",
-  "reward": 0.760100135817478,
+  "reward": 0.7784095651735966,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +82,7 @@
  {
   "q": "Will the Ornn H200 Index hit $4.00 (LOW) by December 31, 2026?",
   "cid": "0xf7699db92f899f7577f55c0dc9db490d6a17d1eced1c07d3860b4ae80a13b175",
-  "reward": 1.4302675904434978,
+  "reward": 1.4324831738189823,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -92,7 +92,7 @@
  {
   "q": "Will Sean Dyche be the next head coach of the England national team?",
   "cid": "0x128b4b965913624b0a3afd39c383eb8fd19eb82bbc183c9c7e054089e39ca617",
-  "reward": 4.273611111111122,
+  "reward": 4.391666666666678,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -102,7 +102,7 @@
  {
   "q": "Will Rebeca Grynspan be the next Secretary-General of the United Nations?",
   "cid": "0xe435a492cb36682914844b5400bb33d57137be8a0544ff54543eea6770ff0b34",
-  "reward": 0.9743076258777134,
+  "reward": 1.0108155623856498,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -122,7 +122,7 @@
  {
   "q": "Will Jensen Huang be the #1 searched person on Google in the US this year?",
   "cid": "0x3f4f3c4980c024b225a0c3839d67d4a63ceedb43c69ef9f5ad5475181956d41b",
-  "reward": 0.16643483828616856,
+  "reward": 0.16915237332790697,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -142,7 +142,7 @@
  {
   "q": "Extended FDV above $150M one day after launch?",
   "cid": "0x45514e0fcd922a740e67ab064a9042d3e964006712f9540947808ae82067ed23",
-  "reward": 2.280184557088576,
+  "reward": 2.303019110700455,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -152,7 +152,7 @@
  {
   "q": "Will Aneyas Williams be the 2026 D1 Rushing Yards Leader?",
   "cid": "0x6fdf44e3476622c75558b9ae3454068fd716fad82e7c0742076b80a8a0dc71b2",
-  "reward": 2.388194444444443,
+  "reward": 2.4541666666666644,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -202,7 +202,7 @@
  {
   "q": "Will Pittsburgh Steelers finish the 2026-27 NFL regular season with the most sacks?",
   "cid": "0x6b347614793722b13fdc92d71390912bf203ce66085bf342a793f05f2e4e6d7f",
-  "reward": 1.005555555555553,
+  "reward": 1.0333333333333308,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -302,7 +302,7 @@
  {
   "q": "Will Chainlink dip to $6 by December 31, 2026?",
   "cid": "0x60fe8a52fb9e60db0f3df143eefbe46a98e0c5e6fcb19274704d759048291f28",
-  "reward": 0.626323145172814,
+  "reward": 0.6435765348085719,
   "mtm": 0.990000000000002,
   "yes": 0.0,
   "no": 20.0,
@@ -320,7 +320,7 @@
  {
   "q": "Will Hyperliquid HIP-3 open interest hit $5B in 2026?",
   "cid": "0x3b6ef460b4d6b718240f3d044675d7c1f4a2db41de56e235c87af7c3f37d29dc",
-  "reward": 0.14208905889775394,
+  "reward": 0.159450170008865,
   "mtm": -2.0372089806743983,
   "yes": 0.0,
   "no": 16.976745,
@@ -343,7 +343,7 @@
  {
   "q": "OpenAI IPO closing market cap above $800B?",
   "cid": "0x48dc4d6bae89b6401210186b94db6618050505c520b1ead26a5806b978fd0e6c",
-  "reward": 0.12768181233772227,
+  "reward": 0.13669334610254016,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -373,7 +373,7 @@
  {
   "q": "Will edgeX dip to $0.20 before 2027?",
   "cid": "0x8e788f5298afd9a3802bc84f90a60d4ce050edee2bc6de50c75f3ab35f9c71c7",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -429,7 +429,7 @@
  {
   "q": "Will Databricks' valuation hit (HIGH) $200B by December 31?",
   "cid": "0x892c525f748c60d04c0c94729f18eca9e38f52a66a38039d436048558769fcf0",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -439,7 +439,7 @@
  {
   "q": "Will Anduril's valuation hit (HIGH) $125B by December 31?",
   "cid": "0xaae4e59f5cf7f7b7ae56e27017925e220af17c69dd3d7e57dffc08f3de988d79",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -459,7 +459,7 @@
  {
   "q": "Will Neuralink's valuation hit (HIGH) $60B by December 31?",
   "cid": "0x3e9cfc2fb641cea085698aed16a8b9cfd2ff127e54c93e8f8b2af618701a9141",
-  "reward": 0.6159873188405777,
+  "reward": 0.6333484299516887,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -499,7 +499,7 @@
  {
   "q": "Will Lula announce the nomination of an individual for Minister of the Supreme Federal Cou",
   "cid": "0x8259480f1436f12e68626ab9256d8faec95a7f30c80552c53b8b231a9e83efca",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -519,7 +519,7 @@
  {
   "q": "Will AVAX dip to $5 by December 31, 2026?",
   "cid": "0x22f9d941af76205055d46dac793fc50135c95e55aa3189854cf3855a58404463",
-  "reward": 0.2715234123962557,
+  "reward": 0.28888452350736676,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -529,7 +529,7 @@
  {
   "q": "Will Cap reach $0.15 before 2027?",
   "cid": "0x704368130923b2ebdc7948875d2bcfb2c237d0871c0e95858f607574aab3856d",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -539,7 +539,7 @@
  {
   "q": "Will $ANSEM dip to $0.02 before 2027?",
   "cid": "0x5a09f4cdad75d65a63aceeac5d25efe0e5013f0a0f2cb1029266b32a930df58b",
-  "reward": 0.3755325216979238,
+  "reward": 0.3815757495698915,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -569,7 +569,7 @@
  {
   "q": "Will Glean's valuation hit (HIGH) $8B by December 31?",
   "cid": "0x9e3b1fe6578e62d4dba36473b157d02bc29973b9feffb26178cbac9e1fe83df7",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -579,7 +579,7 @@
  {
   "q": "Will Glean's valuation hit (LOW) $5.5B by December 31?",
   "cid": "0xc78ac70216ef6d81a22972bbb2f0da9b2be3d616bf3d6a6c96b3a111f4dd8414",
-  "reward": 0.5653762344568368,
+  "reward": 0.5809943624805063,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -589,7 +589,7 @@
  {
   "q": "Will Glean's valuation hit (HIGH) $7.5B by December 31?",
   "cid": "0x0248986d276dd875126485dbdc2388022f8edead91ddc65c18e1ef1ff339452b",
-  "reward": 0.599650739449974,
+  "reward": 0.6170118505610851,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -599,7 +599,7 @@
  {
   "q": "Will Glean's valuation hit (LOW) $5B by December 31?",
   "cid": "0x0c9335b0228172a2fc779bd84fac44ea859268866a962e2c55480b50e637fb0e",
-  "reward": 0.12225183283189742,
+  "reward": 0.12562895528581725,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -619,7 +619,7 @@
  {
   "q": "Will Total Crypto Market Cap hit 3.25T in 2026?",
   "cid": "0xd1860ee98bedea2dba6fbc9162b5af2b8feef1a029f4e40cda91be0d3534a7c6",
-  "reward": 0.40231078335747944,
+  "reward": 0.4107713638209838,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -629,7 +629,7 @@
  {
   "q": "Will Total Crypto Market Cap dip to 2T in 2026?",
   "cid": "0xadab90d7e703afa2ed299aabe3e44dd35ed4f4dad01e5cbe6e062e7121568dd4",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -649,7 +649,7 @@
  {
   "q": "Will 2026 rank 6th or higher among the highest domestic box office years?",
   "cid": "0x6334414161b0a585a085b67c8ead301db20d6b7af66eba506f26b2f08e453313",
-  "reward": 0.4571189282683933,
+  "reward": 0.4721001884362568,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -684,12 +684,18 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794709402.250294,
+    "kind": "pause",
+    "mid": 0.14500000000000002
+   }
+  ]
  },
  {
   "q": "Will Oklahoma State have more than 7.5 wins during the 2026 CFB season?",
   "cid": "0xdabfef31e6d46c4cc3afad7f38e5ff2bf894edc17690606196a4f4213ac682e6",
-  "reward": 0.39930555555555464,
+  "reward": 0.4166666666666657,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -705,7 +711,7 @@
  {
   "q": "Will Oklahoma State have more than 8.5 wins during the 2026 CFB season?",
   "cid": "0x50d9a02580af2def0a48103f9b4edc1a25ec1898911e879150b6f1da312292c1",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -715,7 +721,7 @@
  {
   "q": "Will Oregon have more than 8.5 wins during the 2026 CFB season?",
   "cid": "0x103627c387830c7a9a28b89a6229703420abf361d4a3b205e4788884253a46af",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -725,7 +731,7 @@
  {
   "q": "Will Utah State have more than 4.5 wins during the 2026 CFB season?",
   "cid": "0x38890e6150d5d184252db7f5f6ba3c49a23ea493cb29fb0b4c0c74696d1c0ee8",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -735,7 +741,7 @@
  {
   "q": "Will Utah State have more than 5.5 wins during the 2026 CFB season?",
   "cid": "0xe72b1fea6ab9e1b914be71b628d0d8bf137b930a76fd24005cba22e552a23f70",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -785,7 +791,7 @@
  {
   "q": "Will Indiana have more than 10.5 wins during the 2026 CFB season?",
   "cid": "0x460d6631fbb0c548cd3eec4c8ab8ded560988e8e5b46dddc80f9c7429bf96ac6",
-  "reward": 0.023472180086948867,
+  "reward": 0.023863134559090126,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -801,7 +807,7 @@
  {
   "q": "Will Iowa have more than 9.5 wins during the 2026 CFB season?",
   "cid": "0xe2ba1745a2f32ef90f74507613d5b34014115483431ec19e638f55e09ed58c1a",
-  "reward": 0.41117531684602476,
+  "reward": 0.4285364279571358,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -811,7 +817,7 @@
  {
   "q": "Will Chase Brown have 1.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x6d0e5a42e047f408419ef0e5cb3f6bbcfd135dd596835e1b2700eae701823881",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -821,7 +827,7 @@
  {
   "q": "Will Kyle Monangai have 649.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x5b2929fdc2f0ec89f7bc2ec3263569af86749d9f09e108dd1a809067ef161d1c",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -831,7 +837,7 @@
  {
   "q": "Will Travis Etienne Jr. have 574.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0xdb46cf75fcafbef0d96c0f7db10afa265b553a1f3e6f06232633f1dd478b471d",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -861,7 +867,7 @@
  {
   "q": "Will Brian Thomas Jr. have 524.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xee41fc92556f52b6f2c5f088d667103754c7617b25702c4ebc4e76125c138ebb",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -881,7 +887,7 @@
  {
   "q": "Will Kyren Williams have 9.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x16e9b78513909286d5703d555704e20b4966d5ed31c937b3abd39f97c76c5f60",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -911,7 +917,7 @@
  {
   "q": "Will Javonte Williams have 1,349.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x945abcd3ffea1573736b20c6837972e197b360ff323de84b5ad07d387dd165c1",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -921,7 +927,7 @@
  {
   "q": "Will Drake London have 5.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x3a93fdcfc9d1777b10e2cf7c582a5855009a10252af7c6bc0d9f75016b54695c",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -931,7 +937,7 @@
  {
   "q": "Will Jake Ferguson have 4.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x14d6c72f507774afd7327001c3a359f7ebac13061e6965bf390c5bf8f9329767",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -941,7 +947,7 @@
  {
   "q": "Will TreVeyon Henderson have 2.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x51e411dad0ac770547691a73fc909ab400a6ba4ed4a7f76baed8e9e82c65a042",
-  "reward": 0.36943777462050165,
+  "reward": 0.3867988857316127,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -993,7 +999,7 @@
  {
   "q": "Will Jayden Daniels have 18.5+ passing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xbb04fd14039c2d84775e2c86fe7e59d3c92655a45e1dd170ab086704b7bbd430",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1004,7 +1010,7 @@
   "q": "Will Davante Adams have 7.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x19b1f7d41cba7e275de4e76cac9ce291997532e0814bcea7f7f3495ac11a64d2",
   "reward": 0.4372337312250407,
-  "mtm": -1.1000000000000014,
+  "mtm": -1.0000000000000018,
   "yes": 0.0,
   "no": 20.0,
   "merged": 0.0,
@@ -1041,7 +1047,7 @@
  {
   "q": "Will George Pickens have 999.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x5f0bbad87adbbf5a8abd146303ad669f27c32364cc5575b11ae613ef72107ce3",
-  "reward": 0.12528279398383865,
+  "reward": 0.13845660685921943,
   "mtm": -0.3913510273513463,
   "yes": 19.567568,
   "no": 0.0,
@@ -1069,7 +1075,7 @@
  {
   "q": "Will J.K. Dobbins have 474.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x8d6c27bcb82476598ac5b8dc752d853d07fbbb8e7e8e9bf0d80b87848d88b819",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1080,7 +1086,7 @@
   "q": "Will Michigan State have more than 4.5 wins during the 2026 CFB season?",
   "cid": "0x536722ae6c2c1e04b90912ca424111830039468b415547a5ceeae6bde1b51a04",
   "reward": 0.1195956122264154,
-  "mtm": -5.1,
+  "mtm": -5.199999999999999,
   "yes": 20.0,
   "no": 0.0,
   "merged": 0.0,
@@ -1107,7 +1113,7 @@
  {
   "q": "Will NC State have more than 5.5 wins during the 2026 CFB season?",
   "cid": "0x82cf6c5a41dbd380e028e6579f536f708e5807ee22855c7fbfb1fde6551c78ea",
-  "reward": 0.010416666666666666,
+  "reward": 0.013888888888888888,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1117,7 +1123,7 @@
  {
   "q": "Will Omar Cooper Jr. have 699.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xcc4abef01a8ab34761c2c71e3d92313ff7d441a546850ddd354ec347e4b950f3",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1147,7 +1153,7 @@
  {
   "q": "Will Davante Adams have 1,174.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x9ea417de18964ac6422bcc9eb40b66cf0127006ee716933ee665b23b2a33654d",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1157,7 +1163,7 @@
  {
   "q": "Will Rome Odunze have 799.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x50ca4b2bd449031d6c082582a6e0c16ec198fb1af9cde7367d4440f7c9a546d7",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1167,7 +1173,7 @@
  {
   "q": "Will Puka Nacua have 5.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x1c0ae15885023bcd942db4d75ae8ee42a28ba4ff6dbdf6ba2959f80a739fd944",
-  "reward": 0.052734375000000014,
+  "reward": 0.07009548611111113,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1177,7 +1183,7 @@
  {
   "q": "Will Mike Evans have 6.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x767763337f4b49d97084cc58735a23b605f8b8c2b67654714ce3265e36a470c9",
-  "reward": 0.07638888888888891,
+  "reward": 0.09375000000000003,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1197,7 +1203,7 @@
  {
   "q": "Will Michael Wilson have 524.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x3cd99738d04a6c830d80f72b3c0ca1d8a705ca3d81dbbbd820a6f0192711cc7a",
-  "reward": 0.5243055555555542,
+  "reward": 0.5312499999999987,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1217,7 +1223,7 @@
  {
   "q": "Will Calvin Ridley have 224.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xd3829f16220af6b473db283951706d5f554f6af99d5575f88564b597299a0aff",
-  "reward": 0.08368192782524067,
+  "reward": 0.08630330397512374,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1237,7 +1243,7 @@
  {
   "q": "Will Jake Ferguson have 8.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xc357df4b52b3894b682fa2d0ea13b558c15c91e79f88b3a84dc6739887bb3c23",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1247,7 +1253,7 @@
  {
   "q": "Will Harold Fannin Jr. have 699.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x30d384654663e90db2c4923bd33b2ed2411fd0e3f6de43cd3bf27b3efaab8118",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1277,7 +1283,7 @@
  {
   "q": "Will Ladd McConkey have 1,049.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xb5efdb3de0f5cb96a0aad6232401a37b62990f95fad3261f3635a9fdfd568e83",
-  "reward": 0.03033078487623589,
+  "reward": 0.03054476483123589,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1287,7 +1293,7 @@
  {
   "q": "Will Rome Odunze have 999.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x299c73132f742a84f55b65d0ff814abf80a053ca9867aa7e3f591b774dc74d9e",
-  "reward": 0.004098685853974303,
+  "reward": 0.004139079318634871,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1303,7 +1309,7 @@
  {
   "q": "Will TreVeyon Henderson have 299.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x0c21792cd5632816d9b80e618eb466f98887e9c8e2443131bb152f19f96e345c",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1313,7 +1319,7 @@
  {
   "q": "Will Blake Corum have 874.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x4008007eb8c647dc74c872679ce3974280c3f271a8d5fa12e4dc7fb887c5671f",
-  "reward": 0.20037374646343276,
+  "reward": 0.202179061310342,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1323,7 +1329,7 @@
  {
   "q": "Will Blake Corum have 1,074.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x4c0c3f5a16ad00c8c9eee0bef4f9a3c54082421775fed7b550dddcf6d64cce11",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1333,7 +1339,7 @@
  {
   "q": "Will Breece Hall have 699.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x2779c54313d67b3164f6f8329c89592312812a724eb985bd77ca390e254ca067",
-  "reward": 0.3770833333333326,
+  "reward": 0.38749999999999923,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1363,7 +1369,7 @@
  {
   "q": "Will Matthew Stafford have 36.5+ passing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xd4824c26b9db10a57e1dc47517788f28cad049e738e4a0b8efa2ff2563e36e3a",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1373,7 +1379,7 @@
  {
   "q": "Will Cameron Ward have 3,299.5+ passing yards in the 2026-27 NFL regular season?",
   "cid": "0x5a378b9a094a94dcd153f8ad2a0e39156307d372da4165524b924cc20ee0d2f3",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1393,7 +1399,7 @@
  {
   "q": "Will UCF have more than 6.5 wins during the 2026 CFB season?",
   "cid": "0x85385941c1300a66ee4b9b1b8c30ef393528419e61c6e156cfd3fb11d7c28a5b",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1403,7 +1409,7 @@
  {
   "q": "Will Texas State have more than 7.5 wins during the 2026 CFB season?",
   "cid": "0x0cfe0c59eea564e5e0e3a26ead1e01b02a81de312e688f2a41f7e20b39455d2c",
-  "reward": 0.4131944444444435,
+  "reward": 0.4305555555555545,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1413,7 +1419,7 @@
  {
   "q": "Will Washington have more than 6.5 wins during the 2026 CFB season?",
   "cid": "0x0c044d8801af80100286792cd1b9efba6fde7039f0a29fe25e1d2dc9f3356ab9",
-  "reward": 0.5974392678217665,
+  "reward": 0.6116917401894221,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1423,7 +1429,7 @@
  {
   "q": "Will Bayer Leverkusen qualify for the 2027-28 UEFA Europa League?",
   "cid": "0xf1eff3f780f3ee275d2d5a5408b4fc0d230c77a774fa3a21ee5f685d4e68df28",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1433,7 +1439,7 @@
  {
   "q": "Will FC Augsburg qualify for the 2027-28 UEFA Europa League?",
   "cid": "0xdfcfb26f20a8f7cde5650667d772406dfeec5c14740a35661cde23b395216b26",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1443,7 +1449,7 @@
  {
   "q": "Will FSV Mainz 05 qualify for the 2027-28 UEFA Europa League?",
   "cid": "0x805d7273667b66a4704f69165e76e1f4f261fb71782a3def20df4248c2fad863",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1453,7 +1459,7 @@
  {
   "q": "Will MegaETH hit $0.10 by December 31, 2026?",
   "cid": "0x36b12bcf92bd007dd1e4e86d067ca6fe518936d36f4451851190a1bb0d83d26f",
-  "reward": 0.26212642725925783,
+  "reward": 0.2624617728315997,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1469,7 +1475,7 @@
  {
   "q": "Will MegaETH hit $0.10 by June 30, 2027?",
   "cid": "0x5f87b5a6e804985aabee25a0ff63b15ed64beb04c85b7172113bdab95d6de2be",
-  "reward": 0.08836400786610045,
+  "reward": 0.0933291486103055,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1489,7 +1495,7 @@
  {
   "q": "Will Gaziantep be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0xf3924df713f31f8d9cf70338b1c30a4f0bf510792d45647305af174e980a8bf2",
-  "reward": 0.030569401827793653,
+  "reward": 0.03174399748498461,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1499,7 +1505,7 @@
  {
   "q": "Will Ethereum hit $3k by December 31, 2027?",
   "cid": "0xe9a2b149c957c94f6728752bdd42dd703e017d0e4c43fb1ae54b64dad3944704",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1529,7 +1535,7 @@
  {
   "q": "Will Saints D/ST finish as a top-5 D/ST in the 2026-27 NFL season?",
   "cid": "0x5c32d8a2cd3392933e76207f92d558b100f91df81f9fab1521d2b6f0dc208c50",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1539,7 +1545,7 @@
  {
   "q": "Will Parker Washington finish as a top-5 WR in the 2026-27 NFL season?",
   "cid": "0x9e1ebeabbe67d034ce30a9a03fac846c5417788ff5cf42d3ea3df99e5e01f824",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1549,7 +1555,7 @@
  {
   "q": "Will Malik Nabers finish as a top-5 WR in the 2026-27 NFL season?",
   "cid": "0xeefb5ec3ca547f51a4b8ac69765f11c2deb103f653e76e3558f84a24e08ba1e7",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1569,7 +1575,7 @@
  {
   "q": "Will Michael Badgley finish as a top-5 K in the 2026-27 NFL season?",
   "cid": "0xdecb3a67dfa49af218035a4032cb73f16345b4efee1af9ad6dd7fdf6d49dfd1d",
-  "reward": 0.5795152634601864,
+  "reward": 0.5968763745712975,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1579,7 +1585,7 @@
  {
   "q": "Will AGF be relegated from the 2026-27 Denmark Superliga?",
   "cid": "0x3017553d2b3001155fc6b54c1542223bc0587b651602bb4dca3f4939cf66f643",
-  "reward": 0.03121213749328568,
+  "reward": 0.032049072997027125,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1599,7 +1605,7 @@
  {
   "q": "Will Casa Pia be relegated from the 2026-27 Primeira Liga?",
   "cid": "0x0e5a2eeb0d8746526b4b68ab915d481578b090a6d4ed06597a86fa876045723c",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1609,7 +1615,7 @@
  {
   "q": "Will Estrela da Amadora be relegated from the 2026-27 Primeira Liga?",
   "cid": "0x9e7bbe3cdbb612b3775830a8726012976b9b6be0a3d41c321a15fb317c7a5de4",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1649,7 +1655,7 @@
  {
   "q": "Will Rio Ave be relegated from the 2026-27 Primeira Liga?",
   "cid": "0xefae2dd334047412cbbf8b03fb6ece0bfcd89b67b377cda6d1492e9a29be18ac",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -1659,7 +1665,7 @@
  {
   "q": "Will Deportivo Moquegua be relegated from the 2026 Peru Liga 1?",
   "cid": "0x74e4debe5151d19a85b59f77f974a9d1ac16c36d7a1bf7de81d290293c9f6960",
-  "reward": 0.6284722222222205,
+  "reward": 0.6458333333333316,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
