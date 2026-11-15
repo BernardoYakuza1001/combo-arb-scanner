@@ -198,8 +198,8 @@ def test_setup_key_validation_and_file(tmp_path, monkeypatch, capsys):
     assert sk.clean_addr("0x" + "a" * 40) and sk.clean_addr("0x" + "a" * 39) is None
     monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk, "detect", lambda k: None)
     key = "0x" + "7" * 64
-    monkeypatch.setattr(sk.getpass, "getpass", lambda p: key)
-    answers = iter(["0x" + "b" * 40, "1"]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
+    monkeypatch.setattr(sk.os, "system", lambda c: 0)
+    answers = iter([key, "0x" + "b" * 40, "1"]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
     sk.main()
     txt = open(sk.ENV).read()
     assert f"PM_PRIVATE_KEY={key}" in txt and "PM_SIG_TYPE=1" in txt and "PM_FUNDER=0x" + "b" * 40 in txt
@@ -251,9 +251,9 @@ def test_setup_key_finds_wallet_by_balance(tmp_path, monkeypatch, capsys):
     # known derivation check (public signer address -> wallet candidates)
     k = sk.candidates("0x0421F86e2F69f1A0DDDA760827019407E4d749df")
     assert k[0][1] == "0xe734e2fAc39B062f3044648bbaDc818364FAC950" and k[1][1] == "0xb163220Ef974D93ddBA4b3Ea3Bca9782FFB608Fa"
-    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk.getpass, "getpass", lambda p: acct.key.hex())
+    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk.os, "system", lambda c: 0)
     monkeypatch.setattr(sk, "balance", lambda key, sig, addr: 72.77 if sig == "2" else 0.0)
-    monkeypatch.setattr("builtins.input", lambda p="": (_ for _ in ()).throw(AssertionError("should not need to ask")))
+    answers = iter([acct.key.hex()]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
     sk.main()
     txt = open(sk.ENV).read()
     assert f"PM_FUNDER={cands[1][1]}" in txt and "PM_SIG_TYPE=2" in txt

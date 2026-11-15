@@ -53,8 +53,11 @@ def main():
     if os.path.exists(ENV) and input("pmmm\\.env already exists. Replace it? (y/n): ").strip().lower() != "y": return
     key = None
     for _ in range(5):
-        key = clean_key(getpass.getpass("1) Paste your PRIVATE KEY (right-click to paste; nothing will appear) then Enter: "))
-        if key: print("   Key accepted (66 characters, hidden)."); break
+        key = clean_key(getpass.getpass("") if os.environ.get("PMMM_HIDE_KEY") == "YES" else
+                        input("1) Paste your PRIVATE KEY here (Ctrl+V or right-click), then press Enter:\n> "))
+        if key:
+            os.system("cls" if os.name == "nt" else "clear")       # wipe the key off the screen
+            print("Key accepted (66 characters). The screen was cleared so the key is no longer visible."); break
         print("   That is not a private key: it must be 64 hex characters, with or without 0x in front. Try again.")
     if not key: print("Stopped: no valid key."); return
     addr = sig = None
