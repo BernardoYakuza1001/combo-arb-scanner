@@ -1,0 +1,128 @@
+[
+ {
+  "q": "Will Kristi Noem leave the Trump administration before 2027?",
+  "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
+  "reward": 0.007546936015691086,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Anthropic + OpenAI vs Microsoft - higher valuation on December 31?",
+  "cid": "0xfbf0869b186734f26197fc7c96bded5ed05862b394839716df72c29eb3f4fd60",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Perpl launch a token by June 30, 2027?",
+  "cid": "0xbdac24d43a7faf668e6a121a6c90ffb5953c62b7080751788d01664dce4432ce",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Arc FDV above $3B one day after launch?",
+  "cid": "0xd6b72c133b640f7a2c600d1d41aadaa18f006d2b835509b170edfac9e9443837",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "OpenAI criminally charged in the US in 2026?",
+  "cid": "0x35ef1403fa561153f9688d75fd02030634b382dd4254479769b2651d1e7b11b9",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Unit FDV above $200M one day after launch?",
+  "cid": "0x70eb82556e062975ed23ff8e07a355f132a79f17ef6267ee8be0a8c283ef7dbd",
+  "reward": 0.00018520269902402744,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Theo FDV above $100M one day after launch?",
+  "cid": "0x54f6212ba2469a110b62dad45e4dc318a3eb28a9b7db6309d8b81965355356b7",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "City Protocol FDV above $500M one day after launch?",
+  "cid": "0x626e6c7babb7727ecffd9b7d0aebc6cef7ce4ad531fdf8e3372550663117df67",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will the Orlando Magic make the 2027 NBA Playoffs?",
+  "cid": "0xa7dcbe84cc883f47069b34f50e50e724f997c01d85799db9e503eb0df47bdbd7",
+  "reward": 0.0010628310667529293,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will J.D. Vance announce a presidential run before 2028?",
+  "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
+  "reward": 0.0024453624724117317,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Leonardo Monta\u00f1ez Castro win the 2027 Aguascalientes Governor Election?",
+  "cid": "0x2b6e0c3e73aeb1bf370336800e865e2fbb59c14bc3f6f3fcd5f1c675e6d8cc8d",
+  "reward": 0.0012879819696022755,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": [
+   {
+    "ts": 1794750199.4978282,
+    "kind": "pause",
+    "mid": 0.165
+   }
+  ]
+ },
+ {
+  "q": "Will the highest score achieved by a Moonshot Kimi model on Humanity\u2019s Last Exam in 2026 b",
+  "cid": "0x0c49d3e9e2ca6bcf8a876a640948abe8a23823a9379ca942d0612704c22ccdb4",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ }
+]
