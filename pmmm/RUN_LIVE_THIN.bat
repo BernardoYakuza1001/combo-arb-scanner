@@ -1,6 +1,6 @@
 @echo off
 cd /d %~dp0
-title PMMM LIVE THIN - create a file named STOP in this folder to cancel all orders and exit
+title BOT RUNNING - REAL ORDERS - to stop: double-click STOP_BOT
 if not exist .env (echo Create pmmm\.env first - copy env.example to .env and fill it in & pause & exit /b)
 if exist STOP del STOP
 call _venv.bat
