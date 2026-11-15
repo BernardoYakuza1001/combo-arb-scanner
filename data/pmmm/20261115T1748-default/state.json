@@ -18,7 +18,7 @@
  {
   "q": "Will Bijan Robinson finish the 2026-27 NFL regular season with the most rushing yards?",
   "cid": "0xeef71929e6de499b2eb34de2e56ba9283eeb867d7b7f59af6dd4a3a5476e70ff",
-  "reward": 0.01633455477401383,
+  "reward": 0.021004383718063006,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -60,7 +60,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.01514579910080944,
+  "reward": 0.0161198300687361,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -70,7 +70,7 @@
  {
   "q": "Will J.D. Vance announce a presidential run before 2028?",
   "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
-  "reward": 0.04070997733836565,
+  "reward": 0.04973063841731641,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
