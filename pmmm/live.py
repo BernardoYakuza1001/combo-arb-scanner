@@ -275,11 +275,24 @@ def main():
         pos = retry(getpos, "read holdings"); keep = {m.cid: m for m in old}
         out = []
         for m in new:
-            if m.cid in keep: out.append(keep[m.cid]); continue     # keep running state (inventory, cash, pause)
+            if m.cid in keep: keep[m.cid].exit_only = False; out.append(keep[m.cid]); continue     # keep running state (inventory, cash, pause)
             m.yes = pos.get(str(m.tok), 0.0); m.no = pos.get(str(m.tno), 0.0)
             s = min(m.yes, m.no); m.yes -= s; m.no -= s
             m.cash = -(m.yes + m.no) * 0.5                          # rough carry-in cost; baseline below removes it
             out.append(m)
+        # Never orphan a position: any market where I hold 5+ shares stays managed (exit orders only),
+        # even when it has dropped out of the ranking.
+        try:
+            have = {m.cid for m in out}
+            for r in json.load(open("data/edges/pm_rewards.json", encoding="utf-8")):
+                if r.get("cid") in have or not r.get("tok") or not r.get("tno"): continue
+                y, n = pos.get(str(r["tok"]), 0.0), pos.get(str(r["tno"]), 0.0)
+                if max(y, n) < 5: continue
+                m = keep.get(r["cid"]) or bot.Mkt(r)
+                if r["cid"] not in keep:
+                    s2 = min(y, n); m.yes, m.no = y - s2, n - s2; m.cash = -(m.yes + m.no) * 0.5
+                m.exit_only = True; out.append(m); have.add(r["cid"])
+        except Exception as e: log(ev="held_markets_err", err=str(e)[:200])
         log(ev="markets", markets=[m.q[:50] for m in out], held={m.q[:30]: (m.yes, m.no) for m in out if m.yes or m.no})
         return out
     mk = load_markets()
@@ -413,8 +426,9 @@ def main():
                         yb, nb, n, yb0, nb0 = tg; imb = m.yes - m.no
                         # a fill means someone thought my price was too high: wait before bidding that side again
                         fy = now - getattr(m, "fill_y", 0) >= REBID_WAIT_S; fn = now - getattr(m, "fill_n", 0) >= REBID_WAIT_S
-                        if yb is not None and fy and imb < CFG["max_imb"] * n: want["Y"] = (yb, n, False)
-                        if nb is not None and fn and -imb < CFG["max_imb"] * n: want["N"] = (nb, n, False)
+                        xo = getattr(m, "exit_only", False)      # held-but-unranked market: sell what I hold, buy nothing
+                        if yb is not None and fy and not xo and imb < CFG["max_imb"] * n: want["Y"] = (yb, n, False)
+                        if nb is not None and fn and not xo and -imb < CFG["max_imb"] * n: want["N"] = (nb, n, False)
                         # exit orders: holding YES -> the NO slot becomes SELL YES at the same book level (1 - nb0)
                         # exits never sell below what the shares cost (plus one tick)
                         if m.yes >= 5: want["N"] = (min(nb0, round(1 - (getattr(m, "avg_y", None) or 0) - m.tick, 6)), m.yes, True)

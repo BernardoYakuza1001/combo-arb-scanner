@@ -313,3 +313,18 @@ def test_no_rebid_right_after_a_fill(tmp_path, monkeypatch):
     i = next(k for k, e in enumerate(ev) if e["ev"] == "fill")
     after = [e for e in ev[i:] if e["ev"] == "quote" and e["side"] == "Y"]
     assert not after and any(e["ev"] == "exit_quote" for e in ev[i:])
+
+
+def test_held_position_in_unranked_market_gets_exit_only(tmp_path, monkeypatch):
+    """I hold 23 YES in a market that is no longer in the ranking: it must still get an exit SELL, and no new bids."""
+    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52) + [{"asset_id": "HY", "bids": [{"price": "0.27", "size": "500"}], "asks": [{"price": "0.31", "size": "500"}]}], max_cycles=5, max_loss=500.0)
+    (tmp_path / "data" / "edges").mkdir(parents=True)
+    json.dump([dict(cid="0xheld", q="Held market", slug="h", tok="HY", tno="HN", v=4.5, minsz=20, rate=10, tick=0.01)],
+              open(tmp_path / "data" / "edges" / "pm_rewards.json", "w"))
+    monkeypatch.chdir(tmp_path); monkeypatch.setattr(live, "positions", lambda f: {"HY": 23.16})
+    live.main()
+    ev = [json.loads(l) for l in open(live.LOG)]
+    mk = next(e for e in ev if e["ev"] == "markets")
+    assert any("Held market" in q for q in mk["markets"]) and mk["held"].get("Held market") == [23.16, 0.0]
+    assert st["sells"] and st["sells"][0][1] == "HY" and abs(st["sells"][0][3] - 23.16) < 0.01      # exit sell of the held YES
+    assert not [p for p in st["placed"] if p[1] in ("HY", "HN")]                                     # no new bids there
