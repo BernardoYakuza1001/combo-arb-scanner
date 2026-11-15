@@ -34,12 +34,18 @@
  {
   "q": "Will MegaETH hit $0.10 by December 31, 2026?",
   "cid": "0x36b12bcf92bd007dd1e4e86d067ca6fe518936d36f4451851190a1bb0d83d26f",
-  "reward": 0.007169887956026426,
+  "reward": 0.00907134106149571,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794705059.1669486,
+    "kind": "pause",
+    "mid": 0.175
+   }
+  ]
  },
  {
   "q": "Extended FDV above $150M one day after launch?",
@@ -75,7 +81,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.3615384360281212,
+  "reward": 0.36684695430768244,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -85,7 +91,7 @@
  {
   "q": "Will David Sacks leave the Trump administration before 2027?",
   "cid": "0x41e7c27975bd53fe08a5ab30960934bfea92b60b88f56ee9d9b42b8b0c97d98d",
-  "reward": 0.8518900570323639,
+  "reward": 0.8589615446544479,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -106,7 +112,7 @@
  {
   "q": "Will Indiana have more than 10.5 wins during the 2026 CFB season?",
   "cid": "0x460d6631fbb0c548cd3eec4c8ab8ded560988e8e5b46dddc80f9c7429bf96ac6",
-  "reward": 0.0,
+  "reward": 0.0035549915992013114,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -158,7 +164,7 @@
  {
   "q": "OpenAI IPO closing market cap above $1.6T?",
   "cid": "0x82b7da93a66790027b48e73cff250492ece87b6bfd48e680278f4fee75433737",
-  "reward": 2.7473851374573306e-30,
+  "reward": 2.7827676382341193e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -168,7 +174,7 @@
  {
   "q": "Will Anthropic\u2019s market cap be between 1.2T and 1.5T at market close on IPO day by Decembe",
   "cid": "0x510736e7804a288592abab4105eca3399cbd562cd49a6d4e0289362490cc4825",
-  "reward": 0.08684389090577066,
+  "reward": 0.08772866866154246,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
