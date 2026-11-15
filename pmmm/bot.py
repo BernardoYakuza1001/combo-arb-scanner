@@ -28,6 +28,7 @@ CFG = dict(
     max_imb=1.0,              # stop bidding a side once net inventory exceeds this many order sizes
     news_move=0.04, news_win_s=600, pause_s=1800,
     min_days=7,
+    wide_frac=float(os.environ.get("PMMM_WIDE_FRAC", "0.95")),
     mode=os.environ.get("PMMM_MODE", "quiet"),            # quiet = jump-filtered liquid markets; thin = minimum-size quotes in markets nobody quotes
     max_others=float(os.environ.get("PMMM_MAX_OTHERS", "300")),
     max_jumps=int(os.environ.get("PMMM_MAX_JUMPS", "2")),   # hours in the past week with a move bigger than the quote distance
@@ -153,7 +154,10 @@ class Mkt:
         return self.cash + self.yes * m + self.no * (1 - m)
 
 def target(m, book, mid):
-    s = CFG["quote_frac"] * m.v / 100
+    # In a wide/empty book I am the only maker inside the reward zone, so my reward share is 100% wherever I sit
+    # in it. Quote at the far edge there: same reward, and a price move must travel further to reach my order.
+    frac = CFG["wide_frac"] if getattr(m, "wide", False) else CFG["quote_frac"]
+    s = frac * m.v / 100
     best_bid = max(float(l["price"]) for l in book["bids"]); best_ask = min(float(l["price"]) for l in book["asks"])
     yb = floor_tick(mid - s, m.tick)
     if mid - yb >= m.v / 100: yb += m.tick

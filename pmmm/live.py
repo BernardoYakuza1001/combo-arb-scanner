@@ -308,7 +308,7 @@ def main():
             # holdings: re-read real positions every 2 minutes (and at once when an order vanished), so the
             # bot's count can never drift from the account. Markets with a fill in the last minute are skipped
             # because the positions feed lags a few seconds.
-            if not DRY and cycles >= 1 and (resync or now - last_pos > 120):
+            if not DRY and cycles >= 1 and (resync or now - last_pos > 300):
                 try:
                     pos = getpos(); last_pos = now; resync = False
                     for m in mk:
@@ -416,8 +416,9 @@ def main():
                         if yb is not None and fy and imb < CFG["max_imb"] * n: want["Y"] = (yb, n, False)
                         if nb is not None and fn and -imb < CFG["max_imb"] * n: want["N"] = (nb, n, False)
                         # exit orders: holding YES -> the NO slot becomes SELL YES at the same book level (1 - nb0)
-                        if m.yes >= 5: want["N"] = (nb0, m.yes, True)
-                        if m.no >= 5: want["Y"] = (yb0, m.no, True)
+                        # exits never sell below what the shares cost (plus one tick)
+                        if m.yes >= 5: want["N"] = (min(nb0, round(1 - (getattr(m, "avg_y", None) or 0) - m.tick, 6)), m.yes, True)
+                        if m.no >= 5: want["Y"] = (min(yb0, round(1 - (getattr(m, "avg_n", None) or 0) - m.tick, 6)), m.no, True)
                     # small balances: open a market only if BOTH sides fit under the cap (one side alone earns far less)
                     if not live.get((m.cid, "Y")) and not live.get((m.cid, "N")):
                         need = sum(w[0] * w[1] for w in want.values() if w and not w[2])
