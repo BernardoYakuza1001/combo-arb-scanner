@@ -258,3 +258,48 @@ def test_setup_key_finds_wallet_by_balance(tmp_path, monkeypatch, capsys):
     txt = open(sk.ENV).read()
     assert f"PM_FUNDER={cands[1][1]}" in txt and "PM_SIG_TYPE=2" in txt
     assert acct.key.hex()[-20:] not in capsys.readouterr().out
+
+
+def test_sdk_adapter_maps_calls_to_the_unified_client(monkeypatch):
+    """LiveSDK against a stand-in for polymarket.SecureClient (same method names and shapes as polymarket-client 0.18)."""
+    import types
+    from decimal import Decimal
+    calls = []
+    class NS(types.SimpleNamespace): pass
+    class FakeClient:
+        wallet = "0xWALLET"
+        def get_balance_allowance(self, *, asset_type): assert asset_type == "COLLATERAL"; return NS(balance=72_770_000)
+        def place_limit_order(self, **kw):
+            calls.append(("limit", kw))
+            return NS(ok=False, code="not_enough_balance", message="no funds") if kw["size"] == "999.00" else NS(ok=True, order_id="0xORDER")
+        def place_market_order(self, **kw): calls.append(("market", kw)); return NS(ok=True, order_id="0xM")
+        def cancel_order(self, *, order_id): calls.append(("cancel", order_id))
+        def cancel_all(self): calls.append(("cancel_all",))
+        def list_open_orders(self): return NS(iter_items=lambda: iter([NS(id="0xA", size_matched=Decimal("7.5"))]))
+        def get_order(self, *, order_id):
+            if order_id == "0xGONE": raise RuntimeError("not found")
+            return NS(size_matched=Decimal("3"), status="live")
+        def get_orders_scoring(self, *, order_ids): return {i: True for i in order_ids}
+        def get_total_earnings_for_user_for_day(self, *, date): return (NS(earnings=Decimal("1.25")), NS(earnings=Decimal("0.5")))
+        def list_positions(self, *, user): assert user == "0xWALLET"; return NS(iter_items=lambda: iter([NS(asset_id="111", current_size=Decimal("20"))]))
+        def merge_positions(self, *, condition_id, amount): calls.append(("merge", condition_id, amount))
+        def send_order_heartbeat(self, *, heartbeat_id=""): calls.append(("hb", heartbeat_id)); return NS(heartbeat_id="hb2")
+    fake = types.ModuleType("polymarket")
+    fake.SecureClient = types.SimpleNamespace(create=lambda **kw: (calls.append(("create", {k: v for k, v in kw.items() if k != "private_key"})), FakeClient())[1])
+    monkeypatch.setitem(sys.modules, "polymarket", fake)
+    from pmmm import live
+    monkeypatch.setenv("PM_PRIVATE_KEY", "0x" + "1" * 64); monkeypatch.setenv("PM_SIG_TYPE", "3"); monkeypatch.delenv("PM_FUNDER", raising=False)
+    L = live.make_client()
+    assert isinstance(L, live.LiveSDK) and L.funder == "0xWALLET" and abs(L.usdc() - 72.77) < 1e-9
+    assert L.place("111", 0.4300000001, 20.009, 0.01) == "0xORDER"
+    assert calls[-1] == ("limit", dict(token_id="111", price="0.43", size="20.00", side="BUY", post_only=True))
+    assert L.place("111", 0.571, 20, 0.001, sell=True) and calls[-1][1]["side"] == "SELL" and calls[-1][1]["price"] == "0.571"
+    try: L.place("111", 0.5, 999, 0.01); raise AssertionError("should raise")
+    except RuntimeError as e: assert "not_enough_balance" in str(e)
+    L.stop_sell("111", 0.30, 20, 0.01); assert calls[-1] == ("market", dict(token_id="111", side="SELL", shares="20.00", min_price="0.30", order_type="FAK"))
+    assert L.open_map() == {"0xA": 7.5} and L.matched("0xB") == (3.0, "live") and L.matched("0xGONE") == (-1.0, "GONE")
+    assert L.scoring(["a"]) == {"a": True} and L.earnings("2026-11-15") == {"earnings": 1.75} and L.positions() == {"111": 20.0}
+    assert L.c.post_heartbeat(None) == {"heartbeat_id": "hb2"} and calls[-1] == ("hb", "")
+    L.merge("0xCID"); assert calls[-1] == ("merge", "0xCID", "max")
+    L.cancel("0xA"); L.cancel_all(); assert calls[-2:] == [("cancel", "0xA"), ("cancel_all",)]
+    monkeypatch.setenv("PM_SIG_TYPE", "1"); monkeypatch.setattr(live, "Live", lambda: "old-client"); assert live.make_client() == "old-client"

@@ -24,7 +24,7 @@ Safety:
 pmmm\\.env:
   PM_PRIVATE_KEY=0x...   Polymarket > Settings > Export private key
   PM_FUNDER=0x...        your Polymarket wallet address (profile / deposit address)
-  PM_SIG_TYPE=1          1 = email or Google login, 2 = MetaMask / browser-wallet login
+  PM_SIG_TYPE=3          3 = Deposit Wallet (accounts created after May 2026); 1 = older email/Google; 2 = older MetaMask
 """
 import os, sys, time, json, datetime as dt, requests
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
@@ -146,6 +146,66 @@ class Live:
         r = requests.get(CLOB + path, headers=h, params={"date": day, "maker_address": self.funder}, timeout=20)
         return r.json() if r.ok else {"error": r.status_code}
 
+class LiveSDK:
+    """Adapter for Polymarket's unified client (package polymarket-client). Required for accounts created
+    after May 2026, which hold funds in a Deposit Wallet (wallet type 3). Same interface as Live."""
+    def __init__(self):
+        from polymarket import SecureClient
+        w = os.environ.get("PM_FUNDER") or None
+        self.k = SecureClient.create(private_key=os.environ["PM_PRIVATE_KEY"], wallet=w)
+        self.funder = str(self.k.wallet)
+        outer = self
+        class _HB:      # start_heartbeat() talks to .c.post_heartbeat(id)
+            def post_heartbeat(self, hid):
+                return {"heartbeat_id": outer.k.send_order_heartbeat(heartbeat_id=hid or "").heartbeat_id}
+        self.c = _HB()
+
+    def usdc(self):
+        return float(self.k.get_balance_allowance(asset_type="COLLATERAL").balance) / 1e6
+
+    def place(self, token, price, size, tick, sell=False):
+        dec = max(0, -int(round(__import__("math").log10(tick))))
+        size = __import__("math").floor(float(size) * 100) / 100
+        r = self.k.place_limit_order(token_id=str(token), price=f"{price:.{dec}f}", size=f"{size:.2f}",
+                                     side="SELL" if sell else "BUY", post_only=True)
+        if getattr(r, "ok", False): return str(r.order_id)
+        raise RuntimeError(f"rejected: {getattr(r, 'code', '')} {getattr(r, 'message', '')}")
+
+    def stop_sell(self, token, price, size, tick):
+        dec = max(0, -int(round(__import__("math").log10(tick))))
+        size = __import__("math").floor(float(size) * 100) / 100
+        return self.k.place_market_order(token_id=str(token), side="SELL", shares=f"{size:.2f}",
+                                         min_price=f"{max(price, tick):.{dec}f}", order_type="FAK")
+
+    def cancel(self, oid): self.k.cancel_order(order_id=oid)
+    def cancel_all(self): self.k.cancel_all()
+
+    def open_map(self):
+        return {str(o.id): float(o.size_matched) for o in self.k.list_open_orders().iter_items()}
+
+    def matched(self, oid):
+        try:
+            o = self.k.get_order(order_id=oid)
+            return float(o.size_matched), str(o.status)
+        except Exception:
+            return -1.0, "GONE"          # no longer open: holdings are re-read from positions
+
+    def scoring(self, oids):
+        return {str(k): bool(v) for k, v in self.k.get_orders_scoring(order_ids=list(oids)).items()} if oids else {}
+
+    def earnings(self, day):
+        return {"earnings": float(sum(e.earnings for e in self.k.get_total_earnings_for_user_for_day(date=day)))}
+
+    def positions(self):
+        return {str(p.asset_id): float(p.current_size) for p in self.k.list_positions(user=self.funder).iter_items()}
+
+    def merge(self, cid):
+        return self.k.merge_positions(condition_id=cid, amount="max")
+
+def make_client():
+    """Deposit Wallet accounts (PM_SIG_TYPE=3) use the unified client; older wallet types use py-clob-client."""
+    return LiveSDK() if os.environ.get("PM_SIG_TYPE", "1") == "3" else Live()
+
 def ext_book(b, mine):
     """The order book without my own resting orders, so my quotes never anchor themselves.
     mine: my live orders in this market (slot 'Y' rests in the YES bids at price; slot 'N' rests in the YES asks at 1 - price)."""
@@ -191,7 +251,8 @@ def main():
         print("Live mode is off. Use RUN_LIVE.bat (or DRY_RUN.bat to test without orders)."); return
     for k in ("PM_PRIVATE_KEY", "PM_FUNDER"):
         if not os.environ.get(k): print(f"Missing {k} in pmmm\\.env"); return
-    L = Live()
+    L = make_client()
+    getpos = getattr(L, "positions", None) or (lambda: positions(L.funder))
     usdc = L.usdc(); cap = min(MAX_TOTAL, usdc)
     log(ev="start", dry=DRY, usdc=round(usdc, 2), cap=cap, per_market=CFG["cap"], n=CFG["n_markets"])
     if cap < max(CFG["cap"], 20): log(ev="abort", why=f"USDC ${usdc:.2f} is below one market's size ${CFG['cap']:.0f}"); return
@@ -200,7 +261,7 @@ def main():
     def load_markets(old=()):
         new = bot.select()
         if not new: return list(old)
-        pos = positions(L.funder); keep = {m.cid: m for m in old}
+        pos = getpos(); keep = {m.cid: m for m in old}
         out = []
         for m in new:
             if m.cid in keep: out.append(keep[m.cid]); continue     # keep running state (inventory, cash, pause)
@@ -213,7 +274,7 @@ def main():
     mk = load_markets()
     if not mk: log(ev="abort", why="no market passed the filters"); return
     live = {}; errors = 0; t0 = time.time(); last_score = 0; scoring_frac = "n/a"; last_day = None
-    last_select = t0; baseline = None; retired_pnl = 0.0; hb_flag = {"stop": False}; tapes = {}; cycles = 0
+    last_select = t0; baseline = None; retired_pnl = 0.0; hb_flag = {"stop": False}; tapes = {}; cycles = 0; last_pos = t0; resync = False
     if not DRY: start_heartbeat(L, hb_flag)
     try:
         while not os.path.exists(STOP):
@@ -233,6 +294,19 @@ def main():
             bk = {}
             for i in range(0, len(mk), 200):
                 for b in (http("POST", f"{CLOB}/books", json=[{"token_id": m.tok} for m in mk[i:i + 200]]) or []): bk[b.get("asset_id")] = b
+            # holdings: re-read real positions every 2 minutes (and at once when an order vanished), so the
+            # bot's count can never drift from the account. Markets with a fill in the last minute are skipped
+            # because the positions feed lags a few seconds.
+            if not DRY and cycles >= 1 and (resync or now - last_pos > 120):
+                try:
+                    pos = getpos(); last_pos = now; resync = False
+                    for m in mk:
+                        if now - getattr(m, "last_fill", 0) < 60: continue
+                        y, n = pos.get(str(m.tok), 0.0), pos.get(str(m.tno), 0.0); s2 = min(y, n)
+                        if abs((y - s2) - m.yes) > 0.5 or abs((n - s2) - m.no) > 0.5:
+                            log(ev="positions_resync", q=m.q[:50], yes=round(y - s2, 2), no=round(n - s2, 2), was=(round(m.yes, 2), round(m.no, 2)))
+                        m.yes, m.no = y - s2, n - s2
+                except Exception as e: log(ev="positions_err", err=str(e)[:150])
             # my open orders in one call (falls back to per-order checks if it fails)
             omap = None
             if not DRY and live:
@@ -280,10 +354,16 @@ def main():
                                 else: m.avg_n = (getattr(m, "avg_n", 0.0) * m.no + o["price"] * d) / (m.no + d); m.no += d
                                 m.cash -= d * o["price"]
                                 log(ev="fill", q=m.q[:50], side=sd, px=o["price"], sz=round(d, 2))
+                            m.last_fill = now
                         if status.upper() not in ("LIVE", "OPEN", ""):
                             live.pop((m.cid, sd), None)
+                            if status.upper() == "GONE": resync = True
                     s = min(m.yes, m.no)
-                    if s > 0: m.yes -= s; m.no -= s; m.merged += s; m.cash += s; log(ev="pair_locked", q=m.q[:50], sets=round(s, 2))
+                    if s > 0:
+                        m.yes -= s; m.no -= s; m.merged += s; m.cash += s; log(ev="pair_locked", q=m.q[:50], sets=round(s, 2))
+                        if s >= 1 and hasattr(L, "merge") and not DRY:      # turn the YES+NO pair back into USDC
+                            try: L.merge(m.cid); log(ev="merged", q=m.q[:50])
+                            except Exception as e: log(ev="merge_err", q=m.q[:50], err=str(e)[:150])
                     # 2) decide (on the book without my own orders)
                     b = ext_book(b, [(sd, live[(m.cid, sd)]) for sd in ("Y", "N") if (m.cid, sd) in live])
                     mid = fair_mid(m, b, tapes.get(m.cid, (0, []))[1], now) if b["bids"] and b["asks"] else None

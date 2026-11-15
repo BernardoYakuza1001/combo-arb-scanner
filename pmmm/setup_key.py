@@ -41,6 +41,15 @@ def detect(key):
     signer = Account.from_key(key).address
     print(f"   Signer address {signer[:6]}...{signer[-4:]}. Looking for the wallet that holds your USDC...")
     best = None
+    try:        # accounts created after May 2026: Deposit Wallet, via Polymarket's unified client
+        from polymarket import SecureClient
+        with SecureClient.create(private_key=key) as c:
+            w = str(c.wallet); bal = float(c.get_balance_allowance(asset_type="COLLATERAL").balance) / 1e6
+        print(f"   type 3 (Deposit Wallet) {w[:6]}...{w[-4:]}: ${bal:,.2f}")
+        if bal > 0: best = (w, "3", bal)
+    except Exception as e:
+        print(f"   type 3 (Deposit Wallet): no answer ({str(e)[:120]})")
+    if best: return best
     for sig, addr in candidates(signer):
         try: bal = balance(key, sig, addr)
         except Exception as e: print(f"   type {sig}: no answer ({str(e)[:80]})"); continue
