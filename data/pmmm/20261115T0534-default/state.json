@@ -18,7 +18,7 @@
  {
   "q": "Arc FDV above $3B one day after launch?",
   "cid": "0xd6b72c133b640f7a2c600d1d41aadaa18f006d2b835509b170edfac9e9443837",
-  "reward": 0.0,
+  "reward": 0.00028988593109958776,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -28,7 +28,7 @@
  {
   "q": "Unit FDV above $200M one day after launch?",
   "cid": "0x70eb82556e062975ed23ff8e07a355f132a79f17ef6267ee8be0a8c283ef7dbd",
-  "reward": 0.004384358532918421,
+  "reward": 0.0050145934416074775,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -49,7 +49,13 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794727208.606144,
+    "kind": "pause",
+    "mid": 0.76
+   }
+  ]
  },
  {
   "q": "Will the highest score achieved by a Moonshot Kimi model on Humanity\u2019s Last Exam in 2026 b",
