@@ -24,7 +24,7 @@ def test_live_loop_fake_exchange(tmp_path, monkeypatch):
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setitem(bot.CFG, "ahead_x", 0)
     monkeypatch.setitem(bot.CFG, "cycle_s", 0); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
-    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00", PM_SIG_TYPE="1")
     state = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={})
     class FakeLive:
         funder = "0xF00"
@@ -65,7 +65,7 @@ def _setup(tmp_path, monkeypatch, books, fills_at=None, max_cycles=8, max_loss=3
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     monkeypatch.setitem(bot.CFG, "ahead_x", 0); monkeypatch.setattr(live, "MAX_LOSS", max_loss)
-    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00", PM_SIG_TYPE="1")
     st = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={}, beats=0, sells=[], stops=[])
     class C:
         def post_heartbeat(self, hid): st["beats"] += 1; return {"heartbeat_id": f"h{st['beats']}"}
@@ -133,7 +133,7 @@ def test_thin_mode_anchor_ignores_own_orders_and_follows_fills(tmp_path, monkeyp
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     monkeypatch.setattr(live, "MAX_LOSS", 500.0)
     for k, v in dict(ahead_x=0, stop_c=1.0, cap=1.0, quote_frac=0.75, news_move=1.0).items(): monkeypatch.setitem(bot.CFG, k, v)
-    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00", PM_SIG_TYPE="1")
     st = dict(orders={}, n=0, cycle=0, cancelled=[], tape_a=[dict(token_id="YES", price="0.36", size="30", timestamp=time.time() - 3600)])
     class C:
         def post_heartbeat(self, hid): return {"heartbeat_id": "h"}
@@ -213,7 +213,7 @@ def test_small_balance_opens_only_markets_that_fit_both_sides(tmp_path, monkeypa
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     monkeypatch.setattr(live, "MAX_TOTAL", 1000.0)
     for k, v in dict(ahead_x=0, stop_c=1.0, cap=1.0, quote_frac=0.75).items(): monkeypatch.setitem(bot.CFG, k, v)
-    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00", PM_SIG_TYPE="1")
     placed = []; cyc = {"n": 0}
     class C:
         def post_heartbeat(self, hid): return {"heartbeat_id": "h"}

@@ -15,7 +15,7 @@ def check(name, fn):
     try:
         r = fn(); print(f"[ OK ] {name}: {r}")
     except Exception as e:
-        ok = False; print(f"[FAIL] {name}: {str(e)[:300]}")
+        ok = False; print(f"[FAIL] {name}: {type(e).__name__}: {str(e)[:300]}")
 
 def main():
     load_env()
@@ -34,7 +34,7 @@ def main():
     check("holdings readable", lambda: f"{len((getattr(L, 'positions', None) or (lambda: {}))())} positions")
     def sign():
         r = requests.get("https://clob.polymarket.com/rewards/markets/multi", params={"page_size": 50}, timeout=20).json()
-        m = next(x for x in r["data"] if x.get("rewards_config") and x.get("tokens"))
+        m = next((x for x in r["data"] if x.get("rewards_config") and x.get("tokens")), None) or next(x for x in r["data"] if x.get("tokens"))
         tok = m["tokens"][0]["token_id"]
         if hasattr(L, "k"):
             if L.k.get_closed_only_mode(): raise RuntimeError("account is in closed-only mode: it cannot open new positions")
