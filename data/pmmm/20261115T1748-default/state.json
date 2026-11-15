@@ -2,7 +2,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.2320594688312749,
+  "reward": 0.25124324917806556,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -18,7 +18,7 @@
  {
   "q": "Will Bijan Robinson finish the 2026-27 NFL regular season with the most rushing yards?",
   "cid": "0xeef71929e6de499b2eb34de2e56ba9283eeb867d7b7f59af6dd4a3a5476e70ff",
-  "reward": 0.10030328962179999,
+  "reward": 0.1074398767641766,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -65,7 +65,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.04846945421300553,
+  "reward": 0.04995623523334985,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -75,7 +75,7 @@
  {
   "q": "Will J.D. Vance announce a presidential run before 2028?",
   "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
-  "reward": 0.10479781641840666,
+  "reward": 0.10755394938697851,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -101,7 +101,7 @@
  {
   "q": "City Protocol FDV above $500M one day after launch?",
   "cid": "0x626e6c7babb7727ecffd9b7d0aebc6cef7ce4ad531fdf8e3372550663117df67",
-  "reward": 0.0,
+  "reward": 0.0013541782518635254,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
