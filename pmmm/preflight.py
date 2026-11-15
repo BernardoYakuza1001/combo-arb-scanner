@@ -10,33 +10,14 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from pmmm.live import load_env, HERE
 
 ok = True
-RESULT = os.path.join(HERE, "PREFLIGHT_RESULT.txt")
-def out(line):
-    print(line)
-    with open(RESULT, "a", encoding="utf-8") as f: f.write(line + "\n")
-
 def check(name, fn):
     global ok
     try:
-        r = fn(); out(f"[ OK ] {name}: {r}")
+        r = fn(); print(f"[ OK ] {name}: {r}")
     except Exception as e:
-        ok = False; out(f"[FAIL] {name}: {str(e)[:300]}")
-
-def fix_wallet():
-    """If the saved wallet shows $0, try the other wallet types for this key and save the funded one."""
-    from pmmm import setup_key as sk
-    key = os.environ["PM_PRIVATE_KEY"]
-    found = sk.detect(key)
-    if not found: return "no funded wallet found for this key (is the deposit confirmed on Polymarket?)"
-    addr, sig, bal = found
-    lines = [l for l in open(os.path.join(HERE, ".env"), encoding="utf-8-sig").read().splitlines() if not l.startswith(("PM_FUNDER=", "PM_SIG_TYPE="))]
-    open(os.path.join(HERE, ".env"), "w", encoding="utf-8").write("\n".join(lines + [f"PM_FUNDER={addr}", f"PM_SIG_TYPE={sig}"]) + "\n")
-    os.environ["PM_FUNDER"] = addr; os.environ["PM_SIG_TYPE"] = sig
-    return f"switched to wallet {addr[:6]}...{addr[-4:]} (type {sig}) holding ${bal:,.2f}"
+        ok = False; print(f"[FAIL] {name}: {str(e)[:300]}")
 
 def main():
-    import datetime
-    open(RESULT, "w", encoding="utf-8").write(f"Preflight {datetime.datetime.now():%Y-%m-%d %H:%M:%S}\n")
     load_env()
     check("pmmm\\.env has PM_PRIVATE_KEY", lambda: "present" if os.environ.get("PM_PRIVATE_KEY", "").startswith("0x") else (_ for _ in ()).throw(ValueError("missing or not starting with 0x")))
     check("pmmm\\.env has PM_FUNDER", lambda: os.environ["PM_FUNDER"][:6] + "..." + os.environ["PM_FUNDER"][-4:])
@@ -45,16 +26,9 @@ def main():
     from pmmm.live import make_client
     box = {}
     check("login", lambda: (box.__setitem__("L", make_client()), "ok")[1])
-    if "L" not in box: out("Fix the items above and run again."); return
+    if "L" not in box: print("\nFix the items above and run again."); return
     L = box["L"]
     check("wallet", lambda: L.funder[:6] + "..." + L.funder[-4:])
-    bal = 0.0
-    try: bal = L.usdc()
-    except Exception: pass
-    if bal <= 0:
-        check("wallet auto-fix (balance was $0)", fix_wallet)
-        try: L = Live()
-        except Exception as e: out(f"[FAIL] login after wallet fix: {str(e)[:200]}")
     check("USDC balance", lambda: f"${L.usdc():,.2f}")
     check("open orders now", lambda: len(L.open_map()))
     check("holdings readable", lambda: f"{len((getattr(L, 'positions', None) or (lambda: {}))())} positions")
@@ -70,7 +44,7 @@ def main():
         return f"signed (not sent) a test order on '{m['question'][:50]}'"
     check("order signing", sign)
     check("rewards endpoint (yesterday)", lambda: L.earnings(__import__("datetime").date.today().isoformat()))
-    out("ALL GOOD" if ok else "SOME CHECKS FAILED")
+    print("\nALL GOOD - you can run DRY_RUN.bat, then RUN_LIVE.bat." if ok else "\nSome checks failed - send me the [FAIL] lines (never the key).")
 
 if __name__ == "__main__":
     main()

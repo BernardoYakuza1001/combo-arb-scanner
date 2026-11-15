@@ -6,13 +6,6 @@ the file pmmm\\.env on this PC. The key is never shown on screen, never logged a
 import os, re, sys, getpass
 HERE = os.path.dirname(os.path.abspath(__file__)); ENV = os.path.join(HERE, ".env")
 
-def note(msg):
-    """Progress log without secrets, so problems can be diagnosed from the file."""
-    try:
-        import datetime
-        with open(os.path.join(HERE, "setup_log.txt"), "a", encoding="utf-8") as f: f.write(f"{datetime.datetime.now():%H:%M:%S} {msg}\n")
-    except Exception: pass
-
 def clean_key(k):
     k = re.sub(r"\s+", "", k or "").strip('"').strip("'")
     if re.fullmatch(r"[0-9a-fA-F]{64}", k): k = "0x" + k
@@ -59,8 +52,8 @@ def detect(key):
     if best: return best
     for sig, addr in candidates(signer):
         try: bal = balance(key, sig, addr)
-        except Exception as e: print(f"   type {sig}: no answer ({str(e)[:80]})"); note(f"type {sig} {addr}: error {str(e)[:300]}"); continue
-        print(f"   type {sig} {addr[:6]}...{addr[-4:]}: ${bal:,.2f}"); note(f"type {sig} {addr}: balance {bal:.2f}")
+        except Exception as e: print(f"   type {sig}: no answer ({str(e)[:80]})"); continue
+        print(f"   type {sig} {addr[:6]}...{addr[-4:]}: ${bal:,.2f}")
         if bal > 0 and (best is None or bal > best[2]): best = (addr, sig, bal)
     return best
 
@@ -78,32 +71,24 @@ def main():
     if not key: print("Stopped: no valid key."); return
     addr = sig = None
     # Find the wallet automatically: derive the possible wallet addresses from the key and ask Polymarket
-    # which one holds the money (40 s limit). Only public addresses are involved. No questions asked:
-    # if the search fails, the standard email/Google wallet is saved and PREFLIGHT verifies it.
-    note("key accepted")
-    import threading
-    box = {}
-    def work():
-        try: box["found"] = detect(key)
-        except Exception as e: box["err"] = str(e)[:300]
-    th = threading.Thread(target=work, daemon=True); th.start(); th.join(40)
-    found = box.get("found")
-    if found:
-        addr, sig, bal = found
-        print(f"   Found your Polymarket wallet {addr[:6]}...{addr[-4:]} with ${bal:,.2f} (wallet type {sig}).")
-        note(f"wallet found type {sig} {addr} balance {bal:.2f}")
-    else:
-        why = "timed out" if th.is_alive() else box.get("err", "no funded wallet found")
-        print(f"   Automatic wallet search did not finish ({why}). Saving the standard wallet; PREFLIGHT will verify it.")
-        note(f"wallet search failed: {why}")
-        try:
-            from eth_account import Account
-            sig, addr = candidates(Account.from_key(key).address)[0]
-        except Exception as e:
-            note(f"derive failed: {str(e)[:200]}"); print("   Could not derive the wallet address:", str(e)[:150]); return
+    # which one holds the money. Nothing but public addresses is sent.
+    try:
+        found = detect(key)
+        if found:
+            addr, sig, bal = found
+            print(f"   Found your Polymarket wallet {addr[:6]}...{addr[-4:]} with ${bal:,.2f} (wallet type {sig}).")
+        else:
+            print("   Could not find a funded wallet automatically.")
+    except Exception as e:
+        print("   Automatic wallet search failed:", str(e)[:150])
+    while not addr:
+        addr = clean_addr(input("2) Paste your Polymarket WALLET ADDRESS from your Profile page (0x..., 42 characters) then Enter: "))
+        if not addr: print("   That is not a wallet address: it must be 0x followed by 40 hex characters. Try again.")
+    while sig is None:
+        a = input("3) How do you log into Polymarket?  1 = email or Google   2 = MetaMask / browser wallet : ").strip()
+        if a in ("1", "2"): sig = a
     with open(ENV, "w", encoding="utf-8") as f:
         f.write(f"PM_PRIVATE_KEY={key}\nPM_FUNDER={addr}\nPM_SIG_TYPE={sig}\n")
-    note(f"saved .env type {sig} funder {addr}")
     print(f"\nSaved to {ENV}\nWallet {addr[:6]}...{addr[-4:]}, type {sig}. Next: PREFLIGHT.bat (it places no orders).")
 
 if __name__ == "__main__":

@@ -191,20 +191,56 @@ def test_thin_mode_anchor_ignores_own_orders_and_follows_fills(tmp_path, monkeyp
     assert any(e["ev"] == "fill" for e in ev) and A.yes == 20
 
 
-def test_setup_key_validation_and_fallback(tmp_path, monkeypatch, capsys):
+def test_setup_key_validation_and_file(tmp_path, monkeypatch, capsys):
     from pmmm import setup_key as sk
-    from eth_account import Account
-    assert sk.clean_key("A" * 64) == "0x" + "A" * 64 and sk.clean_key("0x" + "1" * 64 + "\n") == "0x" + "1" * 64
+    assert sk.clean_key(" ab" * 0 + "A" * 64) == "0x" + "A" * 64 and sk.clean_key("0x" + "1" * 64 + "\n") == "0x" + "1" * 64
     assert sk.clean_key("0x123") is None and sk.clean_key("hello") is None
-    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk, "HERE", str(tmp_path))
+    assert sk.clean_addr("0x" + "a" * 40) and sk.clean_addr("0x" + "a" * 39) is None
+    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk, "detect", lambda k: None)
+    key = "0x" + "7" * 64
     monkeypatch.setattr(sk.os, "system", lambda c: 0)
-    acct = Account.create(); key = acct.key.hex(); key = key if key.startswith("0x") else "0x" + key
-    monkeypatch.setattr(sk, "detect", lambda k: (_ for _ in ()).throw(RuntimeError("network down")))
-    answers = iter([key]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
-    sk.main()                                              # search fails -> standard wallet saved, no questions
+    answers = iter([key, "0x" + "b" * 40, "1"]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
+    sk.main()
     txt = open(sk.ENV).read()
-    assert f"PM_PRIVATE_KEY={key}" in txt and "PM_SIG_TYPE=1" in txt and f"PM_FUNDER={sk.candidates(acct.address)[0][1]}" in txt
-    assert key not in capsys.readouterr().out and key not in open(tmp_path / "setup_log.txt").read()
+    assert f"PM_PRIVATE_KEY={key}" in txt and "PM_SIG_TYPE=1" in txt and "PM_FUNDER=0x" + "b" * 40 in txt
+    assert key not in capsys.readouterr().out          # the key is never printed
+
+
+def test_small_balance_opens_only_markets_that_fit_both_sides(tmp_path, monkeypatch):
+    """$72 balance, 20-share markets at ~$19 a pair: three markets get both orders, the fourth gets none."""
+    from pmmm import live, bot
+    monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
+    monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
+    monkeypatch.setattr(live, "MAX_TOTAL", 1000.0)
+    for k, v in dict(ahead_x=0, stop_c=1.0, cap=1.0, quote_frac=0.75).items(): monkeypatch.setitem(bot.CFG, k, v)
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    placed = []; cyc = {"n": 0}
+    class C:
+        def post_heartbeat(self, hid): return {"heartbeat_id": "h"}
+    class FakeLive:
+        funder = "0xF00"; c = C()
+        def usdc(self): return 72.0
+        def place(self, tok, px, sz, tick, sell=False): placed.append((tok, px, sz)); return f"o{len(placed)}"
+        def cancel(self, oid): pass
+        def cancel_all(self): pass
+        def open_map(self): return {f"o{i+1}": 0.0 for i in range(len(placed))}
+        def matched(self, oid): return 0.0, "LIVE"
+        def scoring(self, ids): return {}
+        def earnings(self, d): return {}
+    monkeypatch.setattr(live, "Live", FakeLive)
+    mk = [bot.Mkt(dict(cid=f"0x{i}", q=f"M{i}", slug="s", tok=f"Y{i}", tno=f"N{i}", v=4.5, minsz=20, rate=50, tick=0.01)) for i in range(4)]
+    monkeypatch.setattr(bot, "select", lambda: mk); monkeypatch.setattr(live, "positions", lambda f: {})
+    def fake_http(method, url, **kw):
+        if method == "GET": return {"data": []}
+        cyc["n"] += 1
+        if cyc["n"] >= 3: open(live.STOP, "w").close()
+        return [{"asset_id": f"Y{i}", "bids": [{"price": "0.48", "size": "500"}], "asks": [{"price": "0.52", "size": "500"}]} for i in range(4)]
+    monkeypatch.setattr(live, "http", fake_http)
+    live.main()
+    per = {}
+    for tok, px, sz in placed: per.setdefault(tok[1:], []).append(tok[0])
+    assert sorted(per) == ["0", "1", "2"] and all(sorted(v) == ["N", "Y"] for v in per.values())    # 3 full pairs, market 3 untouched
+    assert sum(px * sz for _, px, sz in placed) <= 72
 
 
 def test_setup_key_finds_wallet_by_balance(tmp_path, monkeypatch, capsys):
@@ -215,7 +251,7 @@ def test_setup_key_finds_wallet_by_balance(tmp_path, monkeypatch, capsys):
     # known derivation check (public signer address -> wallet candidates)
     k = sk.candidates("0x0421F86e2F69f1A0DDDA760827019407E4d749df")
     assert k[0][1] == "0xe734e2fAc39B062f3044648bbaDc818364FAC950" and k[1][1] == "0xb163220Ef974D93ddBA4b3Ea3Bca9782FFB608Fa"
-    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk.os, "system", lambda c: 0); monkeypatch.setattr(sk, "HERE", str(tmp_path))
+    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk.os, "system", lambda c: 0)
     monkeypatch.setattr(sk, "balance", lambda key, sig, addr: 72.77 if sig == "2" else 0.0)
     answers = iter([acct.key.hex()]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
     sk.main()
