@@ -2,7 +2,7 @@
 
 Assumes $1000 resting per market, quoted at 50% of max spread on both sides, and that competing liquidity stays as it is now. Only open markets accepting orders with a future end date.
 
-Markets with live rewards: 3395; pool $23,117/day. Open and scored: 280.
+Markets with live rewards: 3395; pool $23,117/day. Open and scored: 874.
 
 ## A. Competitive books (real two-sided market already exists)
 
@@ -17,15 +17,15 @@ Markets with live rewards: 3395; pool $23,117/day. Open and scored: 280.
 | 7 | [Variational FDV above $1B one day after launch?](https://polymarket.com/market/variational-fdv-above-1b-one-day-after-launch-636-229-681) | 50 | 4.5 | 100 | 0.455 | 1.0 | 40722 | 404 | 39.3% | 19.67 | 2028-01-01 |
 | 8 | [Will Trey McBride be the highest-scoring TE of the 2026-27 NFL season?](https://polymarket.com/market/will-trey-mcbride-be-the-highest-scoring-te-of-the-2026-27-nfl-season-20260806224131145) | 18 | 4.5 | 20 | 0.345 | 7.0 | 0 | 5 | 98.3% | 17.69 | 2027-01-27 |
 | 9 | [Will Lindsay Clancy be the #1 searched person on Google this year?](https://polymarket.com/market/will-lindsay-clancy-be-the-1-searched-person-on-google-this-year-20260717214426299) | 114 | 4.5 | 50 | 0.185 | 1.0 | 8494 | 1,459 | 15.2% | 17.34 | 2026-12-31 |
-| 10 | [Will Joe Burrow finish the 2026-27 NFL regular season with the most passing touchdowns?](https://polymarket.com/market/will-joe-burrow-finish-the-2026-27-nfl-regular-season-with-the-most-passing-touchdowns-20260715212611259) | 29 | 4.5 | 20 | 0.55 | 2.0 | 20 | 263 | 49.9% | 14.47 | 2027-01-27 |
-| 11 | [Extended FDV above $150M one day after launch?](https://polymarket.com/market/extended-fdv-above-150m-one-day-after-launch-452) | 50 | 4.5 | 100 | 0.58 | 2.0 | 28405 | 646 | 28.8% | 14.42 | 2027-01-01 |
-| 12 | [Predict.fun FDV above $1.5B one day after launch?](https://polymarket.com/market/predictfun-fdv-above-1pt5b-one-day-after-launch) | 50 | 4.5 | 100 | 0.249 | 3.0 | 19677 | 684 | 27.7% | 13.85 | 2028-01-01 |
-| 13 | [Will Anthropic's IPO valuation be between $1.50T and $1.75T?](https://polymarket.com/market/will-anthropics-ipo-valuation-be-between-1pt50t-and-1pt75t-12) | 51 | 4.5 | 50 | 0.54 | 1.2 | 6158 | 707 | 27.0% | 13.78 | 2028-01-01 |
-| 14 | [Will Anthropic’s market cap be between 1.5T and 1.8T at market close on IPO day by Decembe](https://polymarket.com/market/will-anthropics-market-cap-be-between-1pt5t-and-1pt8t-at-market-close-on-ipo-day-by-december-31-2027) | 48 | 4.5 | 50 | 0.231 | 1.3 | 1944 | 681 | 27.8% | 13.33 | 2028-01-01 |
-| 15 | [Will Japan Q3 GDP growth (annualized) be between -1.6% and -0.8%?](https://polymarket.com/market/will-japan-q3-gdp-growth-annualized-be-between-1pt6-and-0pt8) | 27 | 4.5 | 20 | 0.141 | 1.3 | 98 | 298 | 46.8% | 12.62 | 2026-11-17 |
-| 16 | [Will Josh Allen be the highest-scoring QB of the 2026-27 NFL season?](https://polymarket.com/market/will-josh-allen-be-the-highest-scoring-qb-of-the-2026-27-nfl-season-20260806224129805) | 26 | 4.5 | 20 | 0.53 | 2.0 | 400 | 283 | 48.0% | 12.48 | 2027-01-27 |
-| 17 | [Will Nvidia’s market capitalization be less than $4.00T at the end of 2026?](https://polymarket.com/market/will-nvidias-market-capitalization-be-less-than-3pt50t-at-the-end-of-2026-1785882876109) | 54 | 4.5 | 20 | 0.479 | 1.2 | 4014 | 904 | 22.4% | 12.12 | 2026-12-31 |
-| 18 | [Will Nvidia’s market capitalization be between $4.00T and $4.50T at the end of 2026?](https://polymarket.com/market/will-nvidias-market-capitalization-be-between-3pt50t-and-4pt00t-at-the-end-of-2026-1785882876110) | 26 | 4.5 | 20 | 0.263 | 1.5 | 821 | 346 | 43.0% | 11.19 | 2026-12-31 |
+| 10 | [Will Nvidia’s market capitalization be less than $4.00T at the end of 2026?](https://polymarket.com/market/will-nvidias-market-capitalization-be-less-than-3pt50t-at-the-end-of-2026-1785882876109) | 54 | 4.5 | 20 | 0.479 | 1.2 | 4014 | 622 | 29.6% | 15.99 | 2026-12-31 |
+| 11 | [Will Joe Burrow finish the 2026-27 NFL regular season with the most passing touchdowns?](https://polymarket.com/market/will-joe-burrow-finish-the-2026-27-nfl-regular-season-with-the-most-passing-touchdowns-20260715212611259) | 29 | 4.5 | 20 | 0.55 | 2.0 | 20 | 263 | 49.9% | 14.47 | 2027-01-27 |
+| 12 | [Extended FDV above $150M one day after launch?](https://polymarket.com/market/extended-fdv-above-150m-one-day-after-launch-452) | 50 | 4.5 | 100 | 0.58 | 2.0 | 28405 | 646 | 28.8% | 14.42 | 2027-01-01 |
+| 13 | [Predict.fun FDV above $1.5B one day after launch?](https://polymarket.com/market/predictfun-fdv-above-1pt5b-one-day-after-launch) | 50 | 4.5 | 100 | 0.249 | 3.0 | 19677 | 684 | 27.7% | 13.85 | 2028-01-01 |
+| 14 | [Will Anthropic's IPO valuation be between $1.50T and $1.75T?](https://polymarket.com/market/will-anthropics-ipo-valuation-be-between-1pt50t-and-1pt75t-12) | 51 | 4.5 | 50 | 0.54 | 1.2 | 6158 | 707 | 27.0% | 13.78 | 2028-01-01 |
+| 15 | [Will Anthropic’s market cap be between 1.5T and 1.8T at market close on IPO day by Decembe](https://polymarket.com/market/will-anthropics-market-cap-be-between-1pt5t-and-1pt8t-at-market-close-on-ipo-day-by-december-31-2027) | 48 | 4.5 | 50 | 0.231 | 1.3 | 1944 | 681 | 27.8% | 13.33 | 2028-01-01 |
+| 16 | [Will Josh Allen be the highest-scoring QB of the 2026-27 NFL season?](https://polymarket.com/market/will-josh-allen-be-the-highest-scoring-qb-of-the-2026-27-nfl-season-20260806224129805) | 26 | 4.5 | 20 | 0.53 | 2.0 | 400 | 272 | 49.0% | 12.74 | 2027-01-27 |
+| 17 | [Will Japan Q3 GDP growth (annualized) be between -1.6% and -0.8%?](https://polymarket.com/market/will-japan-q3-gdp-growth-annualized-be-between-1pt6-and-0pt8) | 27 | 4.5 | 20 | 0.141 | 1.3 | 98 | 298 | 46.8% | 12.62 | 2026-11-17 |
+| 18 | [Will Nvidia’s market capitalization be between $4.00T and $4.50T at the end of 2026?](https://polymarket.com/market/will-nvidias-market-capitalization-be-between-3pt50t-and-4pt00t-at-the-end-of-2026-1785882876110) | 26 | 4.5 | 20 | 0.263 | 1.5 | 821 | 369 | 41.5% | 10.78 | 2026-12-31 |
 | 19 | [Predict.fun FDV above $1B one day after launch?](https://polymarket.com/market/predictfun-fdv-above-1b-one-day-after-launch) | 50 | 4.5 | 100 | 0.503 | 0.4 | 12839 | 973 | 21.2% | 10.60 | 2028-01-01 |
 | 20 | [Will Avengers: Doomsday have the 2nd best domestic opening weekend in 2026?](https://polymarket.com/market/will-avengers-doomsday-have-the-2nd-best-domestic-opening-weekend-in-2026-20260722231944211) | 24 | 4.5 | 50 | 0.27 | 2.0 | 2784 | 355 | 42.5% | 10.19 | 2027-01-01 |
 | 21 | [Will Anthropic flip BTC by December 31?](https://polymarket.com/market/will-anthropic-flip-btc-by-december-31) | 10 | 4.5 | 200 | 0.855 | 7.0 | 716 | 1 | 99.8% | 9.98 | 2027-01-01 |
@@ -37,9 +37,9 @@ Markets with live rewards: 3395; pool $23,117/day. Open and scored: 280.
 | 27 | [Will Benjamin Netanyahu be the next leader out before 2027?](https://polymarket.com/market/will-benjamin-netanyahu-be-the-next-leader-out-before-2027-20260630194627368) | 45 | 6.5 | 100 | 0.365 | 1.0 | 7370 | 1,075 | 19.9% | 8.96 | 2027-01-01 |
 | 28 | [Will Nate Sheppard be the 2026 D1 Rushing Yards Leader?](https://polymarket.com/market/will-nate-sheppard-be-the-2026-d1-rushing-yards-leader-20260803210835739) | 20 | 4.5 | 50 | 0.202 | 1.2 | 6186 | 352 | 42.6% | 8.53 | 2027-01-04 |
 | 29 | [Will no listed leader be out before 2027?](https://polymarket.com/market/will-no-listed-leader-be-out-before-2027-20260630194627385) | 55 | 6.5 | 100 | 0.555 | 1.0 | 18205 | 1,536 | 14.8% | 8.16 | 2027-01-01 |
-| 30 | [Will 2026 rank between 7th and 9th among the highest domestic box office years?](https://polymarket.com/market/will-2026-rank-between-7th-and-9th-among-the-highest-domestic-box-office-years-20260807033449403) | 12 | 4.5 | 20 | 0.57 | 2.0 | 356 | 139 | 65.3% | 7.84 | 2027-02-01 |
+| 30 | [Will Caedrel Win the 2026 Esports Content Creator of the Year Award?](https://polymarket.com/market/will-caedrel-win-the-2026-esports-content-creator-of-the-year-award-20260806165627998) | 15 | 4.5 | 20 | 0.835 | 1.0 | 768 | 237 | 52.5% | 7.87 | 2026-12-15 |
 
-Top 10 A combined: $253.45/day on $10,000.
+Top 10 A combined: $254.97/day on $10,000.
 
 ## B. Empty books (no maker inside the max spread; you would set the price yourself, highest pick-off risk)
 
@@ -62,6 +62,6 @@ Top 10 A combined: $253.45/day on $10,000.
 | 15 | [Will New Orleans Pelicans receive the first overall pick at the 2027 NBA Draft Lottery?](https://polymarket.com/market/will-new-orleans-pelicans-receive-the-first-overall-pick-at-the-2027-nba-draft-lottery) | 7 | 4.5 | 20 | 0.3 | 54.0 | 0 | 0 | 100.0% | 7.00 | 2027-06-02 |
 | 16 | [Will Oklahoma City Thunder receive the first overall pick at the 2027 NBA Draft Lottery?](https://polymarket.com/market/will-oklahoma-city-thunder-receive-the-first-overall-pick-at-the-2027-nba-draft-lottery) | 7 | 4.5 | 20 | 0.294 | 56.4 | 0 | 0 | 100.0% | 7.00 | 2027-06-02 |
 | 17 | [Will San Antonio Spurs receive the first overall pick at the 2027 NBA Draft Lottery?](https://polymarket.com/market/will-san-antonio-spurs-receive-the-first-overall-pick-at-the-2027-nba-draft-lottery) | 7 | 4.5 | 20 | 0.29 | 55.8 | 0 | 0 | 100.0% | 7.00 | 2027-06-02 |
-| 18 | [Will Chase McLaughlin be the highest-scoring K of the 2026-27 NFL season?](https://polymarket.com/market/will-chase-mclaughlin-be-the-highest-scoring-k-of-the-2026-27-nfl-season-20260806224131972) | 6 | 4.5 | 20 | 0.227 | 44.3 | 0 | 0 | 100.0% | 6.00 | 2027-01-27 |
+| 18 | [Will Chase McLaughlin be the highest-scoring K of the 2026-27 NFL season?](https://polymarket.com/market/will-chase-mclaughlin-be-the-highest-scoring-k-of-the-2026-27-nfl-season-20260806224131972) | 6 | 4.5 | 20 | 0.227 | 44.4 | 0 | 0 | 100.0% | 6.00 | 2027-01-27 |
 | 19 | [Will Jake Elliott be the highest-scoring K of the 2026-27 NFL season?](https://polymarket.com/market/will-jake-elliott-be-the-highest-scoring-k-of-the-2026-27-nfl-season-20260806224131976) | 6 | 4.5 | 20 | 0.239 | 42.4 | 0 | 0 | 100.0% | 6.00 | 2027-01-27 |
 | 20 | [Will Tyler Bass be the highest-scoring K of the 2026-27 NFL season?](https://polymarket.com/market/will-tyler-bass-be-the-highest-scoring-k-of-the-2026-27-nfl-season-20260806224131979) | 6 | 4.5 | 20 | 0.24 | 47.4 | 0 | 0 | 100.0% | 6.00 | 2027-01-27 |
