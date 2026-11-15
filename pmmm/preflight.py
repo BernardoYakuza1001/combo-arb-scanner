@@ -10,14 +10,22 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from pmmm.live import load_env, HERE
 
 ok = True
+RESULT = os.path.join(HERE, "PREFLIGHT_RESULT.txt")     # same lines as on screen (no secrets), readable afterwards
+def out(line):
+    print(line, flush=True)
+    with open(RESULT, "a", encoding="utf-8") as f: f.write(line + "\n")
+
 def check(name, fn):
     global ok
     try:
-        r = fn(); print(f"[ OK ] {name}: {r}")
-    except Exception as e:
-        ok = False; print(f"[FAIL] {name}: {type(e).__name__}: {str(e)[:300]}")
+        r = fn(); out(f"[ OK ] {name}: {r}")
+    except BaseException as e:
+        if isinstance(e, KeyboardInterrupt): raise
+        ok = False; out(f"[FAIL] {name}: {type(e).__name__}: {str(e)[:400]}")
 
 def main():
+    import datetime
+    open(RESULT, "w", encoding="utf-8").write(f"Preflight {datetime.datetime.now():%Y-%m-%d %H:%M:%S}\n")
     load_env()
     check("pmmm\\.env has PM_PRIVATE_KEY", lambda: "present" if os.environ.get("PM_PRIVATE_KEY", "").startswith("0x") else (_ for _ in ()).throw(ValueError("missing or not starting with 0x")))
     check("pmmm\\.env has PM_FUNDER", lambda: os.environ["PM_FUNDER"][:6] + "..." + os.environ["PM_FUNDER"][-4:])
@@ -26,7 +34,7 @@ def main():
     from pmmm.live import make_client
     box = {}
     check("login", lambda: (box.__setitem__("L", make_client()), "ok")[1])
-    if "L" not in box: print("\nFix the items above and run again."); return
+    if "L" not in box: out("STOPPED: login failed"); return
     L = box["L"]
     check("wallet", lambda: L.funder[:6] + "..." + L.funder[-4:])
     check("USDC balance", lambda: f"${L.usdc():,.2f}")
@@ -44,7 +52,7 @@ def main():
         return f"signed (not sent) a test order on '{m['question'][:50]}'"
     check("order signing", sign)
     check("rewards endpoint (yesterday)", lambda: L.earnings(__import__("datetime").date.today().isoformat()))
-    print("\nALL GOOD - you can run DRY_RUN.bat, then RUN_LIVE.bat." if ok else "\nSome checks failed - send me the [FAIL] lines (never the key).")
+    out("ALL GOOD" if ok else "SOME CHECKS FAILED")
 
 if __name__ == "__main__":
     main()
