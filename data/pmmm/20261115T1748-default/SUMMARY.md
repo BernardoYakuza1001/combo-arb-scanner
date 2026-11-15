@@ -1,19 +1,19 @@
-# PMMM paper run — 2026-11-15 17:49 UTC, 3.92 h
+# PMMM paper run — 2026-11-15 17:49 UTC, 4.00 h
 
 8 markets, $200 each ($1,600 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.64  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.64**
-Per day at this pace: rewards $3.93, net $+3.93
+**Rewards accrued: $0.67  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.67**
+Per day at this pace: rewards $4.03, net $+4.03
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.64, per day $+3.93. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.67, per day $+4.03. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.274 | 54.3% | 87/236 | 0.33 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will Bijan Robinson finish the 2026-27 NFL regular season wi](https://polymarket.com/market/will-bijan-robinson-finish-the-2026-27-nfl-regular-season-with-the-most-rushing-yards-20260715211637038) | 9 | 0.222 | 11.4% | 184/236 | 0.13 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 3 (3) / 3 / - |
-| [Will J.D. Vance announce a presidential run before 2028?](https://polymarket.com/market/will-jptdpt-vance-announce-a-presidential-run-before-2028-20260803143241645) | 5 | 0.66 | 14.6% | 232/236 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 21 | 0.154 | 1.6% | 236/236 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Arc FDV above $3B one day after launch?](https://polymarket.com/market/arc-fdv-above-3b-one-day-after-launch) | 5 | 0.355 | 11.9% | 19/236 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [City Protocol FDV above $500M one day after launch?](https://polymarket.com/market/city-protocol-fdv-above-500m-one-day-after-launch) | 5 | 0.175 | 7.8% | 5/236 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will Trevor Lawrence have 3,774.5+ passing yards in the 2026](https://polymarket.com/market/trevor-lawrence-3774pt5-passing-yards-2026-27) | 5 | 0.7 | 0.0% | 1/236 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 2 (0) / 2 / - |
-| [Will Fuse launch a token by December 31, 2026?](https://polymarket.com/market/will-fuse-launch-a-token-by-december-31-2026) | 5 | 0.333 | 0.0% | 0/236 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.274 | 54.3% | 92/241 | 0.35 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Bijan Robinson finish the 2026-27 NFL regular season wi](https://polymarket.com/market/will-bijan-robinson-finish-the-2026-27-nfl-regular-season-with-the-most-rushing-yards-20260715211637038) | 9 | 0.222 | 11.5% | 189/241 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 3 (3) / 3 / - |
+| [Will J.D. Vance announce a presidential run before 2028?](https://polymarket.com/market/will-jptdpt-vance-announce-a-presidential-run-before-2028-20260803143241645) | 5 | 0.66 | 14.7% | 237/241 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Nancy Guthrie be the #1 searched person on Google in th](https://polymarket.com/market/will-nancy-guthrie-be-the-1-searched-person-on-google-in-the-us-this-year-20260730192940436) | 21 | 0.154 | 1.6% | 241/241 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Arc FDV above $3B one day after launch?](https://polymarket.com/market/arc-fdv-above-3b-one-day-after-launch) | 5 | 0.375 | 12.0% | 20/241 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [City Protocol FDV above $500M one day after launch?](https://polymarket.com/market/city-protocol-fdv-above-500m-one-day-after-launch) | 5 | 0.175 | 7.8% | 5/241 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Trevor Lawrence have 3,774.5+ passing yards in the 2026](https://polymarket.com/market/trevor-lawrence-3774pt5-passing-yards-2026-27) | 5 | 0.7 | 0.0% | 1/241 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 2 (0) / 2 / - |
+| [Will Fuse launch a token by December 31, 2026?](https://polymarket.com/market/will-fuse-launch-a-token-by-december-31-2026) | 5 | 0.333 | 0.0% | 0/241 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
