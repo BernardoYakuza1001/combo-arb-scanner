@@ -1,16 +1,16 @@
-# PMMM paper run — 2026-11-15 05:35 UTC, 5.58 h
+# PMMM paper run — 2026-11-15 05:35 UTC, 5.67 h
 
 5 markets, $200 each ($1,000 total), quotes at 75% of max spread.
 
-**Rewards accrued: $1.02  |  Trading P&L (marked at mid): $+0.00  |  Net: $+1.02**
-Per day at this pace: rewards $4.38, net $+4.38
+**Rewards accrued: $1.04  |  Trading P&L (marked at mid): $+0.00  |  Net: $+1.04**
+Per day at this pace: rewards $4.41, net $+4.41
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+1.02, per day $+4.38. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+1.04, per day $+4.41. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Jahmyr Gibbs be the highest-scoring RB of the 2026-27 N](https://polymarket.com/market/will-jahmyr-gibbs-be-the-highest-scoring-rb-of-the-2026-27-nfl-season-20260806224130428) | 24 | 0.765 | 15.7% | 243/336 | 0.64 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.195 | 20.1% | 255/336 | 0.36 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 3 (1) / 3 / - |
-| [Arc FDV above $3B one day after launch?](https://polymarket.com/market/arc-fdv-above-3b-one-day-after-launch) | 5 | 0.39 | 2.7% | 231/336 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Unit FDV above $200M one day after launch?](https://polymarket.com/market/unit-fdv-above-200m-one-day-after-launch) | 5 | 0.395 | 2.3% | 97/336 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
-| [Will the highest score achieved by a Moonshot Kimi model on ](https://polymarket.com/market/will-the-highest-score-achieved-by-a-moonshot-kimi-model-on-humanitys-last-exam-in-2026-be-50-or-higher-20260723191206822) | 3 | 0.265 | 0.0% | 0/336 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Jahmyr Gibbs be the highest-scoring RB of the 2026-27 N](https://polymarket.com/market/will-jahmyr-gibbs-be-the-highest-scoring-rb-of-the-2026-27-nfl-season-20260806224130428) | 24 | 0.765 | 15.8% | 248/341 | 0.65 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.195 | 19.9% | 260/341 | 0.36 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 3 (1) / 3 / - |
+| [Arc FDV above $3B one day after launch?](https://polymarket.com/market/arc-fdv-above-3b-one-day-after-launch) | 5 | 0.39 | 2.7% | 236/341 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Unit FDV above $200M one day after launch?](https://polymarket.com/market/unit-fdv-above-200m-one-day-after-launch) | 5 | 0.395 | 2.3% | 97/341 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will the highest score achieved by a Moonshot Kimi model on ](https://polymarket.com/market/will-the-highest-score-achieved-by-a-moonshot-kimi-model-on-humanitys-last-exam-in-2026-be-50-or-higher-20260723191206822) | 3 | 0.265 | 0.0% | 0/341 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
