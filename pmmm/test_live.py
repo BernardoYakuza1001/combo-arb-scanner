@@ -196,7 +196,7 @@ def test_setup_key_validation_and_file(tmp_path, monkeypatch, capsys):
     assert sk.clean_key(" ab" * 0 + "A" * 64) == "0x" + "A" * 64 and sk.clean_key("0x" + "1" * 64 + "\n") == "0x" + "1" * 64
     assert sk.clean_key("0x123") is None and sk.clean_key("hello") is None
     assert sk.clean_addr("0x" + "a" * 40) and sk.clean_addr("0x" + "a" * 39) is None
-    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env"))
+    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk, "detect", lambda k: None)
     key = "0x" + "7" * 64
     monkeypatch.setattr(sk.getpass, "getpass", lambda p: key)
     answers = iter(["0x" + "b" * 40, "1"]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
@@ -243,12 +243,18 @@ def test_small_balance_opens_only_markets_that_fit_both_sides(tmp_path, monkeypa
     assert sum(px * sz for _, px, sz in placed) <= 72
 
 
-def test_setup_key_catches_signer_address_pasted_as_wallet(tmp_path, monkeypatch):
+def test_setup_key_finds_wallet_by_balance(tmp_path, monkeypatch, capsys):
     from pmmm import setup_key as sk
     from eth_account import Account
-    acct = Account.create(); proxy = "0x" + "c" * 40
+    acct = Account.create(); cands = sk.candidates(acct.address)
+    assert [c[0] for c in cands] == ["1", "2", "0"] and len({c[1] for c in cands}) == 3 and cands[2][1] == acct.address
+    # known derivation check (public signer address -> wallet candidates)
+    k = sk.candidates("0x0421F86e2F69f1A0DDDA760827019407E4d749df")
+    assert k[0][1] == "0xe734e2fAc39B062f3044648bbaDc818364FAC950" and k[1][1] == "0xb163220Ef974D93ddBA4b3Ea3Bca9782FFB608Fa"
     monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk.getpass, "getpass", lambda p: acct.key.hex())
-    answers = iter([acct.address, proxy, "1"]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
+    monkeypatch.setattr(sk, "balance", lambda key, sig, addr: 72.77 if sig == "2" else 0.0)
+    monkeypatch.setattr("builtins.input", lambda p="": (_ for _ in ()).throw(AssertionError("should not need to ask")))
     sk.main()
     txt = open(sk.ENV).read()
-    assert f"PM_FUNDER={proxy}" in txt and "PM_SIG_TYPE=1" in txt
+    assert f"PM_FUNDER={cands[1][1]}" in txt and "PM_SIG_TYPE=2" in txt
+    assert acct.key.hex()[-20:] not in capsys.readouterr().out

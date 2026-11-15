@@ -15,6 +15,39 @@ def clean_addr(a):
     a = re.sub(r"\s+", "", a or "").strip('"').strip("'")
     return a if re.fullmatch(r"0x[0-9a-fA-F]{40}", a) else None
 
+def candidates(signer):
+    """Possible Polymarket wallet addresses for a signer: (wallet type, address)."""
+    from eth_utils import keccak, to_checksum_address
+    from eth_abi import encode
+    def c2(factory, salt, codehash):
+        return to_checksum_address(keccak(b"\xff" + bytes.fromhex(factory[2:]) + salt + bytes.fromhex(codehash[2:]))[12:])
+    raw = bytes.fromhex(signer[2:])
+    return [("1", c2("0xaB45c5A4B0c941a2F231C04C3f49182e1A254052", keccak(raw), "0xd21df8dc65880a8606f09fe0ce3df9b8869287ab0b058be05aa9e8af6330a00b")),
+            ("2", c2("0xaacFeEa03eb1561C4e67d661e40682Bd20E3541b", keccak(encode(["address"], [signer])), "0x2bce2127ff07fb632d16c8347c4ebf501f4841168bed00d9e6ef715ddb6fcecf")),
+            ("0", signer)]
+
+def balance(key, sig, funder):
+    from py_clob_client.client import ClobClient
+    from py_clob_client.clob_types import BalanceAllowanceParams, AssetType
+    c = ClobClient("https://clob.polymarket.com", key=key, chain_id=137, signature_type=int(sig), funder=funder)
+    c.set_api_creds(c.create_or_derive_api_creds())
+    p = BalanceAllowanceParams(asset_type=AssetType.COLLATERAL, signature_type=int(sig))
+    try: c.update_balance_allowance(p)
+    except Exception: pass
+    return float(c.get_balance_allowance(p).get("balance", 0)) / 1e6
+
+def detect(key):
+    from eth_account import Account
+    signer = Account.from_key(key).address
+    print(f"   Signer address {signer[:6]}...{signer[-4:]}. Looking for the wallet that holds your USDC...")
+    best = None
+    for sig, addr in candidates(signer):
+        try: bal = balance(key, sig, addr)
+        except Exception as e: print(f"   type {sig}: no answer ({str(e)[:80]})"); continue
+        print(f"   type {sig} {addr[:6]}...{addr[-4:]}: ${bal:,.2f}")
+        if bal > 0 and (best is None or bal > best[2]): best = (addr, sig, bal)
+    return best
+
 def main():
     print(__doc__)
     if os.path.exists(ENV) and input("pmmm\\.env already exists. Replace it? (y/n): ").strip().lower() != "y": return
@@ -24,24 +57,21 @@ def main():
         if key: print("   Key accepted (66 characters, hidden)."); break
         print("   That is not a private key: it must be 64 hex characters, with or without 0x in front. Try again.")
     if not key: print("Stopped: no valid key."); return
-    addr = None
-    for _ in range(5):
-        addr = clean_addr(input("2) Paste your Polymarket WALLET ADDRESS (0x..., 42 characters) then Enter: "))
-        if addr: break
-        print("   That is not a wallet address: it must be 0x followed by 40 hex characters. Try again.")
-    if not addr: print("Stopped: no valid address."); return
-    sig = None
+    addr = sig = None
+    # Find the wallet automatically: derive the possible wallet addresses from the key and ask Polymarket
+    # which one holds the money. Nothing but public addresses is sent.
     try:
-        from eth_account import Account
-        signer = Account.from_key(key).address
-        print(f"   Your key's signer address is {signer[:6]}...{signer[-4:]} (Polymarket shows it as 'Signer Address').")
-        if signer.lower() == addr.lower():
-            print("   You pasted the SIGNER address. On a normal Polymarket account the money sits in a different address:")
-            print("   the wallet address on your Profile / Deposit page. Paste that one instead.")
-            again = clean_addr(input("   Wallet address from Profile (or just press Enter if you really trade from a plain wallet): "))
-            if again and again.lower() != signer.lower(): addr = again
-            else: sig = "0"; print("   Using the signer address itself (wallet type 0).")
-    except Exception: pass
+        found = detect(key)
+        if found:
+            addr, sig, bal = found
+            print(f"   Found your Polymarket wallet {addr[:6]}...{addr[-4:]} with ${bal:,.2f} (wallet type {sig}).")
+        else:
+            print("   Could not find a funded wallet automatically.")
+    except Exception as e:
+        print("   Automatic wallet search failed:", str(e)[:150])
+    while not addr:
+        addr = clean_addr(input("2) Paste your Polymarket WALLET ADDRESS from your Profile page (0x..., 42 characters) then Enter: "))
+        if not addr: print("   That is not a wallet address: it must be 0x followed by 40 hex characters. Try again.")
     while sig is None:
         a = input("3) How do you log into Polymarket?  1 = email or Google   2 = MetaMask / browser wallet : ").strip()
         if a in ("1", "2"): sig = a
