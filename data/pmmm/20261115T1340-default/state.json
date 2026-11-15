@@ -2,7 +2,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.10838094556973706,
+  "reward": 0.11076796004633065,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Unit FDV above $200M one day after launch?",
   "cid": "0x70eb82556e062975ed23ff8e07a355f132a79f17ef6267ee8be0a8c283ef7dbd",
-  "reward": 0.008329207038502054,
+  "reward": 0.008467213319343832,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Theo FDV above $100M one day after launch?",
   "cid": "0x54f6212ba2469a110b62dad45e4dc318a3eb28a9b7db6309d8b81965355356b7",
-  "reward": 0.006942162639166633,
+  "reward": 0.0077952466360971286,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -88,7 +88,7 @@
  {
   "q": "Will the Orlando Magic make the 2027 NBA Playoffs?",
   "cid": "0xa7dcbe84cc883f47069b34f50e50e724f997c01d85799db9e503eb0df47bdbd7",
-  "reward": 0.008365609752426634,
+  "reward": 0.009284669402822996,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -98,7 +98,7 @@
  {
   "q": "Will J.D. Vance announce a presidential run before 2028?",
   "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
-  "reward": 0.028145187154611652,
+  "reward": 0.02952262818187537,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
