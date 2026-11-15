@@ -2,7 +2,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.10565446151792893,
+  "reward": 0.10838094556973706,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,17 +42,23 @@
  {
   "q": "OpenAI criminally charged in the US in 2026?",
   "cid": "0x35ef1403fa561153f9688d75fd02030634b382dd4254479769b2651d1e7b11b9",
-  "reward": 0.02662505815717277,
+  "reward": 0.02722939209484004,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794754819.5377076,
+    "kind": "pause",
+    "mid": 0.345
+   }
+  ]
  },
  {
   "q": "Unit FDV above $200M one day after launch?",
   "cid": "0x70eb82556e062975ed23ff8e07a355f132a79f17ef6267ee8be0a8c283ef7dbd",
-  "reward": 0.008199218244388842,
+  "reward": 0.008329207038502054,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +68,7 @@
  {
   "q": "Theo FDV above $100M one day after launch?",
   "cid": "0x54f6212ba2469a110b62dad45e4dc318a3eb28a9b7db6309d8b81965355356b7",
-  "reward": 0.006089078642236137,
+  "reward": 0.006942162639166633,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +88,7 @@
  {
   "q": "Will the Orlando Magic make the 2027 NBA Playoffs?",
   "cid": "0xa7dcbe84cc883f47069b34f50e50e724f997c01d85799db9e503eb0df47bdbd7",
-  "reward": 0.007609309571045141,
+  "reward": 0.008365609752426634,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -92,7 +98,7 @@
  {
   "q": "Will J.D. Vance announce a presidential run before 2028?",
   "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
-  "reward": 0.02634877301717274,
+  "reward": 0.028145187154611652,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
