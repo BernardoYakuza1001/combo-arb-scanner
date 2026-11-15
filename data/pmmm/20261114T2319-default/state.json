@@ -39,7 +39,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.16118937605991723,
+  "reward": 0.16424310281569462,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -49,7 +49,7 @@
  {
   "q": "Will Rafael Grossi be the next Secretary-General of the United Nations?",
   "cid": "0x109940d5d51a60f3706e2149b21124a0c1630c4950ddbf7521470700013783f1",
-  "reward": 0.13162660028591464,
+  "reward": 0.13617709656153384,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -59,7 +59,7 @@
  {
   "q": "Variational FDV above $1B one day after launch?",
   "cid": "0x88b2827dd9bb9b3ebd4f229561a7606bd2bbdedbf3dfbb9c563e1e7dd2673747",
-  "reward": 0.011923505753436396,
+  "reward": 0.012154858955953005,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -69,7 +69,7 @@
  {
   "q": "Anthropic vs OpenAI - higher valuation on December 31?",
   "cid": "0x15cda44bef6ec2cb20755e8632f1386cf244a1aeb0372d463dbf70a7c44bcde5",
-  "reward": 0.03001200298409711,
+  "reward": 0.030981141273197094,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -85,7 +85,7 @@
  {
   "q": "Will Leonardo Monta\u00f1ez Castro win the 2027 Aguascalientes Governor Election?",
   "cid": "0x2b6e0c3e73aeb1bf370336800e865e2fbb59c14bc3f6f3fcd5f1c675e6d8cc8d",
-  "reward": 0.030379700670727115,
+  "reward": 0.0328723914120655,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
