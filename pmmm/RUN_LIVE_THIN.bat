@@ -16,5 +16,12 @@ set PMMM_AHEAD=0
 set PMMM_STOP=1
 set PMMM_MAX_TOTAL=1000
 set PMMM_MAX_LOSS=15
+:run
 .venv\Scripts\python.exe -u pmmm\live.py
+if errorlevel 1 if not exist pmmm\STOP (
+  echo.
+  echo The bot stopped on an error. All orders were cancelled. Restarting in 20 seconds - close this window to stop.
+  timeout /t 20 /nobreak >nul
+  goto run
+)
 pause

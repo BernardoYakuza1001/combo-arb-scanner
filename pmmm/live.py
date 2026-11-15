@@ -202,6 +202,15 @@ class LiveSDK:
     def merge(self, cid):
         return self.k.merge_positions(condition_id=cid, amount="max")
 
+def retry(fn, what, tries=6):
+    """Network calls at startup can be cut by the connection; try again a few times before giving up."""
+    for i in range(tries):
+        try: return fn()
+        except Exception as e:
+            log(ev="retry", what=what, attempt=i + 1, err=f"{type(e).__name__}: {str(e)[:160]}")
+            if i == tries - 1: raise
+            time.sleep(5 * (i + 1))
+
 def make_client():
     """Deposit Wallet accounts (PM_SIG_TYPE=3) use the unified client; older wallet types use py-clob-client."""
     return LiveSDK() if os.environ.get("PM_SIG_TYPE", "1") == "3" else Live()
@@ -251,17 +260,17 @@ def main():
         print("Live mode is off. Use RUN_LIVE.bat (or DRY_RUN.bat to test without orders)."); return
     for k in ("PM_PRIVATE_KEY", "PM_FUNDER"):
         if not os.environ.get(k): print(f"Missing {k} in pmmm\\.env"); return
-    L = make_client()
+    L = retry(make_client, "login")
     getpos = getattr(L, "positions", None) or (lambda: positions(L.funder))
-    usdc = L.usdc(); cap = min(MAX_TOTAL, usdc)
+    usdc = retry(L.usdc, "balance"); cap = min(MAX_TOTAL, usdc)
     log(ev="start", dry=DRY, usdc=round(usdc, 2), cap=cap, per_market=CFG["cap"], n=CFG["n_markets"])
     if cap < max(CFG["cap"], 20): log(ev="abort", why=f"USDC ${usdc:.2f} is below one market's size ${CFG['cap']:.0f}"); return
-    if not DRY: L.cancel_all()
+    if not DRY: retry(L.cancel_all, "cancel old orders")
     keep_awake(True)
     def load_markets(old=()):
         new = bot.select()
         if not new: return list(old)
-        pos = getpos(); keep = {m.cid: m for m in old}
+        pos = retry(getpos, "read holdings"); keep = {m.cid: m for m in old}
         out = []
         for m in new:
             if m.cid in keep: out.append(keep[m.cid]); continue     # keep running state (inventory, cash, pause)
