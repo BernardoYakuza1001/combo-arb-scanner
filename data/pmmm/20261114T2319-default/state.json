@@ -39,7 +39,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.18885125253506196,
+  "reward": 0.1900088561041899,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -65,7 +65,7 @@
  {
   "q": "Variational FDV above $1B one day after launch?",
   "cid": "0x88b2827dd9bb9b3ebd4f229561a7606bd2bbdedbf3dfbb9c563e1e7dd2673747",
-  "reward": 0.027435157305191294,
+  "reward": 0.02811658962358241,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -75,7 +75,7 @@
  {
   "q": "Anthropic vs OpenAI - higher valuation on December 31?",
   "cid": "0x15cda44bef6ec2cb20755e8632f1386cf244a1aeb0372d463dbf70a7c44bcde5",
-  "reward": 0.04968065062785486,
+  "reward": 0.05032265263643308,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -91,7 +91,7 @@
  {
   "q": "Will Leonardo Monta\u00f1ez Castro win the 2027 Aguascalientes Governor Election?",
   "cid": "0x2b6e0c3e73aeb1bf370336800e865e2fbb59c14bc3f6f3fcd5f1c675e6d8cc8d",
-  "reward": 0.06324799287628252,
+  "reward": 0.06517443476335433,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
