@@ -2,6 +2,12 @@
 import os, sys, json, time, types
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
+import pytest
+@pytest.fixture(autouse=True)
+def _isolated_scorecard(tmp_path, monkeypatch):
+    from pmmm import bot
+    monkeypatch.setattr(bot, "SCORECARD", str(tmp_path / "scorecard.json"))
+
 def test_real_signing_offline():
     from eth_account import Account
     from py_clob_client.client import ClobClient
@@ -23,6 +29,7 @@ def test_live_loop_fake_exchange(tmp_path, monkeypatch):
     from pmmm import live, bot
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setitem(bot.CFG, "ahead_x", 0)
+    monkeypatch.setattr(bot, "SCORECARD", str(tmp_path / "scorecard.json"))
     monkeypatch.setitem(bot.CFG, "cycle_s", 0); monkeypatch.setattr(live, "REBID_WAIT_S", 0); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00", PM_SIG_TYPE="1")
     state = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={})
@@ -65,6 +72,7 @@ def _setup(tmp_path, monkeypatch, books, fills_at=None, max_cycles=8, max_loss=3
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     monkeypatch.setitem(bot.CFG, "ahead_x", 0); monkeypatch.setattr(live, "MAX_LOSS", max_loss)
+    monkeypatch.setattr(bot, "SCORECARD", str(tmp_path / "scorecard.json"))
     os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00", PM_SIG_TYPE="1")
     st = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={}, beats=0, sells=[], stops=[])
     class C:

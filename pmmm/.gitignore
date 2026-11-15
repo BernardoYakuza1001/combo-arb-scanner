@@ -1,3 +1,5 @@
 .env
 STOP
 live_log.jsonl
+scorecard.json
+scorecard.json.tmp

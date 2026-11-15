@@ -300,6 +300,7 @@ def main():
     mk = load_markets()
     if not mk: log(ev="abort", why="no market passed the filters"); return
     live = {}; errors = 0; t0 = time.time(); last_score = 0; scoring_frac = "n/a"; last_day = None
+    card = bot.load_scorecard()
     last_select = t0; baseline = None; retired_pnl = 0.0; hb_flag = {"stop": False}; tapes = {}; cycles = 0; last_pos = t0; resync = False
     if not DRY: start_heartbeat(L, hb_flag)
     try:
@@ -384,6 +385,8 @@ def main():
                                 else: m.avg_n = (getattr(m, "avg_n", 0.0) * m.no + o["price"] * d) / (m.no + d); m.no += d
                                 m.cash -= d * o["price"]
                                 log(ev="fill", q=m.q[:50], side=sd, px=o["price"], sz=round(d, 2))
+                                if not DRY:
+                                    c = card.setdefault(m.cid, {"q": m.q[:60]}); c["fills"] = c.get("fills", 0) + 1; bot.save_scorecard(card)
                                 if sd == "Y": m.fill_y = now
                                 else: m.fill_n = now
                             m.last_fill = now
@@ -492,9 +495,12 @@ def main():
                         f = bym.get(m.cid)
                         if not f: continue
                         m.dry_checks = 0 if any(f) else getattr(m, "dry_checks", 0) + 1
+                        c = card.setdefault(m.cid, {"q": m.q[:60]})
+                        c["checks"] = c.get("checks", 0) + 1; c["scoring"] = c.get("scoring", 0) + (1 if any(f) else 0)
                         if m.dry_checks >= BENCH_AFTER:
                             m.benched_until = now + BENCH_S; m.dry_checks = 0
                             log(ev="benched", q=m.q[:50], why="quotes not earning rewards", minutes=round(BENCH_S / 60))
+                    if not DRY: bot.save_scorecard(card)
                     day = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1)).strftime("%Y-%m-%d")
                     if day != last_day: last_day = day; log(ev="earnings", day=day, result=L.earnings(day))
                 except Exception as e: log(ev="scoring_err", err=str(e)[:200])

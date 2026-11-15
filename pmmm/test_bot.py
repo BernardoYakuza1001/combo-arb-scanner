@@ -93,3 +93,16 @@ def test_wide_book_quotes_at_the_edge_of_the_reward_zone(monkeypatch):
     m2 = Mkt(dict(cid="c", q="q", slug="s", tok="Y", tno="N", v=4.5, minsz=20, rate=100, tick=0.001))
     step(m2, bk([(0.49, 500)], [(0.51, 500)]), [], 1000.0)
     assert abs((0.50 - m2.orders["Y"].price) - 0.0225) < 0.002                         # normal book: unchanged (50%)
+
+
+def test_opportunity_ranking_learns_from_live_results():
+    from pmmm import bot as B
+    base = dict(cid="a", chg=0.0, comp=0.0)
+    fresh = B.opportunity(base, 10.0, {})
+    good = B.opportunity(base, 10.0, {"a": {"checks": 20, "scoring": 20, "fills": 0}})
+    dead = B.opportunity(base, 10.0, {"a": {"checks": 20, "scoring": 0, "fills": 0}})
+    filled = B.opportunity(base, 10.0, {"a": {"checks": 20, "scoring": 20, "fills": 4}})
+    jumpy = B.opportunity(dict(base, chg=0.06), 10.0, {})
+    crowded = B.opportunity(dict(base, comp=0.5), 10.0, {})
+    assert good > fresh > dead and good > filled and fresh > jumpy and fresh > crowded
+    assert dead < 1.0 and abs(fresh - 10 * 2 / 3) < 1e-9

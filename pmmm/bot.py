@@ -29,7 +29,8 @@ CFG = dict(
     news_move=0.04, news_win_s=600, pause_s=1800,
     min_days=7,
     wide_frac=float(os.environ.get("PMMM_WIDE_FRAC", "0.85")),
-    mode=os.environ.get("PMMM_MODE", "quiet"),            # quiet = jump-filtered liquid markets; thin = minimum-size quotes in markets nobody quotes
+    mode=os.environ.get("PMMM_MODE", "quiet"),
+    max_day_move=float(os.environ.get("PMMM_MAX_DAY_MOVE", "0.08")),   # skip markets that moved more than 8c in the last day            # quiet = jump-filtered liquid markets; thin = minimum-size quotes in markets nobody quotes
     max_others=float(os.environ.get("PMMM_MAX_OTHERS", "300")),
     max_jumps=int(os.environ.get("PMMM_MAX_JUMPS", "2")),   # hours in the past week with a move bigger than the quote distance
     max_move=float(os.environ.get("PMMM_MAX_MOVE", "0.10")),
@@ -289,6 +290,31 @@ def sample(m, book, now):
     m.reward += m.rate / 1440 * sh
 
 # ---------------- selection ----------------
+SCORECARD = os.environ.get("PMMM_SCORECARD", os.path.join(os.path.dirname(os.path.abspath(__file__)), "scorecard.json"))
+
+def load_scorecard():
+    try: return json.load(open(SCORECARD, encoding="utf-8"))
+    except Exception: return {}
+
+def save_scorecard(sc):
+    try:
+        tmp = SCORECARD + ".tmp"
+        json.dump(sc, open(tmp, "w", encoding="utf-8"), indent=1); os.replace(tmp, SCORECARD)
+    except Exception as e: print("scorecard save failed:", e)
+
+def opportunity(r, est_reward, card):
+    """Rank score for a market = expected reward per day, adjusted by what live trading has actually shown.
+    - earn rate: share of checks in which Polymarket said my quotes were earning (prior: 2 of 3)
+    - fill penalty: each fill in this market (an informed trader took my order) cuts the score
+    - price-jump penalty: markets that moved a lot in the last day are where fills come from
+    - competition: Polymarket's own competitiveness figure (0 = nobody else quoting)"""
+    c = card.get(r["cid"], {})
+    earn_rate = (c.get("scoring", 0) + 2) / (c.get("checks", 0) + 3)
+    fill_pen = 1 / (1 + 0.5 * c.get("fills", 0))
+    jump_pen = 1 / (1 + 25 * abs(r.get("chg", 0)))
+    comp_pen = 1 / (1 + 2 * float(r.get("comp") or 0))
+    return est_reward * earn_rate * fill_pen * jump_pen * comp_pen
+
 def select():
     from edges import pm_rewards
     try: pm_rewards.main()
@@ -305,11 +331,15 @@ def select():
         return r["rate"] * mine / (mine + r["others"])
     rows.sort(key=lambda r: -est(r))
     if thin:
-        rows = [r for r in rows if r["minsz"] <= float(os.environ.get("PMMM_MAX_MINSZ", "100"))]
+        rows = [r for r in rows if r["minsz"] <= float(os.environ.get("PMMM_MAX_MINSZ", "100"))
+                and abs(r.get("chg", 0)) <= CFG["max_day_move"]]
+        card = load_scorecard()
+        for r in rows: r["opp"] = opportunity(r, est(r), card)
+        rows.sort(key=lambda r: -r["opp"])
         z = [r for r in rows if r.get("comp", 0) == 0]
         print(f"thin: Polymarket's own competitiveness is 0 in {len(z)} of {len(rows)} candidates (pool ${sum(r['rate'] for r in z):,.0f}/day); "
               f"my book check says nobody quotes in {sum(1 for r in rows if r.get('empty_book'))}", flush=True)
-        json.dump([dict(q=r["q"], rate=r["rate"], comp=r.get("comp"), others=r["others"], empty=r.get("empty_book"), minsz=r["minsz"], v=r["v"], mid=r["mid"], end=r["end"]) for r in rows],
+        json.dump([dict(q=r["q"], opp=round(r["opp"], 3), chg=r.get("chg"), rate=r["rate"], comp=r.get("comp"), others=r["others"], empty=r.get("empty_book"), minsz=r["minsz"], v=r["v"], mid=r["mid"], end=r["end"]) for r in rows],
                   open("data/edges/pm_thin_candidates.json", "w", encoding="utf-8"), indent=1)
         print("thin mode candidates:", len(rows), "pool $/day", round(sum(r["rate"] for r in rows)), flush=True)
         return [Mkt(r) for r in rows[:CFG["n_markets"]]]
