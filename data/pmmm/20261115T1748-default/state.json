@@ -60,7 +60,7 @@
  {
   "q": "Will Nancy Guthrie be the #1 searched person on Google in the US this year?",
   "cid": "0xb013c7a4b9470f2a153f55469c3bc7f39bed88e6a934b1849a322f1611058861",
-  "reward": 0.008384156537548341,
+  "reward": 0.00972936675470721,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -70,7 +70,7 @@
  {
   "q": "Will J.D. Vance announce a presidential run before 2028?",
   "cid": "0x6a51989ede99186c83f62d9cfdb619e2dcf0047fb54ed8bbe6e085bef1f5bde6",
-  "reward": 0.011081898775203254,
+  "reward": 0.015273371898640153,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -80,7 +80,7 @@
  {
   "q": "Will Trevor Lawrence have 3,774.5+ passing yards in the 2026-27 NFL regular season?",
   "cid": "0xe1fe6857b37ee6b9bf0bb8ebcb85451f57fa78a61d794565e2a3139387e3f121",
-  "reward": 0.0,
+  "reward": 3.1376973882139813e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
