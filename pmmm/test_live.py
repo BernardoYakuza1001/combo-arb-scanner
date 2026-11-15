@@ -23,7 +23,7 @@ def test_live_loop_fake_exchange(tmp_path, monkeypatch):
     from pmmm import live, bot
     monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
     monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setitem(bot.CFG, "ahead_x", 0)
-    monkeypatch.setitem(bot.CFG, "cycle_s", 0); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
+    monkeypatch.setitem(bot.CFG, "cycle_s", 0); monkeypatch.setattr(live, "REBID_WAIT_S", 0); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
     os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00", PM_SIG_TYPE="1")
     state = dict(placed=[], cancelled=[], cancel_all=0, cycle=0, matched={})
     class FakeLive:
@@ -303,3 +303,13 @@ def test_sdk_adapter_maps_calls_to_the_unified_client(monkeypatch):
     L.merge("0xCID"); assert calls[-1] == ("merge", "0xCID", "max")
     L.cancel("0xA"); L.cancel_all(); assert calls[-2:] == [("cancel", "0xA"), ("cancel_all",)]
     monkeypatch.setenv("PM_SIG_TYPE", "1"); monkeypatch.setattr(live, "Live", lambda: "old-client"); assert live.make_client() == "old-client"
+
+
+def test_no_rebid_right_after_a_fill(tmp_path, monkeypatch):
+    """YES bid fills at cycle 3: the bot must not post a new YES bid in the following cycles (only the exit sell)."""
+    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52), fills_at=3, max_cycles=8, max_loss=500.0)
+    live.main()
+    ev = [json.loads(l) for l in open(live.LOG)]
+    i = next(k for k, e in enumerate(ev) if e["ev"] == "fill")
+    after = [e for e in ev[i:] if e["ev"] == "quote" and e["side"] == "Y"]
+    assert not after and any(e["ev"] == "exit_quote" for e in ev[i:])

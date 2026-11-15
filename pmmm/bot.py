@@ -199,7 +199,7 @@ def step(m, book, trades, now):
         if ts is None: continue
         if not getattr(m, "raw_dumped", False):
             m.raw_dumped = True; os.makedirs(OUT, exist_ok=True)
-            json.dump(trades[:3], open(f"{OUT}/tape_sample_{m.cid[:10]}.json", "w"), indent=1)
+            json.dump(trades[:3], open(f"{OUT}/tape_sample_{m.cid[:10]}.json", "w", encoding="utf-8"), indent=1)
         if t.get("token_id") not in (m.tok, m.tno): continue
         if ts < getattr(m, "t_start", 0): continue
         yes_px = px if t.get("token_id") == m.tok else 1 - px
@@ -289,7 +289,7 @@ def select():
     from edges import pm_rewards
     try: pm_rewards.main()
     except Exception as e: print("refresh failed, using last ranking:", e)
-    rows = json.load(open("data/edges/pm_rewards.json"))
+    rows = json.load(open("data/edges/pm_rewards.json", encoding="utf-8"))
     cut = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(days=CFG["min_days"])).strftime("%Y-%m-%d")
     thin = CFG["mode"] == "thin"
     rows = [r for r in rows if r.get("status") == "open" and r.get("tok") and r.get("tno") and r["end"] >= cut
@@ -306,7 +306,7 @@ def select():
         print(f"thin: Polymarket's own competitiveness is 0 in {len(z)} of {len(rows)} candidates (pool ${sum(r['rate'] for r in z):,.0f}/day); "
               f"my book check says nobody quotes in {sum(1 for r in rows if r.get('empty_book'))}", flush=True)
         json.dump([dict(q=r["q"], rate=r["rate"], comp=r.get("comp"), others=r["others"], empty=r.get("empty_book"), minsz=r["minsz"], v=r["v"], mid=r["mid"], end=r["end"]) for r in rows],
-                  open("data/edges/pm_thin_candidates.json", "w"), indent=1)
+                  open("data/edges/pm_thin_candidates.json", "w", encoding="utf-8"), indent=1)
         print("thin mode candidates:", len(rows), "pool $/day", round(sum(r["rate"] for r in rows)), flush=True)
         return [Mkt(r) for r in rows[:CFG["n_markets"]]]
     # Jump filter: paper runs lost money on "cross" fills, where the price jumped through the quote on news.
@@ -346,9 +346,9 @@ def report(mk, t0, now, final=False):
         nf = sum(1 for f in m.fills if "side" in f); np_ = sum(1 for f in m.fills if f.get("kind") == "pause"); ns_ = sum(1 for f in m.fills if f.get("kind") == "stop")
         avg = m.share_sum / m.scored if m.scored else 0
         L.append(f"| [{m.q[:60]}](https://polymarket.com/market/{m.slug}) | {m.rate:.0f} | {m.mid if m.mid is None else round(m.mid,3)} | {avg:.1%} | {m.scored}/{m.samples} | {m.reward:.2f} | {nf} | {m.merged:.0f} | {m.yes:.0f} | {m.no:.0f} | {m.mtm():+.2f} | {np_} / {ns_} stops | {m.tape_n} ({m.tape_tok}) / {m.tape_near} / {"-" if m.closest is None else f"{m.closest*100:+.1f}c"} |")
-    open(f"{OUT}/SUMMARY.md", "w").write("\n".join(L) + "\n")
+    open(f"{OUT}/SUMMARY.md", "w", encoding="utf-8").write("\n".join(L) + "\n")
     json.dump([dict(q=m.q, cid=m.cid, reward=m.reward, mtm=m.mtm(), yes=m.yes, no=m.no, merged=m.merged, fills=m.fills[-200:]) for m in mk],
-              open(f"{OUT}/state.json", "w"), indent=1)
+              open(f"{OUT}/state.json", "w", encoding="utf-8"), indent=1)
     print("\n".join(L[:6]), flush=True)
 
 def main():

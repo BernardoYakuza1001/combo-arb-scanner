@@ -65,7 +65,7 @@ def main():
     mk = reward_markets()
     print("reward markets:", len(mk))
     if mk: print("sample keys:", sorted(mk[0].keys()))
-    with open(f"{OUT}/pm_rewards_raw_sample.json", "w") as f: json.dump(mk[:3], f, indent=1)
+    with open(f"{OUT}/pm_rewards_raw_sample.json", "w", encoding="utf-8") as f: json.dump(mk[:3], f, indent=1)
     now = dt.datetime.now(dt.timezone.utc)
     live = []
     for m in mk:
@@ -140,7 +140,7 @@ def main():
     print("after status filter:", len(keep), "of", len(rows))
     competitive = [r for r in keep if not r["empty_book"]]
     empty = [r for r in keep if r["empty_book"]]
-    json.dump(rows, open(f"{OUT}/pm_rewards.json", "w"), indent=1)
+    json.dump(rows, open(f"{OUT}/pm_rewards.json", "w", encoding="utf-8"), indent=1)
     hdr = ["| # | Market | Pool $/d | Max spread c | Min size | Mid | Book spread c | 24h vol $ | Others' score | Est. share | Est. $/day per $%d | Ends |" % CAPITAL,
            "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     def tab(rs, n):
@@ -154,7 +154,7 @@ def main():
          "## A. Competitive books (real two-sided market already exists)", ""] + tab(competitive, 30) + [
          "", f"Top 10 A combined: ${sum(r['earn'] for r in competitive[:10]):.2f}/day on ${CAPITAL*10:,.0f}.", "",
          "## B. Empty books (no maker inside the max spread; you would set the price yourself, highest pick-off risk)", ""] + tab(empty, 20)
-    open(f"{OUT}/PM_REWARDS.md", "w").write("\n".join(L) + "\n")
+    open(f"{OUT}/PM_REWARDS.md", "w", encoding="utf-8").write("\n".join(L) + "\n")
     print("\n".join(L[:45]))
 
 if __name__ == "__main__":

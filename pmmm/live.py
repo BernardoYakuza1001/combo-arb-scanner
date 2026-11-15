@@ -34,8 +34,10 @@ from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STOP = os.path.join(HERE, "STOP")
-LOG = os.path.join(HERE, "live_log.jsonl")
-STATUS = os.path.join(HERE, "LIVE_STATUS.md")
+_DRY = os.environ.get("PMMM_DRY") == "YES"       # dry runs keep their own files, so they never overwrite the live ones
+LOG = os.path.join(HERE, "dry_log.jsonl" if _DRY else "live_log.jsonl")
+STATUS = os.path.join(HERE, "DRY_STATUS.md" if _DRY else "LIVE_STATUS.md")
+REBID_WAIT_S = float(os.environ.get("PMMM_REBID_WAIT_S", "900"))   # after a fill, do not bid that side again for this long
 MAX_TOTAL = float(os.environ.get("PMMM_MAX_TOTAL", "1000"))
 DRY = os.environ.get("PMMM_DRY") == "YES"
 MAX_LOSS = float(os.environ.get("PMMM_MAX_LOSS", "30"))
@@ -363,6 +365,8 @@ def main():
                                 else: m.avg_n = (getattr(m, "avg_n", 0.0) * m.no + o["price"] * d) / (m.no + d); m.no += d
                                 m.cash -= d * o["price"]
                                 log(ev="fill", q=m.q[:50], side=sd, px=o["price"], sz=round(d, 2))
+                                if sd == "Y": m.fill_y = now
+                                else: m.fill_n = now
                             m.last_fill = now
                         if status.upper() not in ("LIVE", "OPEN", ""):
                             live.pop((m.cid, sd), None)
@@ -407,8 +411,10 @@ def main():
                     want = {"Y": None, "N": None}       # slot -> (slot price, size, sell?)
                     if tg:
                         yb, nb, n, yb0, nb0 = tg; imb = m.yes - m.no
-                        if yb is not None and imb < CFG["max_imb"] * n: want["Y"] = (yb, n, False)
-                        if nb is not None and -imb < CFG["max_imb"] * n: want["N"] = (nb, n, False)
+                        # a fill means someone thought my price was too high: wait before bidding that side again
+                        fy = now - getattr(m, "fill_y", 0) >= REBID_WAIT_S; fn = now - getattr(m, "fill_n", 0) >= REBID_WAIT_S
+                        if yb is not None and fy and imb < CFG["max_imb"] * n: want["Y"] = (yb, n, False)
+                        if nb is not None and fn and -imb < CFG["max_imb"] * n: want["N"] = (nb, n, False)
                         # exit orders: holding YES -> the NO slot becomes SELL YES at the same book level (1 - nb0)
                         if m.yes >= 5: want["N"] = (nb0, m.yes, True)
                         if m.no >= 5: want["Y"] = (yb0, m.no, True)
@@ -449,7 +455,11 @@ def main():
                 try:
                     ids = [o["oid"] for o in live.values()]
                     sc = L.scoring(ids); k = sum(1 for i in ids if sc.get(i))
-                    scoring_frac = f"{k}/{len(ids)}"; log(ev="scoring", scoring=scoring_frac)
+                    scoring_frac = f"{k}/{len(ids)}"
+                    names = {m.cid: m.q[:40] for m in mk}
+                    log(ev="scoring", scoring=scoring_frac,
+                        not_scoring=[f"{names.get(c, c[:8])} {sd} {'sell' if o.get('sell') else 'bid'} {o.get('real_px', o['price'])}"
+                                     for (c, sd), o in live.items() if not sc.get(o["oid"])])
                     day = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1)).strftime("%Y-%m-%d")
                     if day != last_day: last_day = day; log(ev="earnings", day=day, result=L.earnings(day))
                 except Exception as e: log(ev="scoring_err", err=str(e)[:200])
