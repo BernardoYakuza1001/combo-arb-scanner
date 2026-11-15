@@ -34,7 +34,7 @@
  {
   "q": "Will Erzurumspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0x31adbdb4625f271015a49ee4dbfd18ed6247182bb5da460c899c8bd9cea17514",
-  "reward": 0.10248288907433908,
+  "reward": 0.10806861155618426,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -44,7 +44,7 @@
  {
   "q": "Will Rafael Grossi be the next Secretary-General of the United Nations?",
   "cid": "0x109940d5d51a60f3706e2149b21124a0c1630c4950ddbf7521470700013783f1",
-  "reward": 0.0839863500080448,
+  "reward": 0.09053291111107709,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -54,7 +54,7 @@
  {
   "q": "Variational FDV above $1B one day after launch?",
   "cid": "0x88b2827dd9bb9b3ebd4f229561a7606bd2bbdedbf3dfbb9c563e1e7dd2673747",
-  "reward": 0.009356007682423175,
+  "reward": 0.0095906770683751,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -64,7 +64,7 @@
  {
   "q": "Anthropic vs OpenAI - higher valuation on December 31?",
   "cid": "0x15cda44bef6ec2cb20755e8632f1386cf244a1aeb0372d463dbf70a7c44bcde5",
-  "reward": 0.01004176151922685,
+  "reward": 0.014836733412244351,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
