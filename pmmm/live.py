@@ -37,6 +37,8 @@ STOP = os.path.join(HERE, "STOP")
 _DRY = os.environ.get("PMMM_DRY") == "YES"       # dry runs keep their own files, so they never overwrite the live ones
 LOG = os.path.join(HERE, "dry_log.jsonl" if _DRY else "live_log.jsonl")
 STATUS = os.path.join(HERE, "DRY_STATUS.md" if _DRY else "LIVE_STATUS.md")
+BENCH_AFTER = int(os.environ.get("PMMM_BENCH_AFTER", "2"))
+BENCH_S = float(os.environ.get("PMMM_BENCH_S", "7200"))
 REBID_WAIT_S = float(os.environ.get("PMMM_REBID_WAIT_S", "900"))   # after a fill, do not bid that side again for this long
 MAX_TOTAL = float(os.environ.get("PMMM_MAX_TOTAL", "1000"))
 DRY = os.environ.get("PMMM_DRY") == "YES"
@@ -424,7 +426,7 @@ def main():
                             if side == "Y": m.yes = 0.0
                             else: m.no = 0.0
                             m.paused_until = now + CFG["pause_s"]
-                    tg = None if now < m.paused_until else target(m, b, mid)
+                    tg = None if now < m.paused_until or now < getattr(m, "benched_until", 0) else target(m, b, mid)
                     want = {"Y": None, "N": None}       # slot -> (slot price, size, sell?)
                     if tg:
                         yb, nb, n, yb0, nb0 = tg; imb = m.yes - m.no
@@ -481,6 +483,18 @@ def main():
                     log(ev="scoring", scoring=scoring_frac,
                         not_scoring=[f"{names.get(c, c[:8])} {sd} {'sell' if o.get('sell') else 'bid'} {o.get('real_px', o['price'])}"
                                      for (c, sd), o in live.items() if not sc.get(o["oid"])])
+                    # Polymarket's own verdict decides: a market whose BUY quotes have earned nothing for
+                    # 2 checks in a row (~10 min) is benched for 2 hours, freeing the money for the next market.
+                    bym = {}
+                    for (c, sd), o in live.items():
+                        if not o.get("sell"): bym.setdefault(c, []).append(bool(sc.get(o["oid"])))
+                    for m in mk:
+                        f = bym.get(m.cid)
+                        if not f: continue
+                        m.dry_checks = 0 if any(f) else getattr(m, "dry_checks", 0) + 1
+                        if m.dry_checks >= BENCH_AFTER:
+                            m.benched_until = now + BENCH_S; m.dry_checks = 0
+                            log(ev="benched", q=m.q[:50], why="quotes not earning rewards", minutes=round(BENCH_S / 60))
                     day = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1)).strftime("%Y-%m-%d")
                     if day != last_day: last_day = day; log(ev="earnings", day=day, result=L.earnings(day))
                 except Exception as e: log(ev="scoring_err", err=str(e)[:200])

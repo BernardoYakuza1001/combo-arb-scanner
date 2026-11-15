@@ -328,3 +328,17 @@ def test_held_position_in_unranked_market_gets_exit_only(tmp_path, monkeypatch):
     assert any("Held market" in q for q in mk["markets"]) and mk["held"].get("Held market") == [23.16, 0.0]
     assert st["sells"] and st["sells"][0][1] == "HY" and abs(st["sells"][0][3] - 23.16) < 0.01      # exit sell of the held YES
     assert not [p for p in st["placed"] if p[1] in ("HY", "HN")]                                     # no new bids there
+
+
+def test_market_benched_when_polymarket_says_quotes_do_not_score(tmp_path, monkeypatch):
+    live, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52), max_cycles=12, max_loss=500.0)
+    monkeypatch.setattr(live, "BENCH_AFTER", 2)
+    clock = {"t": 1_000_000.0}
+    monkeypatch.setattr(live.time, "time", lambda: clock["t"])
+    monkeypatch.setattr(live.time, "sleep", lambda s: clock.__setitem__("t", clock["t"] + 301))   # every cycle is a scoring check
+    live.main()
+    ev = [json.loads(l) for l in open(live.LOG)]
+    names = [e["ev"] for e in ev]
+    assert "benched" in names
+    i = names.index("benched")
+    assert not [e for e in ev[i + 1:] if e["ev"] == "quote"]          # no new quotes in a benched market
