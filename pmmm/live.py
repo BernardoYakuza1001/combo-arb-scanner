@@ -323,6 +323,11 @@ def main():
                         # exit orders: holding YES -> the NO slot becomes SELL YES at the same book level (1 - nb0)
                         if m.yes >= 5: want["N"] = (nb0, m.yes, True)
                         if m.no >= 5: want["Y"] = (yb0, m.no, True)
+                    # small balances: open a market only if BOTH sides fit under the cap (one side alone earns far less)
+                    if not live.get((m.cid, "Y")) and not live.get((m.cid, "N")):
+                        need = sum(w[0] * w[1] for w in want.values() if w and not w[2])
+                        if need and exposure + need > cap: want = {"Y": want["Y"] if want["Y"] and want["Y"][2] else None,
+                                                                    "N": want["N"] if want["N"] and want["N"][2] else None}
                     # 3) reconcile
                     for sd, w in want.items():
                         o = live.get((m.cid, sd))

@@ -204,3 +204,40 @@ def test_setup_key_validation_and_file(tmp_path, monkeypatch, capsys):
     txt = open(sk.ENV).read()
     assert f"PM_PRIVATE_KEY={key}" in txt and "PM_SIG_TYPE=1" in txt and "PM_FUNDER=0x" + "b" * 40 in txt
     assert key not in capsys.readouterr().out          # the key is never printed
+
+
+def test_small_balance_opens_only_markets_that_fit_both_sides(tmp_path, monkeypatch):
+    """$72 balance, 20-share markets at ~$19 a pair: three markets get both orders, the fourth gets none."""
+    from pmmm import live, bot
+    monkeypatch.setattr(live, "STOP", str(tmp_path / "STOP")); monkeypatch.setattr(live, "LOG", str(tmp_path / "log.jsonl"))
+    monkeypatch.setattr(live, "STATUS", str(tmp_path / "STATUS.md")); monkeypatch.setattr(live, "LIVE_CYCLE_S", 0)
+    monkeypatch.setattr(live, "MAX_TOTAL", 1000.0)
+    for k, v in dict(ahead_x=0, stop_c=1.0, cap=1.0, quote_frac=0.75).items(): monkeypatch.setitem(bot.CFG, k, v)
+    os.environ.update(PMMM_LIVE="YES", PM_PRIVATE_KEY="0xabc", PM_FUNDER="0xF00")
+    placed = []; cyc = {"n": 0}
+    class C:
+        def post_heartbeat(self, hid): return {"heartbeat_id": "h"}
+    class FakeLive:
+        funder = "0xF00"; c = C()
+        def usdc(self): return 72.0
+        def place(self, tok, px, sz, tick, sell=False): placed.append((tok, px, sz)); return f"o{len(placed)}"
+        def cancel(self, oid): pass
+        def cancel_all(self): pass
+        def open_map(self): return {f"o{i+1}": 0.0 for i in range(len(placed))}
+        def matched(self, oid): return 0.0, "LIVE"
+        def scoring(self, ids): return {}
+        def earnings(self, d): return {}
+    monkeypatch.setattr(live, "Live", FakeLive)
+    mk = [bot.Mkt(dict(cid=f"0x{i}", q=f"M{i}", slug="s", tok=f"Y{i}", tno=f"N{i}", v=4.5, minsz=20, rate=50, tick=0.01)) for i in range(4)]
+    monkeypatch.setattr(bot, "select", lambda: mk); monkeypatch.setattr(live, "positions", lambda f: {})
+    def fake_http(method, url, **kw):
+        if method == "GET": return {"data": []}
+        cyc["n"] += 1
+        if cyc["n"] >= 3: open(live.STOP, "w").close()
+        return [{"asset_id": f"Y{i}", "bids": [{"price": "0.48", "size": "500"}], "asks": [{"price": "0.52", "size": "500"}]} for i in range(4)]
+    monkeypatch.setattr(live, "http", fake_http)
+    live.main()
+    per = {}
+    for tok, px, sz in placed: per.setdefault(tok[1:], []).append(tok[0])
+    assert sorted(per) == ["0", "1", "2"] and all(sorted(v) == ["N", "Y"] for v in per.values())    # 3 full pairs, market 3 untouched
+    assert sum(px * sz for _, px, sz in placed) <= 72
