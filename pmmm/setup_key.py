@@ -33,8 +33,14 @@ def main():
     sig = None
     try:
         from eth_account import Account
-        if Account.from_key(key).address.lower() == addr.lower():
-            sig = "0"; print("   The key controls this address directly: using wallet type 0.")
+        signer = Account.from_key(key).address
+        print(f"   Your key's signer address is {signer[:6]}...{signer[-4:]} (Polymarket shows it as 'Signer Address').")
+        if signer.lower() == addr.lower():
+            print("   You pasted the SIGNER address. On a normal Polymarket account the money sits in a different address:")
+            print("   the wallet address on your Profile / Deposit page. Paste that one instead.")
+            again = clean_addr(input("   Wallet address from Profile (or just press Enter if you really trade from a plain wallet): "))
+            if again and again.lower() != signer.lower(): addr = again
+            else: sig = "0"; print("   Using the signer address itself (wallet type 0).")
     except Exception: pass
     while sig is None:
         a = input("3) How do you log into Polymarket?  1 = email or Google   2 = MetaMask / browser wallet : ").strip()

@@ -241,3 +241,14 @@ def test_small_balance_opens_only_markets_that_fit_both_sides(tmp_path, monkeypa
     for tok, px, sz in placed: per.setdefault(tok[1:], []).append(tok[0])
     assert sorted(per) == ["0", "1", "2"] and all(sorted(v) == ["N", "Y"] for v in per.values())    # 3 full pairs, market 3 untouched
     assert sum(px * sz for _, px, sz in placed) <= 72
+
+
+def test_setup_key_catches_signer_address_pasted_as_wallet(tmp_path, monkeypatch):
+    from pmmm import setup_key as sk
+    from eth_account import Account
+    acct = Account.create(); proxy = "0x" + "c" * 40
+    monkeypatch.setattr(sk, "ENV", str(tmp_path / ".env")); monkeypatch.setattr(sk.getpass, "getpass", lambda p: acct.key.hex())
+    answers = iter([acct.address, proxy, "1"]); monkeypatch.setattr("builtins.input", lambda p="": next(answers))
+    sk.main()
+    txt = open(sk.ENV).read()
+    assert f"PM_FUNDER={proxy}" in txt and "PM_SIG_TYPE=1" in txt
