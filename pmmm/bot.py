@@ -28,7 +28,7 @@ CFG = dict(
     max_imb=1.0,              # stop bidding a side once net inventory exceeds this many order sizes
     news_move=0.04, news_win_s=600, pause_s=1800,
     min_days=7,
-    wide_frac=float(os.environ.get("PMMM_WIDE_FRAC", "0.95")),
+    wide_frac=float(os.environ.get("PMMM_WIDE_FRAC", "0.85")),
     mode=os.environ.get("PMMM_MODE", "quiet"),            # quiet = jump-filtered liquid markets; thin = minimum-size quotes in markets nobody quotes
     max_others=float(os.environ.get("PMMM_MAX_OTHERS", "300")),
     max_jumps=int(os.environ.get("PMMM_MAX_JUMPS", "2")),   # hours in the past week with a move bigger than the quote distance

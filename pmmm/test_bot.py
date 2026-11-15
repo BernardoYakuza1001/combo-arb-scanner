@@ -89,7 +89,7 @@ def test_wide_book_quotes_at_the_edge_of_the_reward_zone(monkeypatch):
     wide = bk([(0.20, 100)], [(0.80, 100)])
     step(m, wide, [dict(token_id="Y", price="0.50", size="50", timestamp=900)], 1000.0)
     y, n = m.orders["Y"], m.orders["N"]
-    assert 0.040 <= 0.50 - y.price < 0.045 and 0.040 <= 0.50 - n.price < 0.045      # ~95% of 4.5c, still inside
+    assert 0.040 <= 0.50 - y.price < 0.045 and 0.040 <= 0.50 - n.price < 0.045      # 95% of 4.5c (set above), still inside
     m2 = Mkt(dict(cid="c", q="q", slug="s", tok="Y", tno="N", v=4.5, minsz=20, rate=100, tick=0.001))
     step(m2, bk([(0.49, 500)], [(0.51, 500)]), [], 1000.0)
     assert abs((0.50 - m2.orders["Y"].price) - 0.0225) < 0.002                         # normal book: unchanged (50%)

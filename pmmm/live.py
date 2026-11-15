@@ -264,7 +264,7 @@ def main():
         if not os.environ.get(k): print(f"Missing {k} in pmmm\\.env"); return
     L = retry(make_client, "login")
     getpos = getattr(L, "positions", None) or (lambda: positions(L.funder))
-    usdc = retry(L.usdc, "balance"); cap = min(MAX_TOTAL, usdc)
+    usdc = retry(L.usdc, "balance"); cap = min(MAX_TOTAL, usdc); usdc_now = usdc
     log(ev="start", dry=DRY, usdc=round(usdc, 2), cap=cap, per_market=CFG["cap"], n=CFG["n_markets"])
     if cap < max(CFG["cap"], 20): log(ev="abort", why=f"USDC ${usdc:.2f} is below one market's size ${CFG['cap']:.0f}"); return
     if not DRY: retry(L.cancel_all, "cancel old orders")
@@ -344,8 +344,12 @@ def main():
                     return (tr or {}).get("data", []) if isinstance(tr, dict) else (tr or [])
                 with ThreadPoolExecutor(8) as ex:
                     for m, tr in zip(need, ex.map(tape, need)): tapes[m.cid] = (now, tr)
-            exposure = sum(m.yes * (m.mid or .5) + m.no * (1 - (m.mid or .5)) for m in mk) + \
-                       sum(o["price"] * (o["size"] - o["matched"]) for o in live.values() if not o.get("sell"))
+            # Money limits: open BUY orders must fit in the cash actually in the account, and
+            # holdings + open buys must stay under PMMM_MAX_TOTAL. (Holdings were already paid for,
+            # so they do not count against the cash.)
+            held_val = sum(m.yes * (m.mid or .5) + m.no * (1 - (m.mid or .5)) for m in mk)
+            exposure = sum(o["price"] * (o["size"] - o["matched"]) for o in live.values() if not o.get("sell"))
+            cap = max(0.0, min(MAX_TOTAL - held_val, usdc_now))
             for m in mk:
                 b = bk.get(m.tok)
                 if not b or not b.get("bids") or not b.get("asks"):
@@ -467,6 +471,8 @@ def main():
             # rewards check every 5 min
             if not DRY and now - last_score > 300:
                 last_score = now
+                try: usdc_now = L.usdc()
+                except Exception as e: log(ev="balance_err", err=str(e)[:120])
                 try:
                     ids = [o["oid"] for o in live.values()]
                     sc = L.scoring(ids); k = sum(1 for i in ids if sc.get(i))
