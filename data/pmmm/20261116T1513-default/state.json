@@ -2,7 +2,7 @@
  {
   "q": "Will Octane (Don Toliver) win Best Rap Album at the 69th Annual GRAMMY Awards?",
   "cid": "0xcca33c7b76516c913082fc49284939c8eb8272b90623b5ca6b95cd451da732e0",
-  "reward": 0.056607581508986995,
+  "reward": 0.06618325837974225,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Mark Andrews have 2.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x8af272f0ad1d3871c79e8ff6b87cfdb60b20d19b9eda9859dcff88307f63ca58",
-  "reward": 1.7070162452787666e-30,
+  "reward": 1.943755004975432e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Lamine Yamal (Barcelona) record the most assists in the 2026-27 La Liga season?",
   "cid": "0x64b772a4981d93f820e9b0d235048f228137bce594db995822eca75a3b87e116",
-  "reward": 0.0016503175841665542,
+  "reward": 0.001727439344758124,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will SIENNA SPIRO win Best New Artist at the 69th Annual GRAMMY Awards?",
   "cid": "0x626ac4f91ecb34253a7e10161b33f88483fc454c80f38e238bbe603832efb195",
-  "reward": 0.015994791636171013,
+  "reward": 0.01860617597901808,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -84,7 +84,7 @@
  {
   "q": "Will the Baltimore Ravens make the 2027 NFL Playoffs?",
   "cid": "0xc022132e7e7c1ccf5e49ee72493dc4819cd35ae03a92ad88afdc1953558c1f50",
-  "reward": 0.0012249887180802558,
+  "reward": 0.0032742976118691793,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
