@@ -27,3 +27,4 @@ yarn-error.log*
 .dockerignore.env
 .node/
 liqbot_log.txt
+.node22/
