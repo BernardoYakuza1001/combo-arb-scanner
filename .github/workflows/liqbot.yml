@@ -16,8 +16,8 @@ jobs:
         with: {node-version: 20}
       - run: pnpm install --frozen-lockfile=false
       - run: pnpm build
-      - name: Config check (Base enabled with our edge settings, no secrets needed)
+      - name: Dry start on Base (dummy unfunded key, 60 s) - shows how many markets/positions it watches
         run: |
-          RPC_URL_8453=https://mainnet.base.org EXECUTOR_ADDRESS_8453=0x0000000000000000000000000000000000000001 \
-          LIQUIDATION_PRIVATE_KEY_8453=0x$(printf '1%.0s' {1..64}) \
-          npx tsx -e "import {chainConfig} from '@morpho-blue-liquidation-bot/config'; const c=chainConfig(8453); console.log(JSON.stringify({chain:c.chainId, vaults:c.vaultWhitelist, every:c.blockInterval, buffer:c.liquidationBufferBps, venues:c.liquidityVenues}))"
+          export RPC_URL_8453=https://base-rpc.publicnode.com EXECUTOR_ADDRESS_8453=0x0000000000000000000000000000000000000001
+          export LIQUIDATION_PRIVATE_KEY_8453=0x$(printf '1%.0s' {1..64})
+          timeout 90 npx tsx apps/client/src/script.ts 2>&1 | tail -40 || true
