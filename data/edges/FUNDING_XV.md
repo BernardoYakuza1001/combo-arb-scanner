@@ -1,39 +1,39 @@
-# Cross-venue perp funding — 2026-11-16 05:26 UTC
+# Cross-venue perp funding — 2026-11-16 07:18 UTC
 
 Short the perp on the high-funding venue, long the same coin's perp on the low one. Price-neutral; earns the funding difference.
 Net = funding over 7 days minus taker fees for open+close on both legs. 'Past 7d APR' = what the same pair actually paid over the last week.
 
 | Coin | Short on | Long on | Live APR | Past 7d APR | Net 7d (live) | Net 7d (past) | Price gap | Intervals h |
 |---|---|---|---|---|---|---|---|---|
-| SAMSUNGEM | bitget | gate | 1009% | 58% | 19.13% | 0.90% | -0.84% | 8/4 |
-| LGELECTRONICS | bitget | gate | 993% | 71% | 18.83% | 1.15% | -1.09% | 8/4 |
-| INIT | gate | mexc | 888% | 1518% | 16.90% | 28.97% | -2.40% | 1/1 |
-| KAVA | mexc | gate | 846% | 146% | 16.09% | 2.65% | -1.00% | 4/4 |
-| HANMI | bitget | kucoin | 687% | 88% | 12.94% | 1.45% | -0.40% | 8/4 |
-| NAVER | bitget | gate | 665% | 85% | 12.54% | 1.40% | +0.08% | 8/4 |
-| NES | gate | mexc | 636% | 54% | 12.05% | 0.89% | +0.49% | 4/4 |
-| AXIS | gate | mexc | 629% | 8% | 11.92% | 0.01% | -0.22% | 4/4 |
-| BWET | mexc | gate | 528% | 41% | 9.98% | 0.65% | -0.81% | 8/8 |
-| EVAA | kucoin | bitget | 497% | 145% | 9.29% | 2.54% | -0.00% | 4/4 |
-| SAGA | hl | mexc | 486% | 20% | 9.19% | 0.26% | +0.78% | 1/4 |
-| ZHIPUHKD | gate | bitget | 434% | 16% | 8.10% | 0.09% | +2.56% | 8/8 |
-| SKDD | bitget | mexc | 409% | 24% | 7.68% | 0.30% | -0.24% | 8/8 |
-| SOPH | hl | gate | 405% | 147% | 7.58% | 2.63% | -0.45% | 1/1 |
-| SKR | hl | mexc | 360% | -9% | 6.78% | -0.31% | -0.04% | 1/4 |
-| RUNE | mexc | hl | 302% | 41% | 5.67% | 0.66% | -0.07% | 8/1 |
-| ARC | gate | kucoin | 289% | 14% | 5.32% | 0.05% | +0.06% | 4/4 |
-| AKE | mexc | gate | 266% | 43% | 4.95% | 0.68% | -0.58% | 4/4 |
-| UNITREE | gate | mexc | 258% | 28% | 4.81% | 0.39% | -0.50% | 4/4 |
-| HEI | kucoin | gate | 262% | 0% | 4.80% | -0.21% | +0.29% | 4/4 |
-| BULLA | gate | mexc | 250% | 51% | 4.65% | 0.84% | -0.20% | 4/4 |
-| OG | kucoin | gate | 219% | 18% | 3.98% | 0.13% | -0.45% | 4/4 |
-| RARE | bitget | gate | 214% | 26% | 3.88% | 0.29% | -0.21% | 4/4 |
-| SHEINHKD | kucoin | bitget | 213% | 6% | 3.84% | -0.13% | -0.57% | 8/8 |
-| UVXY | gate | mexc | 199% | 10% | 3.68% | 0.04% | -0.28% | 8/8 |
-| BIRB | kucoin | gate | 191% | 41% | 3.45% | 0.57% | +0.12% | 4/4 |
-| RPL | gate | mexc | 186% | -18% | 3.42% | -0.48% | -0.41% | 8/4 |
-| BNT | kucoin | gate | 187% | 12% | 3.36% | 0.02% | -0.22% | 8/8 |
-| DODO | mexc | kucoin | 176% | 93% | 3.21% | 1.62% | +0.46% | 4/4 |
-| KODEX200 | mexc | gate | 173% | -23% | 3.18% | -0.59% | -1.36% | 4/4 |
+| AXIS | gate | mexc | 1034% | 8% | 19.69% | 0.01% | -0.57% | 4/4 |
+| LGELECTRONICS | bitget | gate | 943% | 71% | 17.87% | 1.15% | -0.69% | 8/4 |
+| SAMSUNGEM | bitget | gate | 928% | 58% | 17.58% | 0.90% | -1.16% | 8/4 |
+| INIT | gate | mexc | 835% | 1527% | 15.87% | 29.14% | -2.75% | 1/1 |
+| NES | gate | mexc | 775% | 54% | 14.72% | 0.89% | -0.39% | 4/4 |
+| NAVER | bitget | gate | 649% | 85% | 12.23% | 1.40% | -0.31% | 8/4 |
+| KAVA | kucoin | gate | 568% | -53% | 10.67% | -1.24% | +0.27% | 4/4 |
+| HANMI | bitget | kucoin | 519% | 88% | 9.72% | 1.45% | -0.45% | 8/4 |
+| ZHIPUHKD | gate | bitget | 492% | 16% | 9.21% | 0.09% | +0.86% | 8/8 |
+| SAGA | hl | mexc | 386% | 26% | 7.28% | 0.36% | +0.72% | 1/4 |
+| POWR | mexc | gate | 380% | 43% | 7.15% | 0.68% | -0.19% | 4/4 |
+| SOPH | hl | gate | 327% | 154% | 6.09% | 2.76% | +0.00% | 1/1 |
+| SHEINHKD | kucoin | bitget | 322% | 6% | 5.93% | -0.13% | -0.36% | 8/8 |
+| BWET | mexc | gate | 311% | 41% | 5.82% | 0.65% | -0.95% | 8/8 |
+| POWER | mexc | bitget | 270% | 140% | 5.01% | 2.52% | -0.77% | 4/4 |
+| SKDD | bitget | mexc | 269% | 24% | 4.99% | 0.30% | -0.28% | 8/8 |
+| FRAX | mexc | gate | 260% | 46% | 4.84% | 0.74% | -0.14% | 4/4 |
+| MELANIA | gate | hl | 260% | 67% | 4.79% | 1.09% | -0.26% | 4/1 |
+| GMT | mexc | kucoin | 239% | 42% | 4.42% | 0.64% | +0.00% | 4/4 |
+| UNITREE | gate | mexc | 231% | 28% | 4.29% | 0.39% | -0.62% | 4/4 |
+| C | mexc | gate | 215% | 12% | 3.98% | 0.08% | -0.32% | 4/4 |
+| BB | bitget | gate | 198% | 39% | 3.57% | 0.53% | +0.06% | 4/4 |
+| EVAA | kucoin | bitget | 198% | 145% | 3.57% | 2.54% | +0.05% | 4/4 |
+| BA | bitget | gate | 197% | 20% | 3.56% | 0.17% | +0.26% | 8/8 |
+| BIRB | kucoin | mexc | 184% | 32% | 3.36% | 0.45% | -0.13% | 4/4 |
+| SXT | bitget | kucoin | 187% | 16% | 3.35% | 0.07% | +0.10% | 4/4 |
+| GWEI | mexc | kucoin | 179% | 24% | 3.28% | 0.30% | -0.29% | 4/4 |
+| MINIMAX | bitget | gate | 181% | 11% | 3.25% | -0.02% | -0.26% | 8/8 |
+| LIT | mexc | gate | 176% | 19% | 3.23% | 0.21% | -0.30% | 4/4 |
+| AIOT | mexc | gate | 168% | 47% | 3.09% | 0.77% | -0.38% | 4/4 |
 
-Both live and past-week net > 0.5%/week: 15 pairs: SAMSUNGEM (bitget/gate), LGELECTRONICS (bitget/gate), INIT (gate/mexc), KAVA (mexc/gate), HANMI (bitget/kucoin), NAVER (bitget/gate), NES (gate/mexc), BWET (mexc/gate), EVAA (kucoin/bitget), SOPH (hl/gate), RUNE (mexc/hl), AKE (mexc/gate), BULLA (gate/mexc), BIRB (kucoin/gate), DODO (mexc/kucoin)
+Both live and past-week net > 0.5%/week: 16 pairs: LGELECTRONICS (bitget/gate), SAMSUNGEM (bitget/gate), INIT (gate/mexc), NES (gate/mexc), NAVER (bitget/gate), HANMI (bitget/kucoin), POWR (mexc/gate), SOPH (hl/gate), BWET (mexc/gate), POWER (mexc/bitget), FRAX (mexc/gate), MELANIA (gate/hl), GMT (mexc/kucoin), BB (bitget/gate), EVAA (kucoin/bitget), AIOT (mexc/gate)
