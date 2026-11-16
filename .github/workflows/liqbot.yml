@@ -1,0 +1,23 @@
+name: liqbot-build
+on:
+  workflow_dispatch: {}
+  push:
+    paths: ["liqbot/**", ".github/workflows/liqbot.yml"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults: {run: {working-directory: liqbot}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: {version: 9}
+      - uses: actions/setup-node@v4
+        with: {node-version: 20}
+      - run: pnpm install --frozen-lockfile=false
+      - run: pnpm build
+      - name: Config check (Base enabled with our edge settings, no secrets needed)
+        run: |
+          RPC_URL_8453=https://mainnet.base.org EXECUTOR_ADDRESS_8453=0x0000000000000000000000000000000000000001 \
+          LIQUIDATION_PRIVATE_KEY_8453=0x$(printf '1%.0s' {1..64}) \
+          npx tsx -e "import {chainConfig} from '@morpho-blue-liquidation-bot/config'; const c=chainConfig(8453); console.log(JSON.stringify({chain:c.chainId, vaults:c.vaultWhitelist, every:c.blockInterval, buffer:c.liquidationBufferBps, venues:c.liquidityVenues}))"
