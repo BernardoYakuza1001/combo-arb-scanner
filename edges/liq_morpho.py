@@ -14,18 +14,14 @@ S = requests.Session(); S.headers["User-Agent"] = "edges/1.0"
 
 Q = """
 query($skip:Int!,$since:Int!){
-  transactions(first:1000, skip:$skip, orderBy: Timestamp, orderDirection: Desc,
-               where:{type_in:[MarketLiquidation], timestamp_gte:$since}){
+  marketTransactions(first:1000, skip:$skip, orderBy: Timestamp, orderDirection: Desc,
+                     where:{type_in:[Liquidation], timestamp_gte:$since}){
     pageInfo{countTotal count}
     items{
-      hash timestamp blockNumber chain{ id network }
+      txHash timestamp blockNumber chain{ id network }
       user{ address }
-      data{
-        ... on MarketLiquidationTransactionData{
-          liquidator seizedAssets repaidAssets seizedAssetsUsd repaidAssetsUsd badDebtAssetsUsd
-          market{ uniqueKey lltv loanAsset{ symbol } collateralAsset{ symbol } }
-        }
-      }
+      market{ marketId lltv loanAsset{ symbol decimals priceUsd } collateralAsset{ symbol decimals priceUsd } }
+      data{ ... on MarketTransactionLiquidationData{ liquidator seizedAssets repaidAssets badDebtAssets } }
     }
   }
 }"""
@@ -44,25 +40,28 @@ def main():
     since = int(time.time() - DAYS * 86400)
     rows, skip = [], 0
     while True:
-        d = gql(Q, {"skip": skip, "since": since})["transactions"]
+        d = gql(Q, {"skip": skip, "since": since})["marketTransactions"]
         items = d["items"]; rows += items
         print("fetched", len(rows), "of", d["pageInfo"]["countTotal"], flush=True)
         if len(items) < 1000 or skip > 60000: break
         skip += 1000
     L = []
     for t in rows:
-        x = t.get("data") or {}
-        seized = float(x.get("seizedAssetsUsd") or 0); repaid = float(x.get("repaidAssetsUsd") or 0)
-        m = x.get("market") or {}
+        x = t.get("data") or {}; m = t.get("market") or {}
+        la, ca = m.get("loanAsset") or {}, m.get("collateralAsset") or {}
+        def usd(raw, a):
+            try: return int(raw) / 10 ** int(a.get("decimals") or 18) * float(a.get("priceUsd") or 0)
+            except Exception: return 0.0
+        seized = usd(x.get("seizedAssets") or 0, ca); repaid = usd(x.get("repaidAssets") or 0, la)
         L.append(dict(chain=(t.get("chain") or {}).get("network") or str((t.get("chain") or {}).get("id")),
                       ts=int(t["timestamp"]), liq=(x.get("liquidator") or "").lower(), seized=seized, repaid=repaid,
-                      bonus=seized - repaid, bad=float(x.get("badDebtAssetsUsd") or 0),
-                      pair=f"{(m.get('collateralAsset') or {}).get('symbol')}/{(m.get('loanAsset') or {}).get('symbol')}",
-                      lltv=float(m.get("lltv") or 0) / 1e18, hash=t["hash"]))
+                      bonus=seized - repaid, bad=usd(x.get("badDebtAssets") or 0, la),
+                      pair=f"{ca.get('symbol')}/{la.get('symbol')}", lltv=float(m.get("lltv") or 0) / 1e18, hash=t["txHash"],
+                      priced=bool(ca.get("priceUsd")) and bool(la.get("priceUsd"))))
     json.dump(L, open(f"{OUT}/liq_morpho.json", "w", encoding="utf-8"))
     now = dt.datetime.now(dt.timezone.utc)
     R = [f"# Morpho Blue liquidations, last {DAYS} days — {now:%Y-%m-%d %H:%M} UTC", "",
-         "Bonus = collateral seized minus debt repaid (USD, Morpho's own valuation), before gas and swap costs.", "",
+         "Bonus = collateral seized minus debt repaid, valued at TODAY's token prices (Morpho API), before gas and swap costs. Liquidations whose tokens have no price are counted but valued at $0.", "",
          "| Chain | Liquidations | Total bonus $ | Median bonus $ | Bonus > $50 | Distinct winners | Top winner's share | Top 3 share | Bonus $5-50 (small) |",
          "|---|---|---|---|---|---|---|---|---|"]
     by = collections.defaultdict(list)
