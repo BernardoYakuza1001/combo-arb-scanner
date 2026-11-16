@@ -24,4 +24,6 @@ yarn-error.log*
 
 # Tools
 .claude/settings.local.json
-.dockerignore
+.dockerignore.env
+.node/
+liqbot_log.txt

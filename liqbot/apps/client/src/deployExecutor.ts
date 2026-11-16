@@ -1,5 +1,6 @@
 import { chainConfigs } from "@morpho-blue-liquidation-bot/config";
 import dotenv from "dotenv";
+import { appendFileSync, readFileSync } from "node:fs";
 import { createWalletClient, type Hex, http } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 
@@ -14,14 +15,14 @@ async function run() {
     const chain = config.chain;
     const id = chain.id;
 
-    const rpcUrl = process.env[`RPC_URL_${id}`] ?? chain.rpcUrls.default.http[0];
+    const rpcUrl = process.env[`RPC_URL_${id}`];
     const privateKey = process.env[`LIQUIDATION_PRIVATE_KEY_${id}`];
 
-    if (!rpcUrl) {
-      throw new Error(`RPC_URL_${id} is not set`);
-    }
-    if (!privateKey) {
-      throw new Error(`LIQUIDATION_PRIVATE_KEY_${id} is not set`);
+    // Only chains the user has set up (RPC + key) get an executor; existing ones are not redeployed.
+    if (!rpcUrl || !privateKey) continue;
+    if (process.env[`EXECUTOR_ADDRESS_${id}`]) {
+      console.log(`Executor already set for chain ${id}: ${process.env[`EXECUTOR_ADDRESS_${id}`]}`);
+      continue;
     }
 
     const client = createWalletClient({
@@ -30,7 +31,12 @@ async function run() {
       account: privateKeyToAccount(privateKey as Hex),
     });
 
-    await deploy(client, privateKeyToAccount(privateKey as Hex).address);
+    const address = await deploy(client, privateKeyToAccount(privateKey as Hex).address);
+    if (address) {
+      const env = readFileSync(".env", "utf8");
+      appendFileSync(".env", `${env.endsWith("\n") ? "" : "\n"}EXECUTOR_ADDRESS_${id}=${address}\n`);
+      console.log(`Saved EXECUTOR_ADDRESS_${id} to .env`);
+    }
   }
 }
 
