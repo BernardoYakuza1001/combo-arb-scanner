@@ -18,7 +18,7 @@
  {
   "q": "Will Mark Andrews have 2.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x8af272f0ad1d3871c79e8ff6b87cfdb60b20d19b9eda9859dcff88307f63ca58",
-  "reward": 1.105331668288974e-29,
+  "reward": 1.1251446254056963e-29,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -28,7 +28,7 @@
  {
   "q": "Will Lamine Yamal (Barcelona) record the most assists in the 2026-27 La Liga season?",
   "cid": "0x64b772a4981d93f820e9b0d235048f228137bce594db995822eca75a3b87e116",
-  "reward": 0.006711256474421585,
+  "reward": 0.006930843428308796,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -44,7 +44,7 @@
  {
   "q": "Will SIENNA SPIRO win Best New Artist at the 69th Annual GRAMMY Awards?",
   "cid": "0x626ac4f91ecb34253a7e10161b33f88483fc454c80f38e238bbe603832efb195",
-  "reward": 0.062143123075425286,
+  "reward": 0.06508866748972049,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -75,7 +75,7 @@
  {
   "q": "Will Grand Theft Auto VI win Best Narrative at the 2026 Game Awards?",
   "cid": "0x646108c99798200a348f46876f474b02e894744d40c81e75870db0ffa35fd41a",
-  "reward": 0.023879178934692363,
+  "reward": 0.024338745512846805,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -111,13 +111,18 @@
     "ts": 1794851410.07415,
     "kind": "pause",
     "mid": 0.137
+   },
+   {
+    "ts": 1794858115.1257129,
+    "kind": "pause",
+    "mid": 0.14750000000000002
    }
   ]
  },
  {
   "q": "Will the Baltimore Ravens make the 2027 NFL Playoffs?",
   "cid": "0xc022132e7e7c1ccf5e49ee72493dc4819cd35ae03a92ad88afdc1953558c1f50",
-  "reward": 0.07853353448623705,
+  "reward": 0.07998206320623326,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
