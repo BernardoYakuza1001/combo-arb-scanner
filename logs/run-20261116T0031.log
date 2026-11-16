@@ -1,0 +1,300 @@
+2026-11-15 22:24:53 cycle 6135: polled 373 baskets / 255 tokens in 1.26s, hot 373, open 0, closed 65
+2026-11-15 22:25:16 cycle 6150: polled 373 baskets / 255 tokens in 1.21s, hot 373, open 0, closed 65
+2026-11-15 22:25:52 cycle 6165: polled 378 baskets / 264 tokens in 1.26s, hot 378, open 0, closed 65
+2026-11-15 22:26:27 cycle 6180: polled 380 baskets / 260 tokens in 1.11s, hot 380, open 0, closed 65
+2026-11-15 22:26:50 cycle 6195: polled 380 baskets / 260 tokens in 1.22s, hot 380, open 0, closed 65
+2026-11-15 22:27:25 cycle 6210: polled 386 baskets / 268 tokens in 1.25s, hot 386, open 0, closed 65
+2026-11-15 22:27:47 cycle 6225: polled 386 baskets / 268 tokens in 1.17s, hot 386, open 0, closed 65
+2026-11-15 22:28:24 cycle 6240: polled 384 baskets / 266 tokens in 1.22s, hot 384, open 0, closed 65
+2026-11-15 22:28:57 cycle 6255: polled 387 baskets / 268 tokens in 1.16s, hot 387, open 0, closed 65
+2026-11-15 22:29:19 cycle 6270: polled 387 baskets / 268 tokens in 0.87s, hot 387, open 0, closed 65
+2026-11-15 22:29:54 cycle 6285: polled 387 baskets / 266 tokens in 1.18s, hot 387, open 0, closed 65
+2026-11-15 22:30:16 cycle 6300: polled 387 baskets / 266 tokens in 1.11s, hot 387, open 0, closed 65
+2026-11-15 22:30:52 cycle 6315: polled 387 baskets / 269 tokens in 1.22s, hot 387, open 0, closed 65
+2026-11-15 22:31:29 cycle 6330: polled 370 baskets / 250 tokens in 1.01s, hot 370, open 0, closed 65
+2026-11-15 22:31:52 cycle 6345: polled 370 baskets / 250 tokens in 1.11s, hot 370, open 0, closed 65
+2026-11-15 22:32:26 cycle 6360: polled 373 baskets / 253 tokens in 1.2s, hot 373, open 0, closed 65
+2026-11-15 22:32:49 cycle 6375: polled 373 baskets / 253 tokens in 1.16s, hot 373, open 0, closed 65
+2026-11-15 22:33:25 cycle 6390: polled 374 baskets / 253 tokens in 1.19s, hot 374, open 0, closed 65
+2026-11-15 22:34:00 cycle 6405: polled 377 baskets / 261 tokens in 1.19s, hot 377, open 0, closed 65
+2026-11-15 22:34:23 cycle 6420: polled 377 baskets / 261 tokens in 1.01s, hot 377, open 0, closed 65
+2026-11-15 22:34:56 cycle 6435: polled 373 baskets / 252 tokens in 1.2s, hot 373, open 0, closed 65
+2026-11-15 22:35:18 cycle 6450: polled 373 baskets / 252 tokens in 1.21s, hot 373, open 0, closed 65
+2026-11-15 22:35:52 cycle 6465: polled 378 baskets / 262 tokens in 1.11s, hot 378, open 0, closed 65
+2026-11-15 22:36:28 cycle 6480: polled 380 baskets / 264 tokens in 1.18s, hot 380, open 0, closed 65
+2026-11-15 22:36:50 cycle 6495: polled 380 baskets / 264 tokens in 1.19s, hot 380, open 0, closed 65
+2026-11-15 22:37:24 cycle 6510: polled 386 baskets / 275 tokens in 1.12s, hot 386, open 0, closed 65
+2026-11-15 22:37:52 cycle 6525: polled 386 baskets / 275 tokens in 1.14s, hot 386, open 0, closed 65
+2026-11-15 22:38:26 cycle 6540: polled 382 baskets / 267 tokens in 1.28s, hot 382, open 0, closed 65
+2026-11-15 22:39:02 cycle 6555: polled 388 baskets / 275 tokens in 1.19s, hot 388, open 0, closed 65
+2026-11-15 22:39:24 cycle 6570: polled 388 baskets / 275 tokens in 1.31s, hot 388, open 0, closed 65
+2026-11-15 22:39:58 cycle 6585: polled 391 baskets / 278 tokens in 1.12s, hot 391, open 0, closed 65
+2026-11-15 22:40:21 cycle 6600: polled 391 baskets / 278 tokens in 1.22s, hot 391, open 0, closed 65
+2026-11-15 22:40:53 cycle 6615: polled 390 baskets / 278 tokens in 1.05s, hot 390, open 0, closed 66
+2026-11-15 22:41:30 cycle 6630: polled 396 baskets / 281 tokens in 1.27s, hot 396, open 0, closed 70
+2026-11-15 22:41:53 cycle 6645: polled 396 baskets / 281 tokens in 1.28s, hot 396, open 0, closed 70
+2026-11-15 22:42:28 cycle 6660: polled 398 baskets / 286 tokens in 1.18s, hot 398, open 1, closed 70
+2026-11-15 22:42:50 cycle 6675: polled 398 baskets / 286 tokens in 1.13s, hot 398, open 0, closed 71
+2026-11-15 22:43:24 cycle 6690: polled 392 baskets / 275 tokens in 0.96s, hot 392, open 0, closed 71
+2026-11-15 22:43:59 cycle 6705: polled 398 baskets / 286 tokens in 1.24s, hot 398, open 0, closed 71
+2026-11-15 22:44:21 cycle 6720: polled 398 baskets / 286 tokens in 0.94s, hot 398, open 0, closed 71
+2026-11-15 22:44:57 cycle 6735: polled 399 baskets / 287 tokens in 1.12s, hot 399, open 0, closed 72
+2026-11-15 22:45:20 cycle 6750: polled 399 baskets / 287 tokens in 1.42s, hot 399, open 0, closed 72
+2026-11-15 22:45:54 cycle 6765: polled 398 baskets / 287 tokens in 1.07s, hot 398, open 0, closed 72
+2026-11-15 22:46:29 cycle 6780: polled 392 baskets / 279 tokens in 1.33s, hot 392, open 0, closed 72
+2026-11-15 22:46:52 cycle 6795: polled 392 baskets / 279 tokens in 1.24s, hot 392, open 0, closed 72
+2026-11-15 22:47:15 events: tag sports page 1: 100 events in 1.1s (total 100)
+2026-11-15 22:47:16 events: tag sports page 2: 100 events in 0.3s (total 200)
+2026-11-15 22:47:16 events: tag sports page 3: 100 events in 0.5s (total 300)
+2026-11-15 22:47:16 events: tag esports page 1: 100 events in 0.2s (total 385)
+2026-11-15 22:47:17 events: tag esports page 2: 100 events in 0.2s (total 485)
+2026-11-15 22:47:17 events: tag esports page 3: 100 events in 0.4s (total 585)
+2026-11-15 22:47:17 events: tag crypto page 1: 100 events in 0.3s (total 685)
+2026-11-15 22:47:18 events: tag crypto page 2: 100 events in 0.6s (total 785)
+2026-11-15 22:47:18 events: tag crypto page 3: 100 events in 0.4s (total 885)
+2026-11-15 22:47:22 relation search took 3.6s
+2026-11-15 22:47:22 discovery: 885 events, 667 families, 17824 baskets, 3822 tokens, skipped {'sports_unmodelled_type': 8435, 'sports_bad_margin': 185}
+2026-11-15 22:47:35 cycle 6810: polled 387 baskets / 269 tokens in 1.22s, hot 387, open 0, closed 72
+2026-11-15 22:47:57 cycle 6825: polled 387 baskets / 269 tokens in 1.17s, hot 387, open 0, closed 72
+2026-11-15 22:48:32 cycle 6840: polled 396 baskets / 277 tokens in 1.3s, hot 396, open 0, closed 72
+2026-11-15 22:49:09 cycle 6855: polled 397 baskets / 280 tokens in 1.32s, hot 397, open 0, closed 72
+2026-11-15 22:49:32 cycle 6870: polled 397 baskets / 280 tokens in 1.22s, hot 397, open 0, closed 72
+2026-11-15 22:50:05 cycle 6885: polled 389 baskets / 270 tokens in 1.23s, hot 389, open 0, closed 72
+2026-11-15 22:50:27 cycle 6900: polled 389 baskets / 270 tokens in 0.89s, hot 389, open 1, closed 72
+2026-11-15 22:51:02 cycle 6915: polled 400 baskets / 280 tokens in 1.3s, hot 400, open 0, closed 74
+2026-11-15 22:51:38 cycle 6930: polled 391 baskets / 270 tokens in 1.24s, hot 391, open 1, closed 74
+2026-11-15 22:52:01 cycle 6945: polled 391 baskets / 270 tokens in 1.25s, hot 391, open 1, closed 75
+2026-11-15 22:52:38 cycle 6960: polled 406 baskets / 286 tokens in 1.23s, hot 406, open 1, closed 76
+2026-11-15 22:53:00 cycle 6975: polled 406 baskets / 286 tokens in 1.24s, hot 406, open 2, closed 76
+2026-11-15 22:53:37 cycle 6990: polled 398 baskets / 280 tokens in 1.15s, hot 398, open 1, closed 77
+2026-11-15 22:54:13 cycle 7005: polled 407 baskets / 284 tokens in 1.34s, hot 407, open 1, closed 77
+2026-11-15 22:54:35 cycle 7020: polled 407 baskets / 284 tokens in 1.29s, hot 407, open 0, closed 78
+2026-11-15 22:55:12 cycle 7035: polled 406 baskets / 286 tokens in 1.32s, hot 406, open 0, closed 78
+2026-11-15 22:55:35 cycle 7050: polled 406 baskets / 286 tokens in 1.08s, hot 406, open 0, closed 78
+2026-11-15 22:56:09 cycle 7065: polled 413 baskets / 292 tokens in 0.87s, hot 413, open 0, closed 78
+2026-11-15 22:56:43 cycle 7080: polled 405 baskets / 283 tokens in 1.25s, hot 405, open 0, closed 78
+2026-11-15 22:57:06 cycle 7095: polled 405 baskets / 283 tokens in 1.3s, hot 405, open 0, closed 78
+2026-11-15 22:57:41 cycle 7110: polled 408 baskets / 281 tokens in 1.22s, hot 408, open 0, closed 78
+2026-11-15 22:58:04 cycle 7125: polled 408 baskets / 281 tokens in 1.17s, hot 408, open 0, closed 78
+2026-11-15 22:58:39 cycle 7140: polled 401 baskets / 275 tokens in 1.05s, hot 401, open 0, closed 78
+2026-11-15 22:59:15 cycle 7155: polled 400 baskets / 277 tokens in 1.22s, hot 400, open 0, closed 78
+2026-11-15 22:59:38 cycle 7170: polled 400 baskets / 277 tokens in 1.23s, hot 400, open 0, closed 78
+2026-11-15 23:00:13 cycle 7185: polled 400 baskets / 278 tokens in 1.2s, hot 400, open 0, closed 78
+2026-11-15 23:00:36 cycle 7200: polled 400 baskets / 278 tokens in 1.26s, hot 400, open 0, closed 78
+2026-11-15 23:01:11 cycle 7215: polled 391 baskets / 271 tokens in 1.22s, hot 391, open 0, closed 78
+2026-11-15 23:01:46 cycle 7230: polled 394 baskets / 273 tokens in 1.32s, hot 394, open 0, closed 78
+2026-11-15 23:02:08 cycle 7245: polled 394 baskets / 273 tokens in 1.12s, hot 394, open 0, closed 78
+2026-11-15 23:02:44 cycle 7260: polled 394 baskets / 275 tokens in 0.87s, hot 394, open 0, closed 78
+2026-11-15 23:03:07 cycle 7275: polled 394 baskets / 275 tokens in 1.29s, hot 394, open 0, closed 78
+2026-11-15 23:03:43 cycle 7290: polled 403 baskets / 280 tokens in 1.23s, hot 403, open 0, closed 78
+2026-11-15 23:04:18 cycle 7305: polled 401 baskets / 278 tokens in 1.09s, hot 401, open 0, closed 78
+2026-11-15 23:04:41 cycle 7320: polled 401 baskets / 278 tokens in 1.29s, hot 401, open 0, closed 78
+2026-11-15 23:05:17 cycle 7335: polled 396 baskets / 275 tokens in 1.03s, hot 396, open 0, closed 78
+2026-11-15 23:05:40 cycle 7350: polled 396 baskets / 275 tokens in 1.3s, hot 396, open 0, closed 78
+2026-11-15 23:06:15 cycle 7365: polled 400 baskets / 280 tokens in 1.0s, hot 400, open 0, closed 78
+2026-11-15 23:06:47 cycle 7380: polled 413 baskets / 293 tokens in 1.07s, hot 413, open 0, closed 78
+2026-11-15 23:07:10 cycle 7395: polled 413 baskets / 293 tokens in 1.3s, hot 413, open 0, closed 78
+2026-11-15 23:07:46 cycle 7410: polled 408 baskets / 287 tokens in 0.94s, hot 408, open 0, closed 78
+2026-11-15 23:08:08 cycle 7425: polled 408 baskets / 287 tokens in 1.12s, hot 408, open 0, closed 78
+2026-11-15 23:08:44 cycle 7440: polled 411 baskets / 284 tokens in 1.26s, hot 411, open 0, closed 78
+2026-11-15 23:09:20 cycle 7455: polled 411 baskets / 289 tokens in 1.16s, hot 411, open 0, closed 78
+2026-11-15 23:09:42 cycle 7470: polled 411 baskets / 289 tokens in 1.29s, hot 411, open 0, closed 78
+2026-11-15 23:10:19 cycle 7485: polled 426 baskets / 300 tokens in 1.29s, hot 426, open 0, closed 78
+2026-11-15 23:10:41 cycle 7500: polled 426 baskets / 300 tokens in 1.19s, hot 426, open 0, closed 78
+2026-11-15 23:11:16 cycle 7515: polled 413 baskets / 289 tokens in 1.05s, hot 413, open 0, closed 78
+2026-11-15 23:11:52 cycle 7530: polled 418 baskets / 297 tokens in 1.13s, hot 418, open 0, closed 78
+2026-11-15 23:12:14 cycle 7545: polled 418 baskets / 297 tokens in 1.12s, hot 418, open 0, closed 78
+2026-11-15 23:12:50 cycle 7560: polled 408 baskets / 286 tokens in 1.21s, hot 408, open 0, closed 78
+2026-11-15 23:13:13 cycle 7575: polled 408 baskets / 286 tokens in 1.35s, hot 408, open 0, closed 78
+2026-11-15 23:13:49 cycle 7590: polled 409 baskets / 284 tokens in 1.29s, hot 409, open 0, closed 78
+2026-11-15 23:14:24 cycle 7605: polled 428 baskets / 292 tokens in 1.15s, hot 428, open 0, closed 78
+2026-11-15 23:14:47 cycle 7620: polled 428 baskets / 292 tokens in 1.2s, hot 428, open 0, closed 78
+2026-11-15 23:15:21 cycle 7635: polled 424 baskets / 287 tokens in 1.15s, hot 424, open 0, closed 78
+2026-11-15 23:15:44 cycle 7650: polled 424 baskets / 287 tokens in 1.23s, hot 424, open 0, closed 78
+2026-11-15 23:16:20 cycle 7665: polled 414 baskets / 290 tokens in 1.25s, hot 414, open 0, closed 78
+2026-11-15 23:16:53 cycle 7680: polled 411 baskets / 289 tokens in 1.56s, hot 411, open 0, closed 78
+2026-11-15 23:17:15 events: tag sports page 1: 100 events in 0.3s (total 100)
+2026-11-15 23:17:15 events: tag sports page 2: 100 events in 0.1s (total 200)
+2026-11-15 23:17:15 events: tag sports page 3: 100 events in 0.1s (total 300)
+2026-11-15 23:17:15 events: tag esports page 1: 100 events in 0.1s (total 386)
+2026-11-15 23:17:15 events: tag esports page 2: 100 events in 0.1s (total 486)
+2026-11-15 23:17:15 events: tag esports page 3: 100 events in 0.1s (total 586)
+2026-11-15 23:17:16 events: tag crypto page 1: 100 events in 0.7s (total 686)
+2026-11-15 23:17:16 events: tag crypto page 2: 100 events in 0.2s (total 786)
+2026-11-15 23:17:17 events: tag crypto page 3: 100 events in 0.2s (total 886)
+2026-11-15 23:17:20 relation search took 3.6s
+2026-11-15 23:17:20 discovery: 886 events, 654 families, 17601 baskets, 3730 tokens, skipped {'sports_unmodelled_type': 8296, 'sports_bad_margin': 188}
+2026-11-15 23:17:21 cycle 7695: polled 411 baskets / 289 tokens in 1.16s, hot 411, open 0, closed 78
+2026-11-15 23:17:55 cycle 7710: polled 426 baskets / 302 tokens in 1.4s, hot 426, open 0, closed 78
+2026-11-15 23:18:17 cycle 7725: polled 426 baskets / 302 tokens in 1.37s, hot 426, open 0, closed 78
+2026-11-15 23:18:52 cycle 7740: polled 433 baskets / 305 tokens in 1.06s, hot 433, open 0, closed 78
+2026-11-15 23:19:27 cycle 7755: polled 430 baskets / 302 tokens in 1.29s, hot 430, open 0, closed 78
+2026-11-15 23:19:49 cycle 7770: polled 430 baskets / 302 tokens in 1.62s, hot 430, open 0, closed 78
+2026-11-15 23:20:25 cycle 7785: polled 404 baskets / 287 tokens in 1.12s, hot 404, open 0, closed 78
+2026-11-15 23:20:47 cycle 7800: polled 404 baskets / 287 tokens in 1.26s, hot 404, open 0, closed 78
+2026-11-15 23:21:23 cycle 7815: polled 411 baskets / 281 tokens in 1.29s, hot 411, open 0, closed 78
+2026-11-15 23:21:59 cycle 7830: polled 411 baskets / 289 tokens in 1.29s, hot 411, open 0, closed 78
+2026-11-15 23:22:21 cycle 7845: polled 411 baskets / 289 tokens in 1.2s, hot 411, open 0, closed 78
+2026-11-15 23:22:53 cycle 7860: polled 399 baskets / 279 tokens in 1.39s, hot 399, open 0, closed 78
+2026-11-15 23:23:15 cycle 7875: polled 399 baskets / 279 tokens in 1.32s, hot 399, open 0, closed 78
+2026-11-15 23:23:51 cycle 7890: polled 404 baskets / 281 tokens in 1.36s, hot 404, open 0, closed 78
+2026-11-15 23:24:26 cycle 7905: polled 390 baskets / 279 tokens in 1.25s, hot 390, open 0, closed 78
+2026-11-15 23:24:49 cycle 7920: polled 390 baskets / 279 tokens in 1.32s, hot 390, open 0, closed 78
+2026-11-15 23:25:24 cycle 7935: polled 386 baskets / 272 tokens in 1.12s, hot 386, open 0, closed 78
+2026-11-15 23:25:47 cycle 7950: polled 386 baskets / 272 tokens in 1.22s, hot 386, open 0, closed 78
+2026-11-15 23:26:21 cycle 7965: polled 377 baskets / 263 tokens in 0.96s, hot 377, open 0, closed 78
+2026-11-15 23:26:55 cycle 7980: polled 384 baskets / 269 tokens in 1.52s, hot 384, open 0, closed 78
+2026-11-15 23:27:18 cycle 7995: polled 384 baskets / 269 tokens in 1.32s, hot 384, open 0, closed 79
+2026-11-15 23:27:53 cycle 8010: polled 387 baskets / 277 tokens in 1.06s, hot 387, open 0, closed 79
+2026-11-15 23:28:15 cycle 8025: polled 387 baskets / 277 tokens in 1.32s, hot 387, open 0, closed 79
+2026-11-15 23:28:50 cycle 8040: polled 392 baskets / 281 tokens in 1.34s, hot 392, open 0, closed 79
+2026-11-15 23:29:26 cycle 8055: polled 408 baskets / 299 tokens in 1.33s, hot 408, open 0, closed 79
+2026-11-15 23:29:49 cycle 8070: polled 408 baskets / 299 tokens in 1.28s, hot 408, open 0, closed 79
+2026-11-15 23:30:24 cycle 8085: polled 390 baskets / 280 tokens in 1.12s, hot 390, open 0, closed 79
+2026-11-15 23:30:46 cycle 8100: polled 390 baskets / 280 tokens in 0.98s, hot 390, open 0, closed 79
+2026-11-15 23:31:20 cycle 8115: polled 388 baskets / 273 tokens in 0.91s, hot 388, open 0, closed 79
+2026-11-15 23:31:55 cycle 8130: polled 383 baskets / 270 tokens in 1.23s, hot 383, open 0, closed 79
+2026-11-15 23:32:18 cycle 8145: polled 383 baskets / 270 tokens in 1.3s, hot 383, open 0, closed 79
+2026-11-15 23:32:53 cycle 8160: polled 371 baskets / 256 tokens in 1.24s, hot 371, open 0, closed 79
+2026-11-15 23:33:15 cycle 8175: polled 371 baskets / 256 tokens in 1.06s, hot 371, open 0, closed 79
+2026-11-15 23:33:51 cycle 8190: polled 390 baskets / 281 tokens in 1.12s, hot 390, open 0, closed 79
+2026-11-15 23:34:27 cycle 8205: polled 387 baskets / 273 tokens in 1.09s, hot 387, open 0, closed 79
+2026-11-15 23:34:50 cycle 8220: polled 387 baskets / 273 tokens in 1.32s, hot 387, open 0, closed 79
+2026-11-15 23:35:23 cycle 8235: polled 403 baskets / 292 tokens in 1.16s, hot 403, open 0, closed 79
+2026-11-15 23:35:46 cycle 8250: polled 403 baskets / 292 tokens in 1.32s, hot 403, open 0, closed 79
+2026-11-15 23:36:22 cycle 8265: polled 392 baskets / 274 tokens in 1.14s, hot 392, open 0, closed 79
+2026-11-15 23:36:54 cycle 8280: polled 402 baskets / 286 tokens in 1.31s, hot 402, open 0, closed 79
+2026-11-15 23:37:17 cycle 8295: polled 402 baskets / 286 tokens in 1.24s, hot 402, open 0, closed 79
+2026-11-15 23:37:51 cycle 8310: polled 410 baskets / 290 tokens in 1.72s, hot 410, open 0, closed 79
+2026-11-15 23:38:13 cycle 8325: polled 410 baskets / 290 tokens in 1.13s, hot 410, open 0, closed 79
+2026-11-15 23:38:47 cycle 8340: polled 410 baskets / 287 tokens in 1.19s, hot 410, open 0, closed 79
+2026-11-15 23:39:22 cycle 8355: polled 416 baskets / 293 tokens in 1.38s, hot 416, open 0, closed 79
+2026-11-15 23:39:44 cycle 8370: polled 416 baskets / 293 tokens in 1.33s, hot 416, open 0, closed 79
+2026-11-15 23:40:20 cycle 8385: polled 422 baskets / 311 tokens in 1.34s, hot 422, open 0, closed 79
+2026-11-15 23:40:42 cycle 8400: polled 422 baskets / 311 tokens in 1.08s, hot 422, open 0, closed 79
+2026-11-15 23:41:19 cycle 8415: polled 428 baskets / 301 tokens in 1.25s, hot 428, open 0, closed 79
+2026-11-15 23:41:52 cycle 8430: polled 390 baskets / 277 tokens in 1.32s, hot 390, open 0, closed 79
+2026-11-15 23:42:14 cycle 8445: polled 390 baskets / 277 tokens in 1.09s, hot 390, open 0, closed 79
+2026-11-15 23:42:49 cycle 8460: polled 382 baskets / 272 tokens in 1.32s, hot 382, open 0, closed 79
+2026-11-15 23:43:11 cycle 8475: polled 382 baskets / 272 tokens in 1.13s, hot 382, open 0, closed 79
+2026-11-15 23:43:45 cycle 8490: polled 376 baskets / 265 tokens in 0.9s, hot 376, open 0, closed 79
+2026-11-15 23:44:20 cycle 8505: polled 415 baskets / 292 tokens in 1.36s, hot 415, open 0, closed 79
+2026-11-15 23:44:43 cycle 8520: polled 415 baskets / 292 tokens in 1.27s, hot 415, open 0, closed 79
+2026-11-15 23:45:19 cycle 8535: polled 405 baskets / 293 tokens in 0.91s, hot 405, open 1, closed 80
+2026-11-15 23:45:42 cycle 8550: polled 405 baskets / 293 tokens in 1.35s, hot 405, open 0, closed 81
+2026-11-15 23:46:18 cycle 8565: polled 391 baskets / 282 tokens in 1.12s, hot 391, open 0, closed 81
+2026-11-15 23:46:54 cycle 8580: polled 439 baskets / 327 tokens in 1.41s, hot 439, open 2, closed 81
+2026-11-15 23:47:16 events: tag sports page 1: 100 events in 0.7s (total 100)
+2026-11-15 23:47:16 events: tag sports page 2: 100 events in 0.4s (total 200)
+2026-11-15 23:47:17 events: tag sports page 3: 100 events in 0.3s (total 300)
+2026-11-15 23:47:17 events: tag esports page 1: 100 events in 0.0s (total 386)
+2026-11-15 23:47:17 events: tag esports page 2: 100 events in 0.1s (total 486)
+2026-11-15 23:47:17 events: tag esports page 3: 100 events in 0.1s (total 586)
+2026-11-15 23:47:17 events: tag crypto page 1: 100 events in 0.3s (total 686)
+2026-11-15 23:47:17 events: tag crypto page 2: 100 events in 0.2s (total 786)
+2026-11-15 23:47:18 events: tag crypto page 3: 100 events in 0.3s (total 886)
+2026-11-15 23:47:21 relation search took 3.4s
+2026-11-15 23:47:21 discovery: 886 events, 676 families, 16937 baskets, 3640 tokens, skipped {'sports_unmodelled_type': 8127, 'sports_bad_margin': 187}
+2026-11-15 23:47:22 cycle 8595: polled 439 baskets / 327 tokens in 1.08s, hot 439, open 0, closed 83
+2026-11-15 23:47:58 cycle 8610: polled 432 baskets / 327 tokens in 1.45s, hot 432, open 0, closed 83
+2026-11-15 23:48:21 cycle 8625: polled 432 baskets / 327 tokens in 1.36s, hot 432, open 0, closed 83
+2026-11-15 23:48:56 cycle 8640: polled 416 baskets / 299 tokens in 1.32s, hot 416, open 0, closed 84
+2026-11-15 23:49:32 cycle 8655: polled 415 baskets / 290 tokens in 1.32s, hot 415, open 0, closed 84
+2026-11-15 23:49:54 cycle 8670: polled 415 baskets / 290 tokens in 1.29s, hot 415, open 0, closed 84
+2026-11-15 23:50:29 cycle 8685: polled 387 baskets / 272 tokens in 1.07s, hot 387, open 0, closed 84
+2026-11-15 23:50:52 cycle 8700: polled 387 baskets / 272 tokens in 1.31s, hot 387, open 0, closed 84
+2026-11-15 23:51:28 cycle 8715: polled 389 baskets / 273 tokens in 1.04s, hot 389, open 0, closed 84
+2026-11-15 23:52:02 cycle 8730: polled 414 baskets / 286 tokens in 1.09s, hot 414, open 0, closed 84
+2026-11-15 23:52:24 cycle 8745: polled 414 baskets / 286 tokens in 1.12s, hot 414, open 0, closed 86
+2026-11-15 23:52:59 cycle 8760: polled 432 baskets / 307 tokens in 1.16s, hot 432, open 0, closed 86
+2026-11-15 23:53:22 cycle 8775: polled 432 baskets / 307 tokens in 1.44s, hot 432, open 0, closed 86
+2026-11-15 23:53:57 cycle 8790: polled 434 baskets / 312 tokens in 1.63s, hot 434, open 1, closed 86
+2026-11-15 23:54:32 cycle 8805: polled 440 baskets / 313 tokens in 1.5s, hot 440, open 0, closed 87
+2026-11-15 23:54:55 cycle 8820: polled 440 baskets / 313 tokens in 1.4s, hot 440, open 0, closed 88
+2026-11-15 23:55:30 cycle 8835: polled 477 baskets / 327 tokens in 1.53s, hot 477, open 1, closed 91
+2026-11-15 23:55:53 cycle 8850: polled 477 baskets / 327 tokens in 1.51s, hot 477, open 0, closed 95
+2026-11-15 23:56:29 cycle 8865: polled 446 baskets / 315 tokens in 1.56s, hot 446, open 0, closed 96
+2026-11-15 23:57:02 cycle 8880: polled 418 baskets / 296 tokens in 1.03s, hot 418, open 0, closed 96
+2026-11-15 23:57:25 cycle 8895: polled 418 baskets / 296 tokens in 1.06s, hot 418, open 0, closed 96
+2026-11-15 23:57:59 cycle 8910: polled 406 baskets / 278 tokens in 1.26s, hot 406, open 0, closed 96
+2026-11-15 23:58:22 cycle 8925: polled 406 baskets / 278 tokens in 1.31s, hot 406, open 0, closed 96
+2026-11-15 23:58:57 cycle 8940: polled 407 baskets / 278 tokens in 1.26s, hot 407, open 0, closed 96
+2026-11-15 23:59:28 cycle 8955: polled 400 baskets / 289 tokens in 1.24s, hot 400, open 0, closed 96
+2026-11-15 23:59:51 cycle 8970: polled 400 baskets / 289 tokens in 1.29s, hot 400, open 0, closed 96
+2026-11-16 00:00:27 cycle 8985: polled 416 baskets / 287 tokens in 1.38s, hot 416, open 0, closed 97
+2026-11-16 00:00:50 cycle 9000: polled 416 baskets / 287 tokens in 1.28s, hot 416, open 0, closed 97
+2026-11-16 00:01:25 cycle 9015: polled 405 baskets / 275 tokens in 0.87s, hot 405, open 0, closed 97
+2026-11-16 00:02:02 cycle 9030: polled 409 baskets / 283 tokens in 1.21s, hot 409, open 0, closed 97
+2026-11-16 00:02:24 cycle 9045: polled 409 baskets / 283 tokens in 1.32s, hot 409, open 0, closed 97
+2026-11-16 00:02:59 cycle 9060: polled 406 baskets / 280 tokens in 1.23s, hot 406, open 0, closed 97
+2026-11-16 00:03:22 cycle 9075: polled 406 baskets / 280 tokens in 1.67s, hot 406, open 0, closed 97
+2026-11-16 00:03:57 cycle 9090: polled 387 baskets / 269 tokens in 1.26s, hot 387, open 0, closed 97
+2026-11-16 00:04:33 cycle 9105: polled 406 baskets / 282 tokens in 1.11s, hot 406, open 0, closed 98
+2026-11-16 00:04:56 cycle 9120: polled 406 baskets / 282 tokens in 1.31s, hot 406, open 1, closed 98
+2026-11-16 00:05:30 cycle 9135: polled 406 baskets / 289 tokens in 1.39s, hot 406, open 1, closed 98
+2026-11-16 00:05:53 cycle 9150: polled 406 baskets / 289 tokens in 1.38s, hot 406, open 4, closed 101
+2026-11-16 00:06:28 cycle 9165: polled 427 baskets / 301 tokens in 1.28s, hot 427, open 8, closed 104
+2026-11-16 00:07:02 cycle 9180: polled 440 baskets / 315 tokens in 1.33s, hot 440, open 8, closed 106
+2026-11-16 00:07:24 cycle 9195: polled 440 baskets / 315 tokens in 1.07s, hot 440, open 8, closed 106
+2026-11-16 00:07:58 cycle 9210: polled 441 baskets / 307 tokens in 1.29s, hot 441, open 8, closed 106
+2026-11-16 00:08:21 cycle 9225: polled 441 baskets / 307 tokens in 1.07s, hot 441, open 8, closed 106
+2026-11-16 00:08:55 cycle 9240: polled 424 baskets / 287 tokens in 1.2s, hot 424, open 8, closed 106
+2026-11-16 00:09:28 cycle 9255: polled 420 baskets / 290 tokens in 1.12s, hot 420, open 1, closed 121
+2026-11-16 00:09:51 cycle 9270: polled 420 baskets / 290 tokens in 1.09s, hot 420, open 6, closed 128
+2026-11-16 00:10:24 cycle 9285: polled 434 baskets / 297 tokens in 0.87s, hot 434, open 12, closed 139
+2026-11-16 00:10:47 cycle 9300: polled 434 baskets / 297 tokens in 1.29s, hot 434, open 1, closed 169
+2026-11-16 00:11:22 cycle 9315: polled 420 baskets / 292 tokens in 1.08s, hot 420, open 5, closed 184
+2026-11-16 00:11:58 cycle 9330: polled 418 baskets / 288 tokens in 1.32s, hot 418, open 4, closed 191
+2026-11-16 00:12:20 cycle 9345: polled 418 baskets / 288 tokens in 1.06s, hot 418, open 9, closed 202
+2026-11-16 00:12:55 cycle 9360: polled 430 baskets / 291 tokens in 1.33s, hot 430, open 1, closed 217
+2026-11-16 00:13:17 cycle 9375: polled 430 baskets / 291 tokens in 1.14s, hot 430, open 1, closed 227
+2026-11-16 00:13:52 cycle 9390: polled 430 baskets / 289 tokens in 1.06s, hot 430, open 12, closed 231
+2026-11-16 00:14:27 cycle 9405: polled 444 baskets / 296 tokens in 1.3s, hot 444, open 16, closed 235
+2026-11-16 00:14:49 cycle 9420: polled 444 baskets / 296 tokens in 1.02s, hot 444, open 20, closed 239
+2026-11-16 00:15:23 cycle 9435: polled 441 baskets / 297 tokens in 1.21s, hot 441, open 15, closed 244
+2026-11-16 00:15:45 cycle 9450: polled 441 baskets / 297 tokens in 1.22s, hot 441, open 19, closed 244
+2026-11-16 00:16:20 cycle 9465: polled 413 baskets / 270 tokens in 1.16s, hot 413, open 19, closed 248
+2026-11-16 00:16:56 cycle 9480: polled 427 baskets / 284 tokens in 1.1s, hot 427, open 19, closed 248
+2026-11-16 00:17:16 events: tag sports page 1: 100 events in 0.8s (total 100)
+2026-11-16 00:17:17 events: tag sports page 2: 100 events in 0.5s (total 200)
+2026-11-16 00:17:17 events: tag sports page 3: 100 events in 0.4s (total 300)
+2026-11-16 00:17:18 events: tag esports page 1: 100 events in 0.3s (total 386)
+2026-11-16 00:17:18 events: tag esports page 2: 100 events in 0.3s (total 486)
+2026-11-16 00:17:18 events: tag esports page 3: 100 events in 0.3s (total 586)
+2026-11-16 00:17:19 events: tag crypto page 1: 100 events in 0.4s (total 686)
+2026-11-16 00:17:19 events: tag crypto page 2: 100 events in 0.3s (total 786)
+2026-11-16 00:17:19 events: tag crypto page 3: 100 events in 0.3s (total 886)
+2026-11-16 00:17:22 relation search took 2.6s
+2026-11-16 00:17:22 discovery: 886 events, 700 families, 13845 baskets, 3232 tokens, skipped {'sports_unmodelled_type': 7143, 'sports_bad_margin': 189}
+2026-11-16 00:17:25 cycle 9495: polled 427 baskets / 284 tokens in 1.22s, hot 427, open 19, closed 248
+2026-11-16 00:17:58 cycle 9510: polled 449 baskets / 297 tokens in 1.12s, hot 449, open 19, closed 253
+2026-11-16 00:18:20 cycle 9525: polled 449 baskets / 297 tokens in 1.31s, hot 449, open 19, closed 255
+2026-11-16 00:18:53 cycle 9540: polled 430 baskets / 295 tokens in 1.1s, hot 430, open 19, closed 258
+2026-11-16 00:19:25 cycle 9555: polled 429 baskets / 293 tokens in 0.87s, hot 429, open 19, closed 259
+2026-11-16 00:19:48 cycle 9570: polled 429 baskets / 293 tokens in 1.33s, hot 429, open 19, closed 260
+2026-11-16 00:20:21 cycle 9585: polled 427 baskets / 290 tokens in 1.22s, hot 427, open 19, closed 260
+2026-11-16 00:20:43 cycle 9600: polled 427 baskets / 290 tokens in 1.24s, hot 427, open 19, closed 260
+2026-11-16 00:21:16 cycle 9615: polled 423 baskets / 285 tokens in 1.2s, hot 423, open 18, closed 262
+2026-11-16 00:21:50 cycle 9630: polled 410 baskets / 269 tokens in 1.12s, hot 410, open 18, closed 263
+2026-11-16 00:22:13 cycle 9645: polled 410 baskets / 269 tokens in 1.25s, hot 410, open 19, closed 263
+2026-11-16 00:22:47 cycle 9660: polled 403 baskets / 265 tokens in 1.21s, hot 403, open 19, closed 263
+2026-11-16 00:23:09 cycle 9675: polled 403 baskets / 265 tokens in 0.96s, hot 403, open 19, closed 263
+2026-11-16 00:23:39 cycle 9690: polled 399 baskets / 261 tokens in 1.03s, hot 399, open 19, closed 263
+2026-11-16 00:24:11 cycle 9705: polled 415 baskets / 268 tokens in 1.1s, hot 415, open 19, closed 263
+2026-11-16 00:24:33 cycle 9720: polled 415 baskets / 268 tokens in 1.03s, hot 415, open 19, closed 263
+2026-11-16 00:25:07 cycle 9735: polled 405 baskets / 267 tokens in 1.16s, hot 405, open 19, closed 264
+2026-11-16 00:25:29 cycle 9750: polled 405 baskets / 267 tokens in 0.98s, hot 405, open 19, closed 264
+2026-11-16 00:26:00 cycle 9765: polled 433 baskets / 283 tokens in 0.89s, hot 433, open 19, closed 265
+2026-11-16 00:26:34 cycle 9780: polled 436 baskets / 282 tokens in 1.11s, hot 436, open 20, closed 268
+2026-11-16 00:26:56 cycle 9795: polled 436 baskets / 282 tokens in 1.04s, hot 436, open 19, closed 269
+2026-11-16 00:27:29 cycle 9810: polled 416 baskets / 273 tokens in 1.27s, hot 416, open 19, closed 269
+2026-11-16 00:27:52 cycle 9825: polled 416 baskets / 273 tokens in 1.29s, hot 416, open 19, closed 269
+2026-11-16 00:28:24 cycle 9840: polled 420 baskets / 275 tokens in 1.33s, hot 420, open 19, closed 269
+2026-11-16 00:28:54 cycle 9855: polled 416 baskets / 274 tokens in 1.21s, hot 416, open 1, closed 305
+2026-11-16 00:29:17 cycle 9870: polled 416 baskets / 274 tokens in 1.34s, hot 416, open 1, closed 329
+2026-11-16 00:29:51 cycle 9885: polled 408 baskets / 264 tokens in 1.03s, hot 408, open 16, closed 344
+2026-11-16 00:30:13 cycle 9900: polled 408 baskets / 264 tokens in 0.98s, hot 408, open 1, closed 374
+2026-11-16 00:30:47 cycle 9915: polled 403 baskets / 262 tokens in 1.14s, hot 403, open 16, closed 377
+2026-11-16 00:31:20 cycle 9930: polled 402 baskets / 268 tokens in 1.11s, hot 402, open 1, closed 402
+2026-11-16 00:31:42 cycle 9945: polled 402 baskets / 268 tokens in 0.87s, hot 402, open 5, closed 414
+2026-11-16 00:31:43 max runtime reached after 9945 cycles
