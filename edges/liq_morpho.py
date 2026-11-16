@@ -13,9 +13,9 @@ DAYS = int(os.environ.get("LIQ_DAYS", "30"))
 S = requests.Session(); S.headers["User-Agent"] = "edges/1.0"
 
 Q = """
-query($skip:Int!,$since:Int!){
+query($skip:Int!,$since:Int!,$until:Int!){
   marketTransactions(first:1000, skip:$skip, orderBy: Timestamp, orderDirection: Desc,
-                     where:{type_in:[Liquidation], timestamp_gte:$since}){
+                     where:{type_in:[Liquidation], timestamp_gte:$since, timestamp_lte:$until}){
     pageInfo{countTotal count}
     items{
       txHash timestamp blockNumber chain{ id network }
@@ -40,17 +40,20 @@ def gql(query, variables):
 def main():
     os.makedirs(OUT, exist_ok=True)
     since = int(time.time() - DAYS * 86400)
-    rows, skip = [], 0
-    while True:
-        d = None
-        for pf in PRICE_FORMS:
-            try: d = gql(Q.replace("PRICE", pf), {"skip": skip, "since": since})["marketTransactions"]; PRICE_FORMS[:] = [pf]; break
-            except RuntimeError as e: print("price form", pf, "failed:", str(e)[:200])
-        if d is None: raise RuntimeError("no price form worked")
-        items = d["items"]; rows += items
-        print("fetched", len(rows), "of", d["pageInfo"]["countTotal"], flush=True)
-        if not items or len(rows) >= d["pageInfo"]["countTotal"] or skip > 60000: break
-        skip += 1000
+    rows = []
+    for k in range(DAYS):                         # one-day windows: the API caps skip at 10,000
+        lo, hi = since + k * 86400, since + (k + 1) * 86400 - 1
+        skip = 0
+        while True:
+            d = None
+            for pf in PRICE_FORMS:
+                try: d = gql(Q.replace("PRICE", pf), {"skip": skip, "since": lo, "until": hi})["marketTransactions"]; PRICE_FORMS[:] = [pf]; break
+                except RuntimeError as e: print("price form", pf, "failed:", str(e)[:200])
+            if d is None: raise RuntimeError("no price form worked")
+            items = d["items"]; rows += items
+            if not items or skip + len(items) >= d["pageInfo"]["countTotal"] or skip >= 9000: break
+            skip += 1000
+        print("day", k, "total so far", len(rows), flush=True)
     L = []
     for t in rows:
         x = t.get("data") or {}; m = t.get("market") or {}
