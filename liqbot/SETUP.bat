@@ -17,7 +17,7 @@ set COREPACK_INTEGRITY_KEYS=0
 set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 echo Installing pnpm...
-if not exist "%~dp0.node22\pnpm.cmd" call "%~dp0.node22\npm.cmd" install -g pnpm@9 --prefix "%~dp0.node22" >> "%LOG%" 2>&1
+if not exist "%~dp0.node22\pnpm.cmd" call "%~dp0.node22\npm.cmd" install -g pnpm@11.0.9 --prefix "%~dp0.node22" >> "%LOG%" 2>&1
 if not exist "%~dp0.node22\pnpm.cmd" (
   echo pnpm install failed - see setup_log.txt
   goto end
