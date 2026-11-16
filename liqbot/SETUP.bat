@@ -1,15 +1,42 @@
 @echo off
+setlocal
 cd /d %~dp0
 title LIQBOT setup - installs Node.js locally (in this folder) and builds the bot
-if not exist .node\node.exe (
+set LOG=%~dp0setup_log.txt
+echo ==== setup %date% %time% ==== >> "%LOG%"
+if not exist "%~dp0.node\node.exe" (
   echo Downloading Node.js 20 portable into this folder...
-  powershell -NoProfile -Command "$ProgressPreference='SilentlyContinue'; Invoke-WebRequest https://nodejs.org/dist/v20.18.1/node-v20.18.1-win-x64.zip -OutFile node.zip; Expand-Archive node.zip -DestinationPath .nodetmp -Force; Move-Item .nodetmp\node-v20.18.1-win-x64 .node; Remove-Item node.zip; Remove-Item .nodetmp -Recurse"
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0get_node.ps1" >> "%LOG%" 2>&1
+)
+if not exist "%~dp0.node\node.exe" (
+  echo Node.js download failed - see setup_log.txt
+  goto end
 )
 set PATH=%~dp0.node;%PATH%
-call corepack enable --install-directory .node
-call pnpm install
-call pnpm build
+set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+echo Installing pnpm...
+if not exist "%~dp0.node\pnpm.cmd" call "%~dp0.node\npm.cmd" install -g pnpm@9 --prefix "%~dp0.node" >> "%LOG%" 2>&1
+if not exist "%~dp0.node\pnpm.cmd" (
+  echo pnpm install failed - see setup_log.txt
+  goto end
+)
+echo Installing the bot's packages (a few minutes)...
+call "%~dp0.node\pnpm.cmd" install >> "%LOG%" 2>&1
+if errorlevel 1 (
+  echo Package install failed - see setup_log.txt
+  goto end
+)
+echo Building...
+call "%~dp0.node\pnpm.cmd" build >> "%LOG%" 2>&1
+if errorlevel 1 (
+  echo Build failed - see setup_log.txt
+  goto end
+)
+echo Build OK. >> "%LOG%"
+echo Build OK.
 set PY=python
 if exist C:\morpho-scan\claude-lab\projects\22-edges\.venv\Scripts\python.exe set PY=C:\morpho-scan\claude-lab\projects\22-edges\.venv\Scripts\python.exe
-%PY% setup_key.py
+"%PY%" setup_key.py
+:end
+echo.
 pause
