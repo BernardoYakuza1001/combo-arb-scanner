@@ -27,6 +27,11 @@ def main():
         if not key: print("   That is not a private key (64 hex characters, with or without 0x). Try again.")
     os.system("cls" if os.name == "nt" else "clear"); print("Key accepted. Screen cleared.")
     url = None
+    pre = os.path.join(os.path.dirname(HERE), "alchemy_url.txt")     # optional, pre-filled next to the liqbot folder
+    if os.path.exists(pre):
+        u = open(pre, encoding="utf-8").read().strip()
+        if u.startswith("https://") and rpc_ok(u): url = u; print("2) Alchemy Base URL found in alchemy_url.txt and tested: OK")
+        else: print("   alchemy_url.txt did not answer as Base mainnet; please paste the URL.")
     while not url:
         u = input("2) Paste your Alchemy Base Mainnet URL (https://base-mainnet.g.alchemy.com/v2/...), then Enter:\n> ").strip()
         if u.startswith("https://") and rpc_ok(u): url = u
