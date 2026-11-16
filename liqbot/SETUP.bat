@@ -4,32 +4,32 @@ cd /d %~dp0
 title LIQBOT setup - installs Node.js locally (in this folder) and builds the bot
 set LOG=%~dp0setup_log.txt
 echo ==== setup %date% %time% ==== >> "%LOG%"
-if not exist "%~dp0.node22\node.exe" (
+if not exist "%~dp0.nodejs\node.exe" (
   echo Downloading Node.js 22 portable into this folder...
   powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0get_node.ps1" >> "%LOG%" 2>&1
 )
-if not exist "%~dp0.node22\node.exe" (
+if not exist "%~dp0.nodejs\node.exe" (
   echo Node.js download failed - see setup_log.txt
   goto end
 )
-set PATH=%~dp0.node22;%PATH%
+set PATH=%~dp0.nodejs;%PATH%
 set COREPACK_INTEGRITY_KEYS=0
 set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 echo Installing pnpm...
-if not exist "%~dp0.node22\pnpm.cmd" call "%~dp0.node22\npm.cmd" install -g pnpm@11.0.9 --prefix "%~dp0.node22" >> "%LOG%" 2>&1
-if not exist "%~dp0.node22\pnpm.cmd" (
+if not exist "%~dp0.nodejs\pnpm.cmd" call "%~dp0.nodejs\npm.cmd" install -g pnpm@11.0.9 --prefix "%~dp0.nodejs" >> "%LOG%" 2>&1
+if not exist "%~dp0.nodejs\pnpm.cmd" (
   echo pnpm install failed - see setup_log.txt
   goto end
 )
 echo Installing the bot's packages (a few minutes)...
-call "%~dp0.node22\pnpm.cmd" install >> "%LOG%" 2>&1
+call "%~dp0.nodejs\pnpm.cmd" install >> "%LOG%" 2>&1
 if errorlevel 1 (
   echo Package install failed - see setup_log.txt
   goto end
 )
 echo Building...
-call "%~dp0.node22\pnpm.cmd" build >> "%LOG%" 2>&1
+call "%~dp0.nodejs\pnpm.cmd" build >> "%LOG%" 2>&1
 if errorlevel 1 (
   echo Build failed - see setup_log.txt
   goto end

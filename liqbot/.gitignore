@@ -28,3 +28,4 @@ yarn-error.log*
 .node/
 liqbot_log.txt
 .node22/
+.nodejs/
