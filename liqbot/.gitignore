@@ -29,3 +29,4 @@ yarn-error.log*
 liqbot_log.txt
 .node22/
 .nodejs/
+BOT_ADDRESS.txt
