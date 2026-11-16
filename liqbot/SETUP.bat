@@ -13,6 +13,8 @@ if not exist "%~dp0.node\node.exe" (
   goto end
 )
 set PATH=%~dp0.node;%PATH%
+set COREPACK_INTEGRITY_KEYS=0
+set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 set COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 echo Installing pnpm...
 if not exist "%~dp0.node\pnpm.cmd" call "%~dp0.node\npm.cmd" install -g pnpm@9 --prefix "%~dp0.node" >> "%LOG%" 2>&1
