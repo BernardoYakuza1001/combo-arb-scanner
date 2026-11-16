@@ -37,6 +37,7 @@ STOP = os.path.join(HERE, "STOP")
 _DRY = os.environ.get("PMMM_DRY") == "YES"       # dry runs keep their own files, so they never overwrite the live ones
 LOG = os.path.join(HERE, "dry_log.jsonl" if _DRY else "live_log.jsonl")
 STATUS = os.path.join(HERE, "DRY_STATUS.md" if _DRY else "LIVE_STATUS.md")
+EXIT_ONLY = os.environ.get("PMMM_EXIT_ONLY") == "YES"     # unwind: only sell what is held, place no new bids
 BENCH_AFTER = int(os.environ.get("PMMM_BENCH_AFTER", "2"))
 BENCH_S = float(os.environ.get("PMMM_BENCH_S", "7200"))
 REBID_WAIT_S = float(os.environ.get("PMMM_REBID_WAIT_S", "900"))   # after a fill, do not bid that side again for this long
@@ -435,7 +436,7 @@ def main():
                         yb, nb, n, yb0, nb0 = tg; imb = m.yes - m.no
                         # a fill means someone thought my price was too high: wait before bidding that side again
                         fy = now - getattr(m, "fill_y", 0) >= REBID_WAIT_S; fn = now - getattr(m, "fill_n", 0) >= REBID_WAIT_S
-                        xo = getattr(m, "exit_only", False)      # held-but-unranked market: sell what I hold, buy nothing
+                        xo = getattr(m, "exit_only", False) or EXIT_ONLY      # held-but-unranked market: sell what I hold, buy nothing
                         if yb is not None and fy and not xo and imb < CFG["max_imb"] * n: want["Y"] = (yb, n, False)
                         if nb is not None and fn and not xo and -imb < CFG["max_imb"] * n: want["N"] = (nb, n, False)
                         # exit orders: holding YES -> the NO slot becomes SELL YES at the same book level (1 - nb0)

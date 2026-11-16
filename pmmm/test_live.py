@@ -350,3 +350,11 @@ def test_market_benched_when_polymarket_says_quotes_do_not_score(tmp_path, monke
     assert "benched" in names
     i = names.index("benched")
     assert not [e for e in ev[i + 1:] if e["ev"] == "quote"]          # no new quotes in a benched market
+
+
+def test_exit_only_mode_sells_holdings_and_places_no_bids(tmp_path, monkeypatch):
+    from pmmm import live
+    live_, st, m = _setup(tmp_path, monkeypatch, lambda c: _bk(0.48, 0.52), max_cycles=4, max_loss=500.0)
+    monkeypatch.setattr(live, "EXIT_ONLY", True); monkeypatch.setattr(live, "positions", lambda f: {"YES": 20.0})
+    live.main()
+    assert not st["placed"] and st["sells"] and st["sells"][0][1] == "YES"
