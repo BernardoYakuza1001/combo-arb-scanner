@@ -20,11 +20,13 @@ query($skip:Int!,$since:Int!){
     items{
       txHash timestamp blockNumber chain{ id network }
       user{ address }
-      market{ marketId lltv loanAsset{ symbol decimals priceUsd } collateralAsset{ symbol decimals priceUsd } }
+      market{ marketId lltv loanAsset{ symbol decimals PRICE } collateralAsset{ symbol decimals PRICE } }
       data{ ... on MarketTransactionLiquidationData{ liquidator seizedAssets repaidAssets badDebtAssets } }
     }
   }
 }"""
+
+PRICE_FORMS = ["price{ usd }", "price"]
 
 def gql(query, variables):
     for i in range(5):
@@ -40,7 +42,11 @@ def main():
     since = int(time.time() - DAYS * 86400)
     rows, skip = [], 0
     while True:
-        d = gql(Q, {"skip": skip, "since": since})["marketTransactions"]
+        d = None
+        for pf in PRICE_FORMS:
+            try: d = gql(Q.replace("PRICE", pf), {"skip": skip, "since": since})["marketTransactions"]; PRICE_FORMS[:] = [pf]; break
+            except RuntimeError as e: print("price form", pf, "failed:", str(e)[:200])
+        if d is None: raise RuntimeError("no price form worked")
         items = d["items"]; rows += items
         print("fetched", len(rows), "of", d["pageInfo"]["countTotal"], flush=True)
         if len(items) < 1000 or skip > 60000: break
@@ -50,14 +56,15 @@ def main():
         x = t.get("data") or {}; m = t.get("market") or {}
         la, ca = m.get("loanAsset") or {}, m.get("collateralAsset") or {}
         def usd(raw, a):
-            try: return int(raw) / 10 ** int(a.get("decimals") or 18) * float(a.get("priceUsd") or 0)
+            pr = a.get("price"); pr = pr.get("usd") if isinstance(pr, dict) else pr
+            try: return int(raw) / 10 ** int(a.get("decimals") or 18) * float(pr or 0)
             except Exception: return 0.0
         seized = usd(x.get("seizedAssets") or 0, ca); repaid = usd(x.get("repaidAssets") or 0, la)
         L.append(dict(chain=(t.get("chain") or {}).get("network") or str((t.get("chain") or {}).get("id")),
                       ts=int(t["timestamp"]), liq=(x.get("liquidator") or "").lower(), seized=seized, repaid=repaid,
                       bonus=seized - repaid, bad=usd(x.get("badDebtAssets") or 0, la),
                       pair=f"{ca.get('symbol')}/{la.get('symbol')}", lltv=float(m.get("lltv") or 0) / 1e18, hash=t["txHash"],
-                      priced=bool(ca.get("priceUsd")) and bool(la.get("priceUsd"))))
+                      priced=bool(ca.get("price")) and bool(la.get("price"))))
     json.dump(L, open(f"{OUT}/liq_morpho.json", "w", encoding="utf-8"))
     now = dt.datetime.now(dt.timezone.utc)
     R = [f"# Morpho Blue liquidations, last {DAYS} days — {now:%Y-%m-%d %H:%M} UTC", "",
