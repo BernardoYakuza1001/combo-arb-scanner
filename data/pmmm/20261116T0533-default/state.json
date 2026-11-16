@@ -12,13 +12,18 @@
     "ts": 1794807763.9341173,
     "kind": "pause",
     "mid": 0.2055
+   },
+   {
+    "ts": 1794815758.9904747,
+    "kind": "pause",
+    "mid": 0.1395
    }
   ]
  },
  {
   "q": "Will the Dallas Cowboys have more than 7.5 wins during the 2026 NFL season?",
   "cid": "0xfd282d590eea7b0a990ec7c5b1feb5e6bae2715bab6f14d98b48eacc11fa1987",
-  "reward": 0.060608260175191345,
+  "reward": 0.06272707174034489,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -33,7 +38,13 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794815758.9904747,
+    "kind": "pause",
+    "mid": 0.11599999999999999
+   }
+  ]
  },
  {
   "q": "Databricks vs Stripe \u2014 higher valuation on December 31?",
@@ -58,6 +69,11 @@
     "ts": 1794811903.9629595,
     "kind": "pause",
     "mid": 0.265
+   },
+   {
+    "ts": 1794815758.9904747,
+    "kind": "pause",
+    "mid": 0.16499999999999998
    }
   ]
  }
