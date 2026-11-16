@@ -2,7 +2,7 @@
  {
   "q": "Will San Francisco 49ers win the 2027 NFL NFC Championship?",
   "cid": "0x59925ff5a84e6eaebd1ed1c6dd776ed27264fd9c52ba99c7020c630f3f720f75",
-  "reward": 0.09552207407053256,
+  "reward": 0.09826257222367128,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -18,7 +18,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.09299967833427751,
+  "reward": 0.09393983297486576,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -44,7 +44,7 @@
  {
   "q": "Will Hesai be removed from Chinese Military Companies list by June 30, 2027?",
   "cid": "0x35f18058ac9d1874df287a7d903fb177ca93817be3d8cfe5b687eaa38b88d897",
-  "reward": 0.0483673415119399,
+  "reward": 0.04869912399913308,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -54,7 +54,7 @@
  {
   "q": "Will Matthew Stafford have 33.5+ passing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x680dc6b7c37e80233cdea8b94348bcc01395398884fd85f18434a559d69d4453",
-  "reward": 0.03128187768493934,
+  "reward": 0.031754471299799567,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -91,7 +91,7 @@
  {
   "q": "Arc FDV above $3B one day after launch?",
   "cid": "0xd6b72c133b640f7a2c600d1d41aadaa18f006d2b835509b170edfac9e9443837",
-  "reward": 0.08658685692139713,
+  "reward": 0.08719328425975413,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -132,7 +132,7 @@
  {
   "q": "Will Quinshon Judkins have 899.5+ rushing yards in the 2026-27 NFL regular season?",
   "cid": "0x70459ccdd3bb66397b4608cc071d6f78d1714aa2578ba2c22076ddbaf9b7a19c",
-  "reward": 0.02455356060778156,
+  "reward": 0.02505022987555735,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
