@@ -9,5 +9,7 @@ set PATH=%~dp0.node;%PATH%
 call corepack enable --install-directory .node
 call pnpm install
 call pnpm build
-if exist ..\.venv\Scripts\python.exe (..\.venv\Scripts\python.exe setup_key.py) else (python setup_key.py)
+set PY=python
+if exist C:\morpho-scan\claude-lab\projects\22-edges\.venv\Scripts\python.exe set PY=C:\morpho-scan\claude-lab\projects\22-edges\.venv\Scripts\python.exe
+%PY% setup_key.py
 pause
