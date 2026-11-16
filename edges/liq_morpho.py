@@ -49,7 +49,7 @@ def main():
         if d is None: raise RuntimeError("no price form worked")
         items = d["items"]; rows += items
         print("fetched", len(rows), "of", d["pageInfo"]["countTotal"], flush=True)
-        if len(items) < 1000 or skip > 60000: break
+        if not items or len(rows) >= d["pageInfo"]["countTotal"] or skip > 60000: break
         skip += 1000
     L = []
     for t in rows:
@@ -62,13 +62,16 @@ def main():
         seized = usd(x.get("seizedAssets") or 0, ca); repaid = usd(x.get("repaidAssets") or 0, la)
         L.append(dict(chain=(t.get("chain") or {}).get("network") or str((t.get("chain") or {}).get("id")),
                       ts=int(t["timestamp"]), liq=(x.get("liquidator") or "").lower(), seized=seized, repaid=repaid,
-                      bonus=seized - repaid, bad=usd(x.get("badDebtAssets") or 0, la),
+                      # Morpho's liquidation incentive is fixed by the market's LLTV: LIF = min(1.15, 1/(0.3*LLTV+0.7)).
+                      # Bonus = repaid x (LIF-1): exact at the time of the liquidation, unlike today's prices.
+                      bonus=repaid * (min(1.15, 1 / (0.3 * float(m.get("lltv") or 0) / 1e18 + 0.7)) - 1),
+                      bad=usd(x.get("badDebtAssets") or 0, la),
                       pair=f"{ca.get('symbol')}/{la.get('symbol')}", lltv=float(m.get("lltv") or 0) / 1e18, hash=t["txHash"],
                       priced=bool(ca.get("price")) and bool(la.get("price"))))
     json.dump(L, open(f"{OUT}/liq_morpho.json", "w", encoding="utf-8"))
     now = dt.datetime.now(dt.timezone.utc)
     R = [f"# Morpho Blue liquidations, last {DAYS} days — {now:%Y-%m-%d %H:%M} UTC", "",
-         "Bonus = collateral seized minus debt repaid, valued at TODAY's token prices (Morpho API), before gas and swap costs. Liquidations whose tokens have no price are counted but valued at $0.", "",
+         "Bonus = debt repaid x (liquidation incentive - 1); the incentive is fixed by each market's LLTV. Debt valued at today's loan-token price (mostly stablecoins). Before gas and swap costs.", "",
          "| Chain | Liquidations | Total bonus $ | Median bonus $ | Bonus > $50 | Distinct winners | Top winner's share | Top 3 share | Bonus $5-50 (small) |",
          "|---|---|---|---|---|---|---|---|---|"]
     by = collections.defaultdict(list)
