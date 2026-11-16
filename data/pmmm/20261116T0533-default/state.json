@@ -22,13 +22,18 @@
     "ts": 1794822539.0387008,
     "kind": "pause",
     "mid": 0.21999999999999997
+   },
+   {
+    "ts": 1794825734.0620399,
+    "kind": "pause",
+    "mid": 0.137
    }
   ]
  },
  {
   "q": "Will the Dallas Cowboys have more than 7.5 wins during the 2026 NFL season?",
   "cid": "0xfd282d590eea7b0a990ec7c5b1feb5e6bae2715bab6f14d98b48eacc11fa1987",
-  "reward": 0.10101314977606052,
+  "reward": 0.10143507693328069,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -80,7 +85,7 @@
  {
   "q": "City Protocol FDV above $500M one day after launch?",
   "cid": "0x626e6c7babb7727ecffd9b7d0aebc6cef7ce4ad531fdf8e3372550663117df67",
-  "reward": 0.028747764041287465,
+  "reward": 0.02921844883777811,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
