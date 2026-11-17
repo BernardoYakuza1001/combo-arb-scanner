@@ -1,23 +1,23 @@
-# PMMM paper run — 2026-11-17 01:45 UTC, 4.75 h
+# PMMM paper run — 2026-11-17 01:45 UTC, 4.83 h
 
 12 markets, $200 each ($2,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.67  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.67**
-Per day at this pace: rewards $3.39, net $+3.39
+**Rewards accrued: $0.68  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.68**
+Per day at this pace: rewards $3.38, net $+3.38
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.67, per day $+3.39. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.68, per day $+3.38. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.158 | 21.0% | 181/286 | 0.26 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 2 (1) / 2 / +0.5c |
-| [Will Valantis launch a token by December 31, 2026?](https://polymarket.com/market/will-valantis-launch-a-token-by-december-31-2026) | 3 | 0.155 | 25.0% | 192/286 | 0.10 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 1 (0) / 1 / - |
-| [Will Spider-Man: Brand New Day have the best domestic openin](https://polymarket.com/market/will-spider-man-brand-new-day-have-the-best-domestic-opening-week-in-2026) | 8 | 0.17 | 5.4% | 284/286 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Russia capture all of Bilytske by December 31?](https://polymarket.com/market/will-russia-capture-all-of-bilytske-by-december-31) | 10 | 0.605 | 4.5% | 251/286 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / +3.0c |
-| [Will the Portland Trail Blazers make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-portland-trail-blazers-make-the-2027-nba-playoffs-20260708210742397) | 4 | 0.805 | 11.9% | 233/286 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Reya FDV above $150M one day after launch?](https://polymarket.com/market/reya-fdv-above-150m-one-day-after-launch-514-746-976) | 5 | 0.115 | 3.2% | 276/286 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Base FDV above $4B one day after launch?](https://polymarket.com/market/base-fdv-above-4b-one-day-after-launch-789) | 5 | 0.245 | 8.3% | 55/286 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
-| [Will Justin Herbert have 21.5+ passing touchdowns in the 202](https://polymarket.com/market/justin-herbert-21pt5-passing-touchdowns-2026-27) | 4 | 0.15 | 12.2% | 38/286 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Anthropic vs OpenAI - higher valuation on December 31?](https://polymarket.com/market/anthropic-vs-openai-higher-valuation-on-december-31) | 5 | 0.77 | 19.0% | 16/286 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / - |
-| [Will Ethereum hit $3k by June 30, 2027?](https://polymarket.com/market/will-ethereum-hit-3k-by-june-30-2027) | 5 | 0.275 | 1.8% | 67/286 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will David Montgomery have 7.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-7pt5-rushing-touchdowns-2026-27) | 4 | 0.23 | 4.9% | 35/286 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
-| [Databricks vs Stripe — higher valuation on December 31?](https://polymarket.com/market/databricks-vs-stripe-higher-valuation-on-december-31) | 5 | 0.685 | 0.0% | 0/286 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.158 | 20.6% | 186/291 | 0.27 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 2 (1) / 2 / +0.5c |
+| [Will Valantis launch a token by December 31, 2026?](https://polymarket.com/market/will-valantis-launch-a-token-by-december-31-2026) | 3 | 0.155 | 24.8% | 197/291 | 0.10 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 1 (0) / 1 / - |
+| [Will Spider-Man: Brand New Day have the best domestic openin](https://polymarket.com/market/will-spider-man-brand-new-day-have-the-best-domestic-opening-week-in-2026) | 8 | 0.17 | 5.3% | 289/291 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Russia capture all of Bilytske by December 31?](https://polymarket.com/market/will-russia-capture-all-of-bilytske-by-december-31) | 10 | 0.605 | 4.5% | 256/291 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / +3.0c |
+| [Will the Portland Trail Blazers make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-portland-trail-blazers-make-the-2027-nba-playoffs-20260708210742397) | 4 | 0.805 | 11.7% | 238/291 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Reya FDV above $150M one day after launch?](https://polymarket.com/market/reya-fdv-above-150m-one-day-after-launch-514-746-976) | 5 | 0.115 | 3.3% | 281/291 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Base FDV above $4B one day after launch?](https://polymarket.com/market/base-fdv-above-4b-one-day-after-launch-789) | 5 | 0.245 | 8.4% | 60/291 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will Justin Herbert have 21.5+ passing touchdowns in the 202](https://polymarket.com/market/justin-herbert-21pt5-passing-touchdowns-2026-27) | 4 | 0.145 | 12.2% | 38/291 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Anthropic vs OpenAI - higher valuation on December 31?](https://polymarket.com/market/anthropic-vs-openai-higher-valuation-on-december-31) | 5 | 0.77 | 19.0% | 16/291 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / - |
+| [Will Ethereum hit $3k by June 30, 2027?](https://polymarket.com/market/will-ethereum-hit-3k-by-june-30-2027) | 5 | 0.275 | 1.7% | 72/291 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will David Montgomery have 7.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-7pt5-rushing-touchdowns-2026-27) | 4 | 0.18 | 4.9% | 35/291 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Databricks vs Stripe — higher valuation on December 31?](https://polymarket.com/market/databricks-vs-stripe-higher-valuation-on-december-31) | 5 | 0.685 | 0.0% | 0/291 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
