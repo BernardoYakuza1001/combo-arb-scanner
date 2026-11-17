@@ -12,7 +12,7 @@
  {
   "q": "Will the Ornn H100 Index hit $2.25 (LOW) by December 31, 2026?",
   "cid": "0xa8818217726c5c55fdb16c01afd175ba825fd2d7be77ca06773694907989e1b6",
-  "reward": 0.002529664050896882,
+  "reward": 0.0031403164457447165,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -28,7 +28,7 @@
  {
   "q": "Will Anthropic\u2019s market cap be between 1.2T and 1.5T at market close on IPO day by Decembe",
   "cid": "0x510736e7804a288592abab4105eca3399cbd562cd49a6d4e0289362490cc4825",
-  "reward": 0.37220900778214294,
+  "reward": 0.375113043697274,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Will the Ornn H200 Index be between $5.50 and $6.00 on December 31, 2026?",
   "cid": "0x193266173df293722c088bd1945f80bbb3a86bf650806fe3c4aede6692c9a5f7",
-  "reward": 0.4935570644639236,
+  "reward": 0.49921567993048416,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -74,7 +74,7 @@
  {
   "q": "Extended listed on OKX within 30 days of TGE?",
   "cid": "0x442472dc73ad112a45ebd4cbf62290178eb6230dd4d5122c8069de8291ad34cf",
-  "reward": 0.052360724034055416,
+  "reward": 0.0543619154410326,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -84,7 +84,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.2873417011459257,
+  "reward": 0.28998871656772873,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -94,7 +94,7 @@
  {
   "q": "Will StandX launch a token by June 30, 2027?",
   "cid": "0xedbb125682a5f927173c45b647b64be9d7abb1174fb3728e4478720653eccffb",
-  "reward": 0.0498861537418874,
+  "reward": 0.05127680153362793,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
