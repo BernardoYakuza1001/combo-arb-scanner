@@ -2,7 +2,7 @@
  {
   "q": "Will Russia capture all of Bilytske by December 31?",
   "cid": "0x60b8efcdc90f3e209a0c325d5bff56145d83aed9e064714aa941aa2c4552644a",
-  "reward": 0.03845016189593817,
+  "reward": 0.040261883073913936,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Spider-Man: Brand New Day have the best domestic opening week in 2026?",
   "cid": "0x5e38b77551a62c844b4250a569ec2652f522b01312e428842bf03337405a555a",
-  "reward": 0.049878763829470776,
+  "reward": 0.051277089386222205,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.05819292046622132,
+  "reward": 0.06992350501961517,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +78,7 @@
  {
   "q": "Will David Montgomery have 7.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x542c656f06d9ad9ab6aee6e3e16cbd50f8615ecfa7f09b57949e36a68531d654",
-  "reward": 0.000262425456658304,
+  "reward": 0.0005599935709595666,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -94,7 +94,7 @@
  {
   "q": "Will Valantis launch a token by December 31, 2026?",
   "cid": "0xe30ffc4dd7153958b4e5a2f51ced2cf0b8f6da0dfe1ea51cd25d486de3e1797a",
-  "reward": 0.00915874829604682,
+  "reward": 0.01454624729372142,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -130,7 +130,7 @@
  {
   "q": "Base FDV above $4B one day after launch?",
   "cid": "0x5c18bf0b735c72c812df0f41b596058da7ac14d6eb1aff5482295b5ec10ecfff",
-  "reward": 0.007565116833385448,
+  "reward": 0.007760849700029048,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
