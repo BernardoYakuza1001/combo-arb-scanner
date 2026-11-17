@@ -2,7 +2,7 @@
  {
   "q": "Will Russia capture all of Bilytske by December 31?",
   "cid": "0x60b8efcdc90f3e209a0c325d5bff56145d83aed9e064714aa941aa2c4552644a",
-  "reward": 0.0013178415322863998,
+  "reward": 0.0019767622984295996,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Spider-Man: Brand New Day have the best domestic opening week in 2026?",
   "cid": "0x5e38b77551a62c844b4250a569ec2652f522b01312e428842bf03337405a555a",
-  "reward": 0.009094326201786048,
+  "reward": 0.011377477466520134,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Reya FDV above $150M one day after launch?",
   "cid": "0xe56b73034a1a9f49ecfa624e9d9ca7e2a6e770e8b1881a0062725567c7ee7bff",
-  "reward": 0.0014056366275399155,
+  "reward": 0.0015822216087610418,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -120,7 +120,7 @@
  {
   "q": "Will the Portland Trail Blazers make the 2027 NBA Playoffs?",
   "cid": "0xbd62ed0e468f97e3b047b53a757db7d6c34f6a14a2b68689dee99a85c5e7f64c",
-  "reward": 0.00018158582499209504,
+  "reward": 0.0008507497639015913,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -130,7 +130,7 @@
  {
   "q": "Base FDV above $4B one day after launch?",
   "cid": "0x5c18bf0b735c72c812df0f41b596058da7ac14d6eb1aff5482295b5ec10ecfff",
-  "reward": 0.0024166514176901044,
+  "reward": 0.0037382993784440743,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
