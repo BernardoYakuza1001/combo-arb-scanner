@@ -1,0 +1,82 @@
+[
+ {
+  "q": "Will Donald Trump endorse Marco Rubio in the 2028 US Presidential election?",
+  "cid": "0xb2a0b00eb1ded07fe2740d4f9f7e2a4072980bab2bd9f7d83e3eded8a9faca1b",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will the Ornn H100 Index hit $2.25 (LOW) by December 31, 2026?",
+  "cid": "0xa8818217726c5c55fdb16c01afd175ba825fd2d7be77ca06773694907989e1b6",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Anthropic\u2019s market cap be between 1.2T and 1.5T at market close on IPO day by Decembe",
+  "cid": "0x510736e7804a288592abab4105eca3399cbd562cd49a6d4e0289362490cc4825",
+  "reward": 0.008206771857116556,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will the Ornn H200 Index be between $5.50 and $6.00 on December 31, 2026?",
+  "cid": "0x193266173df293722c088bd1945f80bbb3a86bf650806fe3c4aede6692c9a5f7",
+  "reward": 0.009614456068633289,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Tori FDV above $200M one day after launch?",
+  "cid": "0x77ac37abf2e3b7648ca1dd937a4a48c69ef313a1739d4b54ef720f7f2acfa2e0",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Extended listed on OKX within 30 days of TGE?",
+  "cid": "0x442472dc73ad112a45ebd4cbf62290178eb6230dd4d5122c8069de8291ad34cf",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Solana hit $60 or $140 first?",
+  "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
+  "reward": 0.00803232079082893,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will StandX launch a token by June 30, 2027?",
+  "cid": "0xedbb125682a5f927173c45b647b64be9d7abb1174fb3728e4478720653eccffb",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ }
+]
