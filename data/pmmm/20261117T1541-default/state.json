@@ -2,7 +2,7 @@
  {
   "q": "Will Donald Trump endorse Marco Rubio in the 2028 US Presidential election?",
   "cid": "0xb2a0b00eb1ded07fe2740d4f9f7e2a4072980bab2bd9f7d83e3eded8a9faca1b",
-  "reward": 0.023675455043302946,
+  "reward": 0.024610943742599443,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Anthropic\u2019s market cap be between 1.2T and 1.5T at market close on IPO day by Decembe",
   "cid": "0x510736e7804a288592abab4105eca3399cbd562cd49a6d4e0289362490cc4825",
-  "reward": 0.1771167553636525,
+  "reward": 0.1873118560515684,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will the Ornn H200 Index be between $5.50 and $6.00 on December 31, 2026?",
   "cid": "0x193266173df293722c088bd1945f80bbb3a86bf650806fe3c4aede6692c9a5f7",
-  "reward": 0.2173442038099852,
+  "reward": 0.22484986791461775,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Tori FDV above $200M one day after launch?",
   "cid": "0x77ac37abf2e3b7648ca1dd937a4a48c69ef313a1739d4b54ef720f7f2acfa2e0",
-  "reward": 0.005486125417120383,
+  "reward": 0.005884380582324696,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Extended listed on OKX within 30 days of TGE?",
   "cid": "0x442472dc73ad112a45ebd4cbf62290178eb6230dd4d5122c8069de8291ad34cf",
-  "reward": 0.0,
+  "reward": 7.538004205445182e-33,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.13923176468533086,
+  "reward": 0.1433207520023465,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -83,6 +83,12 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794939138.161967,
+    "kind": "pause",
+    "mid": 0.14450000000000002
+   }
+  ]
  }
 ]
