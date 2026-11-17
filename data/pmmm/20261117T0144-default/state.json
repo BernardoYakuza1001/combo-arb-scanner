@@ -2,7 +2,7 @@
  {
   "q": "Will Russia capture all of Bilytske by December 31?",
   "cid": "0x60b8efcdc90f3e209a0c325d5bff56145d83aed9e064714aa941aa2c4552644a",
-  "reward": 0.029090490540851572,
+  "reward": 0.030890090965993815,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Spider-Man: Brand New Day have the best domestic opening week in 2026?",
   "cid": "0x5e38b77551a62c844b4250a569ec2652f522b01312e428842bf03337405a555a",
-  "reward": 0.02639021213062014,
+  "reward": 0.02814026085343476,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -130,11 +130,17 @@
  {
   "q": "Base FDV above $4B one day after launch?",
   "cid": "0x5c18bf0b735c72c812df0f41b596058da7ac14d6eb1aff5482295b5ec10ecfff",
-  "reward": 0.0070881022788948575,
+  "reward": 0.007565116833385448,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1794884031.2594073,
+    "kind": "pause",
+    "mid": 0.25
+   }
+  ]
  }
 ]
