@@ -2,7 +2,7 @@
  {
   "q": "Will Russia capture all of Bilytske by December 31?",
   "cid": "0x60b8efcdc90f3e209a0c325d5bff56145d83aed9e064714aa941aa2c4552644a",
-  "reward": 0.08255463190938954,
+  "reward": 0.0834539779686678,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -28,7 +28,7 @@
  {
   "q": "Will Spider-Man: Brand New Day have the best domestic opening week in 2026?",
   "cid": "0x5e38b77551a62c844b4250a569ec2652f522b01312e428842bf03337405a555a",
-  "reward": 0.08900099524715542,
+  "reward": 0.09021060016403597,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Reya FDV above $150M one day after launch?",
   "cid": "0xe56b73034a1a9f49ecfa624e9d9ca7e2a6e770e8b1881a0062725567c7ee7bff",
-  "reward": 0.035213040651289704,
+  "reward": 0.03634248689077294,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.26927993454333,
+  "reward": 0.2708508061580962,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -79,7 +79,7 @@
  {
   "q": "Will Ethereum hit $3k by June 30, 2027?",
   "cid": "0x4ceb90daf4764b6cd8e4de25cdf7fc8f9b6064895a347021e94a022876d2a1f2",
-  "reward": 0.004685526405757092,
+  "reward": 0.00480745058272917,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -110,7 +110,7 @@
  {
   "q": "Will Valantis launch a token by December 31, 2026?",
   "cid": "0xe30ffc4dd7153958b4e5a2f51ced2cf0b8f6da0dfe1ea51cd25d486de3e1797a",
-  "reward": 0.10780953149731864,
+  "reward": 0.10985944242752697,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -136,7 +136,7 @@
  {
   "q": "Will the Portland Trail Blazers make the 2027 NBA Playoffs?",
   "cid": "0xbd62ed0e468f97e3b047b53a757db7d6c34f6a14a2b68689dee99a85c5e7f64c",
-  "reward": 0.06856530639169404,
+  "reward": 0.06919066260183016,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -146,7 +146,7 @@
  {
   "q": "Base FDV above $4B one day after launch?",
   "cid": "0x5c18bf0b735c72c812df0f41b596058da7ac14d6eb1aff5482295b5ec10ecfff",
-  "reward": 0.02251631169109449,
+  "reward": 0.02439090480243333,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
