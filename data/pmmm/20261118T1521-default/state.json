@@ -2,7 +2,7 @@
  {
   "q": "Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 2026?",
   "cid": "0xa5642e1ff4a1eab7a1752b3176bf8301ddeb6baee3c85f615e810d1b7eeedb00",
-  "reward": 0.25441222868952845,
+  "reward": 0.2580694385726665,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Will Dricus Du Plessis fight Khamzat Chimaev next?",
   "cid": "0x03f9c2ea42eea60fc96b133c32624b589195afd1969496fcb662a32e409b1ed0",
-  "reward": 0.2623492506322091,
+  "reward": 0.2633880260689471,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Arc FDV above $7B one day after launch?",
   "cid": "0x40b58ffad74d4574627026c0a537b098814385c8942bf89812f9804517346e5c",
-  "reward": 0.2798130968916491,
+  "reward": 0.2844503559061338,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -88,7 +88,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.19935362284814684,
+  "reward": 0.20222041045999126,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
