@@ -2,7 +2,7 @@
  {
   "q": "Will Anthropic's market cap be between $1.25T and $1.5T at market close on IPO day?",
   "cid": "0x67644dafb1cb9f5dda7cc1b5666e93c1ca539da38cafb17b4ebca6493a04e25b",
-  "reward": 0.3640500130419153,
+  "reward": 0.36846874080381087,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "OpenAI + Anthropic vs Google - higher valuation on December 31?",
   "cid": "0x540c2a3b31825ff036400ad0706f49facd00189a6ba2b00515a518f784901267",
-  "reward": 0.025015952921268975,
+  "reward": 0.025445403224880356,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Ethereal FDV above $500M one day after launch?",
   "cid": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-  "reward": 0.14116905953728237,
+  "reward": 0.1450276717812191,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Will OpenAI's IPO valuation be less than $1T?",
   "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
-  "reward": 0.11891374150308862,
+  "reward": 0.1219168249118108,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Will the Ornn H200 Index be between $5.50 and $6.00 on December 31, 2026?",
   "cid": "0x193266173df293722c088bd1945f80bbb3a86bf650806fe3c4aede6692c9a5f7",
-  "reward": 0.1512458648641805,
+  "reward": 0.15415647712996342,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 0.0054350225402378435,
+  "reward": 0.007061208521455758,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +78,7 @@
  {
   "q": "Tori FDV above $200M one day after launch?",
   "cid": "0x77ac37abf2e3b7648ca1dd937a4a48c69ef313a1739d4b54ef720f7f2acfa2e0",
-  "reward": 0.0,
+  "reward": 0.000849459941535279,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
