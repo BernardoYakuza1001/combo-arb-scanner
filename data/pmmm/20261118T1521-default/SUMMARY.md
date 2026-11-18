@@ -1,19 +1,19 @@
-# PMMM paper run — 2026-11-18 15:22 UTC, 5.58 h
+# PMMM paper run — 2026-11-18 15:22 UTC, 5.67 h
 
 8 markets, $200 each ($1,600 total), quotes at 75% of max spread.
 
-**Rewards accrued: $1.27  |  Trading P&L (marked at mid): $+0.00  |  Net: $+1.27**
-Per day at this pace: rewards $5.47, net $+5.47
+**Rewards accrued: $1.28  |  Trading P&L (marked at mid): $+0.00  |  Net: $+1.28**
+Per day at this pace: rewards $5.44, net $+5.44
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+1.27, per day $+5.47. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+1.28, per day $+5.44. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Arc FDV above $7B one day after launch?](https://polymarket.com/market/arc-fdv-above-7b-one-day-after-launch) | 3 | 0.145 | 40.6% | 336/336 | 0.28 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Dricus Du Plessis fight Khamzat Chimaev next?](https://polymarket.com/market/will-dricus-du-plessis-fight-khamzat-chimaev-next-20260720150618476) | 6 | 0.157 | 18.8% | 336/336 | 0.26 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (0) / 3 / +1.6c |
-| [Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 202](https://polymarket.com/market/will-the-ornn-b200-index-hit-5pt50-low-by-december-31-2026-20260709171530831) | 3 | 0.251 | 37.1% | 334/336 | 0.26 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Curvance launch a token by December 31, 2026?](https://polymarket.com/market/will-curvance-launch-a-token-by-december-31-2026) | 3 | 0.204 | 37.4% | 304/336 | 0.24 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Solana hit $60 or $140 first?](https://polymarket.com/market/will-solana-hit-60-or-140-first) | 5 | 0.707 | 17.3% | 336/336 | 0.20 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 8 (7) / 8 / +0.5c |
-| [Will J.K. Dobbins have 674.5+ rushing yards in the 2026-27 N](https://polymarket.com/market/jk-dobbins-674pt5-rushing-yards-2026-27) | 4 | 0.33 | 5.2% | 132/336 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [QFEX FDV above $300M one day after launch?](https://polymarket.com/market/qfex-fdv-above-300m-one-day-after-launch) | 3 | 0.415 | 11.3% | 46/336 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will David Montgomery have 5.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-5pt5-rushing-touchdowns-2026-27) | 4 | 0.4 | 0.0% | 0/336 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 5 / 0 stops | 2 (0) / 2 / - |
+| [Arc FDV above $7B one day after launch?](https://polymarket.com/market/arc-fdv-above-7b-one-day-after-launch) | 3 | 0.145 | 40.7% | 341/341 | 0.29 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Dricus Du Plessis fight Khamzat Chimaev next?](https://polymarket.com/market/will-dricus-du-plessis-fight-khamzat-chimaev-next-20260720150618476) | 6 | 0.157 | 18.6% | 341/341 | 0.26 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (0) / 3 / +1.6c |
+| [Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 202](https://polymarket.com/market/will-the-ornn-b200-index-hit-5pt50-low-by-december-31-2026-20260709171530831) | 3 | 0.251 | 37.1% | 339/341 | 0.26 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Curvance launch a token by December 31, 2026?](https://polymarket.com/market/will-curvance-launch-a-token-by-december-31-2026) | 3 | 0.205 | 37.5% | 305/341 | 0.24 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Solana hit $60 or $140 first?](https://polymarket.com/market/will-solana-hit-60-or-140-first) | 5 | 0.707 | 17.2% | 341/341 | 0.20 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 8 (7) / 8 / +0.5c |
+| [Will J.K. Dobbins have 674.5+ rushing yards in the 2026-27 N](https://polymarket.com/market/jk-dobbins-674pt5-rushing-yards-2026-27) | 4 | 0.33 | 5.2% | 132/341 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [QFEX FDV above $300M one day after launch?](https://polymarket.com/market/qfex-fdv-above-300m-one-day-after-launch) | 3 | 0.415 | 11.3% | 46/341 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will David Montgomery have 5.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-5pt5-rushing-touchdowns-2026-27) | 4 | 0.4 | 0.0% | 0/341 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 5 / 0 stops | 2 (0) / 2 / - |
