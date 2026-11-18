@@ -2,7 +2,7 @@
  {
   "q": "Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 2026?",
   "cid": "0xa5642e1ff4a1eab7a1752b3176bf8301ddeb6baee3c85f615e810d1b7eeedb00",
-  "reward": 0.08170467369272305,
+  "reward": 0.08548189747767905,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -17,12 +17,18 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795021423.6102605,
+    "kind": "pause",
+    "mid": 0.6
+   }
+  ]
  },
  {
   "q": "Will Dricus Du Plessis fight Khamzat Chimaev next?",
   "cid": "0x03f9c2ea42eea60fc96b133c32624b589195afd1969496fcb662a32e409b1ed0",
-  "reward": 0.0924021883926016,
+  "reward": 0.09647758319647326,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +38,7 @@
  {
   "q": "Arc FDV above $7B one day after launch?",
   "cid": "0x40b58ffad74d4574627026c0a537b098814385c8942bf89812f9804517346e5c",
-  "reward": 0.05703010648346849,
+  "reward": 0.06006558661257883,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +48,7 @@
  {
   "q": "QFEX FDV above $300M one day after launch?",
   "cid": "0xea087bbf43dc016aac7dede899f765008e9031521702909f8621b65befc75b34",
-  "reward": 0.008120146305263417,
+  "reward": 0.008336049297939987,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +58,7 @@
  {
   "q": "Will Curvance launch a token by December 31, 2026?",
   "cid": "0xe17ec48f01f4196c66a49641bb57d83016f9f7427fe3974afa402bb4c2f27fc7",
-  "reward": 0.07484049680776009,
+  "reward": 0.07886965064361495,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +68,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.07003470149191572,
+  "reward": 0.07516547784839941,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
