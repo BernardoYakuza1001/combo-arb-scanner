@@ -1,19 +1,19 @@
-# PMMM paper run — 2026-11-18 00:46 UTC, 3.17 h
+# PMMM paper run — 2026-11-18 00:46 UTC, 3.25 h
 
 8 markets, $200 each ($1,600 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.63  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.63**
-Per day at this pace: rewards $4.74, net $+4.74
+**Rewards accrued: $0.64  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.64**
+Per day at this pace: rewards $4.75, net $+4.75
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.63, per day $+4.74. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.64, per day $+4.75. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Anthropic's market cap be between $1.25T and $1.5T at m](https://polymarket.com/market/will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day) | 481 | 0.425 | 0.4% | 191/191 | 0.26 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 28 (9) / 28 / +2.9c |
-| [Will the Ornn H200 Index be between $5.50 and $6.00 on Decem](https://polymarket.com/market/will-the-ornn-h200-index-be-between-5pt50-and-6pt00-on-december-31-2026-20260709164949067) | 4 | 0.186 | 24.9% | 163/191 | 0.11 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will OpenAI's IPO valuation be less than $1T?](https://polymarket.com/market/will-openais-ipo-valuation-be-less-than-1t) | 17 | 0.291 | 4.7% | 191/191 | 0.10 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (1) / 1 / +2.7c |
-| [Ethereal FDV above $500M one day after launch?](https://polymarket.com/market/ethereal-fdv-above-500m-one-day-after-launch-597-871) | 3 | 0.161 | 32.7% | 138/191 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Mohammed Ghalibaf out as Speaker of Iran Parliament by Decem](https://polymarket.com/market/mohammed-ghalibaf-out-as-speaker-of-iran-parliament-by-december-31-2026-20260710000011405) | 3 | 0.125 | 10.9% | 155/191 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [OpenAI + Anthropic vs Google - higher valuation on December ](https://polymarket.com/market/openai-anthropic-vs-google-higher-valuation-on-december-31) | 3 | 0.2 | 5.1% | 188/191 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.395 | 6.5% | 7/191 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Tori FDV above $200M one day after launch?](https://polymarket.com/market/tori-fdv-above-200m-one-day-after-launch) | 5 | 0.2 | 0.0% | 0/191 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will Anthropic's market cap be between $1.25T and $1.5T at m](https://polymarket.com/market/will-anthropics-market-cap-be-between-1pt25t-and-1pt5t-at-market-close-on-ipo-day) | 481 | 0.425 | 0.4% | 196/196 | 0.27 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 28 (9) / 28 / +2.9c |
+| [Will the Ornn H200 Index be between $5.50 and $6.00 on Decem](https://polymarket.com/market/will-the-ornn-h200-index-be-between-5pt50-and-6pt00-on-december-31-2026-20260709164949067) | 4 | 0.186 | 24.9% | 168/196 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will OpenAI's IPO valuation be less than $1T?](https://polymarket.com/market/will-openais-ipo-valuation-be-less-than-1t) | 17 | 0.291 | 4.6% | 196/196 | 0.11 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (1) / 1 / +2.7c |
+| [Ethereal FDV above $500M one day after launch?](https://polymarket.com/market/ethereal-fdv-above-500m-one-day-after-launch-597-871) | 3 | 0.161 | 32.9% | 143/196 | 0.10 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Mohammed Ghalibaf out as Speaker of Iran Parliament by Decem](https://polymarket.com/market/mohammed-ghalibaf-out-as-speaker-of-iran-parliament-by-december-31-2026-20260710000011405) | 3 | 0.125 | 10.9% | 155/196 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [OpenAI + Anthropic vs Google - higher valuation on December ](https://polymarket.com/market/openai-anthropic-vs-google-higher-valuation-on-december-31) | 3 | 0.2 | 5.0% | 193/196 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.395 | 6.5% | 7/196 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Tori FDV above $200M one day after launch?](https://polymarket.com/market/tori-fdv-above-200m-one-day-after-launch) | 5 | 0.2 | 0.0% | 0/196 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
