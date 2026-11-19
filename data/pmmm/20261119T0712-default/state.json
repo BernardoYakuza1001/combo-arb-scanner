@@ -2,7 +2,7 @@
  {
   "q": "Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 2026?",
   "cid": "0xa5642e1ff4a1eab7a1752b3176bf8301ddeb6baee3c85f615e810d1b7eeedb00",
-  "reward": 0.25177533924893497,
+  "reward": 0.25421575608538166,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Ethereal FDV above $500M one day after launch?",
   "cid": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-  "reward": 0.17941906385367332,
+  "reward": 0.1825199139309531,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -33,7 +33,7 @@
  {
   "q": "Will David Montgomery have 5.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xb78a93a6bc7e8866f1067b03571e58b415ebf9f5c2401f47b37f3b574ffaff9a",
-  "reward": 0.05075387057650095,
+  "reward": 0.05251023351123155,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -43,7 +43,7 @@
  {
   "q": "Will OpenAI's IPO valuation be between $1.25T and $1.5T?",
   "cid": "0x717578911883ab218f3c4c5a180998640d491dfe3787d7c3f6ecdabeb4983969",
-  "reward": 0.08051520869495676,
+  "reward": 0.08132433041069183,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -95,7 +95,7 @@
  {
   "q": "Will \"Earrings \u2013 Malcom Todd\" be the #2 song in the US for 2026?",
   "cid": "0x8cad03486f7956a8063f5959d3ddb8a0b7ac12b61cbf5c5b2c584dbc7be6e7f5",
-  "reward": 0.5209193106257664,
+  "reward": 0.5300842737679607,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -116,7 +116,7 @@
  {
   "q": "Will Curvance launch a token by December 31, 2026?",
   "cid": "0xe17ec48f01f4196c66a49641bb57d83016f9f7427fe3974afa402bb4c2f27fc7",
-  "reward": 0.24950182775531737,
+  "reward": 0.25274872576998986,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -132,7 +132,7 @@
  {
   "q": "Will the Golden State Warriors make the 2027 NBA Playoffs?",
   "cid": "0x05a291e83bd22cd3271b46fd8b90de55d55620393a6a4d95302e67c102365571",
-  "reward": 0.012968366406100053,
+  "reward": 0.012984800015835666,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -152,7 +152,7 @@
  {
   "q": "Will OpenAI's IPO valuation be between $1.0T and $1.25T?",
   "cid": "0x956d27f8f2a7f952312c5b94ca9c32c9ecb31fea8cf808d2f970702e2636ec73",
-  "reward": 0.1889047917417957,
+  "reward": 0.18951647232483187,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
