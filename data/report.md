@@ -1,8 +1,8 @@
 # Combinatorial arbitrage report — verdict: **PENDING**
 
-Collected 4.97 days. Episodes 1275, qualifying 4 across 3 events; qualifying profit $9.19 (~$12.94/week).
+Collected 5.52 days. Episodes 1321, qualifying 5 across 4 events; qualifying profit $15.15 (~$19.21/week).
 
-Median time seen open (all episodes): 1.45 s; share lasting >= 10 s: 0.321. In-play at start: 0.788.
+Median time seen open (all episodes): 1.36 s; share lasting >= 10 s: 0.316. In-play at start: 0.793.
 
 | Gate | Met |
 |---|---|
@@ -13,14 +13,15 @@ Median time seen open (all episodes): 1.45 s; share lasting >= 10 s: 0.321. In-p
 
 | Kind | Episodes | Qualifying | Qualifying profit |
 |---|---|---|---|
-| series | 52 | 0 | $0.00 |
-| total | 384 | 1 | $2.67 |
-| margin | 576 | 3 | $6.52 |
-| hit_up | 257 | 0 | $0.00 |
+| series | 55 | 0 | $0.00 |
+| total | 398 | 2 | $8.63 |
+| margin | 602 | 3 | $6.52 |
+| hit_up | 260 | 0 | $0.00 |
 | hit_dn | 6 | 0 | $0.00 |
 
 ## Largest qualifying episodes
 
+- 2026-11-19T01:23:11.867Z CR Flamengo vs. CA Paranaense - More Markets: edge 1.04%, $5.96 on 633 sets, seen 99.3 s, in-play True | CR Flamengo vs. CA Paranaense: O/U 6.5 Over + CR Flamengo vs. CA Paranaense: O/U 7.5 Under
 - 2026-11-16T00:09:36.428Z 49ers vs. Cowboys: edge 1.28%, $4.15 on 1379 sets, seen 39.65 s, in-play True | Spread: 49ers (-4.5) -> Cowboys + Spread: 49ers (-3.5) -> 49ers
 - 2026-11-14T04:27:00.387Z Warriors vs. Spurs: edge 1.81%, $2.67 on 148 sets, seen 20.32 s, in-play True | Warriors vs. Spurs: O/U 222.5 Under + Warriors vs. Spurs: O/U 220.5 Over
 - 2026-11-14T10:13:58.899Z Cruzeiro Basquete vs. Unifacisa: edge 11.84%, $1.18 on 10 sets, seen 154.94 s, in-play True | Spread: Unifacisa (-3.5) -> Cruzeiro Basquete + Cruzeiro Basquete vs. Unifacisa -> Unifacisa
