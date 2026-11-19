@@ -2,7 +2,7 @@
  {
   "q": "Will Beezie launch a token by December 31, 2026?",
   "cid": "0xc6d13008ed1de9e83fe29e6917cdbeb7ad16d0e19ba39e8def015da30939fa37",
-  "reward": 0.01870738780157765,
+  "reward": 0.020454010846776456,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Reya launch a token by December 31, 2026?",
   "cid": "0x5b534e0f41523ad9cce972e32e223b33fc8180cba7c1d9b849f62a6c00848eb1",
-  "reward": 0.019615461993714885,
+  "reward": 0.022106655912884327,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.02416499113638563,
+  "reward": 0.026231805799411412,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Arc FDV above $7B one day after launch?",
   "cid": "0x40b58ffad74d4574627026c0a537b098814385c8942bf89812f9804517346e5c",
-  "reward": 0.006682738494110592,
+  "reward": 0.009069678980058294,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Will QFEX launch a token by June 30, 2027?",
   "cid": "0x972af709ba2bbe6130fbea101cb225802979af3a813bf48593f4a49ebb69127b",
-  "reward": 0.018180749907618865,
+  "reward": 0.01979777758511585,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
