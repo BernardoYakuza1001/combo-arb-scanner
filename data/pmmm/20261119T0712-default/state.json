@@ -2,7 +2,7 @@
  {
   "q": "Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 2026?",
   "cid": "0xa5642e1ff4a1eab7a1752b3176bf8301ddeb6baee3c85f615e810d1b7eeedb00",
-  "reward": 0.09902272210423987,
+  "reward": 0.1028171526153529,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Ethereal FDV above $500M one day after launch?",
   "cid": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-  "reward": 0.06871939851812543,
+  "reward": 0.07162513823351885,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -28,7 +28,7 @@
  {
   "q": "Will David Montgomery have 5.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xb78a93a6bc7e8866f1067b03571e58b415ebf9f5c2401f47b37f3b574ffaff9a",
-  "reward": 7.638599326379008e-31,
+  "reward": 7.954487912574632e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Will OpenAI's IPO valuation be between $1.25T and $1.5T?",
   "cid": "0x717578911883ab218f3c4c5a180998640d491dfe3787d7c3f6ecdabeb4983969",
-  "reward": 0.0413419611082628,
+  "reward": 0.0422279444539011,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 5.014363230149438e-30,
+  "reward": 5.205751139697126e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -110,7 +110,7 @@
  {
   "q": "Will the Golden State Warriors make the 2027 NBA Playoffs?",
   "cid": "0x05a291e83bd22cd3271b46fd8b90de55d55620393a6a4d95302e67c102365571",
-  "reward": 0.0074371682805726745,
+  "reward": 0.00765875507562114,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -130,7 +130,7 @@
  {
   "q": "Will OpenAI's IPO valuation be between $1.0T and $1.25T?",
   "cid": "0x956d27f8f2a7f952312c5b94ca9c32c9ecb31fea8cf808d2f970702e2636ec73",
-  "reward": 0.14615536834017165,
+  "reward": 0.14718641859278533,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
