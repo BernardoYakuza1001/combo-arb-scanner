@@ -1,19 +1,19 @@
-# PMMM paper run — 2026-11-19 00:03 UTC, 2.42 h
+# PMMM paper run — 2026-11-19 00:03 UTC, 2.50 h
 
 8 markets, $200 each ($1,600 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.71  |  Trading P&L (marked at mid): $-9.72  |  Net: $-9.01**
-Per day at this pace: rewards $7.05, net $-89.51
+**Rewards accrued: $0.74  |  Trading P&L (marked at mid): $-9.72  |  Net: $-8.98**
+Per day at this pace: rewards $7.14, net $-86.20
 
-Worst case (all held shares sold at current best bids): trading P&L $-9.72, net $-9.01, per day $-89.51. Fills: 1; cash paid for shares still held: $9.72. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $-9.72, net $-8.98, per day $-86.20. Fills: 1; cash paid for shares still held: $9.72. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Arc FDV above $7B one day after launch?](https://polymarket.com/market/arc-fdv-above-7b-one-day-after-launch) | 3 | 0.145 | 39.4% | 146/146 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 202](https://polymarket.com/market/will-the-ornn-b200-index-hit-5pt50-low-by-december-31-2026-20260709171530831) | 3 | 0.251 | 34.9% | 146/146 | 0.11 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Curvance launch a token by December 31, 2026?](https://polymarket.com/market/will-curvance-launch-a-token-by-december-31-2026) | 3 | 0.225 | 30.8% | 146/146 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Ethereal FDV above $500M one day after launch?](https://polymarket.com/market/ethereal-fdv-above-500m-one-day-after-launch-597-871) | 3 | 0.155 | 23.8% | 112/146 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will the National Regeneration Movement (Morena) win the mos](https://polymarket.com/market/will-the-national-regeneration-movement-morena-win-the-most-seats-in-the-2027-mexico-legislative-election) | 3 | 0.869 | 5.9% | 146/146 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.415 | 6.4% | 99/146 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will David Montgomery have 5.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-5pt5-rushing-touchdowns-2026-27) | 4 | 0.59 | 0.0% | 0/146 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will Anthropic's valuation hit (HIGH) $1.5T by December 31?](https://polymarket.com/market/will-anthropics-valuation-hit-high-1pt5t-by-december-31-797) | 200 | 0.683 | 3.5% | 63/146 | 0.30 | 2 | 0 | 0 | 0 | -9.72 | 0 / 1 stops | 30 (27) / 25 / +1.7c |
+| [Arc FDV above $7B one day after launch?](https://polymarket.com/market/arc-fdv-above-7b-one-day-after-launch) | 3 | 0.145 | 39.7% | 151/151 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 202](https://polymarket.com/market/will-the-ornn-b200-index-hit-5pt50-low-by-december-31-2026-20260709171530831) | 3 | 0.251 | 34.9% | 151/151 | 0.11 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Curvance launch a token by December 31, 2026?](https://polymarket.com/market/will-curvance-launch-a-token-by-december-31-2026) | 3 | 0.225 | 30.6% | 151/151 | 0.10 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Ethereal FDV above $500M one day after launch?](https://polymarket.com/market/ethereal-fdv-above-500m-one-day-after-launch-597-871) | 3 | 0.155 | 25.1% | 117/151 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will the National Regeneration Movement (Morena) win the mos](https://polymarket.com/market/will-the-national-regeneration-movement-morena-win-the-most-seats-in-the-2027-mexico-legislative-election) | 3 | 0.869 | 5.8% | 151/151 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.415 | 6.1% | 104/151 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will David Montgomery have 5.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-5pt5-rushing-touchdowns-2026-27) | 4 | 0.595 | 0.0% | 0/151 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Anthropic's valuation hit (HIGH) $1.5T by December 31?](https://polymarket.com/market/will-anthropics-valuation-hit-high-1pt5t-by-december-31-797) | 200 | 0.684 | 3.4% | 68/151 | 0.32 | 2 | 0 | 0 | 0 | -9.72 | 0 / 1 stops | 30 (27) / 25 / +1.7c |
