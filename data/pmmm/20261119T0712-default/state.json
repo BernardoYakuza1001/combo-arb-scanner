@@ -2,7 +2,7 @@
  {
   "q": "Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 2026?",
   "cid": "0xa5642e1ff4a1eab7a1752b3176bf8301ddeb6baee3c85f615e810d1b7eeedb00",
-  "reward": 0.04183631520706795,
+  "reward": 0.04556996523635148,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Ethereal FDV above $500M one day after launch?",
   "cid": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-  "reward": 0.05053530015827806,
+  "reward": 0.05414626128138826,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will David Montgomery have 5.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xb78a93a6bc7e8866f1067b03571e58b415ebf9f5c2401f47b37f3b574ffaff9a",
-  "reward": 2.959315128995254e-31,
+  "reward": 3.2752037151908765e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will OpenAI's IPO valuation be between $1.25T and $1.5T?",
   "cid": "0x717578911883ab218f3c4c5a180998640d491dfe3787d7c3f6ecdabeb4983969",
-  "reward": 0.02241193409508969,
+  "reward": 0.023883538190829844,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +62,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 2.143544586934114e-30,
+  "reward": 2.3349324964818022e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -88,7 +88,7 @@
  {
   "q": "Will Curvance launch a token by December 31, 2026?",
   "cid": "0xe17ec48f01f4196c66a49641bb57d83016f9f7427fe3974afa402bb4c2f27fc7",
-  "reward": 0.04147161843773639,
+  "reward": 0.045017343439700104,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -98,7 +98,7 @@
  {
   "q": "Will the Golden State Warriors make the 2027 NBA Playoffs?",
   "cid": "0x05a291e83bd22cd3271b46fd8b90de55d55620393a6a4d95302e67c102365571",
-  "reward": 0.004127829589615272,
+  "reward": 0.004347147699320599,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -118,7 +118,7 @@
  {
   "q": "Will OpenAI's IPO valuation be between $1.0T and $1.25T?",
   "cid": "0x956d27f8f2a7f952312c5b94ca9c32c9ecb31fea8cf808d2f970702e2636ec73",
-  "reward": 0.07147176923356122,
+  "reward": 0.0789418206328899,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
