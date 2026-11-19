@@ -1,8 +1,8 @@
 # Combinatorial arbitrage report — verdict: **PENDING**
 
-Collected 5.52 days. Episodes 1321, qualifying 5 across 4 events; qualifying profit $15.15 (~$19.21/week).
+Collected 5.97 days. Episodes 1329, qualifying 5 across 4 events; qualifying profit $15.15 (~$17.76/week).
 
-Median time seen open (all episodes): 1.36 s; share lasting >= 10 s: 0.316. In-play at start: 0.793.
+Median time seen open (all episodes): 1.42 s; share lasting >= 10 s: 0.319. In-play at start: 0.789.
 
 | Gate | Met |
 |---|---|
@@ -13,11 +13,11 @@ Median time seen open (all episodes): 1.36 s; share lasting >= 10 s: 0.316. In-p
 
 | Kind | Episodes | Qualifying | Qualifying profit |
 |---|---|---|---|
-| series | 55 | 0 | $0.00 |
+| series | 56 | 0 | $0.00 |
 | total | 398 | 2 | $8.63 |
 | margin | 602 | 3 | $6.52 |
-| hit_up | 260 | 0 | $0.00 |
-| hit_dn | 6 | 0 | $0.00 |
+| hit_up | 261 | 0 | $0.00 |
+| hit_dn | 12 | 0 | $0.00 |
 
 ## Largest qualifying episodes
 
