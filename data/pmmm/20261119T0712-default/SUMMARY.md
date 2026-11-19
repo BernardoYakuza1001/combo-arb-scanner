@@ -1,23 +1,23 @@
-# PMMM paper run — 2026-11-19 07:14 UTC, 5.25 h
+# PMMM paper run — 2026-11-19 07:14 UTC, 5.33 h
 
 12 markets, $200 each ($2,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $1.41  |  Trading P&L (marked at mid): $+0.00  |  Net: $+1.41**
-Per day at this pace: rewards $6.43, net $+6.43
+**Rewards accrued: $1.45  |  Trading P&L (marked at mid): $+0.00  |  Net: $+1.45**
+Per day at this pace: rewards $6.52, net $+6.52
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+1.41, per day $+6.43. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+1.45, per day $+6.52. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will "Earrings – Malcom Todd" be the #2 song in the US for 2](https://polymarket.com/market/will-earrings-malcom-todd-be-the-2-song-in-the-us-for-2026-20260729205600301) | 34 | 0.198 | 11.5% | 157/316 | 0.43 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 1 (1) / 1 / +4.3c |
-| [Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 202](https://polymarket.com/market/will-the-ornn-b200-index-hit-5pt50-low-by-december-31-2026-20260709171530831) | 3 | 0.251 | 35.9% | 316/316 | 0.24 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Curvance launch a token by December 31, 2026?](https://polymarket.com/market/will-curvance-launch-a-token-by-december-31-2026) | 3 | 0.196 | 39.0% | 282/316 | 0.23 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will OpenAI's IPO valuation be between $1.0T and $1.25T?](https://polymarket.com/market/will-openais-ipo-valuation-be-between-1pt0t-and-1pt25t) | 9 | 0.211 | 9.4% | 316/316 | 0.19 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Ethereal FDV above $500M one day after launch?](https://polymarket.com/market/ethereal-fdv-above-500m-one-day-after-launch-597-871) | 3 | 0.152 | 38.9% | 198/316 | 0.16 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
-| [Will OpenAI's IPO valuation be between $1.25T and $1.5T?](https://polymarket.com/market/will-openais-ipo-valuation-be-between-1pt25t-and-1pt5t) | 10 | 0.214 | 3.5% | 316/316 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will David Montgomery have 5.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-5pt5-rushing-touchdowns-2026-27) | 4 | 0.325 | 5.7% | 294/316 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (2) / 2 / +4.0c |
-| [Will J.K. Dobbins have 674.5+ rushing yards in the 2026-27 N](https://polymarket.com/market/jk-dobbins-674pt5-rushing-yards-2026-27) | 4 | 0.305 | 4.2% | 209/316 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Sui reach $1.40 before 2027?](https://polymarket.com/market/will-sui-reach-1pt40-before-2027) | 3 | 0.075 | 13.1% | 58/316 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (0) / 2 / - |
-| [Will the Golden State Warriors make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-golden-state-warriors-make-the-2027-nba-playoffs-20260708210742382) | 4 | 0.43 | 1.7% | 316/316 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.385 | 0.0% | 157/316 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 3 (0) / 3 / - |
-| [Hotstuff FDV above $50M one day after launch?](https://polymarket.com/market/hotstuff-fdv-above-50m-one-day-after-launch) | 3 | 0.24 | 0.0% | 0/316 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will "Earrings – Malcom Todd" be the #2 song in the US for 2](https://polymarket.com/market/will-earrings-malcom-todd-be-the-2-song-in-the-us-for-2026-20260729205600301) | 34 | 0.196 | 11.9% | 162/321 | 0.46 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 1 (1) / 1 / +4.3c |
+| [Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 202](https://polymarket.com/market/will-the-ornn-b200-index-hit-5pt50-low-by-december-31-2026-20260709171530831) | 3 | 0.251 | 35.8% | 321/321 | 0.24 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Curvance launch a token by December 31, 2026?](https://polymarket.com/market/will-curvance-launch-a-token-by-december-31-2026) | 3 | 0.196 | 39.0% | 287/321 | 0.23 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will OpenAI's IPO valuation be between $1.0T and $1.25T?](https://polymarket.com/market/will-openais-ipo-valuation-be-between-1pt0t-and-1pt25t) | 9 | 0.211 | 9.3% | 321/321 | 0.19 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Ethereal FDV above $500M one day after launch?](https://polymarket.com/market/ethereal-fdv-above-500m-one-day-after-launch-597-871) | 3 | 0.152 | 38.8% | 203/321 | 0.16 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will OpenAI's IPO valuation be between $1.25T and $1.5T?](https://polymarket.com/market/will-openais-ipo-valuation-be-between-1pt25t-and-1pt5t) | 10 | 0.214 | 3.5% | 321/321 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will David Montgomery have 5.5+ rushing touchdowns in the 20](https://polymarket.com/market/david-montgomery-5pt5-rushing-touchdowns-2026-27) | 4 | 0.325 | 5.9% | 299/321 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (2) / 2 / +4.0c |
+| [Will J.K. Dobbins have 674.5+ rushing yards in the 2026-27 N](https://polymarket.com/market/jk-dobbins-674pt5-rushing-yards-2026-27) | 4 | 0.305 | 4.2% | 209/321 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Sui reach $1.40 before 2027?](https://polymarket.com/market/will-sui-reach-1pt40-before-2027) | 3 | 0.075 | 13.3% | 63/321 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (0) / 2 / - |
+| [Will the Golden State Warriors make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-golden-state-warriors-make-the-2027-nba-playoffs-20260708210742382) | 4 | 0.43 | 1.7% | 321/321 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.385 | 0.0% | 157/321 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 3 (0) / 3 / - |
+| [Hotstuff FDV above $50M one day after launch?](https://polymarket.com/market/hotstuff-fdv-above-50m-one-day-after-launch) | 3 | 0.24 | 0.0% | 0/321 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
