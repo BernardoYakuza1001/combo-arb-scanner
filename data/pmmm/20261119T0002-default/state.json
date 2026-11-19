@@ -2,7 +2,7 @@
  {
   "q": "Will Anthropic's valuation hit (HIGH) $1.5T by December 31?",
   "cid": "0x91a003371cb96dc30511f883052d6b5957d9f099f02704f9838523a260dd1162",
-  "reward": 0.6270781094324825,
+  "reward": 0.657461959406233,
   "mtm": -9.724000000000018,
   "yes": 0.0,
   "no": 0.0,
@@ -33,7 +33,7 @@
  {
   "q": "Will the Ornn B200 Index hit $5.50 (LOW) by December 31, 2026?",
   "cid": "0xa5642e1ff4a1eab7a1752b3176bf8301ddeb6baee3c85f615e810d1b7eeedb00",
-  "reward": 0.235017264923104,
+  "reward": 0.23856432190371216,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -43,7 +43,7 @@
  {
   "q": "Ethereal FDV above $500M one day after launch?",
   "cid": "0xa164172b7cee74420cfce554c3a265b2553cb80e48b36e286e67f302b6574712",
-  "reward": 0.17437906686338595,
+  "reward": 0.1757178845171086,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -53,7 +53,7 @@
  {
   "q": "Will the National Regeneration Movement (Morena) win the most seats in the 2027 Mexico leg",
   "cid": "0xbe97f7a4f393291ea2c54425f32949167cb12f6955f33ec7b68901aa93285718",
-  "reward": 0.03826755262023256,
+  "reward": 0.03886104225406378,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -63,7 +63,7 @@
  {
   "q": "Will David Montgomery have 5.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xb78a93a6bc7e8866f1067b03571e58b415ebf9f5c2401f47b37f3b574ffaff9a",
-  "reward": 5.748648848719247e-31,
+  "reward": 6.165047439613475e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -100,7 +100,7 @@
  {
   "q": "Will Curvance launch a token by December 31, 2026?",
   "cid": "0xe17ec48f01f4196c66a49641bb57d83016f9f7427fe3974afa402bb4c2f27fc7",
-  "reward": 0.2488033313216087,
+  "reward": 0.2533396216441894,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -110,7 +110,7 @@
  {
   "q": "Arc FDV above $7B one day after launch?",
   "cid": "0x40b58ffad74d4574627026c0a537b098814385c8942bf89812f9804517346e5c",
-  "reward": 0.2611009129705347,
+  "reward": 0.2640812275747726,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
