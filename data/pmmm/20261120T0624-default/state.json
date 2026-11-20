@@ -12,7 +12,7 @@
  {
   "q": "Will Anthropic's valuation hit (LOW) $800B by December 31?",
   "cid": "0xaee6153d03242be37cea3995233ecacd46e49ccd8e38e85fc27738841bad492f",
-  "reward": 0.012346145418189952,
+  "reward": 0.016159715795487833,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.004731202897277232,
+  "reward": 0.006934259314290291,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -67,12 +67,18 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795156661.4997644,
+    "kind": "pause",
+    "mid": 0.24000030400000005
+   }
+  ]
  },
  {
   "q": "Will Surf launch a token by June 30, 2027?",
   "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
-  "reward": 2.3918667190354907e-32,
+  "reward": 3.4210942163174296e-32,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
