@@ -12,7 +12,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 0.010368421400224507,
+  "reward": 0.011058771905625294,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Reya launch a token by December 31, 2026?",
   "cid": "0x5b534e0f41523ad9cce972e32e223b33fc8180cba7c1d9b849f62a6c00848eb1",
-  "reward": 0.07233890380627003,
+  "reward": 0.07458811375819761,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.11306502022656795,
+  "reward": 0.11531996765467684,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
