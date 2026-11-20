@@ -2,7 +2,7 @@
  {
   "q": "Will the Fed increase interest rates by 25 bps after the January 2027 meeting?",
   "cid": "0x50642b28be893e8752649e9ae6d687558fc5dcfeeecd10713cf59ef6ea0edce4",
-  "reward": 0.07215657592629708,
+  "reward": 0.07275285772281795,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will 1. FC K\u00f6ln be relegated from the 2026-27 Bundesliga?",
   "cid": "0x5fe5d90cd771f730eed1a0c91b639f80bea8ec5923a62e5982133b99e7a3735b",
-  "reward": 0.042126884899980024,
+  "reward": 0.04430124569280772,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Mohammad Bagher Ghalibaf attend a US x Iran diplomatic meeting by December 31, 2026?",
   "cid": "0x0d0cc122d45ae32132dff864936e8d4e58ee68231034d9114eb92e8958bd3899",
-  "reward": 0.09880445794672879,
+  "reward": 0.0989719286512218,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Surf launch a token by June 30, 2027?",
   "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
-  "reward": 0.016775888698915345,
+  "reward": 0.01772477623199842,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -84,7 +84,7 @@
  {
   "q": "Will OpenAI's IPO valuation be less than $1T?",
   "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
-  "reward": 0.11784983107218984,
+  "reward": 0.1187515937363519,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -104,7 +104,7 @@
  {
   "q": "Will Ethereum hit $4k by September 30, 2027?",
   "cid": "0x34c114490941a479befbecf93da3e4d8e8a72ea81a0284073d7c5df1dbe3fa1d",
-  "reward": 0.007754638045598312,
+  "reward": 0.007789070067362814,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -114,7 +114,7 @@
  {
   "q": "Will AI-chip export licensing become law this year?",
   "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
-  "reward": 0.07514252910656422,
+  "reward": 0.07610378778387228,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
