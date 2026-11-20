@@ -28,7 +28,7 @@
  {
   "q": "Tori FDV above $500M one day after launch?",
   "cid": "0x373d821885ae1394625e8b4208c024b222cbfa80e73b298aeff38ec702b7db02",
-  "reward": 0.076415905050772,
+  "reward": 0.07936438434624633,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Unit FDV above $600M one day after launch?",
   "cid": "0xc8bf61693542486a6d63b8b2ae3a808cfbfdb0f2f0f4d95d011009d096882b91",
-  "reward": 0.05121653923137936,
+  "reward": 0.05213743189589963,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.09786257525867523,
+  "reward": 0.09983617407866908,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -90,7 +90,7 @@
  {
   "q": "Will Surf launch a token by June 30, 2027?",
   "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
-  "reward": 4.58223678719467e-31,
+  "reward": 4.6764618397627355e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -121,7 +121,7 @@
  {
   "q": "Will the Memphis Grizzlies make the 2027 NBA Playoffs?",
   "cid": "0x15dea55ccf435ee711c2e65fc9d526cad1997e37de3762712e5bd7090fe799da",
-  "reward": 0.0036076329550486256,
+  "reward": 0.0038854619455435495,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
