@@ -1,0 +1,124 @@
+[
+ {
+  "q": "Will the Fed increase interest rates by 25 bps after the January 2027 meeting?",
+  "cid": "0x50642b28be893e8752649e9ae6d687558fc5dcfeeecd10713cf59ef6ea0edce4",
+  "reward": 0.02025905349652858,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will 1. FC K\u00f6ln be relegated from the 2026-27 Bundesliga?",
+  "cid": "0x5fe5d90cd771f730eed1a0c91b639f80bea8ec5923a62e5982133b99e7a3735b",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Ethereum hit $3k by June 30, 2027?",
+  "cid": "0x4ceb90daf4764b6cd8e4de25cdf7fc8f9b6064895a347021e94a022876d2a1f2",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Mohammad Bagher Ghalibaf attend a US x Iran diplomatic meeting by December 31, 2026?",
+  "cid": "0x0d0cc122d45ae32132dff864936e8d4e58ee68231034d9114eb92e8958bd3899",
+  "reward": 0.0019247957256907137,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Surf launch a token by June 30, 2027?",
+  "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
+  "reward": 0.00027471404047678014,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Ukraine re-enter Uspenivka by December 31?",
+  "cid": "0xaba33ea1253e3dbf70a1d3395c92514737ef3bc405255331a4d98465039581ee",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Harry Kane (Bayern Munich) be the top goalscorer of the 2026-27 Bundesliga season?",
+  "cid": "0x89f6ef4b6d23775417569ef6e09153ff262d218ce9c44b59838475d13f37a29a",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": [
+   {
+    "ts": 1795204344.3953805,
+    "kind": "pause",
+    "mid": 0.505
+   }
+  ]
+ },
+ {
+  "q": "Will OpenAI's IPO valuation be less than $1T?",
+  "cid": "0x15d9c9f8769f3e4ad6621e09f39e7c1e599ba40f882444ffdbb39e0879927dba",
+  "reward": 0.004155863168365612,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will France pass a national budget by December 31?",
+  "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Ethereum hit $4k by September 30, 2027?",
+  "cid": "0x34c114490941a479befbecf93da3e4d8e8a72ea81a0284073d7c5df1dbe3fa1d",
+  "reward": 0.00048462821269409375,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will AI-chip export licensing become law this year?",
+  "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
+  "reward": 0.0004771349082227133,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": [
+   {
+    "ts": 1795204269.39489,
+    "kind": "pause",
+    "mid": 0.575
+   }
+  ]
+ }
+]
