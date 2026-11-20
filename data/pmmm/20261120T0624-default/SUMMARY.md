@@ -1,21 +1,21 @@
-# PMMM paper run — 2026-11-20 06:26 UTC, 5.42 h
+# PMMM paper run — 2026-11-20 06:26 UTC, 5.50 h
 
 10 markets, $200 each ($2,000 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.47  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.47**
-Per day at this pace: rewards $2.08, net $+2.08
+**Rewards accrued: $0.50  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.50**
+Per day at this pace: rewards $2.17, net $+2.17
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.47, per day $+2.08. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.50, per day $+2.17. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Anthropic's valuation hit (LOW) $800B by December 31?](https://polymarket.com/market/will-anthropics-valuation-hit-low-800b-by-december-31-957-743) | 50 | 0.188 | 1.9% | 215/326 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 15 (8) / 14 / +3.9c |
-| [Will Solana hit $60 or $140 first?](https://polymarket.com/market/will-solana-hit-60-or-140-first) | 5 | 0.714 | 11.7% | 326/326 | 0.13 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Tori FDV above $500M one day after launch?](https://polymarket.com/market/tori-fdv-above-500m-one-day-after-launch) | 5 | 0.14 | 12.5% | 241/326 | 0.10 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / - |
-| [Unit FDV above $600M one day after launch?](https://polymarket.com/market/unit-fdv-above-600m-one-day-after-launch) | 3 | 0.18 | 11.7% | 277/326 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Reya launch a token by December 31, 2026?](https://polymarket.com/market/will-reya-launch-a-token-by-december-31-2026) | 3 | 0.09 | 6.1% | 155/326 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 1 (0) / 1 / - |
-| [Will the Memphis Grizzlies make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-memphis-grizzlies-make-the-2027-nba-playoffs-20260708210742387) | 2 | 0.555 | 2.5% | 88/326 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Beezie launch a token by December 31, 2026?](https://polymarket.com/market/will-beezie-launch-a-token-by-december-31-2026-20260727145732885) | 5 | 0.16 | 0.7% | 135/326 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Valantis FDV above $20M one day after launch?](https://polymarket.com/market/valantis-fdv-above-20m-one-day-after-launch) | 3 | 0.24 | 5.8% | 6/326 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.395 | 5.6% | 1/326 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (1) / 2 / - |
-| [Will Surf launch a token by June 30, 2027?](https://polymarket.com/market/will-surf-launch-a-token-by-june-30-2027) | 3 | 0.365 | 0.0% | 326/326 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Anthropic's valuation hit (LOW) $800B by December 31?](https://polymarket.com/market/will-anthropics-valuation-hit-low-800b-by-december-31-957-743) | 50 | 0.205 | 2.1% | 220/331 | 0.16 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 15 (8) / 14 / +3.9c |
+| [Will Solana hit $60 or $140 first?](https://polymarket.com/market/will-solana-hit-60-or-140-first) | 5 | 0.714 | 11.7% | 331/331 | 0.13 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Tori FDV above $500M one day after launch?](https://polymarket.com/market/tori-fdv-above-500m-one-day-after-launch) | 5 | 0.135 | 12.5% | 243/331 | 0.11 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / - |
+| [Unit FDV above $600M one day after launch?](https://polymarket.com/market/unit-fdv-above-600m-one-day-after-launch) | 3 | 0.18 | 11.7% | 282/331 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Reya launch a token by December 31, 2026?](https://polymarket.com/market/will-reya-launch-a-token-by-december-31-2026) | 3 | 0.09 | 6.1% | 160/331 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 1 (0) / 1 / - |
+| [Will Beezie launch a token by December 31, 2026?](https://polymarket.com/market/will-beezie-launch-a-token-by-december-31-2026-20260727145732885) | 5 | 0.16 | 1.2% | 140/331 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will the Memphis Grizzlies make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-memphis-grizzlies-make-the-2027-nba-playoffs-20260708210742387) | 2 | 0.555 | 2.5% | 88/331 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Valantis FDV above $20M one day after launch?](https://polymarket.com/market/valantis-fdv-above-20m-one-day-after-launch) | 3 | 0.24 | 5.8% | 6/331 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will France pass a national budget by December 31?](https://polymarket.com/market/will-france-pass-a-national-budget-by-december-31) | 3 | 0.4 | 5.6% | 1/331 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (1) / 2 / - |
+| [Will Surf launch a token by June 30, 2027?](https://polymarket.com/market/will-surf-launch-a-token-by-june-30-2027) | 3 | 0.365 | 0.0% | 331/331 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
