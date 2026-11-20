@@ -2,7 +2,7 @@
  {
   "q": "Will Beezie launch a token by December 31, 2026?",
   "cid": "0xc6d13008ed1de9e83fe29e6917cdbeb7ad16d0e19ba39e8def015da30939fa37",
-  "reward": 1.8730348312576718e-30,
+  "reward": 2.1181674397118873e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Anthropic's valuation hit (LOW) $800B by December 31?",
   "cid": "0xaee6153d03242be37cea3995233ecacd46e49ccd8e38e85fc27738841bad492f",
-  "reward": 0.06275828054610941,
+  "reward": 0.06430786153871602,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Tori FDV above $500M one day after launch?",
   "cid": "0x373d821885ae1394625e8b4208c024b222cbfa80e73b298aeff38ec702b7db02",
-  "reward": 0.047087981615057006,
+  "reward": 0.05078949017150398,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Unit FDV above $600M one day after launch?",
   "cid": "0xc8bf61693542486a6d63b8b2ae3a808cfbfdb0f2f0f4d95d011009d096882b91",
-  "reward": 0.020126667833023765,
+  "reward": 0.021998691750349613,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.052986037299458714,
+  "reward": 0.055024052222848154,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +78,7 @@
  {
   "q": "Will Surf launch a token by June 30, 2027?",
   "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
-  "reward": 2.5092856306972377e-31,
+  "reward": 2.603510683265303e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -88,7 +88,7 @@
  {
   "q": "Will Reya launch a token by December 31, 2026?",
   "cid": "0x5b534e0f41523ad9cce972e32e223b33fc8180cba7c1d9b849f62a6c00848eb1",
-  "reward": 0.009079139624929749,
+  "reward": 0.009710469105778163,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
