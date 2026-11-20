@@ -1,22 +1,22 @@
 # Combinatorial arbitrage report — verdict: **PENDING**
 
-Collected 6.52 days. Episodes 1333, qualifying 5 across 4 events; qualifying profit $15.15 (~$16.26/week).
+Collected 6.96 days. Episodes 1345, qualifying 6 across 5 events; qualifying profit $16.25 (~$16.33/week).
 
-Median time seen open (all episodes): 1.42 s; share lasting >= 10 s: 0.32. In-play at start: 0.788.
+Median time seen open (all episodes): 1.45 s; share lasting >= 10 s: 0.325. In-play at start: 0.783.
 
 | Gate | Met |
 |---|---|
 | enough_days | False |
 | episodes | False |
-| distinct_events | False |
+| distinct_events | True |
 | weekly_profit | False |
 
 | Kind | Episodes | Qualifying | Qualifying profit |
 |---|---|---|---|
 | series | 56 | 0 | $0.00 |
-| total | 399 | 2 | $8.63 |
-| margin | 603 | 3 | $6.52 |
-| hit_up | 263 | 0 | $0.00 |
+| total | 400 | 2 | $8.63 |
+| margin | 604 | 4 | $7.62 |
+| hit_up | 273 | 0 | $0.00 |
 | hit_dn | 12 | 0 | $0.00 |
 
 ## Largest qualifying episodes
@@ -26,3 +26,4 @@ Median time seen open (all episodes): 1.42 s; share lasting >= 10 s: 0.32. In-pl
 - 2026-11-14T04:27:00.387Z Warriors vs. Spurs: edge 1.81%, $2.67 on 148 sets, seen 20.32 s, in-play True | Warriors vs. Spurs: O/U 222.5 Under + Warriors vs. Spurs: O/U 220.5 Over
 - 2026-11-14T10:13:58.899Z Cruzeiro Basquete vs. Unifacisa: edge 11.84%, $1.18 on 10 sets, seen 154.94 s, in-play True | Spread: Unifacisa (-3.5) -> Cruzeiro Basquete + Cruzeiro Basquete vs. Unifacisa -> Unifacisa
 - 2026-11-14T10:16:36.923Z Cruzeiro Basquete vs. Unifacisa: edge 11.84%, $1.18 on 10 sets, seen 1247.43 s, in-play True | Spread: Unifacisa (-3.5) -> Cruzeiro Basquete + Cruzeiro Basquete vs. Unifacisa -> Unifacisa
+- 2026-11-20T10:10:09.246Z Cairns Taipans vs. Perth Wildcats: edge 3.71%, $1.10 on 58 sets, seen 67.01 s, in-play True | Cairns Taipans vs. Perth Wildcats -> Cairns Taipans + Spread: Cairns Taipans (-1.5) -> Perth Wildcats
