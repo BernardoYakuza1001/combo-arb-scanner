@@ -2,7 +2,7 @@
  {
   "q": "Will Alphabet be the third-largest company in the world by market cap on December 31?",
   "cid": "0xd3e48c21dfeeedf4ef53ce5a850223f851975a8766196696a07eef0ea68dabc8",
-  "reward": 0.10075109087755112,
+  "reward": 0.10270549786564115,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will AI-chip export licensing become law this year?",
   "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
-  "reward": 0.14367940801621473,
+  "reward": 0.14498661750974945,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Will Hsieh Kuo-liang win the next Keelung Mayor election?",
   "cid": "0xfcc06c62976788d674df65604c5d140968f4df651c9d818393e809fa93baeb7f",
-  "reward": 0.10575114758499213,
+  "reward": 0.10691444483976154,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Will Wu Tsung-hsien win the next Yilan County Magistrate election?",
   "cid": "0x5530aaf28138eb571e391eb31433c8d0f14942ab264e0e1c8ea51039e43832cf",
-  "reward": 0.09962708125276244,
+  "reward": 0.10397072815634577,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -89,7 +89,7 @@
  {
   "q": "Will Data center utility cost protection become law this year?",
   "cid": "0xbcf92dd69e289a4bce83a086363bc7deeae3f8d3f0370e8f4b02cffdc7ac8b7e",
-  "reward": 0.16132066438205722,
+  "reward": 0.16343674655055646,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -115,7 +115,7 @@
  {
   "q": "Will the Memphis Grizzlies make the 2027 NBA Playoffs?",
   "cid": "0x15dea55ccf435ee711c2e65fc9d526cad1997e37de3762712e5bd7090fe799da",
-  "reward": 0.01964549282598663,
+  "reward": 0.019759219846781886,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
