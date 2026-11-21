@@ -12,7 +12,7 @@
  {
   "q": "Will Alphabet be the third-largest company in the world by market cap on December 31?",
   "cid": "0xd3e48c21dfeeedf4ef53ce5a850223f851975a8766196696a07eef0ea68dabc8",
-  "reward": 0.03265947323501592,
+  "reward": 0.033656034777095195,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will exactly 2 Israeli legislative elections occur before a government is formed?",
   "cid": "0x61180c25be9fc889a459ca2e1aac1814421c0c7880836d01cdc2057d720249fa",
-  "reward": 0.01509854396214636,
+  "reward": 0.01566447257685702,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,6 +32,11 @@
     "ts": 1795287822.1145675,
     "kind": "pause",
     "mid": 0.22500000000000003
+   },
+   {
+    "ts": 1795291317.1421423,
+    "kind": "pause",
+    "mid": 0.175
    }
   ]
  },
@@ -48,7 +53,7 @@
  {
   "q": "Will Coventry City be relegated from the 2026-27 Premier League?",
   "cid": "0xb5ccec7b66d713656f8e259841d821b12191f844e9971dc338679fb0ebc000aa",
-  "reward": 0.014163869089606877,
+  "reward": 0.015195749133554882,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +63,7 @@
  {
   "q": "Will Hylo launch a token by December 31, 2027?",
   "cid": "0x5d61eecf4b6cc2d78ab116ad3da932f97e845af303b1f73a570af2c084ea5f0e",
-  "reward": 0.013511646628626237,
+  "reward": 0.014454640996274398,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +83,7 @@
  {
   "q": "Will Ethereum hit $3k by June 30, 2027?",
   "cid": "0x4ceb90daf4764b6cd8e4de25cdf7fc8f9b6064895a347021e94a022876d2a1f2",
-  "reward": 0.002179948764810758,
+  "reward": 0.0023700868949764814,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -98,7 +103,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 1.1516315339462596e-31,
+  "reward": 0.0004953472880748959,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -108,7 +113,7 @@
  {
   "q": "Will Darius Acuff Jr. win the 2026-27 NBA Rookie of the Year?",
   "cid": "0x9fdd044a58c60de1adfc85582c31852b3f34ba680270f0967fde73daf97c92eb",
-  "reward": 0.001720073613208967,
+  "reward": 0.0019156452456219122,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -118,7 +123,7 @@
  {
   "q": "Will Gregor Kobel (Dortmund) record the most clean sheets in the 2026-27 Bundesliga season",
   "cid": "0xa8f432c2245de9cfd02ae60e86ed1b857ddb99d53331f27b0b2d4da33be05293",
-  "reward": 0.05685194370617167,
+  "reward": 0.05975873537933636,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
