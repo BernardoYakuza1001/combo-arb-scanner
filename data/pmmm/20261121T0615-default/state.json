@@ -2,7 +2,7 @@
  {
   "q": "Will Alphabet be the third-largest company in the world by market cap on December 31?",
   "cid": "0xd3e48c21dfeeedf4ef53ce5a850223f851975a8766196696a07eef0ea68dabc8",
-  "reward": 0.004747792186847552,
+  "reward": 0.006869367203175376,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Hsieh Kuo-liang win the next Keelung Mayor election?",
   "cid": "0xfcc06c62976788d674df65604c5d140968f4df651c9d818393e809fa93baeb7f",
-  "reward": 0.004780586355948176,
+  "reward": 0.006953580154106438,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -57,7 +57,13 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795242482.8207903,
+    "kind": "pause",
+    "mid": 0.28
+   }
+  ]
  },
  {
   "q": "Will France pass a national budget by December 31?",
@@ -72,7 +78,7 @@
  {
   "q": "Will Data center utility cost protection become law this year?",
   "cid": "0xbcf92dd69e289a4bce83a086363bc7deeae3f8d3f0370e8f4b02cffdc7ac8b7e",
-  "reward": 0.010055566682654546,
+  "reward": 0.014626278811133882,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +88,7 @@
  {
   "q": "Will Surf launch a token by June 30, 2027?",
   "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
-  "reward": 0.0020875525727827777,
+  "reward": 0.0030364401058658587,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -97,6 +103,12 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795242437.8203866,
+    "kind": "pause",
+    "mid": 0.495
+   }
+  ]
  }
 ]
