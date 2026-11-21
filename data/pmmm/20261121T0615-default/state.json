@@ -2,7 +2,7 @@
  {
   "q": "Will Alphabet be the third-largest company in the world by market cap on December 31?",
   "cid": "0xd3e48c21dfeeedf4ef53ce5a850223f851975a8766196696a07eef0ea68dabc8",
-  "reward": 0.052474112266957335,
+  "reward": 0.05491888857423084,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will AI-chip export licensing become law this year?",
   "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
-  "reward": 0.05509799346942043,
+  "reward": 0.05810022648165005,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Will Hsieh Kuo-liang win the next Keelung Mayor election?",
   "cid": "0xfcc06c62976788d674df65604c5d140968f4df651c9d818393e809fa93baeb7f",
-  "reward": 0.05700501311806018,
+  "reward": 0.05836238191314143,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Will Wu Tsung-hsien win the next Yilan County Magistrate election?",
   "cid": "0x5530aaf28138eb571e391eb31433c8d0f14942ab264e0e1c8ea51039e43832cf",
-  "reward": 0.008216038029391918,
+  "reward": 0.008821719841430053,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -79,7 +79,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 0.037457353423068156,
+  "reward": 0.04027443937694654,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -89,7 +89,7 @@
  {
   "q": "Will Data center utility cost protection become law this year?",
   "cid": "0xbcf92dd69e289a4bce83a086363bc7deeae3f8d3f0370e8f4b02cffdc7ac8b7e",
-  "reward": 0.13541693390734186,
+  "reward": 0.1361640471684315,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -99,7 +99,7 @@
  {
   "q": "Will Surf launch a token by June 30, 2027?",
   "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
-  "reward": 0.03226217612482466,
+  "reward": 0.032454405137350484,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -109,7 +109,7 @@
  {
   "q": "Will the Memphis Grizzlies make the 2027 NBA Playoffs?",
   "cid": "0x15dea55ccf435ee711c2e65fc9d526cad1997e37de3762712e5bd7090fe799da",
-  "reward": 0.0049609295570481006,
+  "reward": 0.006792899563864726,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
