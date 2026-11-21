@@ -1,0 +1,102 @@
+[
+ {
+  "q": "Will Alphabet be the third-largest company in the world by market cap on December 31?",
+  "cid": "0xd3e48c21dfeeedf4ef53ce5a850223f851975a8766196696a07eef0ea68dabc8",
+  "reward": 0.0026557196187317767,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Sarah Huckabee Sanders announce a presidential run before 2028?",
+  "cid": "0x5f0171f8bd29d7a73d71582530a744a2fbf0c277c082d548cc75b94c64f6d09b",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will AI-chip export licensing become law this year?",
+  "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
+  "reward": 0.0003042442900747247,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Hsieh Kuo-liang win the next Keelung Mayor election?",
+  "cid": "0xfcc06c62976788d674df65604c5d140968f4df651c9d818393e809fa93baeb7f",
+  "reward": 0.0026075925577899142,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Ukraine re-enter Obratne or Temyrivka by December 31?",
+  "cid": "0x3867c954ccd50c147312a14025511270bcd264b755fa40e7e3ee20df3e2c81bb",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Wu Tsung-hsien win the next Yilan County Magistrate election?",
+  "cid": "0x5530aaf28138eb571e391eb31433c8d0f14942ab264e0e1c8ea51039e43832cf",
+  "reward": 0.0023842430556740364,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will France pass a national budget by December 31?",
+  "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Data center utility cost protection become law this year?",
+  "cid": "0xbcf92dd69e289a4bce83a086363bc7deeae3f8d3f0370e8f4b02cffdc7ac8b7e",
+  "reward": 0.005484854554175207,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Surf launch a token by June 30, 2027?",
+  "cid": "0xabdb9cc33cc2b0c80e56516558994465890152694eb57f4c83f8113f5c5db757",
+  "reward": 0.001138665039699697,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will the Memphis Grizzlies make the 2027 NBA Playoffs?",
+  "cid": "0x15dea55ccf435ee711c2e65fc9d526cad1997e37de3762712e5bd7090fe799da",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ }
+]
