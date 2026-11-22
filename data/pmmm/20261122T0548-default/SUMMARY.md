@@ -1,23 +1,23 @@
-# PMMM paper run — 2026-11-22 05:49 UTC, 2.50 h
+# PMMM paper run — 2026-11-22 05:49 UTC, 2.58 h
 
 12 markets, $200 each ($2,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.46  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.46**
-Per day at this pace: rewards $4.40, net $+4.40
+**Rewards accrued: $0.47  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.47**
+Per day at this pace: rewards $4.39, net $+4.39
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.46, per day $+4.40. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.47, per day $+4.39. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Raphinha (Barcelona) be the top goalscorer of the 2026-](https://polymarket.com/market/will-raphinha-barcelona-be-the-top-goalscorer-of-the-2026-27-la-liga-season) | 6 | 0.417 | 19.6% | 147/151 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (1) / 1 / - |
-| [Will Khalil Shakir have 849.5+ receiving yards in the 2026-2](https://polymarket.com/market/khalil-shakir-849pt5-receiving-yards-2026-27) | 4 | 0.221 | 42.8% | 75/151 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Jacob Fowler win the 2026-27 Calder Trophy?](https://polymarket.com/market/will-jacob-fowler-win-the-2026-27-calder-trophy) | 9 | 0.435 | 9.3% | 133/151 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Hotstuff FDV above $300M one day after launch?](https://polymarket.com/market/hotstuff-fdv-above-300m-one-day-after-launch) | 3 | 0.155 | 21.6% | 151/151 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will the Indiana Pacers make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-indiana-pacers-make-the-2027-nba-playoffs-20260708210742384) | 4 | 0.36 | 11.8% | 148/151 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (1) / 1 / +2.0c |
-| [Will Bitcoin hit $100k by June 30, 2027?](https://polymarket.com/market/will-bitcoin-hit-100k-by-june-30-2027) | 5 | 0.21 | 11.6% | 93/151 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will Memphis Tigers Win the 2026 American Conference?](https://polymarket.com/market/will-memphis-tigers-win-the-2026-american-conference-20260731201100093) | 2 | 0.405 | 10.4% | 132/151 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 1 / +2.0c |
-| [Will Michigan State have more than 3.5 wins during the 2026 ](https://polymarket.com/market/will-michigan-state-have-more-than-3pt5-wins-during-the-2026-cfb-season-20260810194027422) | 4 | 0.61 | 4.1% | 151/151 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will South Korea’s 2026 Annual Inflation be between 2.7% and](https://polymarket.com/market/will-south-koreas-2026-annual-inflation-be-between-2pt7-and-2pt9) | 6 | 0.514 | 14.5% | 2/151 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 1 (0) / 0 / - |
-| [Pete Hegseth out as Secretary of Defense by December 31?](https://polymarket.com/market/pete-hegseth-out-as-secretary-of-defense-by-december-31) | 50 | 0.115 | 0.0% | 79/151 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 12 (6) / 12 / +1.0c |
-| [Will Decibel launch a token by December 31, 2027?](https://polymarket.com/market/will-decibel-launch-a-token-by-december-31-2027) | 3 | 0.59 | 0.0% | 0/151 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Sarah Huckabee Sanders announce a presidential run befo](https://polymarket.com/market/will-sarah-huckabee-sanders-announce-a-presidential-run-before-2028-20260803143241653) | 2 | 0.495 | 0.0% | 0/151 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Raphinha (Barcelona) be the top goalscorer of the 2026-](https://polymarket.com/market/will-raphinha-barcelona-be-the-top-goalscorer-of-the-2026-27-la-liga-season) | 6 | 0.416 | 19.5% | 152/156 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (1) / 1 / - |
+| [Will Jacob Fowler win the 2026-27 Calder Trophy?](https://polymarket.com/market/will-jacob-fowler-win-the-2026-27-calder-trophy) | 9 | 0.435 | 9.3% | 138/156 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Khalil Shakir have 849.5+ receiving yards in the 2026-2](https://polymarket.com/market/khalil-shakir-849pt5-receiving-yards-2026-27) | 4 | 0.221 | 42.8% | 75/156 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Hotstuff FDV above $300M one day after launch?](https://polymarket.com/market/hotstuff-fdv-above-300m-one-day-after-launch) | 3 | 0.15 | 21.5% | 156/156 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will the Indiana Pacers make the 2027 NBA Playoffs?](https://polymarket.com/market/will-the-indiana-pacers-make-the-2027-nba-playoffs-20260708210742384) | 4 | 0.36 | 11.7% | 153/156 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (1) / 1 / +2.0c |
+| [Will Bitcoin hit $100k by June 30, 2027?](https://polymarket.com/market/will-bitcoin-hit-100k-by-june-30-2027) | 5 | 0.205 | 11.6% | 93/156 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Memphis Tigers Win the 2026 American Conference?](https://polymarket.com/market/will-memphis-tigers-win-the-2026-american-conference-20260731201100093) | 2 | 0.405 | 10.3% | 137/156 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 1 / +2.0c |
+| [Will Michigan State have more than 3.5 wins during the 2026 ](https://polymarket.com/market/will-michigan-state-have-more-than-3pt5-wins-during-the-2026-cfb-season-20260810194027422) | 4 | 0.61 | 4.1% | 156/156 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will South Korea’s 2026 Annual Inflation be between 2.7% and](https://polymarket.com/market/will-south-koreas-2026-annual-inflation-be-between-2pt7-and-2pt9) | 6 | 0.514 | 13.5% | 7/156 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 1 (0) / 0 / - |
+| [Pete Hegseth out as Secretary of Defense by December 31?](https://polymarket.com/market/pete-hegseth-out-as-secretary-of-defense-by-december-31) | 50 | 0.115 | 0.0% | 84/156 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 12 (6) / 12 / +1.0c |
+| [Will Decibel launch a token by December 31, 2027?](https://polymarket.com/market/will-decibel-launch-a-token-by-december-31-2027) | 3 | 0.59 | 0.0% | 0/156 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Sarah Huckabee Sanders announce a presidential run befo](https://polymarket.com/market/will-sarah-huckabee-sanders-announce-a-presidential-run-before-2028-20260803143241653) | 2 | 0.495 | 0.0% | 0/156 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
