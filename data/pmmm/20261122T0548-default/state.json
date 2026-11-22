@@ -2,7 +2,7 @@
  {
   "q": "Will Jacob Fowler win the 2026-27 Calder Trophy?",
   "cid": "0x3953a1b2640f3af82e77390a4df00100db6ba86a3c59cb590ba26f64b90c261d",
-  "reward": 0.08319388098319064,
+  "reward": 0.08629915431449829,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will South Korea\u2019s 2026 Annual Inflation be between 2.7% and 2.9%?",
   "cid": "0x73991c82042b5b751e3d398b8793b4454c405eb82f9d0964bf8ad7740cd48b39",
-  "reward": 0.005957472001675574,
+  "reward": 0.008296954494387169,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -28,7 +28,7 @@
  {
   "q": "Pete Hegseth out as Secretary of Defense by December 31?",
   "cid": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
-  "reward": 8.407032477312384e-31,
+  "reward": 8.812610317084307e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Hotstuff FDV above $300M one day after launch?",
   "cid": "0x0965dddf92f004b06666e88923b58b3301e2b60057c4f6f4b692540815889fea",
-  "reward": 0.07199517939417154,
+  "reward": 0.07433855948622357,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.0441577103942389,
+  "reward": 0.04493275722379941,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -94,7 +94,7 @@
  {
   "q": "Will Michigan State have more than 3.5 wins during the 2026 CFB season?",
   "cid": "0xb2e823d2ac8879932de601751ac2c16777f43c20331ee42ab539f0f21aac7b7e",
-  "reward": 0.016039002744113632,
+  "reward": 0.01662279745518884,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -104,7 +104,7 @@
  {
   "q": "Will Memphis Tigers Win the 2026 American Conference?",
   "cid": "0xf69da6166779042b083414cd0c38e0692abb6a71a5e7d8cfc5bb281a3fc666a6",
-  "reward": 0.02031178613174785,
+  "reward": 0.021001390559454613,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -114,7 +114,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.12729198404098926,
+  "reward": 0.1281994747871724,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -124,7 +124,7 @@
  {
   "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
-  "reward": 0.07884506844396595,
+  "reward": 0.07888813329657272,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
