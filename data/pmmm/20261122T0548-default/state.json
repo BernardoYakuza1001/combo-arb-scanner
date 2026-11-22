@@ -2,7 +2,7 @@
  {
   "q": "Will Jacob Fowler win the 2026-27 Calder Trophy?",
   "cid": "0x3953a1b2640f3af82e77390a4df00100db6ba86a3c59cb590ba26f64b90c261d",
-  "reward": 0.15284945287273258,
+  "reward": 0.1554986082909276,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will South Korea\u2019s 2026 Annual Inflation be between 2.7% and 2.9%?",
   "cid": "0x73991c82042b5b751e3d398b8793b4454c405eb82f9d0964bf8ad7740cd48b39",
-  "reward": 0.030587778995930587,
+  "reward": 0.03178356094721802,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -33,7 +33,7 @@
  {
   "q": "Pete Hegseth out as Secretary of Defense by December 31?",
   "cid": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
-  "reward": 1.9594453660249276e-30,
+  "reward": 2.0075105050638646e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -53,7 +53,7 @@
  {
   "q": "Hotstuff FDV above $300M one day after launch?",
   "cid": "0x0965dddf92f004b06666e88923b58b3301e2b60057c4f6f4b692540815889fea",
-  "reward": 0.11074413484279066,
+  "reward": 0.1113213342620837,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -63,7 +63,7 @@
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.061347876694236685,
+  "reward": 0.061818557214947535,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -73,7 +73,7 @@
  {
   "q": "Will Bitcoin hit $100k by June 30, 2027?",
   "cid": "0x83aa84de0070b8ed07bfa042d5f84a37e15d109d812ef771346c8a1f9f3922e9",
-  "reward": 0.048165967583175685,
+  "reward": 0.04850443805669479,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -99,7 +99,7 @@
  {
   "q": "Will Michigan State have more than 3.5 wins during the 2026 CFB season?",
   "cid": "0xb2e823d2ac8879932de601751ac2c16777f43c20331ee42ab539f0f21aac7b7e",
-  "reward": 0.02815977166861268,
+  "reward": 0.028509971689045017,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -109,7 +109,7 @@
  {
   "q": "Will Memphis Tigers Win the 2026 American Conference?",
   "cid": "0xf69da6166779042b083414cd0c38e0692abb6a71a5e7d8cfc5bb281a3fc666a6",
-  "reward": 0.043287071038368534,
+  "reward": 0.04372749922860002,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -119,7 +119,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.22510295285217333,
+  "reward": 0.23013658077419502,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
