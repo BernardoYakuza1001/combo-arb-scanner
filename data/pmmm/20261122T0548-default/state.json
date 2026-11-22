@@ -42,7 +42,7 @@
  {
   "q": "Hotstuff FDV above $300M one day after launch?",
   "cid": "0x0965dddf92f004b06666e88923b58b3301e2b60057c4f6f4b692540815889fea",
-  "reward": 0.0012743006164058783,
+  "reward": 0.002441779751745111,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +62,7 @@
  {
   "q": "Will Bitcoin hit $100k by June 30, 2027?",
   "cid": "0x83aa84de0070b8ed07bfa042d5f84a37e15d109d812ef771346c8a1f9f3922e9",
-  "reward": 0.00016482102752813892,
+  "reward": 0.0008661236161810559,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +82,7 @@
  {
   "q": "Will Michigan State have more than 3.5 wins during the 2026 CFB season?",
   "cid": "0xb2e823d2ac8879932de601751ac2c16777f43c20331ee42ab539f0f21aac7b7e",
-  "reward": 0.0002767090747460702,
+  "reward": 0.0005072999703677953,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -102,7 +102,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.007000841222576815,
+  "reward": 0.012834875574724161,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -112,7 +112,7 @@
  {
   "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
-  "reward": 0.006424330137259309,
+  "reward": 0.011581879853559645,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
