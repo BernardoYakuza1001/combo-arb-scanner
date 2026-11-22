@@ -1,0 +1,122 @@
+[
+ {
+  "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
+  "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
+  "reward": 0.013109963979876543,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
+  "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
+  "reward": 0.0005681978507155034,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Sarah Huckabee Sanders announce a presidential run before 2028?",
+  "cid": "0x5f0171f8bd29d7a73d71582530a744a2fbf0c277c082d548cc75b94c64f6d09b",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will South Korea\u2019s 2026 Annual Inflation be between 2.7% and 2.9%?",
+  "cid": "0x73991c82042b5b751e3d398b8793b4454c405eb82f9d0964bf8ad7740cd48b39",
+  "reward": 0.005177927341514367,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Solana hit $60 or $140 first?",
+  "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
+  "reward": 0.00656808358351397,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Anthropic + OpenAI vs Microsoft - higher valuation on December 31?",
+  "cid": "0xfbf0869b186734f26197fc7c96bded5ed05862b394839716df72c29eb3f4fd60",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Pete Hegseth out as Secretary of Defense by December 31?",
+  "cid": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
+  "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Hotstuff FDV above $50M one day after launch?",
+  "cid": "0x14f1e2b95cfaa1b7ffff6201f1994a854da2bef6a831593c5de124746c28848c",
+  "reward": 0.00029919479373483255,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will France pass a national budget by December 31?",
+  "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
+  "reward": 0.0,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Borussia M\u00f6nchengladbach be relegated from the 2026-27 Bundesliga?",
+  "cid": "0x48180eb2c0d857ebe8d3b9e13813c69e47893b26f8533e32d2c6ca475e6ec3bf",
+  "reward": 0.0030716832053238365,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will AI-chip export licensing become law this year?",
+  "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
+  "reward": 0.0039069796255118815,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ }
+]
