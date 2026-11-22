@@ -2,7 +2,7 @@
  {
   "q": "Will Jacob Fowler win the 2026-27 Calder Trophy?",
   "cid": "0x3953a1b2640f3af82e77390a4df00100db6ba86a3c59cb590ba26f64b90c261d",
-  "reward": 0.0037128987523764663,
+  "reward": 0.006002245126051788,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Hotstuff FDV above $300M one day after launch?",
   "cid": "0x0965dddf92f004b06666e88923b58b3301e2b60057c4f6f4b692540815889fea",
-  "reward": 0.009636147153616529,
+  "reward": 0.011124157503011397,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.00394172204253917,
+  "reward": 0.00486607857814481,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Will Bitcoin hit $100k by June 30, 2027?",
   "cid": "0x83aa84de0070b8ed07bfa042d5f84a37e15d109d812ef771346c8a1f9f3922e9",
-  "reward": 0.004868336119985962,
+  "reward": 0.007606017454267112,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -88,7 +88,7 @@
  {
   "q": "Will Michigan State have more than 3.5 wins during the 2026 CFB season?",
   "cid": "0xb2e823d2ac8879932de601751ac2c16777f43c20331ee42ab539f0f21aac7b7e",
-  "reward": 0.0019372874950830384,
+  "reward": 0.0025300449762889125,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -98,7 +98,7 @@
  {
   "q": "Will Memphis Tigers Win the 2026 American Conference?",
   "cid": "0xf69da6166779042b083414cd0c38e0692abb6a71a5e7d8cfc5bb281a3fc666a6",
-  "reward": 0.0023764396334149266,
+  "reward": 0.004206584826210295,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -108,7 +108,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.030336978631166217,
+  "reward": 0.03617101298331357,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -118,7 +118,7 @@
  {
   "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
-  "reward": 0.026747094547761995,
+  "reward": 0.029012261184186115,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
