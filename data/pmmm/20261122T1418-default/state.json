@@ -2,7 +2,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.013109963979876543,
+  "reward": 0.022735187847722563,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.0005681978507155034,
+  "reward": 0.0013844479192054986,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will South Korea\u2019s 2026 Annual Inflation be between 2.7% and 2.9%?",
   "cid": "0x73991c82042b5b751e3d398b8793b4454c405eb82f9d0964bf8ad7740cd48b39",
-  "reward": 0.005177927341514367,
+  "reward": 0.008249666354175128,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.00656808358351397,
+  "reward": 0.010517074580231784,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -72,7 +72,7 @@
  {
   "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
-  "reward": 0.0,
+  "reward": 0.002370771064923795,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -92,7 +92,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 0.0,
+  "reward": 4.1618839473527244e-33,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -102,7 +102,7 @@
  {
   "q": "Will Borussia M\u00f6nchengladbach be relegated from the 2026-27 Bundesliga?",
   "cid": "0x48180eb2c0d857ebe8d3b9e13813c69e47893b26f8533e32d2c6ca475e6ec3bf",
-  "reward": 0.0030716832053238365,
+  "reward": 0.004545930312488189,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -112,7 +112,7 @@
  {
   "q": "Will AI-chip export licensing become law this year?",
   "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
-  "reward": 0.0039069796255118815,
+  "reward": 0.007162795980105115,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
