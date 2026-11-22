@@ -18,7 +18,7 @@
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.004151049777622111,
+  "reward": 0.004593458242533816,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -60,7 +60,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.026920631298793546,
+  "reward": 0.029981885932666225,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -90,7 +90,7 @@
  {
   "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
-  "reward": 0.0038224579959511193,
+  "reward": 0.005986551257423247,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -116,7 +116,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 1.257235436227298e-32,
+  "reward": 1.3736201355455606e-32,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -142,7 +142,7 @@
  {
   "q": "Will AI-chip export licensing become law this year?",
   "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
-  "reward": 0.02018606139847806,
+  "reward": 0.02350784212622166,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
