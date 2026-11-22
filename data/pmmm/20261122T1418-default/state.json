@@ -2,17 +2,23 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.02501000184904948,
+  "reward": 0.025746569954359005,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795358300.1620414,
+    "kind": "pause",
+    "mid": 0.4105
+   }
+  ]
  },
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.0021585351489145357,
+  "reward": 0.0028340771597049463,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +38,7 @@
  {
   "q": "Will South Korea\u2019s 2026 Annual Inflation be between 2.7% and 2.9%?",
   "cid": "0x73991c82042b5b751e3d398b8793b4454c405eb82f9d0964bf8ad7740cd48b39",
-  "reward": 0.011152245921219888,
+  "reward": 0.013971633146683673,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +48,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.014538302506506581,
+  "reward": 0.018514063256644342,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -124,7 +130,7 @@
  {
   "q": "Will AI-chip export licensing become law this year?",
   "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
-  "reward": 0.010418612334698348,
+  "reward": 0.013674428689291581,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
