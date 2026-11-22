@@ -2,7 +2,7 @@
  {
   "q": "Will Jacob Fowler win the 2026-27 Calder Trophy?",
   "cid": "0x3953a1b2640f3af82e77390a4df00100db6ba86a3c59cb590ba26f64b90c261d",
-  "reward": 0.17965001772992303,
+  "reward": 0.18166637156749973,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Pete Hegseth out as Secretary of Defense by December 31?",
   "cid": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
-  "reward": 2.425056949053726e-30,
+  "reward": 2.459679693618541e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Hotstuff FDV above $300M one day after launch?",
   "cid": "0x0965dddf92f004b06666e88923b58b3301e2b60057c4f6f4b692540815889fea",
-  "reward": 0.1174431202062043,
+  "reward": 0.11798979268517644,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.0696873840594648,
+  "reward": 0.07016272538198759,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +78,7 @@
  {
   "q": "Will Bitcoin hit $100k by June 30, 2027?",
   "cid": "0x83aa84de0070b8ed07bfa042d5f84a37e15d109d812ef771346c8a1f9f3922e9",
-  "reward": 0.05269632032702923,
+  "reward": 0.05296149059092334,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -104,7 +104,7 @@
  {
   "q": "Will Michigan State have more than 3.5 wins during the 2026 CFB season?",
   "cid": "0xb2e823d2ac8879932de601751ac2c16777f43c20331ee42ab539f0f21aac7b7e",
-  "reward": 0.03368299600530586,
+  "reward": 0.034170394097747074,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -124,7 +124,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.28640333863518735,
+  "reward": 0.2916034412646021,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -134,7 +134,7 @@
  {
   "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
-  "reward": 0.13155172918736827,
+  "reward": 0.1324987276195738,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
