@@ -2,7 +2,7 @@
  {
   "q": "Pete Hegseth out as Secretary of Defense by December 31?",
   "cid": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
-  "reward": 1.0389431541939518e-30,
+  "reward": 1.0562525242792451e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Alphabet be the third-largest company in the world by market cap on December 31?",
   "cid": "0xd3e48c21dfeeedf4ef53ce5a850223f851975a8766196696a07eef0ea68dabc8",
-  "reward": 0.08317179654657855,
+  "reward": 0.08405092062753283,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will exactly 2 Israeli legislative elections occur before a government is formed?",
   "cid": "0x61180c25be9fc889a459ca2e1aac1814421c0c7880836d01cdc2057d720249fa",
-  "reward": 0.045225227824239045,
+  "reward": 0.04619406580520163,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -53,7 +53,7 @@
  {
   "q": "Will Veda launch a token by June 30, 2027?",
   "cid": "0xa767ee78a6326ad344c3f900e306fbb10d92ceda200ee17edcf4f5cf24263ed0",
-  "reward": 0.05062241294142203,
+  "reward": 0.051799109661470236,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -69,7 +69,7 @@
  {
   "q": "Will Coventry City be relegated from the 2026-27 Premier League?",
   "cid": "0xb5ccec7b66d713656f8e259841d821b12191f844e9971dc338679fb0ebc000aa",
-  "reward": 0.060049635324379166,
+  "reward": 0.06150008434649918,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -79,7 +79,7 @@
  {
   "q": "Will Hylo launch a token by December 31, 2027?",
   "cid": "0x5d61eecf4b6cc2d78ab116ad3da932f97e845af303b1f73a570af2c084ea5f0e",
-  "reward": 0.037479986184352734,
+  "reward": 0.03775941018102562,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -89,7 +89,7 @@
  {
   "q": "Will Tung Tzu-wei win the next Keelung Mayor election?",
   "cid": "0xbc176a4fb3900b5eebee55b554477e84dbd98d5c0c4562fb7e2c34991e825190",
-  "reward": 0.08663503749450908,
+  "reward": 0.0867998021764453,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -115,7 +115,7 @@
  {
   "q": "Will Ukraine re-enter Obratne or Temyrivka by December 31?",
   "cid": "0x3867c954ccd50c147312a14025511270bcd264b755fa40e7e3ee20df3e2c81bb",
-  "reward": 4.284108584518594e-30,
+  "reward": 4.479277045874571e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -125,7 +125,7 @@
  {
   "q": "Will France pass a national budget by December 31?",
   "cid": "0x68ad245cb933f6f43524215e2c54af2049c7fd6d187d48b0e6880fe81f27064b",
-  "reward": 0.01805199730023092,
+  "reward": 0.018319410235554306,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -135,7 +135,7 @@
  {
   "q": "Will Darius Acuff Jr. win the 2026-27 NBA Rookie of the Year?",
   "cid": "0x9fdd044a58c60de1adfc85582c31852b3f34ba680270f0967fde73daf97c92eb",
-  "reward": 0.032902901309877816,
+  "reward": 0.03306123356311517,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -145,7 +145,7 @@
  {
   "q": "Will Gregor Kobel (Dortmund) record the most clean sheets in the 2026-27 Bundesliga season",
   "cid": "0xa8f432c2245de9cfd02ae60e86ed1b857ddb99d53331f27b0b2d4da33be05293",
-  "reward": 0.29867659548783826,
+  "reward": 0.30143571477446135,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
