@@ -2,7 +2,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.03507687364307781,
+  "reward": 0.041474460743423716,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -18,7 +18,7 @@
  {
   "q": "Will the Indiana Pacers make the 2027 NBA Playoffs?",
   "cid": "0x196ac0e0e7c901ef41c03865a7d2f894b6c89804d9e414597b64e9ae93c34a99",
-  "reward": 0.012946697490534452,
+  "reward": 0.013256080583691697,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -44,7 +44,7 @@
  {
   "q": "Will South Korea\u2019s 2026 Annual Inflation be between 2.7% and 2.9%?",
   "cid": "0x73991c82042b5b751e3d398b8793b4454c405eb82f9d0964bf8ad7740cd48b39",
-  "reward": 0.017404445057752637,
+  "reward": 0.01760061240759064,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -60,7 +60,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.061703061819311934,
+  "reward": 0.06304950934241896,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -90,7 +90,7 @@
  {
   "q": "Will Khalil Shakir have 849.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x818f13f94c138adbd6bbfe7ad758015346d10cf7ebaced4d1db6a44e8bdc268c",
-  "reward": 0.017298914309168554,
+  "reward": 0.01734917199754999,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -100,7 +100,7 @@
  {
   "q": "Hotstuff FDV above $50M one day after launch?",
   "cid": "0x14f1e2b95cfaa1b7ffff6201f1994a854da2bef6a831593c5de124746c28848c",
-  "reward": 0.017172754280342498,
+  "reward": 0.018144373947732235,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -142,7 +142,7 @@
  {
   "q": "Will AI-chip export licensing become law this year?",
   "cid": "0xc2a2b9fb879765ecec9e738cb07ce913c379449d6b046e50bce4f9625ddd2e30",
-  "reward": 0.05669302439622239,
+  "reward": 0.059674584494589164,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
