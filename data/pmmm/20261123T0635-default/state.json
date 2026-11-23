@@ -2,7 +2,7 @@
  {
   "q": "Will Lindsay Clancy be the #1 searched person on Google in the US this year?",
   "cid": "0x2579c53c318675bde886ceb1ad73605d293c27b6eb3b7d878481299d73af1765",
-  "reward": 0.005107036161852849,
+  "reward": 0.005634891861186238,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,12 +38,18 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.015814414484695716,
+  "reward": 0.016444297069013385,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795417692.2155926,
+    "kind": "pause",
+    "mid": 0.6555
+   }
+  ]
  },
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
@@ -96,7 +102,7 @@
  {
   "q": "Will Bournemouth qualify for the 2027-28 UEFA Champions League?",
   "cid": "0xeb7e4808807b9bd98848eb9934f14629a5f9857c931e7c438f0e31dbc034c29c",
-  "reward": 0.009586843368921785,
+  "reward": 0.012424035194652624,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -106,7 +112,7 @@
  {
   "q": "Howard Lutnick out as Secretary of Commerce by December 31?",
   "cid": "0x7978663d03b5c053dcea87b39e06fad5bcdd036b0c7febfa4309502c02f70c2c",
-  "reward": 0.01144947588322791,
+  "reward": 0.01245179697042076,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -116,7 +122,7 @@
  {
   "q": "Will the Carolina Panthers win more than 7.5 games in the 2026 NFL Regular Season?",
   "cid": "0x8b9168402c4f221fa94a8d05a4148bcbd2de5cff767ec89064794cc02958b1ac",
-  "reward": 0.004954950973459735,
+  "reward": 0.005754136614340336,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -126,7 +132,7 @@
  {
   "q": "Will Marco Rubio announce a presidential run before 2028?",
   "cid": "0xc7334a00bbf453be823706e28ab00fcc192b802db9fa52d0c6d8ecdec8050508",
-  "reward": 0.013023658320778836,
+  "reward": 0.01375298694526367,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -136,7 +142,7 @@
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.007376015991683941,
+  "reward": 0.008586524255335338,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
