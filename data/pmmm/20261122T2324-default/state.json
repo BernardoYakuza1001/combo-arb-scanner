@@ -2,7 +2,7 @@
  {
   "q": "Will San Francisco 49ers win the 2027 NFL NFC Championship?",
   "cid": "0x59925ff5a84e6eaebd1ed1c6dd776ed27264fd9c52ba99c7020c630f3f720f75",
-  "reward": 0.10096537954206669,
+  "reward": 0.10126975315342102,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -39,7 +39,7 @@
  {
   "q": "Will Denver Broncos win the 2026 AFC West?",
   "cid": "0xc157dcb7324b6956deb3e2275ea2c694d850abeabba1db750a7ec1d12a27895b",
-  "reward": 0.0692762038362069,
+  "reward": 0.06972068497314297,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -49,7 +49,7 @@
  {
   "q": "Will Rome Odunze have 999.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x299c73132f742a84f55b65d0ff814abf80a053ca9867aa7e3f591b774dc74d9e",
-  "reward": 9.395821289571575e-31,
+  "reward": 9.572845731445073e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -81,7 +81,7 @@
  {
   "q": "Will NVIDIA be the third-largest company in the world by market cap on December 31?",
   "cid": "0x2150a1cd14f1fd0aaf092f74bb38c4adc17c0e876e62b1a24f79f1ab66ad2871",
-  "reward": 0.08943723202929243,
+  "reward": 0.09006107093821072,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -97,7 +97,7 @@
  {
   "q": "Will Lamine Yamal (Barcelona) record the most assists in the 2026-27 La Liga season?",
   "cid": "0x64b772a4981d93f820e9b0d235048f228137bce594db995822eca75a3b87e116",
-  "reward": 0.2290690265006308,
+  "reward": 0.23030604489219111,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -123,7 +123,7 @@
  {
   "q": "Will Chelsea qualify for the 2027-28 UEFA Champions League?",
   "cid": "0xcd01f51450028f74919875c64b531b659afb7db17c5f27801a92321af5f208b4",
-  "reward": 0.01345943355409069,
+  "reward": 0.01370704744296623,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -133,7 +133,7 @@
  {
   "q": "Will Brock Purdy win the 2026 NFL MVP?",
   "cid": "0x6e6819aad914476a8d548452d962d51fa5e0444aead63f2b2b9169a8b028beb1",
-  "reward": 0.09260071814797785,
+  "reward": 0.09294779648523589,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -175,7 +175,7 @@
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.04871576690113021,
+  "reward": 0.04956182847614373,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
