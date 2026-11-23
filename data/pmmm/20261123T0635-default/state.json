@@ -2,7 +2,7 @@
  {
   "q": "Will Lindsay Clancy be the #1 searched person on Google in the US this year?",
   "cid": "0x2579c53c318675bde886ceb1ad73605d293c27b6eb3b7d878481299d73af1765",
-  "reward": 0.03810802272808736,
+  "reward": 0.038915645711169004,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will exactly 2 Israeli legislative elections occur before a government is formed?",
   "cid": "0x61180c25be9fc889a459ca2e1aac1814421c0c7880836d01cdc2057d720249fa",
-  "reward": 0.046810377104875935,
+  "reward": 0.04838513545599313,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -137,7 +137,7 @@
  {
   "q": "Will Bournemouth qualify for the 2027-28 UEFA Champions League?",
   "cid": "0xeb7e4808807b9bd98848eb9934f14629a5f9857c931e7c438f0e31dbc034c29c",
-  "reward": 0.08952086349381634,
+  "reward": 0.09098978233122605,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -147,7 +147,7 @@
  {
   "q": "Howard Lutnick out as Secretary of Commerce by December 31?",
   "cid": "0x7978663d03b5c053dcea87b39e06fad5bcdd036b0c7febfa4309502c02f70c2c",
-  "reward": 0.02946342859093824,
+  "reward": 0.029896991791977738,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -157,7 +157,7 @@
  {
   "q": "Will the Carolina Panthers win more than 7.5 games in the 2026 NFL Regular Season?",
   "cid": "0x8b9168402c4f221fa94a8d05a4148bcbd2de5cff767ec89064794cc02958b1ac",
-  "reward": 0.053627689831404715,
+  "reward": 0.054631248997923404,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -167,7 +167,7 @@
  {
   "q": "Will Marco Rubio announce a presidential run before 2028?",
   "cid": "0xc7334a00bbf453be823706e28ab00fcc192b802db9fa52d0c6d8ecdec8050508",
-  "reward": 0.08372704169910546,
+  "reward": 0.08530117776754077,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -177,7 +177,7 @@
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.06799709083602523,
+  "reward": 0.06933550927832115,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
