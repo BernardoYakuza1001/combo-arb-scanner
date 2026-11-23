@@ -2,7 +2,7 @@
  {
   "q": "Will Lindsay Clancy be the #1 searched person on Google in the US this year?",
   "cid": "0x2579c53c318675bde886ceb1ad73605d293c27b6eb3b7d878481299d73af1765",
-  "reward": 0.001267993315913309,
+  "reward": 0.0021111081686890276,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will exactly 2 Israeli legislative elections occur before a government is formed?",
   "cid": "0x61180c25be9fc889a459ca2e1aac1814421c0c7880836d01cdc2057d720249fa",
-  "reward": 0.0,
+  "reward": 0.0010761631299232206,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.004744347719927484,
+  "reward": 0.0070065712756396895,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Raphinha (Barcelona) be the top goalscorer of the 2026-27 La Liga season?",
   "cid": "0xf7f6a6f4ab3cc50605afee95577cb4fe3a0eabcb4e488e2a9774b7607d42b24d",
-  "reward": 0.004267650415229991,
+  "reward": 0.006965588614859175,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +52,7 @@
  {
   "q": "Hotstuff FDV above $50M one day after launch?",
   "cid": "0x14f1e2b95cfaa1b7ffff6201f1994a854da2bef6a831593c5de124746c28848c",
-  "reward": 0.0005396196258904973,
+  "reward": 0.001451861143317279,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,17 +62,23 @@
  {
   "q": "Will QFEX launch a token by December 31, 2027?",
   "cid": "0x607ba0bd045f4c66dea658dcbeb71b9e0e3e8cd602024346240f6cd40f9db248",
-  "reward": 0.0008277387854745342,
+  "reward": 0.0011036517139660456,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795416237.202653,
+    "kind": "pause",
+    "mid": 0.425
+   }
+  ]
  },
  {
   "q": "Will Bournemouth qualify for the 2027-28 UEFA Champions League?",
   "cid": "0xeb7e4808807b9bd98848eb9934f14629a5f9857c931e7c438f0e31dbc034c29c",
-  "reward": 0.001855518071404216,
+  "reward": 0.00340178313090773,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +88,7 @@
  {
   "q": "Howard Lutnick out as Secretary of Commerce by December 31?",
   "cid": "0x7978663d03b5c053dcea87b39e06fad5bcdd036b0c7febfa4309502c02f70c2c",
-  "reward": 0.0023968805346789475,
+  "reward": 0.004290222566471557,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -92,7 +98,7 @@
  {
   "q": "Will the Carolina Panthers win more than 7.5 games in the 2026 NFL Regular Season?",
   "cid": "0x8b9168402c4f221fa94a8d05a4148bcbd2de5cff767ec89064794cc02958b1ac",
-  "reward": 0.0009590227690567228,
+  "reward": 0.0017582084099373252,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -102,7 +108,7 @@
  {
   "q": "Will Marco Rubio announce a presidential run before 2028?",
   "cid": "0xc7334a00bbf453be823706e28ab00fcc192b802db9fa52d0c6d8ecdec8050508",
-  "reward": 0.0021232305504907093,
+  "reward": 0.0047046150329190265,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -112,7 +118,7 @@
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.001452589913307431,
+  "reward": 0.0026630815077302904,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
