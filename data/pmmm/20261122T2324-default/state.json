@@ -23,7 +23,7 @@
  {
   "q": "Will Data center utility cost protection become law this year?",
   "cid": "0xbcf92dd69e289a4bce83a086363bc7deeae3f8d3f0370e8f4b02cffdc7ac8b7e",
-  "reward": 0.12805092392833298,
+  "reward": 0.1316307285146511,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -33,7 +33,7 @@
  {
   "q": "Will Denver Broncos win the 2026 AFC West?",
   "cid": "0xc157dcb7324b6956deb3e2275ea2c694d850abeabba1db750a7ec1d12a27895b",
-  "reward": 0.059544787618015814,
+  "reward": 0.060145911597836915,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -43,7 +43,7 @@
  {
   "q": "Will Rome Odunze have 999.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0x299c73132f742a84f55b65d0ff814abf80a053ca9867aa7e3f591b774dc74d9e",
-  "reward": 6.248517845510022e-31,
+  "reward": 6.494724452098089e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -75,7 +75,7 @@
  {
   "q": "Will NVIDIA be the third-largest company in the world by market cap on December 31?",
   "cid": "0x2150a1cd14f1fd0aaf092f74bb38c4adc17c0e876e62b1a24f79f1ab66ad2871",
-  "reward": 0.07678116284705006,
+  "reward": 0.0775519996400203,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -91,7 +91,7 @@
  {
   "q": "Will Lamine Yamal (Barcelona) record the most assists in the 2026-27 La Liga season?",
   "cid": "0x64b772a4981d93f820e9b0d235048f228137bce594db995822eca75a3b87e116",
-  "reward": 0.20492598992887617,
+  "reward": 0.20676974087540612,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -101,7 +101,7 @@
  {
   "q": "Will David Montgomery have 9.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0xb10cb91b7b5ae804b7bd93769b5cc789b8f242ae606033d65f7950943fbdba04",
-  "reward": 0.0038868116437032335,
+  "reward": 0.005074478803757678,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -117,7 +117,7 @@
  {
   "q": "Will Chelsea qualify for the 2027-28 UEFA Champions League?",
   "cid": "0xcd01f51450028f74919875c64b531b659afb7db17c5f27801a92321af5f208b4",
-  "reward": 0.008950335402164958,
+  "reward": 0.009162367532276667,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -127,7 +127,7 @@
  {
   "q": "Will Brock Purdy win the 2026 NFL MVP?",
   "cid": "0x6e6819aad914476a8d548452d962d51fa5e0444aead63f2b2b9169a8b028beb1",
-  "reward": 0.08566624493545087,
+  "reward": 0.08599103349366084,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -143,7 +143,7 @@
  {
   "q": "Will QFEX launch a token by December 31, 2027?",
   "cid": "0x607ba0bd045f4c66dea658dcbeb71b9e0e3e8cd602024346240f6cd40f9db248",
-  "reward": 0.0034293098548196605,
+  "reward": 0.0037374658493483977,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -158,13 +158,18 @@
     "ts": 1795402381.0730007,
     "kind": "pause",
     "mid": 0.45999999999999996
+   },
+   {
+    "ts": 1795406266.1055288,
+    "kind": "pause",
+    "mid": 0.46499999999999997
    }
   ]
  },
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.03367865099369744,
+  "reward": 0.03478421683052904,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
