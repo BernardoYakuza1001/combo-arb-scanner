@@ -2,7 +2,7 @@
  {
   "q": "Will the US break its record for billion-dollar weather and climate disasters in 2026?",
   "cid": "0xb3edb13c284cae7fd11e1dd5554a82472fcc8ea30b1720799581c6aa606c4823",
-  "reward": 0.040973528218349584,
+  "reward": 0.04379922114953505,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Hyperliquid hit $100 by December 31, 2027?",
   "cid": "0xbfdfa41e7125283bf40a1fe69a2042f922902bbb965c83b0ce9e15efddc8a363",
-  "reward": 0.066111337344523,
+  "reward": 0.0700596759879212,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Hylo launch a token by December 31, 2027?",
   "cid": "0x5d61eecf4b6cc2d78ab116ad3da932f97e845af303b1f73a570af2c084ea5f0e",
-  "reward": 0.010963986776394104,
+  "reward": 0.01285432932404826,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Will Erling Haaland (Man City) be the top goalscorer of the 2026-27 Premier League season?",
   "cid": "0x8efaed82785c1d4413e1575c13dc41968bf06d69a56ed2c5d88d44fc65915280",
-  "reward": 0.03183971339254788,
+  "reward": 0.03548263098570224,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -54,7 +54,7 @@
  {
   "q": "Will Hyperliquid hit $100 by September 30, 2027?",
   "cid": "0xa79e655fab0c7fbf5143b44ac59da165b7a65d77070fd7ab40ee0b8e2fd20c38",
-  "reward": 0.041961294624241106,
+  "reward": 0.04367047539433861,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -80,7 +80,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.06485187591093974,
+  "reward": 0.06773954991151097,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -106,7 +106,7 @@
  {
   "q": "Will Exponent launch a token by December 31, 2027?",
   "cid": "0x98d54453621129d07bfda4840fb6aa59f98fd90663e7fa5ab4541b7ed21da642",
-  "reward": 4.100659867859387e-31,
+  "reward": 4.325970849609902e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -116,7 +116,7 @@
  {
   "q": "Will the Ornn H100 Index be between $3.00 and $3.50 on December 31, 2026?",
   "cid": "0xbe183fe03c96a338852d8c89be28d8d42b2ba1d45410cdb8054d0137ba7b787c",
-  "reward": 0.06942803025108298,
+  "reward": 0.07250929588278217,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
