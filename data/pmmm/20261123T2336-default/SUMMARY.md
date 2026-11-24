@@ -1,21 +1,21 @@
-# PMMM paper run — 2026-11-23 23:37 UTC, 1.42 h
+# PMMM paper run — 2026-11-23 23:37 UTC, 1.50 h
 
 10 markets, $200 each ($2,000 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.31  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.31**
-Per day at this pace: rewards $5.24, net $+5.24
+**Rewards accrued: $0.33  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.33**
+Per day at this pace: rewards $5.25, net $+5.25
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.31, per day $+5.24. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.33, per day $+5.25. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will the Ornn H100 Index be between $3.00 and $3.50 on Decem](https://polymarket.com/market/will-the-ornn-h100-index-be-between-3pt00-and-3pt50-on-december-31-2026-20260709164334628) | 3 | 0.302 | 37.0% | 86/86 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Hyperliquid hit $100 by December 31, 2027?](https://polymarket.com/market/will-hyperliquid-hit-100-by-december-31-2027) | 5 | 0.451 | 21.6% | 84/86 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Solana hit $60 or $140 first?](https://polymarket.com/market/will-solana-hit-60-or-140-first) | 5 | 0.646 | 20.9% | 86/86 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Hyperliquid hit $100 by September 30, 2027?](https://polymarket.com/market/will-hyperliquid-hit-100-by-september-30-2027) | 5 | 0.465 | 14.2% | 81/86 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (3) / 3 / +2.0c |
-| [Will the US break its record for billion-dollar weather and ](https://polymarket.com/market/will-the-us-break-its-record-for-billion-dollar-weather-and-climate-disasters-in-2026-1787153419673) | 5 | 0.17 | 16.9% | 65/86 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Erling Haaland (Man City) be the top goalscorer of the ](https://polymarket.com/market/will-erling-haaland-man-city-be-the-top-goalscorer-of-the-2026-27-premier-league-season) | 12 | 0.52 | 8.6% | 39/86 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 1 (0) / 1 / +2.0c |
-| [Will Hylo launch a token by December 31, 2027?](https://polymarket.com/market/will-hylo-launch-a-token-by-december-31-2027) | 3 | 0.545 | 18.1% | 24/86 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will 2026 rank between 7th and 9th among the highest domesti](https://polymarket.com/market/will-2026-rank-between-7th-and-9th-among-the-highest-domestic-box-office-years-20260807033449403) | 6 | 0.57 | 12.5% | 4/86 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 5 (5) / 5 / - |
-| [Will Exponent launch a token by December 31, 2027?](https://polymarket.com/market/will-exponent-launch-a-token-by-december-31-2027) | 3 | 0.455 | 0.0% | 86/86 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Ukraine re-enter Obratne or Temyrivka by December 31?](https://polymarket.com/market/will-ukraine-re-enter-obratne-or-temyrivka-by-december-31-973) | 4 | 0.115 | 0.0% | 0/86 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will the Ornn H100 Index be between $3.00 and $3.50 on Decem](https://polymarket.com/market/will-the-ornn-h100-index-be-between-3pt00-and-3pt50-on-december-31-2026-20260709164334628) | 3 | 0.302 | 36.6% | 91/91 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Hyperliquid hit $100 by December 31, 2027?](https://polymarket.com/market/will-hyperliquid-hit-100-by-december-31-2027) | 5 | 0.451 | 21.4% | 89/91 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Solana hit $60 or $140 first?](https://polymarket.com/market/will-solana-hit-60-or-140-first) | 5 | 0.645 | 20.5% | 91/91 | 0.06 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Hyperliquid hit $100 by September 30, 2027?](https://polymarket.com/market/will-hyperliquid-hit-100-by-september-30-2027) | 5 | 0.465 | 14.1% | 86/91 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (3) / 3 / +2.0c |
+| [Will the US break its record for billion-dollar weather and ](https://polymarket.com/market/will-the-us-break-its-record-for-billion-dollar-weather-and-climate-disasters-in-2026-1787153419673) | 5 | 0.17 | 16.9% | 70/91 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Erling Haaland (Man City) be the top goalscorer of the ](https://polymarket.com/market/will-erling-haaland-man-city-be-the-top-goalscorer-of-the-2026-27-premier-league-season) | 12 | 0.52 | 8.7% | 44/91 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 1 (0) / 1 / +2.0c |
+| [Will Hylo launch a token by December 31, 2027?](https://polymarket.com/market/will-hylo-launch-a-token-by-december-31-2027) | 3 | 0.545 | 18.1% | 29/91 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will 2026 rank between 7th and 9th among the highest domesti](https://polymarket.com/market/will-2026-rank-between-7th-and-9th-among-the-highest-domestic-box-office-years-20260807033449403) | 6 | 0.565 | 12.5% | 4/91 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 5 (5) / 5 / - |
+| [Will Exponent launch a token by December 31, 2027?](https://polymarket.com/market/will-exponent-launch-a-token-by-december-31-2027) | 3 | 0.455 | 0.0% | 91/91 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Ukraine re-enter Obratne or Temyrivka by December 31?](https://polymarket.com/market/will-ukraine-re-enter-obratne-or-temyrivka-by-december-31-973) | 4 | 0.16 | 0.0% | 0/91 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
