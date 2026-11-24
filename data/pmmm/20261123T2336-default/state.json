@@ -2,7 +2,7 @@
  {
   "q": "Will the US break its record for billion-dollar weather and climate disasters in 2026?",
   "cid": "0xb3edb13c284cae7fd11e1dd5554a82472fcc8ea30b1720799581c6aa606c4823",
-  "reward": 0.018143509615889952,
+  "reward": 0.021169681836253382,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Hyperliquid hit $100 by December 31, 2027?",
   "cid": "0xbfdfa41e7125283bf40a1fe69a2042f922902bbb965c83b0ce9e15efddc8a363",
-  "reward": 0.03917195644384768,
+  "reward": 0.04284555018403725,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -54,7 +54,7 @@
  {
   "q": "Will Hyperliquid hit $100 by September 30, 2027?",
   "cid": "0xa79e655fab0c7fbf5143b44ac59da165b7a65d77070fd7ab40ee0b8e2fd20c38",
-  "reward": 0.018699066429830713,
+  "reward": 0.021608512485943063,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -80,7 +80,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.04067467985912425,
+  "reward": 0.04393941574623539,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -106,7 +106,7 @@
  {
   "q": "Will Exponent launch a token by December 31, 2027?",
   "cid": "0x98d54453621129d07bfda4840fb6aa59f98fd90663e7fa5ab4541b7ed21da642",
-  "reward": 2.2981720138552646e-31,
+  "reward": 2.52348299560578e-31,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -116,7 +116,7 @@
  {
   "q": "Will the Ornn H100 Index be between $3.00 and $3.50 on December 31, 2026?",
   "cid": "0xbe183fe03c96a338852d8c89be28d8d42b2ba1d45410cdb8054d0137ba7b787c",
-  "reward": 0.04406651883018162,
+  "reward": 0.04732748816098443,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
