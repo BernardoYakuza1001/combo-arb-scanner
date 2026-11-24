@@ -2,7 +2,7 @@
  {
   "q": "Will Tee Higgins have 12.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x20ecfec487edab24de8b86feb5d21e8088e49e92ce0bfa05eeb03e38bb060c2a",
-  "reward": 0.2417750122827846,
+  "reward": 0.2453519878732468,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Davante Adams have 574.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xc9ddced1ce7a76eb4e1519fc8686866f7b84f61aa57d210ecfa085d96ae06350",
-  "reward": 0.07828580983481767,
+  "reward": 0.07885189185026885,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will SK Artis Brno be relegated from the 2026-27 Chance Liga (Czechia)?",
   "cid": "0x67a3e203605ea80ae0c79780922b54f89d14136372aefa150439857622b2ca54",
-  "reward": 0.03100113864362562,
+  "reward": 0.03164295700243933,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -53,7 +53,7 @@
  {
   "q": "Will Manchester City qualify for the 2027-28 UEFA Champions League?",
   "cid": "0x168a225dc9204fbe77df7edee70569c64b73808e5226b79ae6efb38fdaaa14e1",
-  "reward": 0.06919558925706368,
+  "reward": 0.07072569236286788,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -63,7 +63,7 @@
  {
   "q": "Will Ukraine re-enter Obratne or Temyrivka by December 31?",
   "cid": "0x3867c954ccd50c147312a14025511270bcd264b755fa40e7e3ee20df3e2c81bb",
-  "reward": 6.870884703959423e-30,
+  "reward": 7.03745160587359e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -95,7 +95,7 @@
  {
   "q": "Multipli.fi FDV above $100M one day after launch?",
   "cid": "0x3fc4f98c9adfd0df4f8014cae08539c0f1a245e031f7b869b6f10323e530134e",
-  "reward": 0.020271325067652186,
+  "reward": 0.020518342868415144,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
