@@ -2,7 +2,7 @@
  {
   "q": "Will Tee Higgins have 12.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x20ecfec487edab24de8b86feb5d21e8088e49e92ce0bfa05eeb03e38bb060c2a",
-  "reward": 0.009216914554551817,
+  "reward": 0.013085930948423767,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Davante Adams have 574.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xc9ddced1ce7a76eb4e1519fc8686866f7b84f61aa57d210ecfa085d96ae06350",
-  "reward": 0.004030220374291127,
+  "reward": 0.006219781138180061,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Mexico\u2019s 2026 Annual Inflation be between 3.50% and 3.99%?",
   "cid": "0x96e9ee9536dc0419d4b5ac0075c2d6ea3b8405687ee1bc2152c575b1cddb8cd5",
-  "reward": 0.004219220132626421,
+  "reward": 0.005080342913387029,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Manchester City qualify for the 2027-28 UEFA Champions League?",
   "cid": "0x168a225dc9204fbe77df7edee70569c64b73808e5226b79ae6efb38fdaaa14e1",
-  "reward": 0.0014528303822379709,
+  "reward": 0.0015639308440882215,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +68,7 @@
  {
   "q": "Will Erling Haaland (Man City) be the top goalscorer of the 2026-27 Premier League season?",
   "cid": "0x8efaed82785c1d4413e1575c13dc41968bf06d69a56ed2c5d88d44fc65915280",
-  "reward": 0.0007973049642824184,
+  "reward": 0.0011569618681701557,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -83,6 +83,12 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795511878.3807611,
+    "kind": "pause",
+    "mid": 0.59
+   }
+  ]
  }
 ]
