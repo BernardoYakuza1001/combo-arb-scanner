@@ -2,7 +2,7 @@
  {
   "q": "Will Tee Higgins have 12.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x20ecfec487edab24de8b86feb5d21e8088e49e92ce0bfa05eeb03e38bb060c2a",
-  "reward": 0.18765861086774097,
+  "reward": 0.18965656365523637,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Davante Adams have 574.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xc9ddced1ce7a76eb4e1519fc8686866f7b84f61aa57d210ecfa085d96ae06350",
-  "reward": 0.06495371410290875,
+  "reward": 0.06576164446326802,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will SK Artis Brno be relegated from the 2026-27 Chance Liga (Czechia)?",
   "cid": "0x67a3e203605ea80ae0c79780922b54f89d14136372aefa150439857622b2ca54",
-  "reward": 0.021047719832315476,
+  "reward": 0.021593581686707847,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Will Manchester City qualify for the 2027-28 UEFA Champions League?",
   "cid": "0x168a225dc9204fbe77df7edee70569c64b73808e5226b79ae6efb38fdaaa14e1",
-  "reward": 0.053281405787472896,
+  "reward": 0.05341892406232669,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +58,7 @@
  {
   "q": "Will Ukraine re-enter Obratne or Temyrivka by December 31?",
   "cid": "0x3867c954ccd50c147312a14025511270bcd264b755fa40e7e3ee20df3e2c81bb",
-  "reward": 3.539546665676066e-30,
+  "reward": 3.747755293068776e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -74,7 +74,7 @@
  {
   "q": "Will Erling Haaland (Man City) be the top goalscorer of the 2026-27 Premier League season?",
   "cid": "0x8efaed82785c1d4413e1575c13dc41968bf06d69a56ed2c5d88d44fc65915280",
-  "reward": 0.06267155842717438,
+  "reward": 0.06496122828872918,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -90,7 +90,7 @@
  {
   "q": "Multipli.fi FDV above $100M one day after launch?",
   "cid": "0x3fc4f98c9adfd0df4f8014cae08539c0f1a245e031f7b869b6f10323e530134e",
-  "reward": 0.015436910368910534,
+  "reward": 0.015745682619864226,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
