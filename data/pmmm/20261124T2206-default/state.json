@@ -2,7 +2,7 @@
  {
   "q": "Will Lindsay Clancy be the #1 searched person on Google this year?",
   "cid": "0x4350034be066b7f44fcec5f1c89fdcc0f9e0a0f34add9f563715ae1515d75b03",
-  "reward": 0.14393628136952832,
+  "reward": 0.15271225522845616,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -28,7 +28,7 @@
  {
   "q": "Will Tee Higgins have 12.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x20ecfec487edab24de8b86feb5d21e8088e49e92ce0bfa05eeb03e38bb060c2a",
-  "reward": 0.05619036248818587,
+  "reward": 0.058133499401249546,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Hotstuff FDV above $150M one day after launch?",
   "cid": "0x5df67cadc8106cc2dd03e9625dc145772138fe50c60f8fffa62233c617ff0449",
-  "reward": 0.012419627097246335,
+  "reward": 0.012708370608724321,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -84,7 +84,7 @@
  {
   "q": "Will Derrick Henry have 16.5+ rushing touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x2c34fd88803bfe0ef1213d7dcca41b58bd7343daffc710ef570061761ffa91b3",
-  "reward": 0.027571527684219745,
+  "reward": 0.029496759213458894,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
