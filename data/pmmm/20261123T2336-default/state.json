@@ -12,7 +12,7 @@
  {
   "q": "Will Hyperliquid hit $100 by December 31, 2027?",
   "cid": "0xbfdfa41e7125283bf40a1fe69a2042f922902bbb965c83b0ce9e15efddc8a363",
-  "reward": 0.012280156568800967,
+  "reward": 0.016350276935559904,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -38,7 +38,7 @@
  {
   "q": "Will Erling Haaland (Man City) be the top goalscorer of the 2026-27 Premier League season?",
   "cid": "0x8efaed82785c1d4413e1575c13dc41968bf06d69a56ed2c5d88d44fc65915280",
-  "reward": 0.0007635474628205573,
+  "reward": 0.0015840861899797162,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Will Hyperliquid hit $100 by September 30, 2027?",
   "cid": "0xa79e655fab0c7fbf5143b44ac59da165b7a65d77070fd7ab40ee0b8e2fd20c38",
-  "reward": 0.004561817506211838,
+  "reward": 0.006824114707426997,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -74,7 +74,7 @@
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.01980680511188097,
+  "reward": 0.023592706751274513,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -100,7 +100,7 @@
  {
   "q": "Will Exponent launch a token by December 31, 2027?",
   "cid": "0x98d54453621129d07bfda4840fb6aa59f98fd90663e7fa5ab4541b7ed21da642",
-  "reward": 7.209951416016521e-32,
+  "reward": 9.463061233521685e-32,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -110,7 +110,7 @@
  {
   "q": "Will the Ornn H100 Index be between $3.00 and $3.50 on December 31, 2026?",
   "cid": "0xbe183fe03c96a338852d8c89be28d8d42b2ba1d45410cdb8054d0137ba7b787c",
-  "reward": 0.015311601530390176,
+  "reward": 0.02006891952761078,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
