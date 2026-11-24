@@ -2,7 +2,7 @@
  {
   "q": "Will the US break its record for billion-dollar weather and climate disasters in 2026?",
   "cid": "0xb3edb13c284cae7fd11e1dd5554a82472fcc8ea30b1720799581c6aa606c4823",
-  "reward": 0.18062007129148883,
+  "reward": 0.1840992682064816,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Hyperliquid hit $100 by December 31, 2027?",
   "cid": "0xbfdfa41e7125283bf40a1fe69a2042f922902bbb965c83b0ce9e15efddc8a363",
-  "reward": 0.11223921255441739,
+  "reward": 0.11294847914921137,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +48,7 @@
  {
   "q": "Will Erling Haaland (Man City) be the top goalscorer of the 2026-27 Premier League season?",
   "cid": "0x8efaed82785c1d4413e1575c13dc41968bf06d69a56ed2c5d88d44fc65915280",
-  "reward": 0.18018125387509648,
+  "reward": 0.18527943246077533,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -64,7 +64,7 @@
  {
   "q": "Will Hyperliquid hit $100 by September 30, 2027?",
   "cid": "0xa79e655fab0c7fbf5143b44ac59da165b7a65d77070fd7ab40ee0b8e2fd20c38",
-  "reward": 0.10093859199861605,
+  "reward": 0.10247966875466366,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -80,7 +80,7 @@
  {
   "q": "Will 2026 rank between 7th and 9th among the highest domestic box office years?",
   "cid": "0x622aeb89ecf5cd1391fc2ce6ad274093183a0c67fc07af9ababf1175dfcb3324",
-  "reward": 0.04688918019088723,
+  "reward": 0.047640830465910694,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -105,13 +105,18 @@
     "ts": 1795493061.401964,
     "kind": "pause",
     "mid": 0.615
+   },
+   {
+    "ts": 1795496256.4258173,
+    "kind": "pause",
+    "mid": 0.575
    }
   ]
  },
  {
   "q": "Will Solana hit $60 or $140 first?",
   "cid": "0xe3d0a05304ed0f7e0689a93b0531a1c100d715df9c74549063c98980d2c1a407",
-  "reward": 0.3137033525602741,
+  "reward": 0.3218495638325585,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -137,7 +142,7 @@
  {
   "q": "Will Exponent launch a token by December 31, 2027?",
   "cid": "0x98d54453621129d07bfda4840fb6aa59f98fd90663e7fa5ab4541b7ed21da642",
-  "reward": 1.4239654046632573e-30,
+  "reward": 1.4464965028383088e-30,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -147,7 +152,7 @@
  {
   "q": "Will the Ornn H100 Index be between $3.00 and $3.50 on December 31, 2026?",
   "cid": "0xbe183fe03c96a338852d8c89be28d8d42b2ba1d45410cdb8054d0137ba7b787c",
-  "reward": 0.20992792531605206,
+  "reward": 0.21285896745852914,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
