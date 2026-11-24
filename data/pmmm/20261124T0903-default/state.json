@@ -2,7 +2,7 @@
  {
   "q": "Will Tee Higgins have 12.5+ receiving touchdowns in the 2026-27 NFL regular season?",
   "cid": "0x20ecfec487edab24de8b86feb5d21e8088e49e92ce0bfa05eeb03e38bb060c2a",
-  "reward": 0.14302570554679717,
+  "reward": 0.14732198855358686,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Davante Adams have 574.5+ receiving yards in the 2026-27 NFL regular season?",
   "cid": "0xc9ddced1ce7a76eb4e1519fc8686866f7b84f61aa57d210ecfa085d96ae06350",
-  "reward": 0.050312320653680256,
+  "reward": 0.05112025101403956,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will SK Artis Brno be relegated from the 2026-27 Chance Liga (Czechia)?",
   "cid": "0x67a3e203605ea80ae0c79780922b54f89d14136372aefa150439857622b2ca54",
-  "reward": 0.009874942962278564,
+  "reward": 0.010720997751427682,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -37,12 +37,18 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795521343.4637208,
+    "kind": "pause",
+    "mid": 0.507
+   }
+  ]
  },
  {
   "q": "Will Manchester City qualify for the 2027-28 UEFA Champions League?",
   "cid": "0x168a225dc9204fbe77df7edee70569c64b73808e5226b79ae6efb38fdaaa14e1",
-  "reward": 0.028322561042978686,
+  "reward": 0.030145159814510786,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -68,7 +74,7 @@
  {
   "q": "Will Erling Haaland (Man City) be the top goalscorer of the 2026-27 Premier League season?",
   "cid": "0x8efaed82785c1d4413e1575c13dc41968bf06d69a56ed2c5d88d44fc65915280",
-  "reward": 0.03246592147951826,
+  "reward": 0.033474522006779285,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -78,7 +84,7 @@
  {
   "q": "Multipli.fi FDV above $100M one day after launch?",
   "cid": "0x3fc4f98c9adfd0df4f8014cae08539c0f1a245e031f7b869b6f10323e530134e",
-  "reward": 0.010885012376578327,
+  "reward": 0.01110120472403552,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
