@@ -1,19 +1,19 @@
-# PMMM paper run — 2026-11-24 09:05 UTC, 3.08 h
+# PMMM paper run — 2026-11-24 09:05 UTC, 3.17 h
 
 8 markets, $200 each ($1,600 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.34  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.34**
-Per day at this pace: rewards $2.68, net $+2.68
+**Rewards accrued: $0.35  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.35**
+Per day at this pace: rewards $2.67, net $+2.67
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.34, per day $+2.68. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.35, per day $+2.67. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Tee Higgins have 12.5+ receiving touchdowns in the 2026](https://polymarket.com/market/tee-higgins-12pt5-receiving-touchdowns-2026-27) | 4 | 0.211 | 34.3% | 186/186 | 0.16 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Davante Adams have 574.5+ receiving yards in the 2026-2](https://polymarket.com/market/davante-adams-574pt5-receiving-yards-2026-27) | 4 | 0.787 | 12.3% | 177/186 | 0.05 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Mexico’s 2026 Annual Inflation be between 3.50% and 3.9](https://polymarket.com/market/will-mexicos-2026-annual-inflation-be-between-3pt50-and-3pt99) | 5 | 0.454 | 7.3% | 171/186 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 9 (3) / 8 / - |
-| [Will Erling Haaland (Man City) be the top goalscorer of the ](https://polymarket.com/market/will-erling-haaland-man-city-be-the-top-goalscorer-of-the-2026-27-premier-league-season) | 12 | 0.52 | 2.3% | 186/186 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Manchester City qualify for the 2027-28 UEFA Champions ](https://polymarket.com/market/will-manchester-city-qualify-for-the-2027-28-uefa-champions-league) | 4 | 0.32 | 11.6% | 120/186 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (2) / 3 / +3.0c |
-| [Will SK Artis Brno be relegated from the 2026-27 Chance Liga](https://polymarket.com/market/will-sk-artis-brno-be-relegated-from-chance-liga-czechia-2026-27) | 4 | 0.18 | 5.6% | 90/186 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Multipli.fi FDV above $100M one day after launch?](https://polymarket.com/market/multiplifi-fdv-above-100m-one-day-after-launch) | 3 | 0.64 | 6.5% | 86/186 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
-| [Will Ukraine re-enter Obratne or Temyrivka by December 31?](https://polymarket.com/market/will-ukraine-re-enter-obratne-or-temyrivka-by-december-31-973) | 4 | 0.155 | 0.0% | 10/186 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Tee Higgins have 12.5+ receiving touchdowns in the 2026](https://polymarket.com/market/tee-higgins-12pt5-receiving-touchdowns-2026-27) | 4 | 0.211 | 34.2% | 190/191 | 0.16 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Davante Adams have 574.5+ receiving yards in the 2026-2](https://polymarket.com/market/davante-adams-574pt5-receiving-yards-2026-27) | 4 | 0.787 | 12.1% | 182/191 | 0.05 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Mexico’s 2026 Annual Inflation be between 3.50% and 3.9](https://polymarket.com/market/will-mexicos-2026-annual-inflation-be-between-3pt50-and-3pt99) | 5 | 0.454 | 7.3% | 171/191 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 16 (3) / 15 / - |
+| [Will Erling Haaland (Man City) be the top goalscorer of the ](https://polymarket.com/market/will-erling-haaland-man-city-be-the-top-goalscorer-of-the-2026-27-premier-league-season) | 12 | 0.52 | 2.3% | 191/191 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Manchester City qualify for the 2027-28 UEFA Champions ](https://polymarket.com/market/will-manchester-city-qualify-for-the-2027-28-uefa-champions-league) | 4 | 0.32 | 11.7% | 125/191 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (2) / 3 / +3.0c |
+| [Will SK Artis Brno be relegated from the 2026-27 Chance Liga](https://polymarket.com/market/will-sk-artis-brno-be-relegated-from-chance-liga-czechia-2026-27) | 4 | 0.18 | 5.6% | 95/191 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Multipli.fi FDV above $100M one day after launch?](https://polymarket.com/market/multiplifi-fdv-above-100m-one-day-after-launch) | 3 | 0.64 | 6.2% | 91/191 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will Ukraine re-enter Obratne or Temyrivka by December 31?](https://polymarket.com/market/will-ukraine-re-enter-obratne-or-temyrivka-by-december-31-973) | 4 | 0.155 | 0.0% | 15/191 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
