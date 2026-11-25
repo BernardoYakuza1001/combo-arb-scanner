@@ -2,7 +2,7 @@
  {
   "q": "Extended FDV above $150M one day after launch?",
   "cid": "0x45514e0fcd922a740e67ab064a9042d3e964006712f9540947808ae82067ed23",
-  "reward": 0.0554206393035689,
+  "reward": 0.06047482696556616,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will China's annual inflation in 2026 be between 0.1% and 0.5%?",
   "cid": "0x0643a9edd0e8b0dbe0e471371818f5c61a84949ae1e3fc72c8e4572be3a0fe3c",
-  "reward": 0.047887267470782396,
+  "reward": 0.05272644901555087,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Bruno Retailleau be on the ballot for the 2027 French presidential election?",
   "cid": "0x3a00d0d616d344c8cb25209a1df1ff01aa99bcbd7cecf13926959357c8b95223",
-  "reward": 0.021763249864009303,
+  "reward": 0.02481525154185226,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +62,7 @@
  {
   "q": "Extended FDV above $300M one day after launch?",
   "cid": "0xcc59c2569d30b4b86993f3ff17bb900fffc56e7d98f1a5b02793fc9c133db99a",
-  "reward": 0.02261893789797072,
+  "reward": 0.025972636936097408,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
