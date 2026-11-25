@@ -1,18 +1,18 @@
-# PMMM paper run — 2026-11-25 21:23 UTC, 1.08 h
+# PMMM paper run — 2026-11-25 21:23 UTC, 1.17 h
 
 7 markets, $200 each ($1,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.23  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.23**
-Per day at this pace: rewards $4.99, net $+4.99
+**Rewards accrued: $0.24  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.24**
+Per day at this pace: rewards $4.94, net $+4.94
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.23, per day $+4.99. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.24, per day $+4.94. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Extended FDV above $150M one day after launch?](https://polymarket.com/market/extended-fdv-above-150m-one-day-after-launch-452) | 50 | 0.465 | 3.5% | 66/66 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / +2.0c |
-| [Will China's annual inflation in 2026 be between 0.1% and 0.](https://polymarket.com/market/will-chinas-annual-inflation-in-2026-be-between-0pt1-and-0pt5) | 5 | 0.514 | 29.8% | 66/66 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Extended FDV above $300M one day after launch?](https://polymarket.com/market/extended-fdv-above-300m-one-day-after-launch-351-333) | 5 | 0.125 | 16.1% | 65/66 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Bruno Retailleau be on the ballot for the 2027 French p](https://polymarket.com/market/will-bruno-retailleau-be-on-the-ballot-for-the-2027-french-presidential-election) | 5 | 0.215 | 14.6% | 66/66 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +5.0c |
-| [Arc FDV above $800M one day after launch?](https://polymarket.com/market/arc-fdv-above-800m-one-day-after-launch) | 3 | 0.55 | 8.7% | 37/66 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Beezie launch a token by December 31, 2027?](https://polymarket.com/market/will-beezie-launch-a-token-by-december-31-2027-20260727145435059) | 5 | 0.705 | 0.0% | 2/66 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Kraken IPO by June 30, 2027?](https://polymarket.com/market/kraken-ipo-by-june-30-2027) | 5 | 0.23 | 0.0% | 0/66 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Extended FDV above $150M one day after launch?](https://polymarket.com/market/extended-fdv-above-150m-one-day-after-launch-452) | 50 | 0.465 | 3.5% | 71/71 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / +2.0c |
+| [Will China's annual inflation in 2026 be between 0.1% and 0.](https://polymarket.com/market/will-chinas-annual-inflation-in-2026-be-between-0pt1-and-0pt5) | 5 | 0.514 | 29.2% | 71/71 | 0.07 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Extended FDV above $300M one day after launch?](https://polymarket.com/market/extended-fdv-above-300m-one-day-after-launch-351-333) | 5 | 0.125 | 15.8% | 70/71 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Bruno Retailleau be on the ballot for the 2027 French p](https://polymarket.com/market/will-bruno-retailleau-be-on-the-ballot-for-the-2027-french-presidential-election) | 5 | 0.2 | 14.4% | 71/71 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +5.0c |
+| [Arc FDV above $800M one day after launch?](https://polymarket.com/market/arc-fdv-above-800m-one-day-after-launch) | 3 | 0.555 | 8.8% | 41/71 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Beezie launch a token by December 31, 2027?](https://polymarket.com/market/will-beezie-launch-a-token-by-december-31-2027-20260727145435059) | 5 | 0.7 | 7.6% | 5/71 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Kraken IPO by June 30, 2027?](https://polymarket.com/market/kraken-ipo-by-june-30-2027) | 5 | 0.23 | 0.0% | 0/71 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
