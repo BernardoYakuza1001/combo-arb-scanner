@@ -1,0 +1,300 @@
+2026-11-24 23:41:20 cycle 1110: polled 546 baskets / 313 tokens in 2.15s, hot 546, open 1, closed 52
+2026-11-24 23:41:53 cycle 1125: polled 546 baskets / 313 tokens in 2.21s, hot 546, open 3, closed 52
+2026-11-24 23:43:36 cycle 1140: polled 548 baskets / 311 tokens in 2.15s, hot 548, open 3, closed 52
+2026-11-24 23:45:16 cycle 1155: polled 554 baskets / 318 tokens in 1.84s, hot 554, open 2, closed 53
+2026-11-24 23:45:46 cycle 1170: polled 554 baskets / 318 tokens in 2.03s, hot 554, open 3, closed 53
+2026-11-24 23:47:15 cycle 1185: polled 551 baskets / 316 tokens in 1.83s, hot 551, open 3, closed 53
+2026-11-24 23:47:44 cycle 1200: polled 551 baskets / 316 tokens in 1.83s, hot 551, open 3, closed 53
+2026-11-24 23:49:13 cycle 1215: polled 543 baskets / 315 tokens in 1.88s, hot 543, open 1, closed 55
+2026-11-24 23:50:39 events: tag sports page 1: 100 events in 0.3s (total 100)
+2026-11-24 23:50:39 events: tag sports page 2: 100 events in 0.3s (total 200)
+2026-11-24 23:50:39 events: tag sports page 3: 100 events in 0.1s (total 300)
+2026-11-24 23:50:39 events: tag esports page 1: 100 events in 0.2s (total 364)
+2026-11-24 23:50:39 events: tag esports page 2: 100 events in 0.1s (total 464)
+2026-11-24 23:50:39 events: tag esports page 3: 100 events in 0.1s (total 564)
+2026-11-24 23:50:40 events: tag crypto page 1: 100 events in 0.5s (total 664)
+2026-11-24 23:50:41 events: tag crypto page 2: 100 events in 1.0s (total 764)
+2026-11-24 23:50:41 events: tag crypto page 3: 100 events in 0.5s (total 864)
+2026-11-24 23:51:01 relation search took 19.5s
+2026-11-24 23:51:01 discovery: 864 events, 956 families, 80419 baskets, 12160 tokens, skipped {'sports_unmodelled_type': 8125, 'sports_bad_margin': 108}
+2026-11-24 23:51:11 cycle 1230: polled 549 baskets / 319 tokens in 2.25s, hot 549, open 2, closed 55
+2026-11-24 23:51:44 cycle 1245: polled 549 baskets / 319 tokens in 2.16s, hot 549, open 2, closed 55
+2026-11-24 23:53:30 cycle 1260: polled 540 baskets / 312 tokens in 2.19s, hot 540, open 2, closed 55
+2026-11-24 23:54:02 cycle 1275: polled 540 baskets / 312 tokens in 2.13s, hot 540, open 2, closed 55
+2026-11-24 23:55:37 cycle 1290: polled 545 baskets / 319 tokens in 1.84s, hot 545, open 2, closed 56
+2026-11-24 23:57:01 cycle 1305: polled 546 baskets / 319 tokens in 1.64s, hot 546, open 2, closed 56
+2026-11-24 23:57:28 cycle 1320: polled 546 baskets / 319 tokens in 1.86s, hot 546, open 2, closed 56
+2026-11-24 23:58:50 cycle 1335: polled 541 baskets / 318 tokens in 1.94s, hot 541, open 1, closed 57
+2026-11-24 23:59:21 cycle 1350: polled 541 baskets / 318 tokens in 2.32s, hot 541, open 1, closed 57
+2026-11-25 00:01:09 cycle 1365: polled 535 baskets / 310 tokens in 2.17s, hot 535, open 1, closed 57
+2026-11-25 00:02:57 cycle 1380: polled 536 baskets / 311 tokens in 2.16s, hot 536, open 1, closed 57
+2026-11-25 00:03:30 cycle 1395: polled 536 baskets / 311 tokens in 2.18s, hot 536, open 1, closed 57
+2026-11-25 00:05:05 cycle 1410: polled 540 baskets / 317 tokens in 1.69s, hot 540, open 2, closed 62
+2026-11-25 00:05:33 cycle 1425: polled 540 baskets / 317 tokens in 1.62s, hot 540, open 2, closed 62
+2026-11-25 00:06:53 cycle 1440: polled 537 baskets / 310 tokens in 2.0s, hot 537, open 2, closed 62
+2026-11-25 00:08:15 cycle 1455: polled 536 baskets / 310 tokens in 1.96s, hot 536, open 2, closed 63
+2026-11-25 00:08:44 cycle 1470: polled 536 baskets / 310 tokens in 2.17s, hot 536, open 2, closed 63
+2026-11-25 00:10:33 cycle 1485: polled 539 baskets / 315 tokens in 2.21s, hot 539, open 2, closed 63
+2026-11-25 00:11:06 cycle 1500: polled 539 baskets / 315 tokens in 2.17s, hot 539, open 2, closed 63
+2026-11-25 00:12:56 cycle 1515: polled 541 baskets / 316 tokens in 2.26s, hot 541, open 1, closed 64
+2026-11-25 00:14:31 cycle 1530: polled 537 baskets / 310 tokens in 1.87s, hot 537, open 1, closed 64
+2026-11-25 00:15:00 cycle 1545: polled 537 baskets / 310 tokens in 2.04s, hot 537, open 1, closed 64
+2026-11-25 00:16:27 cycle 1560: polled 539 baskets / 312 tokens in 1.83s, hot 539, open 1, closed 64
+2026-11-25 00:16:57 cycle 1575: polled 539 baskets / 312 tokens in 1.96s, hot 539, open 1, closed 64
+2026-11-25 00:18:20 cycle 1590: polled 541 baskets / 316 tokens in 1.83s, hot 541, open 2, closed 64
+2026-11-25 00:19:56 cycle 1605: polled 541 baskets / 316 tokens in 1.62s, hot 541, open 2, closed 64
+2026-11-25 00:20:25 cycle 1620: polled 541 baskets / 316 tokens in 1.81s, hot 541, open 2, closed 64
+2026-11-25 00:21:48 events: tag sports page 1: 100 events in 1.6s (total 100)
+2026-11-25 00:21:49 events: tag sports page 2: 100 events in 0.9s (total 200)
+2026-11-25 00:21:49 events: tag sports page 3: 100 events in 0.6s (total 300)
+2026-11-25 00:21:50 events: tag esports page 1: 100 events in 0.6s (total 363)
+2026-11-25 00:21:50 events: tag esports page 2: 100 events in 0.1s (total 463)
+2026-11-25 00:21:50 events: tag esports page 3: 100 events in 0.1s (total 563)
+2026-11-25 00:21:51 events: tag crypto page 1: 100 events in 0.4s (total 663)
+2026-11-25 00:21:51 events: tag crypto page 2: 100 events in 0.7s (total 763)
+2026-11-25 00:21:52 events: tag crypto page 3: 100 events in 0.3s (total 863)
+2026-11-25 00:22:14 relation search took 22.1s
+2026-11-25 00:22:14 discovery: 863 events, 949 families, 90691 baskets, 13586 tokens, skipped {'sports_unmodelled_type': 8104, 'sports_bad_margin': 82}
+2026-11-25 00:22:34 cycle 1635: polled 540 baskets / 314 tokens in 2.14s, hot 540, open 2, closed 64
+2026-11-25 00:23:06 cycle 1650: polled 540 baskets / 314 tokens in 2.17s, hot 540, open 2, closed 64
+2026-11-25 00:25:00 cycle 1665: polled 547 baskets / 324 tokens in 2.14s, hot 547, open 1, closed 65
+2026-11-25 00:26:55 cycle 1680: polled 547 baskets / 323 tokens in 2.29s, hot 547, open 2, closed 65
+2026-11-25 00:27:29 cycle 1695: polled 547 baskets / 323 tokens in 2.31s, hot 547, open 2, closed 65
+2026-11-25 00:29:15 cycle 1710: polled 542 baskets / 317 tokens in 1.75s, hot 542, open 2, closed 65
+2026-11-25 00:29:44 cycle 1725: polled 542 baskets / 317 tokens in 2.0s, hot 542, open 2, closed 65
+2026-11-25 00:31:12 cycle 1740: polled 543 baskets / 319 tokens in 1.74s, hot 543, open 3, closed 65
+2026-11-25 00:32:41 cycle 1755: polled 549 baskets / 327 tokens in 2.27s, hot 549, open 3, closed 65
+2026-11-25 00:33:15 cycle 1770: polled 549 baskets / 327 tokens in 2.3s, hot 549, open 3, closed 65
+2026-11-25 00:35:11 cycle 1785: polled 551 baskets / 329 tokens in 2.23s, hot 551, open 3, closed 65
+2026-11-25 00:35:46 cycle 1800: polled 551 baskets / 329 tokens in 2.45s, hot 551, open 3, closed 65
+2026-11-25 00:37:42 cycle 1815: polled 549 baskets / 326 tokens in 2.32s, hot 549, open 2, closed 66
+2026-11-25 00:39:14 cycle 1830: polled 538 baskets / 318 tokens in 1.59s, hot 538, open 2, closed 66
+2026-11-25 00:39:45 cycle 1845: polled 538 baskets / 318 tokens in 1.82s, hot 538, open 2, closed 66
+2026-11-25 00:41:17 cycle 1860: polled 541 baskets / 320 tokens in 2.33s, hot 541, open 2, closed 66
+2026-11-25 00:41:48 cycle 1875: polled 541 baskets / 320 tokens in 2.07s, hot 541, open 2, closed 66
+2026-11-25 00:43:43 cycle 1890: polled 539 baskets / 321 tokens in 2.2s, hot 539, open 3, closed 66
+2026-11-25 00:45:39 cycle 1905: polled 540 baskets / 320 tokens in 2.31s, hot 540, open 3, closed 67
+2026-11-25 00:46:14 cycle 1920: polled 540 baskets / 320 tokens in 2.25s, hot 540, open 2, closed 68
+2026-11-25 00:48:10 cycle 1935: polled 545 baskets / 326 tokens in 2.26s, hot 545, open 2, closed 68
+2026-11-25 00:48:44 cycle 1950: polled 545 baskets / 326 tokens in 2.29s, hot 545, open 2, closed 68
+2026-11-25 00:50:37 cycle 1965: polled 534 baskets / 317 tokens in 2.16s, hot 534, open 3, closed 68
+2026-11-25 00:52:19 events: tag sports page 1: 100 events in 1.0s (total 100)
+2026-11-25 00:52:21 events: tag sports page 2: 100 events in 1.7s (total 200)
+2026-11-25 00:52:22 events: tag sports page 3: 100 events in 1.1s (total 300)
+2026-11-25 00:52:22 events: tag esports page 1: 100 events in 0.5s (total 364)
+2026-11-25 00:52:23 events: tag esports page 2: 100 events in 0.5s (total 464)
+2026-11-25 00:52:23 events: tag esports page 3: 100 events in 0.5s (total 564)
+2026-11-25 00:52:24 events: tag crypto page 1: 100 events in 0.6s (total 664)
+2026-11-25 00:52:24 events: tag crypto page 2: 100 events in 0.3s (total 764)
+2026-11-25 00:52:25 events: tag crypto page 3: 100 events in 0.3s (total 864)
+2026-11-25 00:52:46 relation search took 21.4s
+2026-11-25 00:52:46 discovery: 864 events, 949 families, 93514 baskets, 14018 tokens, skipped {'sports_unmodelled_type': 8207, 'sports_bad_margin': 80}
+2026-11-25 00:52:56 cycle 1980: polled 529 baskets / 319 tokens in 2.33s, hot 529, open 3, closed 68
+2026-11-25 00:53:27 cycle 1995: polled 529 baskets / 319 tokens in 1.97s, hot 529, open 3, closed 69
+2026-11-25 00:55:05 cycle 2010: polled 536 baskets / 327 tokens in 1.88s, hot 536, open 4, closed 69
+2026-11-25 00:55:33 cycle 2025: polled 536 baskets / 327 tokens in 2.18s, hot 536, open 4, closed 70
+2026-11-25 00:57:13 cycle 2040: polled 529 baskets / 324 tokens in 2.01s, hot 529, open 2, closed 72
+2026-11-25 00:59:13 cycle 2055: polled 533 baskets / 327 tokens in 2.27s, hot 533, open 2, closed 73
+2026-11-25 00:59:47 cycle 2070: polled 533 baskets / 327 tokens in 2.31s, hot 533, open 2, closed 73
+2026-11-25 01:01:49 cycle 2085: polled 530 baskets / 320 tokens in 2.2s, hot 530, open 1, closed 75
+2026-11-25 01:02:23 cycle 2100: polled 530 baskets / 320 tokens in 2.32s, hot 530, open 1, closed 75
+2026-11-25 01:04:20 cycle 2115: polled 530 baskets / 322 tokens in 2.33s, hot 530, open 1, closed 75
+2026-11-25 01:06:22 cycle 2130: polled 543 baskets / 332 tokens in 2.34s, hot 543, open 1, closed 75
+2026-11-25 01:06:56 cycle 2145: polled 543 baskets / 332 tokens in 2.28s, hot 543, open 1, closed 75
+2026-11-25 01:08:45 cycle 2160: polled 546 baskets / 333 tokens in 2.12s, hot 546, open 2, closed 76
+2026-11-25 01:09:14 cycle 2175: polled 546 baskets / 333 tokens in 2.18s, hot 546, open 2, closed 76
+2026-11-25 01:10:51 cycle 2190: polled 555 baskets / 344 tokens in 1.75s, hot 555, open 2, closed 76
+2026-11-25 01:12:25 cycle 2205: polled 558 baskets / 353 tokens in 2.45s, hot 558, open 1, closed 85
+2026-11-25 01:13:01 cycle 2220: polled 558 baskets / 353 tokens in 2.33s, hot 558, open 1, closed 85
+2026-11-25 01:15:02 cycle 2235: polled 541 baskets / 331 tokens in 2.33s, hot 541, open 1, closed 85
+2026-11-25 01:15:36 cycle 2250: polled 541 baskets / 331 tokens in 2.28s, hot 541, open 1, closed 85
+2026-11-25 01:17:34 cycle 2265: polled 544 baskets / 332 tokens in 1.94s, hot 544, open 1, closed 85
+2026-11-25 01:19:10 cycle 2280: polled 538 baskets / 332 tokens in 1.88s, hot 538, open 1, closed 85
+2026-11-25 01:19:40 cycle 2295: polled 538 baskets / 332 tokens in 1.61s, hot 538, open 1, closed 85
+2026-11-25 01:21:14 cycle 2310: polled 540 baskets / 329 tokens in 2.04s, hot 540, open 1, closed 85
+2026-11-25 01:21:46 cycle 2325: polled 540 baskets / 329 tokens in 2.19s, hot 540, open 1, closed 85
+2026-11-25 01:23:15 events: tag sports page 1: 100 events in 1.8s (total 100)
+2026-11-25 01:23:16 events: tag sports page 2: 100 events in 1.4s (total 200)
+2026-11-25 01:23:17 events: tag sports page 3: 100 events in 1.1s (total 300)
+2026-11-25 01:23:18 events: tag esports page 1: 100 events in 0.7s (total 367)
+2026-11-25 01:23:19 events: tag esports page 2: 100 events in 0.5s (total 467)
+2026-11-25 01:23:19 events: tag esports page 3: 100 events in 0.5s (total 567)
+2026-11-25 01:23:20 events: tag crypto page 1: 100 events in 0.8s (total 667)
+2026-11-25 01:23:20 events: tag crypto page 2: 100 events in 0.3s (total 767)
+2026-11-25 01:23:21 events: tag crypto page 3: 100 events in 0.3s (total 867)
+2026-11-25 01:23:43 relation search took 22.1s
+2026-11-25 01:23:43 discovery: 867 events, 929 families, 94528 baskets, 14104 tokens, skipped {'sports_unmodelled_type': 8265, 'sports_bad_margin': 82}
+2026-11-25 01:24:16 cycle 2340: polled 537 baskets / 325 tokens in 2.36s, hot 537, open 1, closed 85
+2026-11-25 01:26:15 cycle 2355: polled 536 baskets / 327 tokens in 2.26s, hot 536, open 0, closed 86
+2026-11-25 01:26:50 cycle 2370: polled 536 baskets / 327 tokens in 2.3s, hot 536, open 0, closed 86
+2026-11-25 01:28:39 cycle 2385: polled 539 baskets / 325 tokens in 2.02s, hot 539, open 0, closed 87
+2026-11-25 01:29:11 cycle 2400: polled 539 baskets / 325 tokens in 1.56s, hot 539, open 0, closed 87
+2026-11-25 01:30:56 cycle 2415: polled 551 baskets / 331 tokens in 2.14s, hot 551, open 1, closed 87
+2026-11-25 01:32:45 cycle 2430: polled 533 baskets / 313 tokens in 2.1s, hot 533, open 1, closed 87
+2026-11-25 01:33:17 cycle 2445: polled 533 baskets / 313 tokens in 2.06s, hot 533, open 1, closed 87
+2026-11-25 01:35:16 cycle 2460: polled 539 baskets / 324 tokens in 2.17s, hot 539, open 1, closed 89
+2026-11-25 01:35:50 cycle 2475: polled 539 baskets / 324 tokens in 2.26s, hot 539, open 1, closed 89
+2026-11-25 01:37:50 cycle 2490: polled 544 baskets / 324 tokens in 2.23s, hot 544, open 1, closed 89
+2026-11-25 01:39:33 cycle 2505: polled 549 baskets / 331 tokens in 2.02s, hot 549, open 1, closed 89
+2026-11-25 01:40:05 cycle 2520: polled 549 baskets / 331 tokens in 1.89s, hot 549, open 1, closed 89
+2026-11-25 01:41:41 cycle 2535: polled 541 baskets / 327 tokens in 1.97s, hot 541, open 1, closed 89
+2026-11-25 01:42:15 cycle 2550: polled 541 baskets / 327 tokens in 2.29s, hot 541, open 0, closed 90
+2026-11-25 01:44:13 cycle 2565: polled 532 baskets / 321 tokens in 2.3s, hot 532, open 0, closed 91
+2026-11-25 01:46:14 cycle 2580: polled 544 baskets / 341 tokens in 2.24s, hot 544, open 0, closed 93
+2026-11-25 01:46:49 cycle 2595: polled 544 baskets / 341 tokens in 2.27s, hot 544, open 0, closed 93
+2026-11-25 01:48:29 cycle 2610: polled 535 baskets / 321 tokens in 1.97s, hot 535, open 0, closed 93
+2026-11-25 01:48:59 cycle 2625: polled 535 baskets / 321 tokens in 1.95s, hot 535, open 0, closed 93
+2026-11-25 01:50:31 cycle 2640: polled 534 baskets / 321 tokens in 1.71s, hot 534, open 0, closed 93
+2026-11-25 01:52:14 cycle 2655: polled 550 baskets / 329 tokens in 2.27s, hot 550, open 1, closed 93
+2026-11-25 01:52:49 cycle 2670: polled 550 baskets / 329 tokens in 2.25s, hot 550, open 1, closed 93
+2026-11-25 01:54:29 events: tag sports page 1: 100 events in 1.7s (total 100)
+2026-11-25 01:54:30 events: tag sports page 2: 100 events in 0.2s (total 197)
+2026-11-25 01:54:31 events: tag sports page 3: 100 events in 1.3s (total 296)
+2026-11-25 01:54:31 events: tag esports page 1: 100 events in 0.5s (total 366)
+2026-11-25 01:54:32 events: tag esports page 2: 100 events in 0.6s (total 466)
+2026-11-25 01:54:32 events: tag esports page 3: 100 events in 0.5s (total 566)
+2026-11-25 01:54:33 events: tag crypto page 1: 100 events in 0.6s (total 666)
+2026-11-25 01:54:34 events: tag crypto page 2: 100 events in 0.9s (total 766)
+2026-11-25 01:54:34 events: tag crypto page 3: 100 events in 0.4s (total 866)
+2026-11-25 01:54:57 relation search took 22.8s
+2026-11-25 01:54:57 discovery: 866 events, 926 families, 97103 baskets, 14452 tokens, skipped {'sports_unmodelled_type': 8173, 'sports_bad_margin': 79}
+2026-11-25 01:55:19 cycle 2685: polled 538 baskets / 327 tokens in 2.3s, hot 538, open 1, closed 93
+2026-11-25 01:55:53 cycle 2700: polled 538 baskets / 327 tokens in 2.27s, hot 538, open 1, closed 94
+2026-11-25 01:57:54 cycle 2715: polled 549 baskets / 340 tokens in 2.31s, hot 549, open 2, closed 95
+2026-11-25 01:59:46 cycle 2730: polled 551 baskets / 329 tokens in 2.03s, hot 551, open 2, closed 95
+2026-11-25 02:00:19 cycle 2745: polled 551 baskets / 329 tokens in 2.39s, hot 551, open 2, closed 95
+2026-11-25 02:02:13 cycle 2760: polled 537 baskets / 324 tokens in 1.89s, hot 537, open 2, closed 95
+2026-11-25 02:02:41 cycle 2775: polled 537 baskets / 324 tokens in 2.12s, hot 537, open 2, closed 95
+2026-11-25 02:04:18 cycle 2790: polled 541 baskets / 326 tokens in 2.1s, hot 541, open 2, closed 95
+2026-11-25 02:05:58 cycle 2805: polled 548 baskets / 335 tokens in 2.05s, hot 548, open 2, closed 95
+2026-11-25 02:06:28 cycle 2820: polled 548 baskets / 335 tokens in 2.27s, hot 548, open 2, closed 95
+2026-11-25 02:08:30 cycle 2835: polled 559 baskets / 347 tokens in 2.29s, hot 559, open 2, closed 96
+2026-11-25 02:09:05 cycle 2850: polled 559 baskets / 347 tokens in 2.36s, hot 559, open 2, closed 96
+2026-11-25 02:11:10 cycle 2865: polled 579 baskets / 347 tokens in 2.28s, hot 579, open 2, closed 97
+2026-11-25 02:12:52 cycle 2880: polled 557 baskets / 327 tokens in 2.06s, hot 557, open 3, closed 97
+2026-11-25 02:13:23 cycle 2895: polled 557 baskets / 327 tokens in 2.02s, hot 557, open 3, closed 97
+2026-11-25 02:15:00 cycle 2910: polled 562 baskets / 334 tokens in 2.0s, hot 562, open 3, closed 98
+2026-11-25 02:15:32 cycle 2925: polled 562 baskets / 334 tokens in 2.1s, hot 562, open 3, closed 98
+2026-11-25 02:17:27 cycle 2940: polled 553 baskets / 326 tokens in 2.27s, hot 553, open 3, closed 98
+2026-11-25 02:19:30 cycle 2955: polled 542 baskets / 318 tokens in 2.24s, hot 542, open 3, closed 98
+2026-11-25 02:20:04 cycle 2970: polled 542 baskets / 318 tokens in 2.2s, hot 542, open 3, closed 98
+2026-11-25 02:22:08 cycle 2985: polled 551 baskets / 323 tokens in 2.24s, hot 551, open 3, closed 98
+2026-11-25 02:22:42 cycle 3000: polled 551 baskets / 323 tokens in 2.29s, hot 551, open 3, closed 98
+2026-11-25 02:24:30 events: tag sports page 1: 100 events in 0.3s (total 100)
+2026-11-25 02:24:31 events: tag sports page 2: 100 events in 0.9s (total 200)
+2026-11-25 02:24:31 events: tag sports page 3: 100 events in 0.1s (total 297)
+2026-11-25 02:24:31 events: tag esports page 1: 100 events in 0.0s (total 368)
+2026-11-25 02:24:31 events: tag esports page 2: 100 events in 0.4s (total 468)
+2026-11-25 02:24:32 events: tag esports page 3: 100 events in 0.5s (total 568)
+2026-11-25 02:24:32 events: tag crypto page 1: 100 events in 0.5s (total 668)
+2026-11-25 02:24:33 events: tag crypto page 2: 100 events in 0.3s (total 768)
+2026-11-25 02:24:33 events: tag crypto page 3: 100 events in 0.4s (total 868)
+2026-11-25 02:24:57 relation search took 23.8s
+2026-11-25 02:24:57 discovery: 868 events, 919 families, 98789 baskets, 14576 tokens, skipped {'sports_unmodelled_type': 8185, 'sports_bad_margin': 78}
+2026-11-25 02:25:11 cycle 3015: polled 553 baskets / 329 tokens in 2.12s, hot 553, open 3, closed 98
+2026-11-25 02:27:12 cycle 3030: polled 558 baskets / 330 tokens in 1.88s, hot 558, open 1, closed 101
+2026-11-25 02:27:40 cycle 3045: polled 558 baskets / 330 tokens in 1.69s, hot 558, open 1, closed 101
+2026-11-25 02:29:20 cycle 3060: polled 551 baskets / 329 tokens in 2.13s, hot 551, open 1, closed 101
+2026-11-25 02:29:51 cycle 3075: polled 551 baskets / 329 tokens in 2.12s, hot 551, open 1, closed 101
+2026-11-25 02:31:31 cycle 3090: polled 537 baskets / 317 tokens in 2.29s, hot 537, open 1, closed 101
+2026-11-25 02:33:35 cycle 3105: polled 532 baskets / 306 tokens in 2.1s, hot 532, open 1, closed 101
+2026-11-25 02:34:07 cycle 3120: polled 532 baskets / 306 tokens in 2.19s, hot 532, open 1, closed 101
+2026-11-25 02:36:13 cycle 3135: polled 528 baskets / 311 tokens in 2.27s, hot 528, open 1, closed 101
+2026-11-25 02:36:47 cycle 3150: polled 528 baskets / 311 tokens in 2.09s, hot 528, open 1, closed 101
+2026-11-25 02:38:37 cycle 3165: polled 529 baskets / 317 tokens in 2.11s, hot 529, open 1, closed 101
+2026-11-25 02:40:20 cycle 3180: polled 527 baskets / 311 tokens in 2.0s, hot 527, open 1, closed 101
+2026-11-25 02:40:47 cycle 3195: polled 527 baskets / 311 tokens in 1.79s, hot 527, open 1, closed 101
+2026-11-25 02:42:47 cycle 3210: polled 529 baskets / 315 tokens in 2.24s, hot 529, open 1, closed 103
+2026-11-25 02:43:22 cycle 3225: polled 529 baskets / 315 tokens in 2.23s, hot 529, open 1, closed 103
+2026-11-25 02:45:22 cycle 3240: polled 530 baskets / 317 tokens in 1.89s, hot 530, open 1, closed 103
+2026-11-25 02:47:19 cycle 3255: polled 524 baskets / 315 tokens in 2.01s, hot 524, open 1, closed 103
+2026-11-25 02:47:47 cycle 3270: polled 524 baskets / 315 tokens in 1.93s, hot 524, open 1, closed 103
+2026-11-25 02:49:32 cycle 3285: polled 525 baskets / 313 tokens in 2.17s, hot 525, open 1, closed 103
+2026-11-25 02:50:04 cycle 3300: polled 525 baskets / 313 tokens in 2.17s, hot 525, open 1, closed 103
+2026-11-25 02:52:02 cycle 3315: polled 525 baskets / 314 tokens in 2.14s, hot 525, open 1, closed 103
+2026-11-25 02:54:04 cycle 3330: polled 529 baskets / 323 tokens in 2.26s, hot 529, open 1, closed 104
+2026-11-25 02:54:33 events: tag sports page 1: 100 events in 1.7s (total 100)
+2026-11-25 02:54:34 events: tag sports page 2: 100 events in 0.9s (total 200)
+2026-11-25 02:54:35 events: tag sports page 3: 100 events in 1.4s (total 300)
+2026-11-25 02:54:35 events: tag esports page 1: 100 events in 0.0s (total 370)
+2026-11-25 02:54:36 events: tag esports page 2: 100 events in 0.1s (total 470)
+2026-11-25 02:54:36 events: tag esports page 3: 100 events in 0.1s (total 570)
+2026-11-25 02:54:36 events: tag crypto page 1: 100 events in 0.4s (total 670)
+2026-11-25 02:54:37 events: tag crypto page 2: 100 events in 0.5s (total 770)
+2026-11-25 02:54:37 events: tag crypto page 3: 100 events in 0.3s (total 870)
+2026-11-25 02:55:01 relation search took 23.9s
+2026-11-25 02:55:01 discovery: 870 events, 916 families, 99440 baskets, 14726 tokens, skipped {'sports_unmodelled_type': 7890, 'sports_bad_margin': 75}
+2026-11-25 02:55:08 cycle 3345: polled 529 baskets / 323 tokens in 2.28s, hot 529, open 1, closed 104
+2026-11-25 02:57:09 cycle 3360: polled 522 baskets / 310 tokens in 2.36s, hot 522, open 1, closed 104
+2026-11-25 02:57:37 cycle 3375: polled 522 baskets / 310 tokens in 1.84s, hot 522, open 1, closed 104
+2026-11-25 02:59:06 cycle 3390: polled 519 baskets / 311 tokens in 1.66s, hot 519, open 1, closed 104
+2026-11-25 03:00:36 cycle 3405: polled 516 baskets / 306 tokens in 1.86s, hot 516, open 1, closed 104
+2026-11-25 03:01:06 cycle 3420: polled 516 baskets / 306 tokens in 2.16s, hot 516, open 1, closed 104
+2026-11-25 03:03:10 cycle 3435: polled 513 baskets / 302 tokens in 2.17s, hot 513, open 1, closed 106
+2026-11-25 03:03:43 cycle 3450: polled 513 baskets / 302 tokens in 2.15s, hot 513, open 1, closed 106
+2026-11-25 03:05:49 cycle 3465: polled 516 baskets / 305 tokens in 2.23s, hot 516, open 1, closed 108
+2026-11-25 03:07:52 cycle 3480: polled 524 baskets / 313 tokens in 2.32s, hot 524, open 1, closed 113
+2026-11-25 03:08:24 cycle 3495: polled 524 baskets / 313 tokens in 2.13s, hot 524, open 1, closed 113
+2026-11-25 03:10:26 cycle 3510: polled 522 baskets / 306 tokens in 2.12s, hot 522, open 1, closed 113
+2026-11-25 03:10:59 cycle 3525: polled 522 baskets / 306 tokens in 2.14s, hot 522, open 1, closed 113
+2026-11-25 03:13:06 cycle 3540: polled 528 baskets / 312 tokens in 2.22s, hot 528, open 1, closed 121
+2026-11-25 03:15:14 cycle 3555: polled 524 baskets / 311 tokens in 2.18s, hot 524, open 1, closed 121
+2026-11-25 03:15:48 cycle 3570: polled 524 baskets / 311 tokens in 2.58s, hot 524, open 1, closed 121
+2026-11-25 03:17:52 cycle 3585: polled 518 baskets / 300 tokens in 2.05s, hot 518, open 1, closed 121
+2026-11-25 03:18:22 cycle 3600: polled 518 baskets / 300 tokens in 1.98s, hot 518, open 1, closed 121
+2026-11-25 03:20:24 cycle 3615: polled 513 baskets / 299 tokens in 1.97s, hot 513, open 1, closed 121
+2026-11-25 03:22:25 cycle 3630: polled 525 baskets / 313 tokens in 2.21s, hot 525, open 1, closed 124
+2026-11-25 03:22:59 cycle 3645: polled 525 baskets / 313 tokens in 2.31s, hot 525, open 1, closed 124
+2026-11-25 03:24:48 events: tag sports page 1: 100 events in 0.9s (total 100)
+2026-11-25 03:24:49 events: tag sports page 2: 100 events in 0.7s (total 200)
+2026-11-25 03:24:50 events: tag sports page 3: 100 events in 0.7s (total 300)
+2026-11-25 03:24:50 events: tag esports page 1: 100 events in 0.5s (total 371)
+2026-11-25 03:24:50 events: tag esports page 2: 100 events in 0.0s (total 469)
+2026-11-25 03:24:50 events: tag esports page 3: 100 events in 0.1s (total 569)
+2026-11-25 03:24:51 events: tag crypto page 1: 100 events in 0.9s (total 669)
+2026-11-25 03:24:52 events: tag crypto page 2: 100 events in 0.8s (total 769)
+2026-11-25 03:24:52 events: tag crypto page 3: 100 events in 0.3s (total 869)
+2026-11-25 03:25:15 relation search took 23.1s
+2026-11-25 03:25:15 discovery: 869 events, 902 families, 96639 baskets, 14326 tokens, skipped {'sports_unmodelled_type': 7923, 'sports_bad_margin': 75}
+2026-11-25 03:25:36 cycle 3660: polled 524 baskets / 309 tokens in 2.2s, hot 524, open 3, closed 126
+2026-11-25 03:26:10 cycle 3675: polled 524 baskets / 309 tokens in 2.2s, hot 524, open 3, closed 126
+2026-11-25 03:28:14 cycle 3690: polled 526 baskets / 312 tokens in 2.12s, hot 526, open 3, closed 127
+2026-11-25 03:30:14 cycle 3705: polled 519 baskets / 306 tokens in 2.24s, hot 519, open 3, closed 128
+2026-11-25 03:30:48 cycle 3720: polled 519 baskets / 306 tokens in 2.11s, hot 519, open 3, closed 128
+2026-11-25 03:32:47 cycle 3735: polled 513 baskets / 299 tokens in 1.97s, hot 513, open 2, closed 129
+2026-11-25 03:33:16 cycle 3750: polled 513 baskets / 299 tokens in 1.53s, hot 513, open 2, closed 129
+2026-11-25 03:34:57 cycle 3765: polled 514 baskets / 301 tokens in 2.18s, hot 514, open 2, closed 129
+2026-11-25 03:36:42 cycle 3780: polled 520 baskets / 306 tokens in 2.06s, hot 520, open 2, closed 131
+2026-11-25 03:37:14 cycle 3795: polled 520 baskets / 306 tokens in 2.0s, hot 520, open 2, closed 131
+2026-11-25 03:39:10 cycle 3810: polled 522 baskets / 307 tokens in 2.31s, hot 522, open 2, closed 131
+2026-11-25 03:39:43 cycle 3825: polled 522 baskets / 307 tokens in 2.22s, hot 522, open 2, closed 131
+2026-11-25 03:41:41 cycle 3840: polled 516 baskets / 303 tokens in 2.1s, hot 516, open 2, closed 131
+2026-11-25 03:43:34 cycle 3855: polled 518 baskets / 300 tokens in 1.89s, hot 518, open 2, closed 131
+2026-11-25 03:44:01 cycle 3870: polled 518 baskets / 300 tokens in 1.68s, hot 518, open 2, closed 131
+2026-11-25 03:45:45 cycle 3885: polled 523 baskets / 306 tokens in 2.15s, hot 523, open 2, closed 131
+2026-11-25 03:46:15 cycle 3900: polled 523 baskets / 306 tokens in 2.12s, hot 523, open 2, closed 131
+2026-11-25 03:48:04 cycle 3915: polled 519 baskets / 309 tokens in 2.13s, hot 519, open 2, closed 132
+2026-11-25 03:50:04 cycle 3930: polled 522 baskets / 307 tokens in 2.39s, hot 522, open 2, closed 132
+2026-11-25 03:50:37 cycle 3945: polled 522 baskets / 307 tokens in 1.99s, hot 522, open 2, closed 132
+2026-11-25 03:52:36 cycle 3960: polled 525 baskets / 306 tokens in 2.18s, hot 525, open 2, closed 132
+2026-11-25 03:53:10 cycle 3975: polled 525 baskets / 306 tokens in 2.29s, hot 525, open 2, closed 132
+2026-11-25 03:54:49 events: tag sports page 1: 100 events in 0.3s (total 100)
+2026-11-25 03:54:49 events: tag sports page 2: 100 events in 0.2s (total 200)
+2026-11-25 03:54:50 events: tag sports page 3: 100 events in 0.1s (total 300)
+2026-11-25 03:54:50 events: tag esports page 1: 100 events in 0.1s (total 371)
+2026-11-25 03:54:50 events: tag esports page 2: 100 events in 0.1s (total 471)
+2026-11-25 03:54:50 events: tag esports page 3: 100 events in 0.2s (total 571)
+2026-11-25 03:54:50 events: tag crypto page 1: 100 events in 0.5s (total 671)
+2026-11-25 03:54:51 events: tag crypto page 2: 100 events in 0.4s (total 771)
+2026-11-25 03:54:51 events: tag crypto page 3: 100 events in 0.3s (total 871)
+2026-11-25 03:55:13 relation search took 22.3s
+2026-11-25 03:55:13 discovery: 871 events, 900 families, 88997 baskets, 13392 tokens, skipped {'sports_unmodelled_type': 8012, 'sports_bad_margin': 75}
+2026-11-25 03:55:41 cycle 3990: polled 525 baskets / 309 tokens in 2.21s, hot 525, open 3, closed 133
+2026-11-25 03:57:39 cycle 4005: polled 532 baskets / 317 tokens in 2.41s, hot 532, open 3, closed 133
+2026-11-25 03:58:13 cycle 4020: polled 532 baskets / 317 tokens in 2.29s, hot 532, open 3, closed 133
+2026-11-25 04:00:08 cycle 4035: polled 537 baskets / 321 tokens in 2.16s, hot 537, open 3, closed 133
+2026-11-25 04:00:42 cycle 4050: polled 537 baskets / 321 tokens in 2.33s, hot 537, open 3, closed 133
+2026-11-25 04:02:28 cycle 4065: polled 527 baskets / 313 tokens in 2.15s, hot 527, open 3, closed 133
+2026-11-25 04:04:14 cycle 4080: polled 528 baskets / 314 tokens in 1.97s, hot 528, open 3, closed 134
+2026-11-25 04:04:45 cycle 4095: polled 528 baskets / 314 tokens in 2.13s, hot 528, open 3, closed 134
+2026-11-25 04:06:07 max runtime reached after 4101 cycles
