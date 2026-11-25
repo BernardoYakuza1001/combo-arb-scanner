@@ -1,4 +1,4 @@
-# MEXC carry — ORDER TICKET for $1,000 (2026-11-24 19:34 UTC)
+# MEXC carry — ORDER TICKET for $1,000 (2026-11-25 18:41 UTC)
 
 You place these orders yourself in the MEXC app. Spot and futures are separate accounts:
 put about $500 in Spot and $500 in Futures (USDT-M).
@@ -12,9 +12,9 @@ Starting fresh? Open exactly this table (spot buy + futures short per coin), at 
 
 | Coin | Spot qty | Short contracts | Margin | Mark (spot / perp) |
 |---|---|---|---|---|
-| BROCCOLIF3B | 34,560.0000 | 3,456 | $167 | 0.00409432 / 0.00415 |
-| JCT | 80,500.0000 | 805 | $167 | 0.00145405 / 0.001462 |
-| AGT | 3,100.0000 | 31 | $167 | 0.020563 / 0.02068 |
+| BROCCOLIF3B | 34,560.0000 | 3,456 | $167 | 0.00417934 / 0.004222 |
+| JCT | 80,500.0000 | 805 | $167 | 0.00141718 / 0.001423 |
+| AGT | 3,100.0000 | 31 | $167 | 0.018708 / 0.01882 |
 
 ## Safety rules (check daily)
 - Close a coin if the ticket says so (its 7-day funding turned negative).
