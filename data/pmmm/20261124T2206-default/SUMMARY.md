@@ -1,19 +1,19 @@
-# PMMM paper run — 2026-11-24 22:06 UTC, 1.92 h
+# PMMM paper run — 2026-11-24 22:06 UTC, 2.00 h
 
 8 markets, $200 each ($1,600 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.37  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.37**
-Per day at this pace: rewards $4.62, net $+4.62
+**Rewards accrued: $0.38  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.38**
+Per day at this pace: rewards $4.55, net $+4.55
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.37, per day $+4.62. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.38, per day $+4.55. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Lindsay Clancy be the #1 searched person on Google this](https://polymarket.com/market/will-lindsay-clancy-be-the-1-searched-person-on-google-this-year-20260717214426299) | 177 | 0.4 | 1.5% | 116/116 | 0.21 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 14 (8) / 14 / +1.0c |
-| [Will Tee Higgins have 12.5+ receiving touchdowns in the 2026](https://polymarket.com/market/tee-higgins-12pt5-receiving-touchdowns-2026-27) | 4 | 0.212 | 27.9% | 116/116 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Derrick Henry have 16.5+ rushing touchdowns in the 2026](https://polymarket.com/market/derrick-henry-16pt5-rushing-touchdowns-2026-27) | 4 | 0.33 | 14.6% | 116/116 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +1.0c |
-| [Hotstuff FDV above $150M one day after launch?](https://polymarket.com/market/hotstuff-fdv-above-150m-one-day-after-launch) | 3 | 0.13 | 5.9% | 116/116 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Pacifica launch a token by December 31 2026?](https://polymarket.com/market/will-pacifica-launch-a-token-by-december-31-2026) | 5 | 0.055 | 5.6% | 62/116 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 10 (6) / 10 / +2.0c |
-| [QFEX FDV above $300M one day after launch?](https://polymarket.com/market/qfex-fdv-above-300m-one-day-after-launch) | 3 | 0.44 | 8.1% | 50/116 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will the 10-year Japanese government bond yield on the last ](https://polymarket.com/market/will-the-10-year-japanese-government-bond-yield-on-the-last-reported-day-of-2026-be-at-least-3pt0) | 2 | 0.172 | 13.5% | 10/116 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
-| [Pete Hegseth out as Secretary of Defense by December 31?](https://polymarket.com/market/pete-hegseth-out-as-secretary-of-defense-by-december-31) | 50 | 0.105 | 0.0% | 0/116 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Lindsay Clancy be the #1 searched person on Google this](https://polymarket.com/market/will-lindsay-clancy-be-the-1-searched-person-on-google-this-year-20260717214426299) | 177 | 0.4 | 1.5% | 121/121 | 0.22 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 14 (8) / 14 / +1.0c |
+| [Will Tee Higgins have 12.5+ receiving touchdowns in the 2026](https://polymarket.com/market/tee-higgins-12pt5-receiving-touchdowns-2026-27) | 4 | 0.212 | 27.9% | 121/121 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Derrick Henry have 16.5+ rushing touchdowns in the 2026](https://polymarket.com/market/derrick-henry-16pt5-rushing-touchdowns-2026-27) | 4 | 0.33 | 14.4% | 121/121 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +1.0c |
+| [Hotstuff FDV above $150M one day after launch?](https://polymarket.com/market/hotstuff-fdv-above-150m-one-day-after-launch) | 3 | 0.13 | 5.8% | 121/121 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Pacifica launch a token by December 31 2026?](https://polymarket.com/market/will-pacifica-launch-a-token-by-december-31-2026) | 5 | 0.055 | 5.6% | 67/121 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 10 (6) / 10 / +2.0c |
+| [QFEX FDV above $300M one day after launch?](https://polymarket.com/market/qfex-fdv-above-300m-one-day-after-launch) | 3 | 0.44 | 8.3% | 53/121 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will the 10-year Japanese government bond yield on the last ](https://polymarket.com/market/will-the-10-year-japanese-government-bond-yield-on-the-last-reported-day-of-2026-be-at-least-3pt0) | 2 | 0.173 | 13.5% | 10/121 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Pete Hegseth out as Secretary of Defense by December 31?](https://polymarket.com/market/pete-hegseth-out-as-secretary-of-defense-by-december-31) | 50 | 0.105 | 0.0% | 0/121 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
