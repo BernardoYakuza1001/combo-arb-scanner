@@ -1,0 +1,72 @@
+[
+ {
+  "q": "Will the 10-year Japanese government bond yield on the last reported day of 2026 be betwee",
+  "cid": "0x115c4326985073b5fdc899b914911589a33c8750bdd1e705b304aa1cfd4e5b59",
+  "reward": 0.002878462803397387,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Dejan \u0160o\u0161ki\u0107 be the next Prime Minister of Serbia?",
+  "cid": "0x0a9dca54cd3c0a1075cef28fe33f25717d88cceb9e085b214ebb8ae4e4c57575",
+  "reward": 0.006909334602886053,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "QFEX FDV above $300M one day after launch?",
+  "cid": "0xea087bbf43dc016aac7dede899f765008e9031521702909f8621b65befc75b34",
+  "reward": 5.630044634772335e-31,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Ethereal FDV above $200M one day after launch?",
+  "cid": "0x8aa2e5fb26f19dde8e9911d9ec29b539775e6a71300a02c787915fc74b3ffdba",
+  "reward": 0.0019140871212288153,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Darian Mensah be the 2026 D1 Passing Yards Leader?",
+  "cid": "0xb9c12d4241611945aa54346e6743ec611c76d075786ef4d945f2b53fd0c9327c",
+  "reward": 0.0025920347970500223,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Beezie launch a token by December 31, 2027?",
+  "cid": "0xee52eead928533108382b223aecac6b53602c80bd6e32a59303ed6dc5fb35f79",
+  "reward": 0.00019180048506961715,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ },
+ {
+  "q": "Will Zcash dip to $400 by December 31, 2026?",
+  "cid": "0x529c408856960854ab8217c815333c237cfc9b9eda180a750a4f6bb2306a7605",
+  "reward": 0.0016690193943281724,
+  "mtm": 0.0,
+  "yes": 0.0,
+  "no": 0.0,
+  "merged": 0.0,
+  "fills": []
+ }
+]
