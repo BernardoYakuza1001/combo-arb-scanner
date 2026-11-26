@@ -2,7 +2,7 @@
  {
   "q": "Will Jacob Fowler win the 2026-27 Calder Trophy?",
   "cid": "0x3953a1b2640f3af82e77390a4df00100db6ba86a3c59cb590ba26f64b90c261d",
-  "reward": 0.004168890943699295,
+  "reward": 0.004560848614221539,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.033924396820033065,
+  "reward": 0.03682309267890683,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will CMI declare a Millennium Prize Problem solved by December 31, 2028?",
   "cid": "0x1559fd02f1e6dc9ac3b3ed7fb41aa53e10df2a32d3ebbcab516efcaec6117d9e",
-  "reward": 0.007364605186299865,
+  "reward": 0.008487417341296443,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +52,7 @@
  {
   "q": "Will Morgan Wallen be the Billboard #1 top artist in 2026?",
   "cid": "0x45645b3996c6170c477de5f81a04da30d0df6ebf01acb155733aed37458497c2",
-  "reward": 0.018580603472359496,
+  "reward": 0.022013169149719257,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,7 +62,7 @@
  {
   "q": "QFEX FDV above $300M one day after launch?",
   "cid": "0xea087bbf43dc016aac7dede899f765008e9031521702909f8621b65befc75b34",
-  "reward": 0.0051084335883558015,
+  "reward": 0.0062458646086681075,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
