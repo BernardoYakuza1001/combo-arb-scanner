@@ -1,19 +1,19 @@
-# PMMM paper run — 2026-11-26 07:32 UTC, 5.33 h
+# PMMM paper run — 2026-11-26 07:32 UTC, 5.42 h
 
 8 markets, $200 each ($1,600 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.56  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.56**
-Per day at this pace: rewards $2.53, net $+2.53
+**Rewards accrued: $0.57  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.57**
+Per day at this pace: rewards $2.52, net $+2.52
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.56, per day $+2.53. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.57, per day $+2.52. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will Morgan Wallen be the Billboard #1 top artist in 2026?](https://polymarket.com/market/will-morgan-wallen-be-the-billboard-1-top-artist-in-2026) | 5 | 0.708 | 16.4% | 240/321 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
-| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.12 | 6.1% | 321/321 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +2.5c |
-| [Kraken IPO by June 30, 2027?](https://polymarket.com/market/kraken-ipo-by-june-30-2027) | 5 | 0.23 | 23.5% | 153/321 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will CMI declare a Millennium Prize Problem solved by Decemb](https://polymarket.com/market/will-cmi-declare-a-millennium-prize-problem-solved-by-december-31-2028-20260723160122982) | 15 | 0.41 | 2.4% | 321/321 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 7 (5) / 7 / +4.0c |
-| [QFEX FDV above $300M one day after launch?](https://polymarket.com/market/qfex-fdv-above-300m-one-day-after-launch) | 3 | 0.46 | 16.7% | 121/321 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Jacob Fowler win the 2026-27 Calder Trophy?](https://polymarket.com/market/will-jacob-fowler-win-the-2026-27-calder-trophy) | 8 | 0.43 | 2.6% | 287/321 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Kyren Williams have 999.5+ rushing yards in the 2026-27](https://polymarket.com/market/kyren-williams-999pt5-rushing-yards-2026-27) | 4 | 0.46 | 0.0% | 0/321 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 1 / - |
-| [Will Matthew Stafford have 4,499.5+ passing yards in the 202](https://polymarket.com/market/matthew-stafford-4499pt5-passing-yards-2026-27) | 4 | 0.17 | 0.0% | 0/321 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Morgan Wallen be the Billboard #1 top artist in 2026?](https://polymarket.com/market/will-morgan-wallen-be-the-billboard-1-top-artist-in-2026) | 5 | 0.698 | 16.3% | 245/326 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will Kristi Noem leave the Trump administration before 2027?](https://polymarket.com/market/will-kristi-noem-leave-the-trump-administration-before-2027) | 10 | 0.119 | 6.1% | 326/326 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +2.5c |
+| [Kraken IPO by June 30, 2027?](https://polymarket.com/market/kraken-ipo-by-june-30-2027) | 5 | 0.23 | 23.4% | 158/326 | 0.13 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will CMI declare a Millennium Prize Problem solved by Decemb](https://polymarket.com/market/will-cmi-declare-a-millennium-prize-problem-solved-by-december-31-2028-20260723160122982) | 15 | 0.41 | 2.4% | 326/326 | 0.08 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 7 (5) / 7 / +4.0c |
+| [QFEX FDV above $300M one day after launch?](https://polymarket.com/market/qfex-fdv-above-300m-one-day-after-launch) | 3 | 0.46 | 16.7% | 121/326 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Jacob Fowler win the 2026-27 Calder Trophy?](https://polymarket.com/market/will-jacob-fowler-win-the-2026-27-calder-trophy) | 8 | 0.43 | 2.5% | 292/326 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Kyren Williams have 999.5+ rushing yards in the 2026-27](https://polymarket.com/market/kyren-williams-999pt5-rushing-yards-2026-27) | 4 | 0.46 | 0.0% | 0/326 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 1 / - |
+| [Will Matthew Stafford have 4,499.5+ passing yards in the 202](https://polymarket.com/market/matthew-stafford-4499pt5-passing-yards-2026-27) | 4 | 0.17 | 0.0% | 0/326 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
