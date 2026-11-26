@@ -2,7 +2,7 @@
  {
   "q": "Will Jacob Fowler win the 2026-27 Calder Trophy?",
   "cid": "0x3953a1b2640f3af82e77390a4df00100db6ba86a3c59cb590ba26f64b90c261d",
-  "reward": 0.036326976474242406,
+  "reward": 0.03658396166311817,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Kristi Noem leave the Trump administration before 2027?",
   "cid": "0xc37f85182c9f8e6a25d9ac915e350f29ec6abd34adcfc75b42235214fcf1a8fd",
-  "reward": 0.10271963731893496,
+  "reward": 0.10566753676233168,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Kraken IPO by June 30, 2027?",
   "cid": "0xcee7afac20d34bfca0ddafe231f402b105a5ffbaf841fa9c12b1eee4b9031874",
-  "reward": 0.03921437569098935,
+  "reward": 0.04332032850878271,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will CMI declare a Millennium Prize Problem solved by December 31, 2028?",
   "cid": "0x1559fd02f1e6dc9ac3b3ed7fb41aa53e10df2a32d3ebbcab516efcaec6117d9e",
-  "reward": 0.04787778775758976,
+  "reward": 0.04860725755906864,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -62,6 +62,11 @@
     "ts": 1795685156.2635944,
     "kind": "pause",
     "mid": 0.6955
+   },
+   {
+    "ts": 1795691351.3128169,
+    "kind": "pause",
+    "mid": 0.7355
    }
   ]
  },
