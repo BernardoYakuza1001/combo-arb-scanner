@@ -1,18 +1,18 @@
-# PMMM paper run — 2026-11-25 21:23 UTC, 4.75 h
+# PMMM paper run — 2026-11-25 21:23 UTC, 4.83 h
 
 7 markets, $200 each ($1,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.62  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.62**
+**Rewards accrued: $0.63  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.63**
 Per day at this pace: rewards $3.13, net $+3.13
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.62, per day $+3.13. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.63, per day $+3.13. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will China's annual inflation in 2026 be between 0.1% and 0.](https://polymarket.com/market/will-chinas-annual-inflation-in-2026-be-between-0pt1-and-0pt5) | 5 | 0.526 | 19.7% | 284/286 | 0.19 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +1.3c |
-| [Extended FDV above $150M one day after launch?](https://polymarket.com/market/extended-fdv-above-150m-one-day-after-launch-452) | 50 | 0.46 | 1.8% | 286/286 | 0.18 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / +2.0c |
-| [Will Bruno Retailleau be on the ballot for the 2027 French p](https://polymarket.com/market/will-bruno-retailleau-be-on-the-ballot-for-the-2027-french-presidential-election) | 5 | 0.205 | 12.1% | 286/286 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +5.0c |
-| [Extended FDV above $300M one day after launch?](https://polymarket.com/market/extended-fdv-above-300m-one-day-after-launch-351-333) | 5 | 0.12 | 8.8% | 285/286 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Arc FDV above $800M one day after launch?](https://polymarket.com/market/arc-fdv-above-800m-one-day-after-launch) | 3 | 0.55 | 8.9% | 159/286 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Beezie launch a token by December 31, 2027?](https://polymarket.com/market/will-beezie-launch-a-token-by-december-31-2027-20260727145435059) | 5 | 0.69 | 5.3% | 27/286 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Kraken IPO by June 30, 2027?](https://polymarket.com/market/kraken-ipo-by-june-30-2027) | 5 | 0.23 | 0.0% | 0/286 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will China's annual inflation in 2026 be between 0.1% and 0.](https://polymarket.com/market/will-chinas-annual-inflation-in-2026-be-between-0pt1-and-0pt5) | 5 | 0.524 | 19.9% | 289/291 | 0.20 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +1.3c |
+| [Extended FDV above $150M one day after launch?](https://polymarket.com/market/extended-fdv-above-150m-one-day-after-launch-452) | 50 | 0.46 | 1.8% | 291/291 | 0.19 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (1) / 2 / +2.0c |
+| [Will Bruno Retailleau be on the ballot for the 2027 French p](https://polymarket.com/market/will-bruno-retailleau-be-on-the-ballot-for-the-2027-french-presidential-election) | 5 | 0.215 | 12.0% | 291/291 | 0.12 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 1 (0) / 1 / +5.0c |
+| [Extended FDV above $300M one day after launch?](https://polymarket.com/market/extended-fdv-above-300m-one-day-after-launch-351-333) | 5 | 0.12 | 8.8% | 290/291 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Arc FDV above $800M one day after launch?](https://polymarket.com/market/arc-fdv-above-800m-one-day-after-launch) | 3 | 0.545 | 9.0% | 164/291 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Beezie launch a token by December 31, 2027?](https://polymarket.com/market/will-beezie-launch-a-token-by-december-31-2027-20260727145435059) | 5 | 0.69 | 5.3% | 27/291 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Kraken IPO by June 30, 2027?](https://polymarket.com/market/kraken-ipo-by-june-30-2027) | 5 | 0.23 | 0.0% | 0/291 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
