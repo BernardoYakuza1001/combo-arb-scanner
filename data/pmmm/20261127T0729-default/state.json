@@ -2,12 +2,18 @@
  {
   "q": "Arc FDV above $5B one day after launch?",
   "cid": "0x7c123460eebb9f87a988db2260bc9f1971412694b729cfc4281d2d26739779cf",
-  "reward": 0.0304091139835119,
+  "reward": 0.030819278502957854,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795778057.2282438,
+    "kind": "pause",
+    "mid": 0.195
+   }
+  ]
  },
  {
   "q": "Will Ukraine recapture Crimean territory by June 30, 2027?",
@@ -32,7 +38,7 @@
  {
   "q": "GMGN FDV above $200M one day after launch",
   "cid": "0x46f40b14eff736735fae67b5576212cea35f96f44a54451d7cd85ff5cc2fa722",
-  "reward": 0.019914018180962226,
+  "reward": 0.020128272774027775,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -48,7 +54,7 @@
  {
   "q": "Will Ethereum hit $3k by June 30, 2027?",
   "cid": "0x4ceb90daf4764b6cd8e4de25cdf7fc8f9b6064895a347021e94a022876d2a1f2",
-  "reward": 0.006393992785409175,
+  "reward": 0.0064880921711341424,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -58,7 +64,7 @@
  {
   "q": "Will the Ornn H100 Index be between $3.00 and $3.50 on December 31, 2026?",
   "cid": "0xbe183fe03c96a338852d8c89be28d8d42b2ba1d45410cdb8054d0137ba7b787c",
-  "reward": 0.27321801451831795,
+  "reward": 0.27938463184080864,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -89,7 +95,7 @@
  {
   "q": "Will Max Verstappen win the 2026 Action of the Year?",
   "cid": "0x1ffd0326b41c1018a88c1426d627095c62c02f105618f62049198b660b4d15cd",
-  "reward": 0.07973016827177946,
+  "reward": 0.08165735402657236,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
