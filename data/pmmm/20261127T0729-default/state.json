@@ -32,7 +32,7 @@
  {
   "q": "GMGN FDV above $200M one day after launch",
   "cid": "0x46f40b14eff736735fae67b5576212cea35f96f44a54451d7cd85ff5cc2fa722",
-  "reward": 0.0022308865390847418,
+  "reward": 0.0028871166615912327,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will Ethereum hit $3k by June 30, 2027?",
   "cid": "0x4ceb90daf4764b6cd8e4de25cdf7fc8f9b6064895a347021e94a022876d2a1f2",
-  "reward": 0.0001897353017850512,
+  "reward": 0.00025222642764767593,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -52,7 +52,7 @@
  {
   "q": "Will the Ornn H100 Index be between $3.00 and $3.50 on December 31, 2026?",
   "cid": "0xbe183fe03c96a338852d8c89be28d8d42b2ba1d45410cdb8054d0137ba7b787c",
-  "reward": 0.023081808822935763,
+  "reward": 0.030324824970509572,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -72,7 +72,7 @@
  {
   "q": "Will Max Verstappen win the 2026 Action of the Year?",
   "cid": "0x1ffd0326b41c1018a88c1426d627095c62c02f105618f62049198b660b4d15cd",
-  "reward": 0.006194267933532488,
+  "reward": 0.0078007305458022355,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +82,7 @@
  {
   "q": "Will Databricks' valuation hit (HIGH) $250B by December 31?",
   "cid": "0x7416088efbb11ecf399536b5890766be829715acabbc2b8631a0442f7903ad10",
-  "reward": 0.0,
+  "reward": 0.0012769512292147352,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
