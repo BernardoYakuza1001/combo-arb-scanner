@@ -28,7 +28,7 @@
  {
   "q": "Will Eintracht Frankfurt qualify for the 2027-28 UEFA Europa League?",
   "cid": "0xab19bbbbc0817ece24929365e72a36f6bd50d074fd9e451414755d68117533f1",
-  "reward": 0.000216960327254447,
+  "reward": 0.0011849308011908737,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -44,7 +44,7 @@
  {
   "q": "GMGN FDV above $200M one day after launch",
   "cid": "0x46f40b14eff736735fae67b5576212cea35f96f44a54451d7cd85ff5cc2fa722",
-  "reward": 0.023924718421004815,
+  "reward": 0.024171027117732162,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -60,7 +60,7 @@
  {
   "q": "Will Ethereum hit $3k by June 30, 2027?",
   "cid": "0x4ceb90daf4764b6cd8e4de25cdf7fc8f9b6064895a347021e94a022876d2a1f2",
-  "reward": 0.008166293923842443,
+  "reward": 0.008300519108558288,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -70,7 +70,7 @@
  {
   "q": "Will the Ornn H100 Index be between $3.00 and $3.50 on December 31, 2026?",
   "cid": "0xbe183fe03c96a338852d8c89be28d8d42b2ba1d45410cdb8054d0137ba7b787c",
-  "reward": 0.32137121190700485,
+  "reward": 0.3223755766064137,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -80,7 +80,7 @@
  {
   "q": "Will the highest score achieved by an Anthropic Claude model on Humanity\u2019s Last Exam in 20",
   "cid": "0x0ec854f7b18a669ebf06b8426cc69d6a7cfbaae674096e19e46fdd76f1837187",
-  "reward": 0.07543352817696809,
+  "reward": 0.07945865846458865,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -117,7 +117,7 @@
  {
   "q": "Will Databricks' valuation hit (HIGH) $250B by December 31?",
   "cid": "0x7416088efbb11ecf399536b5890766be829715acabbc2b8631a0442f7903ad10",
-  "reward": 0.1534189723783452,
+  "reward": 0.15758288586932967,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
