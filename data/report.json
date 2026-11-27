@@ -1,14 +1,14 @@
 {
- "days": 13.01,
- "episodes": 2296,
- "qualifying": 7,
- "qualifying_events": 6,
- "qualifying_profit_usd": 17.68,
- "weekly_profit_usd": 9.52,
+ "days": 13.56,
+ "episodes": 2364,
+ "qualifying": 9,
+ "qualifying_events": 7,
+ "qualifying_profit_usd": 209.23,
+ "weekly_profit_usd": 108.0,
  "median_seen_s_all": 0.0,
- "share_seen_ge_min": 0.345,
- "median_edge_all": 0.004204920000000056,
- "in_play_share": 0.702,
+ "share_seen_ge_min": 0.343,
+ "median_edge_all": 0.00445162500000007,
+ "in_play_share": 0.703,
  "by_kind": {
   "series": {
    "episodes": 77,
@@ -16,17 +16,17 @@
    "profit_q": 0.0
   },
   "total": {
-   "episodes": 585,
-   "qualifying": 2,
-   "profit_q": 8.630186562000006
+   "episodes": 610,
+   "qualifying": 4,
+   "profit_q": 200.17850461799975
   },
   "margin": {
-   "episodes": 1005,
+   "episodes": 1030,
    "qualifying": 4,
    "profit_q": 7.616971362000125
   },
   "hit_up": {
-   "episodes": 565,
+   "episodes": 583,
    "qualifying": 1,
    "profit_q": 1.4320208174000157
   },
@@ -40,7 +40,7 @@
   "enough_days": true,
   "episodes": false,
   "distinct_events": true,
-  "weekly_profit": false
+  "weekly_profit": true
  },
  "verdict": "FAIL"
 }
