@@ -2,7 +2,7 @@
  {
   "q": "Will Betmoar launch a token by September 30, 2027?",
   "cid": "0xe57b1d1ce86d280361610da507856b2c23f38729266b07bd921a8e55545a2ff4",
-  "reward": 0.007580805462602835,
+  "reward": 0.008384641058192028,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -12,7 +12,7 @@
  {
   "q": "Will Tuyo launch a token by March 31, 2027?",
   "cid": "0x1141e613c42efb2c86ef4e547cc062377db3077aeced18cf52c85e670829c9e3",
-  "reward": 0.0064779480706253145,
+  "reward": 0.007184122680306806,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -22,7 +22,7 @@
  {
   "q": "Will Tuyo launch a token by September 30, 2027?",
   "cid": "0x9a6092a31220c1d72ecb2b22785a54becd46681aa2480a9bc703344c32fba08e",
-  "reward": 0.004628405350405547,
+  "reward": 0.005694394918837946,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -32,7 +32,7 @@
  {
   "q": "Will Tottenham finish in the top 6 of the 2026-27 English Premier League season?",
   "cid": "0xd4b7fab35a0f780e8a060ef354644e81f01307b7d9560caa935a1244989eb19e",
-  "reward": 0.002990164981965285,
+  "reward": 0.004574025357446981,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +42,7 @@
  {
   "q": "Will the 10-year Japanese government bond yield on the last reported day of 2026 be betwee",
   "cid": "0x610a76882648a656f41ddb6f3cd97952851ea462b066d09f2d35204694463f6c",
-  "reward": 0.016455315496097318,
+  "reward": 0.017403555976507536,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +82,7 @@
  {
   "q": "Will CMI declare a Millennium Prize Problem solved by December 31, 2028?",
   "cid": "0x1559fd02f1e6dc9ac3b3ed7fb41aa53e10df2a32d3ebbcab516efcaec6117d9e",
-  "reward": 0.026953112089153252,
+  "reward": 0.028546073000200803,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
