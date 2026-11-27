@@ -1,23 +1,23 @@
-# PMMM paper run — 2026-11-27 20:53 UTC, 1.25 h
+# PMMM paper run — 2026-11-27 20:53 UTC, 1.33 h
 
 12 markets, $200 each ($2,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.12  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.12**
-Per day at this pace: rewards $2.36, net $+2.36
+**Rewards accrued: $0.13  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.13**
+Per day at this pace: rewards $2.33, net $+2.33
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.12, per day $+2.36. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.13, per day $+2.33. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will CMI declare a Millennium Prize Problem solved by Decemb](https://polymarket.com/market/will-cmi-declare-a-millennium-prize-problem-solved-by-december-31-2028-20260723160122982) | 15 | 0.41 | 5.6% | 76/76 | 0.04 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will the 10-year Japanese government bond yield on the last ](https://polymarket.com/market/will-the-10-year-japanese-government-bond-yield-on-the-last-reported-day-of-2026-be-between-2pt6-and-2pt8) | 5 | 0.279 | 8.9% | 71/76 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Tottenham finish in the top 6 of the 2026-27 English Pr](https://polymarket.com/market/will-tottenham-finish-in-the-top-6-of-the-2026-27-english-premier-league-season) | 4 | 0.4 | 15.4% | 39/76 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Betmoar launch a token by September 30, 2027?](https://polymarket.com/market/will-betmoar-launch-a-token-by-september-30-2027) | 3 | 0.375 | 9.1% | 73/73 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Tuyo launch a token by March 31, 2027?](https://polymarket.com/market/will-tuyo-launch-a-token-by-march-31-2027) | 3 | 0.215 | 8.5% | 72/76 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Tuyo launch a token by September 30, 2027?](https://polymarket.com/market/will-tuyo-launch-a-token-by-september-30-2027) | 3 | 0.48 | 7.9% | 72/76 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Chelsea finish in the top 4 of the 2026-27 English Prem](https://polymarket.com/market/will-chelsea-finish-in-the-top-4-of-the-2026-27-english-premier-league-season) | 4 | 0.235 | 7.9% | 20/76 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 3 (0) / 3 / +2.0c |
-| [Will Ink launch a token by September 30, 2027?](https://polymarket.com/market/will-ink-launch-a-token-by-september-30-2027) | 3 | 0.715 | 1.2% | 1/76 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Bo Nix have 2,999.5+ passing yards in the 2026-27 NFL r](https://polymarket.com/market/bo-nix-2999pt5-passing-yards-2026-27) | 4 | 0.76 | 0.0% | 0/76 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Málaga be relegated from the 2026-27 LaLiga?](https://polymarket.com/market/will-malaga-be-relegated-from-laliga-2026-27) | 4 | 0.805 | 0.0% | 0/76 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Levante be relegated from the 2026-27 LaLiga?](https://polymarket.com/market/will-levante-be-relegated-from-laliga-2026-27) | 4 | 0.325 | 0.0% | 0/76 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (2) / 2 / - |
-| [APYX FDV above $200M one day after launch?](https://polymarket.com/market/apyx-fdv-above-200m-one-day-after-launch) | 3 | 0.15 | 0.0% | 0/76 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will CMI declare a Millennium Prize Problem solved by Decemb](https://polymarket.com/market/will-cmi-declare-a-millennium-prize-problem-solved-by-december-31-2028-20260723160122982) | 15 | 0.405 | 5.5% | 81/81 | 0.05 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will the 10-year Japanese government bond yield on the last ](https://polymarket.com/market/will-the-10-year-japanese-government-bond-yield-on-the-last-reported-day-of-2026-be-between-2pt6-and-2pt8) | 5 | 0.28 | 8.5% | 76/81 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Tottenham finish in the top 6 of the 2026-27 English Pr](https://polymarket.com/market/will-tottenham-finish-in-the-top-6-of-the-2026-27-english-premier-league-season) | 4 | 0.395 | 14.4% | 43/81 | 0.02 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Betmoar launch a token by September 30, 2027?](https://polymarket.com/market/will-betmoar-launch-a-token-by-september-30-2027) | 3 | 0.375 | 9.0% | 78/78 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Tuyo launch a token by March 31, 2027?](https://polymarket.com/market/will-tuyo-launch-a-token-by-march-31-2027) | 3 | 0.215 | 8.3% | 77/81 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Tuyo launch a token by September 30, 2027?](https://polymarket.com/market/will-tuyo-launch-a-token-by-september-30-2027) | 3 | 0.48 | 7.9% | 77/81 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Chelsea finish in the top 4 of the 2026-27 English Prem](https://polymarket.com/market/will-chelsea-finish-in-the-top-4-of-the-2026-27-english-premier-league-season) | 4 | 0.235 | 6.9% | 25/81 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 3 (0) / 3 / +2.0c |
+| [Will Ink launch a token by September 30, 2027?](https://polymarket.com/market/will-ink-launch-a-token-by-september-30-2027) | 3 | 0.715 | 1.2% | 1/81 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Bo Nix have 2,999.5+ passing yards in the 2026-27 NFL r](https://polymarket.com/market/bo-nix-2999pt5-passing-yards-2026-27) | 4 | 0.76 | 0.0% | 0/81 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Málaga be relegated from the 2026-27 LaLiga?](https://polymarket.com/market/will-malaga-be-relegated-from-laliga-2026-27) | 4 | 0.805 | 0.0% | 0/81 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Levante be relegated from the 2026-27 LaLiga?](https://polymarket.com/market/will-levante-be-relegated-from-laliga-2026-27) | 4 | 0.33 | 0.0% | 0/81 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 2 (2) / 2 / - |
+| [APYX FDV above $200M one day after launch?](https://polymarket.com/market/apyx-fdv-above-200m-one-day-after-launch) | 3 | 0.15 | 0.0% | 0/81 | 0.00 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
