@@ -1,18 +1,18 @@
-# PMMM paper run — 2026-11-26 21:10 UTC, 5.58 h
+# PMMM paper run — 2026-11-26 21:10 UTC, 5.67 h
 
 7 markets, $200 each ($1,400 total), quotes at 75% of max spread.
 
-**Rewards accrued: $0.65  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.65**
-Per day at this pace: rewards $2.81, net $+2.81
+**Rewards accrued: $0.66  |  Trading P&L (marked at mid): $+0.00  |  Net: $+0.66**
+Per day at this pace: rewards $2.82, net $+2.82
 
-Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.65, per day $+2.81. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
+Worst case (all held shares sold at current best bids): trading P&L $+0.00, net $+0.66, per day $+2.82. Fills: 0; cash paid for shares still held: $0.00. Mode: quiet.
 
 | Market | Pool $/d | Mid | Avg share | Scored min | Rewards $ | Fills | Merged sets | YES inv | NO inv | Trade P&L $ | Pauses | Tape trades (YES tok) / near mid / closest to my order |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Will the Ornn H100 Index be between $3.00 and $3.50 on Decem](https://polymarket.com/market/will-the-ornn-h100-index-be-between-3pt00-and-3pt50-on-december-31-2026-20260709164334628) | 3 | 0.325 | 24.9% | 327/336 | 0.17 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will CMI declare a Millennium Prize Problem solved by Decemb](https://polymarket.com/market/will-cmi-declare-a-millennium-prize-problem-solved-by-december-31-2028-20260723160122982) | 15 | 0.385 | 4.8% | 336/336 | 0.17 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (3) / 3 / +3.0c |
-| [Will Manchester City be relegated from the 2026-27 Premier L](https://polymarket.com/market/will-manchester-city-be-relegated-from-premier-league-2026-27) | 4 | 0.514 | 17.5% | 336/336 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will Will Anderson Jr. win the 2026 NFL Defensive Player of ](https://polymarket.com/market/will-will-anderson-jrpt-win-the-2026-nfl-defensive-player-of-the-year-award-for-the-2026-27-nfl-season-20260716005216695) | 5 | 0.555 | 8.4% | 315/336 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (0) / 2 / - |
-| [GMGN FDV above $200M one day after launch](https://polymarket.com/market/gmgn-fdv-above-200m-one-day-after-launch) | 3 | 0.4 | 7.3% | 334/336 | 0.05 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
-| [Will OnRe launch a token by March 31, 2027?](https://polymarket.com/market/will-onre-launch-a-token-by-march-31-2027) | 3 | 0.22 | 6.8% | 178/336 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
-| [Will Magomed Ankalaev fight Carlos Ulberg next?](https://polymarket.com/market/will-magomed-ankalaev-fight-carlos-ulberg-next) | 4 | 0.275 | 6.2% | 29/336 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
+| [Will CMI declare a Millennium Prize Problem solved by Decemb](https://polymarket.com/market/will-cmi-declare-a-millennium-prize-problem-solved-by-december-31-2028-20260723160122982) | 15 | 0.385 | 4.8% | 341/341 | 0.17 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 3 (3) / 3 / +3.0c |
+| [Will the Ornn H100 Index be between $3.00 and $3.50 on Decem](https://polymarket.com/market/will-the-ornn-h100-index-be-between-3pt00-and-3pt50-on-december-31-2026-20260709164334628) | 3 | 0.325 | 24.7% | 332/341 | 0.17 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Manchester City be relegated from the 2026-27 Premier L](https://polymarket.com/market/will-manchester-city-be-relegated-from-premier-league-2026-27) | 4 | 0.514 | 17.4% | 341/341 | 0.14 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will Will Anderson Jr. win the 2026 NFL Defensive Player of ](https://polymarket.com/market/will-will-anderson-jrpt-win-the-2026-nfl-defensive-player-of-the-year-award-for-the-2026-27-nfl-season-20260716005216695) | 5 | 0.555 | 8.4% | 320/341 | 0.09 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 2 (0) / 2 / - |
+| [GMGN FDV above $200M one day after launch](https://polymarket.com/market/gmgn-fdv-above-200m-one-day-after-launch) | 3 | 0.4 | 7.3% | 339/341 | 0.05 | 0 | 0 | 0 | 0 | +0.00 | 0 / 0 stops | 0 (0) / 0 / - |
+| [Will OnRe launch a token by March 31, 2027?](https://polymarket.com/market/will-onre-launch-a-token-by-march-31-2027) | 3 | 0.215 | 6.9% | 183/341 | 0.03 | 0 | 0 | 0 | 0 | +0.00 | 1 / 0 stops | 0 (0) / 0 / - |
+| [Will Magomed Ankalaev fight Carlos Ulberg next?](https://polymarket.com/market/will-magomed-ankalaev-fight-carlos-ulberg-next) | 4 | 0.275 | 6.5% | 34/341 | 0.01 | 0 | 0 | 0 | 0 | +0.00 | 2 / 0 stops | 0 (0) / 0 / - |
