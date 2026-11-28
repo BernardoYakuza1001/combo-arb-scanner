@@ -1,14 +1,14 @@
 {
- "days": 14.01,
- "episodes": 2403,
+ "days": 14.55,
+ "episodes": 2518,
  "qualifying": 11,
  "qualifying_events": 9,
  "qualifying_profit_usd": 217.6,
- "weekly_profit_usd": 108.71,
+ "weekly_profit_usd": 104.7,
  "median_seen_s_all": 0.0,
- "share_seen_ge_min": 0.351,
- "median_edge_all": 0.0042562499999999615,
- "in_play_share": 0.695,
+ "share_seen_ge_min": 0.341,
+ "median_edge_all": 0.0040580400000000405,
+ "in_play_share": 0.708,
  "by_kind": {
   "series": {
    "episodes": 77,
@@ -16,17 +16,17 @@
    "profit_q": 0.0
   },
   "total": {
-   "episodes": 612,
+   "episodes": 624,
    "qualifying": 4,
    "profit_q": 200.17850461799975
   },
   "margin": {
-   "episodes": 1037,
+   "episodes": 1137,
    "qualifying": 6,
    "profit_q": 15.993757924500127
   },
   "hit_up": {
-   "episodes": 613,
+   "episodes": 616,
    "qualifying": 1,
    "profit_q": 1.4320208174000157
   },
