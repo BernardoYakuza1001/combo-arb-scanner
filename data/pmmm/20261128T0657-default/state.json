@@ -23,7 +23,7 @@
  {
   "q": "Will Veda launch a token by December 31, 2026?",
   "cid": "0x0d1f185786aeb6f4167d0d853831647a7dcae2ed22542fed97c4639d869d03c3",
-  "reward": 0.035381943769279334,
+  "reward": 0.03639555004273843,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -59,7 +59,7 @@
  {
   "q": "Will Jan Oblak (Atl\u00e9tico Madrid) record the most clean sheets in the 2026-27 La Liga seaso",
   "cid": "0x24825f790bc1494296efd57fd90b8667a175d0ff84a48d7be02c7a8b393a3fd2",
-  "reward": 0.014053677306672056,
+  "reward": 0.014346784934797486,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -69,7 +69,7 @@
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.016927043845973773,
+  "reward": 0.0182345067997555,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -95,7 +95,7 @@
  {
   "q": "Will Darian Mensah be the 2026 D1 Passing Yards Leader?",
   "cid": "0xb9c12d4241611945aa54346e6743ec611c76d075786ef4d945f2b53fd0c9327c",
-  "reward": 0.047735761939531406,
+  "reward": 0.049349618609875086,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -105,7 +105,7 @@
  {
   "q": "Will Konyaspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0xe542938e6334a3b9e3324703172091049d55bbd2b8303f08cbe883ff7c91c73a",
-  "reward": 0.05681660246830011,
+  "reward": 0.058586620299730226,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
