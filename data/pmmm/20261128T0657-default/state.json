@@ -12,13 +12,18 @@
     "ts": 1795849488.453267,
     "kind": "pause",
     "mid": 0.645
+   },
+   {
+    "ts": 1795859478.532099,
+    "kind": "pause",
+    "mid": 0.6799999999999999
    }
   ]
  },
  {
   "q": "Will Veda launch a token by December 31, 2026?",
   "cid": "0x0d1f185786aeb6f4167d0d853831647a7dcae2ed22542fed97c4639d869d03c3",
-  "reward": 0.02927803993416849,
+  "reward": 0.030419826317511917,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -54,7 +59,7 @@
  {
   "q": "Will Jan Oblak (Atl\u00e9tico Madrid) record the most clean sheets in the 2026-27 La Liga seaso",
   "cid": "0x24825f790bc1494296efd57fd90b8667a175d0ff84a48d7be02c7a8b393a3fd2",
-  "reward": 0.012187219720610636,
+  "reward": 0.012499741270333606,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -64,7 +69,7 @@
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.009550480153198346,
+  "reward": 0.009907575993114088,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -74,7 +79,7 @@
  {
   "q": "Saturn FDV above $50M one day after launch",
   "cid": "0x8a2aea57bb551023658045e679bb75611083c45e11ffb9dec9e7af88a29e03a8",
-  "reward": 0.0006567360414986672,
+  "reward": 0.0023619129901465805,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -90,7 +95,7 @@
  {
   "q": "Will Darian Mensah be the 2026 D1 Passing Yards Leader?",
   "cid": "0xb9c12d4241611945aa54346e6743ec611c76d075786ef4d945f2b53fd0c9327c",
-  "reward": 0.03464201656556514,
+  "reward": 0.037050545858816314,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -100,7 +105,7 @@
  {
   "q": "Will Konyaspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0xe542938e6334a3b9e3324703172091049d55bbd2b8303f08cbe883ff7c91c73a",
-  "reward": 0.04933768456882958,
+  "reward": 0.050584170885408,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
