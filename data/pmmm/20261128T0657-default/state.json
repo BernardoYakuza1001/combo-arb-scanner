@@ -2,7 +2,7 @@
  {
   "q": "Will another city host the final of the 2030 FIFA World Cup?",
   "cid": "0x07414b5c367c107a563491fe8b354abd5b07f099fce3b25cd57e80110ce780ff",
-  "reward": 0.026868284393919254,
+  "reward": 0.03030194488145762,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -18,7 +18,7 @@
  {
   "q": "Will Veda launch a token by December 31, 2026?",
   "cid": "0x0d1f185786aeb6f4167d0d853831647a7dcae2ed22542fed97c4639d869d03c3",
-  "reward": 0.020899360042505095,
+  "reward": 0.022221919245820156,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -54,7 +54,7 @@
  {
   "q": "Will Jan Oblak (Atl\u00e9tico Madrid) record the most clean sheets in the 2026-27 La Liga seaso",
   "cid": "0x24825f790bc1494296efd57fd90b8667a175d0ff84a48d7be02c7a8b393a3fd2",
-  "reward": 0.009545529395944679,
+  "reward": 0.0098805569854357,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -64,7 +64,7 @@
  {
   "q": "Will Union Berlin be relegated from the 2026-27 Bundesliga?",
   "cid": "0x8760f5e3fd565cfadd07f95f0bb872f14aaef87c970941e632488fd00d504868",
-  "reward": 0.0030295517808712072,
+  "reward": 0.00392771214000746,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -100,7 +100,7 @@
  {
   "q": "Will Konyaspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0xe542938e6334a3b9e3324703172091049d55bbd2b8303f08cbe883ff7c91c73a",
-  "reward": 0.03966151123261209,
+  "reward": 0.04080942515038722,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
