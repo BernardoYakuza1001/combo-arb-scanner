@@ -7,12 +7,18 @@
   "yes": 0.0,
   "no": 0.0,
   "merged": 0.0,
-  "fills": []
+  "fills": [
+   {
+    "ts": 1795849488.453267,
+    "kind": "pause",
+    "mid": 0.645
+   }
+  ]
  },
  {
   "q": "Will Veda launch a token by December 31, 2026?",
   "cid": "0x0d1f185786aeb6f4167d0d853831647a7dcae2ed22542fed97c4639d869d03c3",
-  "reward": 0.0009484239204925268,
+  "reward": 0.0017387771875696325,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -42,7 +48,7 @@
  {
   "q": "Will Jan Oblak (Atl\u00e9tico Madrid) record the most clean sheets in the 2026-27 La Liga seaso",
   "cid": "0x24825f790bc1494296efd57fd90b8667a175d0ff84a48d7be02c7a8b393a3fd2",
-  "reward": 1.652811850864566e-32,
+  "reward": 3.0759215574318116e-32,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
@@ -82,7 +88,7 @@
  {
   "q": "Will Konyaspor be relegated from the 2026-27 S\u00fcper Lig?",
   "cid": "0xe542938e6334a3b9e3324703172091049d55bbd2b8303f08cbe883ff7c91c73a",
-  "reward": 0.0014966189339697777,
+  "reward": 0.0027043301103563786,
   "mtm": 0.0,
   "yes": 0.0,
   "no": 0.0,
